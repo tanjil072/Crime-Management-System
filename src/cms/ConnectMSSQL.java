@@ -18,7 +18,7 @@ public class ConnectMSSQL {
 
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement
-                    .executeQuery("SELECT FirstName FROM Customer");
+                    .executeQuery("SELECT FirstName FROM Customers");
             
             
             while (resultSet.next()) {
@@ -32,5 +32,6 @@ public class ConnectMSSQL {
             e.printStackTrace();
         }
     }
+    
     
 }
