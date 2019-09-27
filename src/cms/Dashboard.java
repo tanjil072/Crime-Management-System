@@ -27,6 +27,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import rojerusan.RSPanelsSlider;
 
@@ -39,58 +40,61 @@ public class Dashboard extends javax.swing.JFrame {
     /**
      * Creates new form Dashboard
      */
-    
-     String filename = null;
+    String filename = null;
     //private byte[] picture;
     byte[] person_image;
-    
+
     public Dashboard() {
         initComponents();
-        
+
         this.setLocationRelativeTo(null);
     }
-    
-    
-    
+
     public ArrayList<User> userList() {
-    ArrayList<User> usersList=new ArrayList<>();
-    
-    try {
+        ArrayList<User> usersList = new ArrayList<>();
+
+        try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-            
-            String query1="SELECT * FROM POLICE_INFO";
-            Statement st=con.createStatement();
-            ResultSet rs=st.executeQuery(query1);
-            
+
+            String query1 = "SELECT * FROM POLICE_INFO";
+            Statement st = con.createStatement();
+            ResultSet rs = st.executeQuery(query1);
+
             User user;
-            
-            while(rs.next()){
-                user=new User(rs.getInt("PoliceId"),rs.getString("FirstName"),rs.getString("Designation"),rs.getString("Email"));
+
+            while (rs.next()) {
+                user = new User(rs.getInt("PoliceId"), rs.getString("FirstName"), rs.getString("Designation"), rs.getString("Email"));
                 usersList.add(user);
             }
-            
-    }catch (ClassNotFoundException | SQLException e) {
+
+        } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-    return usersList;
-}
-    
-    public void show_user(){
-        ArrayList<User> list=userList();
-        DefaultTableModel model=(DefaultTableModel) Police_Info.getModel();
-        Object[] row=new Object[4];
+        return usersList;
+    }
+
+    public void show_user() {
+        ArrayList<User> list = userList();
+        DefaultTableModel model = (DefaultTableModel) Police_Info.getModel();
+        Object[] row = new Object[4];
+
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment(JLabel.CENTER);
+        Police_Info.setDefaultRenderer(String.class, centerRenderer);
+        Police_Info.setDefaultRenderer(Integer.class, centerRenderer);
         
-        for(int i=0;i<list.size();i++)
-        {
-            row[0]=list.get(i).getPId();
-            row[1]=list.get(i).getFirstName();
-            row[2]=list.get(i).getDesignation();
-            row[3]=list.get(i).getEmail();
+        ((DefaultTableCellRenderer) Police_Info.getTableHeader().getDefaultRenderer())
+            .setHorizontalAlignment(JLabel.CENTER);
+
+        for (int i = 0; i < list.size(); i++) {
+            row[0] = list.get(i).getPId();
+            row[1] = list.get(i).getFirstName();
+            row[2] = list.get(i).getDesignation();
+            row[3] = list.get(i).getEmail();
             model.addRow(row);
-            
-            
+
         }
     }
 
@@ -1887,9 +1891,9 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 402, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2101,90 +2105,91 @@ public class Dashboard extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public void setColor(JPanel p,JLabel l){
-        p.setBackground(new Color(204,204,204));
-        l.setForeground(new Color(51,51,51));
+    public void setColor(JPanel p, JLabel l) {
+        p.setBackground(new Color(204, 204, 204));
+        l.setForeground(new Color(51, 51, 51));
     }
-    public void resetColor(JPanel p,JLabel l){
-        p.setBackground(new Color(51,51,51));
-        l.setForeground(new Color(204,204,204));
+
+    public void resetColor(JPanel p, JLabel l) {
+        p.setBackground(new Color(51, 51, 51));
+        l.setForeground(new Color(204, 204, 204));
     }
-    
+
     private void labelPoliceInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceInfoMouseEntered
-        setColor(panelPoliceInfo,labelPoliceInfo);
+        setColor(panelPoliceInfo, labelPoliceInfo);
         labelPoliceInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/policeman.png")));
     }//GEN-LAST:event_labelPoliceInfoMouseEntered
 
     private void labelPoliceInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceInfoMouseClicked
-        panelSlider1.nextPanel(20,panelPolice,panelSlider1.right);//rootPaneCheckingEnabled
+        panelSlider1.nextPanel(20, panelPolice, panelSlider1.right);//rootPaneCheckingEnabled
         show_user();
-        
-        
+
+
     }//GEN-LAST:event_labelPoliceInfoMouseClicked
 
     private void panelPoliceInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPoliceInfoMouseEntered
-        
+
     }//GEN-LAST:event_panelPoliceInfoMouseEntered
 
     private void panelPoliceInfoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPoliceInfoMouseExited
-        
+
     }//GEN-LAST:event_panelPoliceInfoMouseExited
 
     private void labelPoliceInfoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceInfoMouseExited
-        resetColor(panelPoliceInfo,labelPoliceInfo);
+        resetColor(panelPoliceInfo, labelPoliceInfo);
         labelPoliceInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/policeman(1).png")));
     }//GEN-LAST:event_labelPoliceInfoMouseExited
 
     private void labelCriminalInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseEntered
-        setColor(panelCriminalInfo,labelCriminalInfo);
+        setColor(panelCriminalInfo, labelCriminalInfo);
         labelCriminalInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/criminal-record.png")));
     }//GEN-LAST:event_labelCriminalInfoMouseEntered
 
     private void labelCriminalInfoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseExited
-        resetColor(panelCriminalInfo,labelCriminalInfo);
+        resetColor(panelCriminalInfo, labelCriminalInfo);
         labelCriminalInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/criminal-record(1).png")));
     }//GEN-LAST:event_labelCriminalInfoMouseExited
 
     private void labelCustodyInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCustodyInfoMouseEntered
-        setColor(panelCustodyInfo,labelCustodyInfo);
+        setColor(panelCustodyInfo, labelCustodyInfo);
         labelCustodyInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/jail.png")));
     }//GEN-LAST:event_labelCustodyInfoMouseEntered
 
     private void labelCustodyInfoMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCustodyInfoMouseExited
-        resetColor(panelCustodyInfo,labelCustodyInfo);
+        resetColor(panelCustodyInfo, labelCustodyInfo);
         labelCustodyInfo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/jail(1).png")));
     }//GEN-LAST:event_labelCustodyInfoMouseExited
 
     private void labelComplainMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelComplainMouseEntered
-        setColor(panelComplain,labelComplain);
+        setColor(panelComplain, labelComplain);
         labelComplain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/edit.png")));
     }//GEN-LAST:event_labelComplainMouseEntered
 
     private void labelComplainMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelComplainMouseExited
-        resetColor(panelComplain,labelComplain);
+        resetColor(panelComplain, labelComplain);
         labelComplain.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/edit(1).png")));
     }//GEN-LAST:event_labelComplainMouseExited
 
     private void labelExitMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelExitMouseEntered
-        panelExit.setBackground(new Color(102,102,102));
-        labelExit.setForeground(new Color(204,204,204));
+        panelExit.setBackground(new Color(102, 102, 102));
+        labelExit.setForeground(new Color(204, 204, 204));
         labelExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/log-out(1).png")));
     }//GEN-LAST:event_labelExitMouseEntered
 
     private void labelExitMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelExitMouseExited
-        panelExit.setBackground(new Color(153,153,153));
-        labelExit.setForeground(new Color(51,51,51));
+        panelExit.setBackground(new Color(153, 153, 153));
+        labelExit.setForeground(new Color(51, 51, 51));
         labelExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/log-out.png")));
     }//GEN-LAST:event_labelExitMouseExited
 
     private void labelCrossMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCrossMouseEntered
-        panelCross.setBackground(new Color(204,0,0));
-        labelCross.setForeground(new Color(255,255,255));
+        panelCross.setBackground(new Color(204, 0, 0));
+        labelCross.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelCrossMouseEntered
 
     private void labelCrossMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCrossMouseExited
-        panelCross.setBackground(new Color(255,255,255));
-        labelCross.setForeground(new Color(0,0,0));
+        panelCross.setBackground(new Color(255, 255, 255));
+        labelCross.setForeground(new Color(0, 0, 0));
     }//GEN-LAST:event_labelCrossMouseExited
 
     private void labelCrossMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCrossMouseClicked
@@ -2196,56 +2201,55 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelMiniMouseClicked
 
     private void labelMiniMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMiniMouseEntered
-        panelMini.setBackground(new Color(240,240,240));
+        panelMini.setBackground(new Color(240, 240, 240));
     }//GEN-LAST:event_labelMiniMouseEntered
 
     private void labelMiniMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMiniMouseExited
-        panelMini.setBackground(new Color(255,255,255));
+        panelMini.setBackground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelMiniMouseExited
 
-    static int xx,yy;
-    
+    static int xx, yy;
+
     private void jPanel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MousePressed
-        xx=evt.getX();
-        yy=evt.getY();
+        xx = evt.getX();
+        yy = evt.getY();
     }//GEN-LAST:event_jPanel3MousePressed
 
     private void jPanel3MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseDragged
-        int x=evt.getXOnScreen();
-        int y=evt.getYOnScreen();
-        this.setLocation(x-xx, y-yy);
+        int x = evt.getXOnScreen();
+        int y = evt.getYOnScreen();
+        this.setLocation(x - xx, y - yy);
     }//GEN-LAST:event_jPanel3MouseDragged
 
     private void labelPoliceAddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAddMouseEntered
-        resetColor(panelPoliceAdd,labelPoliceAdd);
-        
+        resetColor(panelPoliceAdd, labelPoliceAdd);
+
     }//GEN-LAST:event_labelPoliceAddMouseEntered
 
     private void labelPoliceAddMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAddMouseExited
-        setColor(panelPoliceAdd,labelPoliceAdd);
-        
-        
-       //add button on police info
+        setColor(panelPoliceAdd, labelPoliceAdd);
+
+        //add button on police info
     }//GEN-LAST:event_labelPoliceAddMouseExited
 
     private void labelUpdatePoliceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePoliceMouseEntered
-        resetColor(panelUpdatePolice,labelUpdatePolice);
+        resetColor(panelUpdatePolice, labelUpdatePolice);
     }//GEN-LAST:event_labelUpdatePoliceMouseEntered
 
     private void labelUpdatePoliceMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePoliceMouseExited
-        setColor(panelUpdatePolice,labelUpdatePolice);
+        setColor(panelUpdatePolice, labelUpdatePolice);
     }//GEN-LAST:event_labelUpdatePoliceMouseExited
 
     private void labelDeletePoliceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePoliceMouseEntered
-        resetColor(panelDeletePolice,labelDeletePolice);
+        resetColor(panelDeletePolice, labelDeletePolice);
     }//GEN-LAST:event_labelDeletePoliceMouseEntered
 
     private void labelDeletePoliceMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePoliceMouseExited
-        setColor(panelDeletePolice,labelDeletePolice);
+        setColor(panelDeletePolice, labelDeletePolice);
     }//GEN-LAST:event_labelDeletePoliceMouseExited
 
     private void labelResetPoliceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseEntered
-        resetColor(panelResetPolice,labelResetPolice);
+        resetColor(panelResetPolice, labelResetPolice);
     }//GEN-LAST:event_labelResetPoliceMouseEntered
 
     private void labelRefreshPoliceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelRefreshPoliceMouseEntered
@@ -2257,7 +2261,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelRefreshPoliceMouseExited
 
     private void labelResetPoliceMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseExited
-        setColor(panelResetPolice,labelResetPolice);
+        setColor(panelResetPolice, labelResetPolice);
     }//GEN-LAST:event_labelResetPoliceMouseExited
 
     private void SalaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalaryActionPerformed
@@ -2301,23 +2305,23 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_LastNameActionPerformed
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-       try {
+        try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection connection = DriverManager.getConnection(
-                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             String query = "INSERT INTO POLICE_INFO(FirstName,LastName,Age,Gender,DateOfBirth,Phone,Designation,"
-            + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
-            + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = connection.prepareStatement(query);
             pst.setString(1, FirstName.getText());
             pst.setString(2, LastName.getText());
             pst.setString(3, Age.getText());
             pst.setString(4, Gender.getSelectedItem().toString());
-            
+
             Date dateofbirth = DateOfBirth.getDate();
             String strDate = DateFormat.getDateInstance().format(dateofbirth);
-            
+
             pst.setString(5, strDate);
             pst.setString(6, Phone.getText());
             pst.setString(7, Designation.getSelectedItem().toString());
@@ -2327,27 +2331,22 @@ public class Dashboard extends javax.swing.JFrame {
             pst.setString(11, NID.getText());
             pst.setString(12, District.getSelectedItem().toString());
             pst.setString(13, PoliceStation.getSelectedItem().toString());
-            
+
             Date date2 = JoiningDate.getDate();
             String strDateofJoining = DateFormat.getDateInstance().format(date2);
             pst.setString(14, strDateofJoining);
-            
+
             Date date3 = JoiningDate.getDate();
             String strDateofResigning = DateFormat.getDateInstance().format(date3);
             pst.setString(14, strDateofResigning);
-            
+
             pst.setString(15, strDateofResigning);
             pst.setString(16, Salary.getText());
-            
-            
+
             pst.setBytes(17, person_image);
             pst.executeUpdate();
-            
+
             JOptionPane.showMessageDialog(this, "Added Successfully!");
-            
-            
-           
-           
 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e);
@@ -2368,13 +2367,13 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelPoliceAddMouseClicked
 
     private void labelAddPoliceCrossMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseEntered
-        panelAddPoliceCross.setBackground(new Color(204,0,0));
-        labelAddPoliceCross.setForeground(new Color(255,255,255));
+        panelAddPoliceCross.setBackground(new Color(204, 0, 0));
+        labelAddPoliceCross.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelAddPoliceCrossMouseEntered
 
     private void labelAddPoliceCrossMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseExited
-        panelAddPoliceCross.setBackground(new Color(51,51,51));
-        labelAddPoliceCross.setForeground(new Color(255,255,255));
+        panelAddPoliceCross.setBackground(new Color(51, 51, 51));
+        labelAddPoliceCross.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelAddPoliceCrossMouseExited
 
     private void labelAddPoliceCrossMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseClicked
@@ -2471,8 +2470,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelPoliceAdd3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd3MouseClicked
         // TODO add your handling code here:
-        
-        
+
+
     }//GEN-LAST:event_labelPoliceAdd3MouseClicked
 
     private void labelPoliceAdd3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd3MouseEntered
@@ -2516,7 +2515,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelRefreshPolice3MouseExited
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
-        
+
     }//GEN-LAST:event_buttonSearchActionPerformed
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
@@ -2524,7 +2523,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelCriminalInfoMouseClicked
 
     private void labelCustodyInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCustodyInfoMouseClicked
-         panelSlider1.nextPanel(20, panelCustody, rootPaneCheckingEnabled);
+        panelSlider1.nextPanel(20, panelCustody, rootPaneCheckingEnabled);
     }//GEN-LAST:event_labelCustodyInfoMouseClicked
 
     private void labelComplainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelComplainMouseClicked
@@ -2541,8 +2540,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelResetPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseClicked
         // TODO add your handling code here:
-        
-        
+
+
     }//GEN-LAST:event_labelResetPoliceMouseClicked
 
     /**
