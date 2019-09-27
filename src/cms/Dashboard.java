@@ -6,12 +6,22 @@
 package cms;
 
 import java.awt.Color;
+import java.awt.Image;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.text.DateFormat;
+import java.util.Date;
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import rojerusan.RSPanelsSlider;
 
@@ -24,6 +34,11 @@ public class Dashboard extends javax.swing.JFrame {
     /**
      * Creates new form Dashboard
      */
+    
+     String filename = null;
+    //private byte[] picture;
+    byte[] person_image;
+    
     public Dashboard() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -71,7 +86,7 @@ public class Dashboard extends javax.swing.JFrame {
         Email = new javax.swing.JTextField();
         jLabel22 = new javax.swing.JLabel();
         NID = new javax.swing.JTextField();
-        Img = new javax.swing.JLabel();
+        img2 = new javax.swing.JLabel();
         PoliceIdNo = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -82,10 +97,10 @@ public class Dashboard extends javax.swing.JFrame {
         jSeparator6 = new javax.swing.JSeparator();
         jSeparator7 = new javax.swing.JSeparator();
         Save1 = new javax.swing.JButton();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jDateChooser2 = new com.toedter.calendar.JDateChooser();
-        jDateChooser3 = new com.toedter.calendar.JDateChooser();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        Designation = new javax.swing.JComboBox<>();
+        JoiningDate = new com.toedter.calendar.JDateChooser();
+        ResigningDate = new com.toedter.calendar.JDateChooser();
+        DateOfBirth = new com.toedter.calendar.JDateChooser();
         jPanel5 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
@@ -245,6 +260,12 @@ public class Dashboard extends javax.swing.JFrame {
 
         jLabel15.setText("Date of Birth");
 
+        FirstName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstNameActionPerformed(evt);
+            }
+        });
+
         jLabel16.setText("Date of Joining");
 
         jLabel17.setText("Date of Resigning");
@@ -288,8 +309,8 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        Img.setBackground(new java.awt.Color(255, 255, 255));
-        Img.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        img2.setBackground(new java.awt.Color(255, 255, 255));
+        img2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
 
         jPanel9.setBackground(new java.awt.Color(51, 51, 51));
         jPanel9.setForeground(new java.awt.Color(51, 51, 51));
@@ -360,7 +381,9 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IG", "DIG", "SP", "ASP", "SERGEANT" }));
+        Designation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IG", "DIG", "SP", "ASP", "SERGEANT" }));
+
+        DateOfBirth.setName("DateOfBirth"); // NOI18N
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -378,7 +401,7 @@ public class Dashboard extends javax.swing.JFrame {
                                 .addContainerGap()
                                 .addComponent(jLabel10)
                                 .addGap(23, 23, 23)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Designation, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(22, 22, 22)
@@ -441,7 +464,7 @@ public class Dashboard extends javax.swing.JFrame {
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jDateChooser1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(DateOfBirth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(14, 14, 14)
                         .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -454,7 +477,7 @@ public class Dashboard extends javax.swing.JFrame {
                                     .addGroup(jPanel10Layout.createSequentialGroup()
                                         .addGap(2, 2, 2)
                                         .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(Img, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(img2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(jPanel10Layout.createSequentialGroup()
                                         .addGap(65, 65, 65)
                                         .addComponent(AddImage))
@@ -469,8 +492,8 @@ public class Dashboard extends javax.swing.JFrame {
                                 .addComponent(jLabel17)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jDateChooser2, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                                    .addComponent(jDateChooser3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                    .addComponent(JoiningDate, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                                    .addComponent(ResigningDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
@@ -517,7 +540,7 @@ public class Dashboard extends javax.swing.JFrame {
                             .addComponent(Phone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jLabel15)
                                 .addComponent(NID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -539,7 +562,7 @@ public class Dashboard extends javax.swing.JFrame {
                         .addGap(7, 7, 7)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Designation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(jLabel18))
                             .addComponent(Salary, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -557,22 +580,22 @@ public class Dashboard extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jDateChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(JoiningDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jDateChooser3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ResigningDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(11, 11, 11)
                         .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
-                        .addComponent(Img, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(img2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)
                         .addComponent(AddImage)
                         .addGap(72, 72, 72)
                         .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(6, 6, 6)
                         .addComponent(Save1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout dialogAddPoliceLayout = new javax.swing.GroupLayout(dialogAddPolice.getContentPane());
@@ -2145,10 +2168,14 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelPoliceAddMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAddMouseEntered
         resetColor(panelPoliceAdd,labelPoliceAdd);
+        
     }//GEN-LAST:event_labelPoliceAddMouseEntered
 
     private void labelPoliceAddMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAddMouseExited
         setColor(panelPoliceAdd,labelPoliceAdd);
+        
+        
+       //add button on police info
     }//GEN-LAST:event_labelPoliceAddMouseExited
 
     private void labelUpdatePoliceMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePoliceMouseEntered
@@ -2200,8 +2227,8 @@ public class Dashboard extends javax.swing.JFrame {
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
         filename = f.getAbsolutePath();
-        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(Img.getWidth(), Img.getHeight(), Image.SCALE_SMOOTH));
-        Img.setIcon(imageIcon);
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img2.getWidth(), img2.getHeight(), Image.SCALE_SMOOTH));
+        img2.setIcon(imageIcon);
 
         try {
             File image = new File(filename);
@@ -2224,7 +2251,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_LastNameActionPerformed
 
     private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-        try {
+       try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection connection = DriverManager.getConnection(
                 "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
@@ -2237,24 +2264,43 @@ public class Dashboard extends javax.swing.JFrame {
             pst.setString(2, LastName.getText());
             pst.setString(3, Age.getText());
             pst.setString(4, Gender.getSelectedItem().toString());
-            pst.setString(5, DateOfBirth.getText());
+            
+            Date dateofbirth = DateOfBirth.getDate();
+            String strDate = DateFormat.getDateInstance().format(dateofbirth);
+            
+            pst.setString(5, strDate);
             pst.setString(6, Phone.getText());
-            pst.setString(7, Designation.getText());
+            pst.setString(7, Designation.getSelectedItem().toString());
             pst.setString(8, LivingAdd.getText());
             pst.setString(9, PermanentAdd.getText());
             pst.setString(10, Email.getText());
             pst.setString(11, NID.getText());
             pst.setString(12, District.getSelectedItem().toString());
             pst.setString(13, PoliceStation.getSelectedItem().toString());
-            pst.setString(14, JoiningDate.getDateFormatString());
-            pst.setString(15, ResigningDate.getDateFormatString());
+            
+            Date date2 = JoiningDate.getDate();
+            String strDateofJoining = DateFormat.getDateInstance().format(date2);
+            pst.setString(14, strDateofJoining);
+            
+            Date date3 = JoiningDate.getDate();
+            String strDateofResigning = DateFormat.getDateInstance().format(date3);
+            pst.setString(14, strDateofResigning);
+            
+            pst.setString(15, strDateofResigning);
             pst.setString(16, Salary.getText());
+            
+            
             pst.setBytes(17, person_image);
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Added Successfully!");
+            
+            JOptionPane.showMessageDialog(this, "Added Successfully!");
+            
+            
+           
+           
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
+            JOptionPane.showMessageDialog(this, e);
         }
     }//GEN-LAST:event_SaveActionPerformed
 
@@ -2375,6 +2421,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelPoliceAdd3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd3MouseClicked
         // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_labelPoliceAdd3MouseClicked
 
     private void labelPoliceAdd3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd3MouseEntered
@@ -2437,6 +2485,10 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_GenderActionPerformed
 
+    private void FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstNameActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2475,11 +2527,13 @@ public class Dashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddImage;
     private javax.swing.JTextField Age;
+    private com.toedter.calendar.JDateChooser DateOfBirth;
+    private javax.swing.JComboBox<String> Designation;
     private javax.swing.JComboBox<String> District;
     private javax.swing.JTextField Email;
     private javax.swing.JTextField FirstName;
     private javax.swing.JComboBox<String> Gender;
-    private javax.swing.JLabel Img;
+    private com.toedter.calendar.JDateChooser JoiningDate;
     private javax.swing.JTextField LastName;
     private javax.swing.JTextField LivingAdd;
     private javax.swing.JTextField NID;
@@ -2487,16 +2541,14 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Phone;
     private javax.swing.JLabel PoliceIdNo;
     private javax.swing.JComboBox<String> PoliceStation;
+    private com.toedter.calendar.JDateChooser ResigningDate;
     private javax.swing.JTextField Salary;
     private javax.swing.JButton Save;
     private javax.swing.JButton Save1;
     private javax.swing.JButton buttonSearch;
     private javax.swing.JDialog dialogAddPolice;
+    private javax.swing.JLabel img2;
     private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
-    private com.toedter.calendar.JDateChooser jDateChooser2;
-    private com.toedter.calendar.JDateChooser jDateChooser3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;

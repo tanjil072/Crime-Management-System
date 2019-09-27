@@ -751,8 +751,8 @@ public class JFrame extends javax.swing.JFrame {
                 NID.setText(rs.getString(12));
                 District.setSelectedItem(rs.getString(13));
                 PoliceStation.setSelectedItem(rs.getString(14));
-                JoiningDate.setText(rs.getString(15));
-                ResigningDate.setText(rs.getString(16));
+                //JoiningDate.setText(rs.getString(15));
+                //ResigningDate.setText(rs.getString(16));
                 Salary.setText(rs.getString(17));
                 if (rs.getString(18) != null) {
                     byte[] setImage = rs.getBytes(18);
