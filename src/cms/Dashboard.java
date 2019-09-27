@@ -15,7 +15,11 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.DateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
@@ -23,6 +27,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.table.DefaultTableModel;
 import rojerusan.RSPanelsSlider;
 
 /**
@@ -41,7 +46,52 @@ public class Dashboard extends javax.swing.JFrame {
     
     public Dashboard() {
         initComponents();
+        
         this.setLocationRelativeTo(null);
+    }
+    
+    
+    
+    public ArrayList<User> userList() {
+    ArrayList<User> usersList=new ArrayList<>();
+    
+    try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+            
+            String query1="SELECT * FROM POLICE_INFO";
+            Statement st=con.createStatement();
+            ResultSet rs=st.executeQuery(query1);
+            
+            User user;
+            
+            while(rs.next()){
+                user=new User(rs.getInt("PoliceId"),rs.getString("FirstName"),rs.getString("Designation"),rs.getString("Email"));
+                usersList.add(user);
+            }
+            
+    }catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    return usersList;
+}
+    
+    public void show_user(){
+        ArrayList<User> list=userList();
+        DefaultTableModel model=(DefaultTableModel) Police_Info.getModel();
+        Object[] row=new Object[4];
+        
+        for(int i=0;i<list.size();i++)
+        {
+            row[0]=list.get(i).getPId();
+            row[1]=list.get(i).getFirstName();
+            row[2]=list.get(i).getDesignation();
+            row[3]=list.get(i).getEmail();
+            model.addRow(row);
+            
+            
+        }
     }
 
     /**
@@ -184,7 +234,7 @@ public class Dashboard extends javax.swing.JFrame {
         labelRefreshPolice = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        Police_Info = new javax.swing.JTable();
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -1687,6 +1737,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelResetPolice.setText("Reset");
         labelResetPolice.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelResetPolice.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelResetPoliceMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelResetPoliceMouseEntered(evt);
             }
@@ -1747,15 +1800,9 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(204, 204, 204));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        Police_Info.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
+                {null, "", "", null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -1798,13 +1845,13 @@ public class Dashboard extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable1.setFocusable(false);
-        jTable1.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        jTable1.setRowHeight(20);
-        jTable1.setSelectionBackground(new java.awt.Color(51, 51, 51));
-        jTable1.getTableHeader().setReorderingAllowed(false);
-        jScrollPane1.setViewportView(jTable1);
+        Police_Info.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Police_Info.setFocusable(false);
+        Police_Info.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        Police_Info.setRowHeight(20);
+        Police_Info.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        Police_Info.getTableHeader().setReorderingAllowed(false);
+        jScrollPane1.setViewportView(Police_Info);
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
@@ -2070,6 +2117,9 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelPoliceInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceInfoMouseClicked
         panelSlider1.nextPanel(20,panelPolice,panelSlider1.right);//rootPaneCheckingEnabled
+        show_user();
+        
+        
     }//GEN-LAST:event_labelPoliceInfoMouseClicked
 
     private void panelPoliceInfoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelPoliceInfoMouseEntered
@@ -2489,6 +2539,12 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_FirstNameActionPerformed
 
+    private void labelResetPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseClicked
+        // TODO add your handling code here:
+        
+        
+    }//GEN-LAST:event_labelResetPoliceMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -2541,6 +2597,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Phone;
     private javax.swing.JLabel PoliceIdNo;
     private javax.swing.JComboBox<String> PoliceStation;
+    private javax.swing.JTable Police_Info;
     private com.toedter.calendar.JDateChooser ResigningDate;
     private javax.swing.JTextField Salary;
     private javax.swing.JButton Save;
@@ -2606,7 +2663,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
