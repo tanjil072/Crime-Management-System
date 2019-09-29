@@ -29,6 +29,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
+import net.proteanit.sql.DbUtils;
 import rojerusan.RSPanelsSlider;
 
 /**
@@ -44,65 +45,93 @@ public class Dashboard extends javax.swing.JFrame {
     //private byte[] picture;
     byte[] person_image;
 
+    DefaultTableModel model;
+
     public Dashboard() {
         initComponents();
 
         this.setLocationRelativeTo(null);
     }
 
-    public ArrayList<User> userList() {
-        ArrayList<User> usersList = new ArrayList<>();
+    public void PoliceInfo() {
+       
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-            String query1 = "SELECT * FROM POLICE_INFO";
-            Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery(query1);
+           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            centerRenderer.setHorizontalAlignment(JLabel.CENTER);
+            Police_Info.setDefaultRenderer(String.class, centerRenderer);
+            Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
 
-            User user;
+            String query1 = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO";
+            PreparedStatement st = con.prepareStatement(query1);
+            ResultSet rs = st.executeQuery();
+            Police_Info.setModel(DbUtils.resultSetToTableModel(rs));
 
-            while (rs.next()) {
-                user = new User(rs.getInt("PoliceId"), rs.getString("FirstName"), rs.getString("Designation"), rs.getString("Email"));
-                usersList.add(user);
-            }
-
+            
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        return usersList;
-    }
-
-    public void show_user() {
-        ArrayList<User> list = userList();
-        DefaultTableModel model = (DefaultTableModel) Police_Info.getModel();
-        Object[] row = new Object[4];
-
-        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
-        centerRenderer.setHorizontalAlignment(JLabel.CENTER);
-        Police_Info.setDefaultRenderer(String.class, centerRenderer);
-        Police_Info.setDefaultRenderer(Integer.class, centerRenderer);
         
-        ((DefaultTableCellRenderer) Police_Info.getTableHeader().getDefaultRenderer())
-            .setHorizontalAlignment(JLabel.CENTER);
+    }
+    
+    
+    public void CriminalInfo() {
+        
 
-        for (int i = 0; i < list.size(); i++) {
-            row[0] = list.get(i).getPId();
-            row[1] = list.get(i).getFirstName();
-            row[2] = list.get(i).getDesignation();
-            row[3] = list.get(i).getEmail();
-            model.addRow(row);
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
+           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            centerRenderer.setHorizontalAlignment(JLabel.CENTER);
+            Police_Info.setDefaultRenderer(String.class, centerRenderer);
+            Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
+
+            String query1 = "SELECT CriminalId,FirstName,Age,FathersName,PreviousActs FROM CRIMINAL_INFO";
+            PreparedStatement st = con.prepareStatement(query1);
+            ResultSet rs = st.executeQuery();
+            Criminal_Info.setModel(DbUtils.resultSetToTableModel(rs));
+
+            
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
         }
+        
+    }
+    
+    
+    
+    public void CustodyInfo() {
+        
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            centerRenderer.setHorizontalAlignment(JLabel.CENTER);
+            Police_Info.setDefaultRenderer(String.class, centerRenderer);
+            Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
+
+            String query1 = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO";
+            PreparedStatement st = con.prepareStatement(query1);
+            ResultSet rs = st.executeQuery();
+            Custody_Info.setModel(DbUtils.resultSetToTableModel(rs));
+
+            
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
     }
 
-    /**
-     * This method is called from within the constructor to initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is always
-     * regenerated by the Form Editor.
-     */
+   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -202,7 +231,7 @@ public class Dashboard extends javax.swing.JFrame {
         labelRefreshPolice2 = new javax.swing.JLabel();
         jPanel16 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
+        Custody_Info = new javax.swing.JTable();
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
@@ -220,7 +249,7 @@ public class Dashboard extends javax.swing.JFrame {
         labelRefreshPolice1 = new javax.swing.JLabel();
         jPanel13 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
+        Criminal_Info = new javax.swing.JTable();
         jPanel14 = new javax.swing.JPanel();
         jPanel15 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -1253,7 +1282,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel16.setBackground(new java.awt.Color(204, 204, 204));
 
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+        Custody_Info.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -1304,13 +1333,13 @@ public class Dashboard extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable3.setFocusable(false);
-        jTable3.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        jTable3.setRowHeight(20);
-        jTable3.setSelectionBackground(new java.awt.Color(51, 51, 51));
-        jTable3.getTableHeader().setReorderingAllowed(false);
-        jScrollPane3.setViewportView(jTable3);
+        Custody_Info.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Custody_Info.setFocusable(false);
+        Custody_Info.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        Custody_Info.setRowHeight(20);
+        Custody_Info.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        Custody_Info.getTableHeader().setReorderingAllowed(false);
+        jScrollPane3.setViewportView(Custody_Info);
 
         jPanel17.setBackground(new java.awt.Color(255, 255, 255));
         jPanel17.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
@@ -1525,7 +1554,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jPanel13.setBackground(new java.awt.Color(204, 204, 204));
 
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+        Criminal_Info.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -1576,13 +1605,13 @@ public class Dashboard extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable2.setFocusable(false);
-        jTable2.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        jTable2.setRowHeight(20);
-        jTable2.setSelectionBackground(new java.awt.Color(51, 51, 51));
-        jTable2.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(jTable2);
+        Criminal_Info.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Criminal_Info.setFocusable(false);
+        Criminal_Info.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        Criminal_Info.setRowHeight(20);
+        Criminal_Info.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        Criminal_Info.getTableHeader().setReorderingAllowed(false);
+        jScrollPane2.setViewportView(Criminal_Info);
 
         jPanel14.setBackground(new java.awt.Color(255, 255, 255));
         jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
@@ -2122,7 +2151,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelPoliceInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceInfoMouseClicked
         panelSlider1.nextPanel(20, panelPolice, panelSlider1.right);//rootPaneCheckingEnabled
-        show_user();
+        PoliceInfo();
 
 
     }//GEN-LAST:event_labelPoliceInfoMouseClicked
@@ -2520,14 +2549,18 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
         panelSlider1.nextPanel(20, panelCriminal, rootPaneCheckingEnabled);
+        CriminalInfo() ;
     }//GEN-LAST:event_labelCriminalInfoMouseClicked
 
     private void labelCustodyInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCustodyInfoMouseClicked
         panelSlider1.nextPanel(20, panelCustody, rootPaneCheckingEnabled);
+        CustodyInfo();
     }//GEN-LAST:event_labelCustodyInfoMouseClicked
 
     private void labelComplainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelComplainMouseClicked
         panelSlider1.nextPanel(20, panelComplaint, rootPaneCheckingEnabled);
+        
+        
     }//GEN-LAST:event_labelComplainMouseClicked
 
     private void GenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenderActionPerformed
@@ -2582,6 +2615,8 @@ public class Dashboard extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddImage;
     private javax.swing.JTextField Age;
+    private javax.swing.JTable Criminal_Info;
+    private javax.swing.JTable Custody_Info;
     private com.toedter.calendar.JDateChooser DateOfBirth;
     private javax.swing.JComboBox<String> Designation;
     private javax.swing.JComboBox<String> District;
@@ -2662,8 +2697,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
     private javax.swing.JLabel labelAddPoliceCross;
     private javax.swing.JLabel labelComplain;
