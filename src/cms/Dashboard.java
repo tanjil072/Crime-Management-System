@@ -2714,6 +2714,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelExit.setText("Log Out");
         labelExit.setIconTextGap(10);
         labelExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelExitMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelExitMouseEntered(evt);
             }
@@ -2991,6 +2994,10 @@ public class Dashboard extends javax.swing.JFrame {
 
             pst.setBytes(17, person_image);
             pst.executeUpdate();
+            
+            DefaultTableModel model=(DefaultTableModel)Police_Info.getModel();
+            model.setRowCount(0);
+            PoliceInfo();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
 
@@ -3243,6 +3250,11 @@ public class Dashboard extends javax.swing.JFrame {
             pst.setString(4, strDate);
 
             pst.executeUpdate();
+            
+            DefaultTableModel model=(DefaultTableModel)Complaint_Info.getModel();
+            model.setRowCount(0);
+            ComplaintInfo();
+            
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
 
@@ -3282,6 +3294,10 @@ public class Dashboard extends javax.swing.JFrame {
             
 
             pst.executeUpdate();
+            
+            DefaultTableModel model=(DefaultTableModel)Custody_Info.getModel();
+            model.setRowCount(0);
+            CustodyInfo();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
 
@@ -3331,6 +3347,10 @@ public class Dashboard extends javax.swing.JFrame {
             
 
             pst.executeUpdate();
+            
+            DefaultTableModel model=(DefaultTableModel)Criminal_Info.getModel();
+            model.setRowCount(0);
+            CriminalInfo();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
 
@@ -3362,6 +3382,16 @@ public class Dashboard extends javax.swing.JFrame {
     private void CriminalsPreviousActsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalsPreviousActsActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CriminalsPreviousActsActionPerformed
+
+    private void labelExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelExitMouseClicked
+        // TODO add your handling code here:
+        
+        dispose();
+        SignIn sn= new SignIn();
+        sn.setVisible(true);
+        
+        
+    }//GEN-LAST:event_labelExitMouseClicked
 
     /**
      * @param args the command line arguments
