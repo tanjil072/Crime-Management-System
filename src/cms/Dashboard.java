@@ -3177,6 +3177,23 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
 
+        try {
+
+            String a="'Murder'";
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "SELECT * FROM COMPLAINT_INFO WHERE ComplaintType="+a;
+
+            PreparedStatement st = con.prepareStatement(query1);
+            ResultSet rs = st.executeQuery();
+
+            Complaint_Info.setModel(DbUtils.resultSetToTableModel(rs));
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_buttonSearchActionPerformed
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
