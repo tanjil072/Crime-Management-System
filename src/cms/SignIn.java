@@ -6,8 +6,16 @@
 package cms;
 
 import java.awt.Color;
+import java.awt.Font;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.Iterator;
+import javax.swing.BorderFactory;
+import javax.swing.JOptionPane;
+import javax.swing.border.TitledBorder;
 
 /**
  *
@@ -44,10 +52,10 @@ public class SignIn extends javax.swing.JFrame {
         panelMinSignin = new javax.swing.JPanel();
         labelMinSignin = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        SignInEmail = new javax.swing.JTextField();
         SignInDistrict = new javax.swing.JComboBox<>();
         SignInPS = new javax.swing.JComboBox<>();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        SignInPassword = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
@@ -198,11 +206,11 @@ public class SignIn extends javax.swing.JFrame {
         jLabel2.setText("Sign In");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 60, 100, 30));
 
-        jTextField1.setFont(new java.awt.Font("Sitka Small", 0, 12)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(51, 51, 51));
-        jTextField1.setToolTipText("");
-        jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 51), 1, true));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 230, 30));
+        SignInEmail.setFont(new java.awt.Font("Sitka Small", 0, 12)); // NOI18N
+        SignInEmail.setForeground(new java.awt.Color(51, 51, 51));
+        SignInEmail.setToolTipText("");
+        SignInEmail.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 51), 1, true));
+        jPanel1.add(SignInEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, 230, 30));
 
         SignInDistrict.setBackground(new java.awt.Color(51, 51, 51));
         SignInDistrict.setFont(new java.awt.Font("Sitka Small", 0, 12)); // NOI18N
@@ -232,15 +240,15 @@ public class SignIn extends javax.swing.JFrame {
         });
         jPanel1.add(SignInPS, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 320, 110, 30));
 
-        jPasswordField1.setFont(new java.awt.Font("Sitka Small", 1, 12)); // NOI18N
-        jPasswordField1.setForeground(new java.awt.Color(51, 51, 51));
-        jPasswordField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 51), 1, true));
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        SignInPassword.setFont(new java.awt.Font("Sitka Small", 1, 12)); // NOI18N
+        SignInPassword.setForeground(new java.awt.Color(51, 51, 51));
+        SignInPassword.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 51, 51), 1, true));
+        SignInPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                SignInPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 230, 30));
+        jPanel1.add(SignInPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 230, 30));
 
         jButton1.setBackground(new java.awt.Color(51, 51, 51));
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -291,14 +299,47 @@ public class SignIn extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        dispose();
+
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query = "SELECT * FROM USERS WHERE EMAIL=? AND PASSWORD=?";
+
+            
+            PreparedStatement pst = connection.prepareStatement(query);
+            pst.setString(1, SignInEmail.getText());
+            pst.setString(2, SignInPassword.getText());
+
+            ResultSet rs = pst.executeQuery();
+
+            if (rs.next() && SignInDistrict.getSelectedIndex()!=0 ) {
+                
+                JOptionPane.showMessageDialog(this, "LOGIN SUCCESS");
+                dispose();
+                Dashboard dashFrame = new Dashboard();
+                dashFrame.setVisible(true);
+            } else {
+                //JOptionPane.showMessageDialog(this, "LOGIN FAILED");
+                
+                SignInEmail.setBorder(BorderFactory.createLineBorder(Color.RED));
+            
+                SignInPassword.setText("");
+            }
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+
+        /*dispose();
         Dashboard dashFrame=new Dashboard();
-        dashFrame.setVisible(true);
+        dashFrame.setVisible(true);*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void SignInPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInPasswordActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+    }//GEN-LAST:event_SignInPasswordActionPerformed
 
     private void SignInPSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignInPSActionPerformed
         // TODO add your handling code here:
@@ -313,54 +354,51 @@ public class SignIn extends javax.swing.JFrame {
     }//GEN-LAST:event_labelMinSigninMouseClicked
 
     private void SignInDistrictItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_SignInDistrictItemStateChanged
-        ArrayList<String> array=new ArrayList<>();
+        ArrayList<String> array = new ArrayList<>();
         Iterator<String> itr;
-        
-        if(SignInDistrict.getSelectedItem().equals("Select...")){
-            
+
+        if (SignInDistrict.getSelectedItem().equals("Select...")) {
+
             SignInPS.setEnabled(false);
             SignInPS.removeAllItems();
             array.add("No Item");
-        }
-        else if(SignInDistrict.getSelectedItem().equals("Dhaka")){
-            
+        } else if (SignInDistrict.getSelectedItem().equals("Dhaka")) {
+
             SignInPS.setEnabled(true);
             SignInPS.removeAllItems();
             array.add("Adabor");
             array.add("Airport");
             array.add("Badda");
             array.add("Banani");
-            
-            itr=array.iterator();
-            while(itr.hasNext()){
+
+            itr = array.iterator();
+            while (itr.hasNext()) {
                 SignInPS.addItem(itr.next());
             }
-        }
-        else if(SignInDistrict.getSelectedItem().equals("Faridpur")){
-            
+        } else if (SignInDistrict.getSelectedItem().equals("Faridpur")) {
+
             SignInPS.setEnabled(true);
             SignInPS.removeAllItems();
             array.add("Kotwali");
             array.add("Modhukhali");
             array.add("Boalmari");
             array.add("Nagarkanda");
-            
-            itr=array.iterator();
-            while(itr.hasNext()){
+
+            itr = array.iterator();
+            while (itr.hasNext()) {
                 SignInPS.addItem(itr.next());
             }
-        }
-        else if(SignInDistrict.getSelectedItem().equals("Kushtia")){
-            
+        } else if (SignInDistrict.getSelectedItem().equals("Kushtia")) {
+
             SignInPS.setEnabled(true);
             SignInPS.removeAllItems();
             array.add("Kushtia sador");
             array.add("Kumarkhali");
             array.add("Khoksa");
             array.add("Veramara");
-            
-            itr=array.iterator();
-            while(itr.hasNext()){
+
+            itr = array.iterator();
+            while (itr.hasNext()) {
                 SignInPS.addItem(itr.next());
             }
         }
@@ -371,36 +409,36 @@ public class SignIn extends javax.swing.JFrame {
     }//GEN-LAST:event_SignInDistrictActionPerformed
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-        for(double i=0.0;i<=1.0;i+=.1){
-            String val=i+"";
-            float f=Float.valueOf(val);
+        for (double i = 0.0; i <= 1.0; i += .1) {
+            String val = i + "";
+            float f = Float.valueOf(val);
             this.setOpacity(f);
-            try{
+            try {
                 Thread.sleep(50);
-            }catch(Exception e){
-                
+            } catch (Exception e) {
+
             }
         }
     }//GEN-LAST:event_formWindowOpened
 
     private void labelCrossSigninMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCrossSigninMouseEntered
-        panelCrossSignin.setBackground(new Color(204,0,0));
-        labelCrossSignin.setForeground(new Color(255,255,255));
+        panelCrossSignin.setBackground(new Color(204, 0, 0));
+        labelCrossSignin.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelCrossSigninMouseEntered
 
     private void labelCrossSigninMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCrossSigninMouseExited
-        panelCrossSignin.setBackground(new Color(51,51,51));
-        labelCrossSignin.setForeground(new Color(255,255,255));
+        panelCrossSignin.setBackground(new Color(51, 51, 51));
+        labelCrossSignin.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelCrossSigninMouseExited
 
     private void labelMinSigninMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMinSigninMouseEntered
-        panelMinSignin.setBackground(new Color(240,240,240));
-        labelMinSignin.setForeground(new Color(51,51,51));
+        panelMinSignin.setBackground(new Color(240, 240, 240));
+        labelMinSignin.setForeground(new Color(51, 51, 51));
     }//GEN-LAST:event_labelMinSigninMouseEntered
 
     private void labelMinSigninMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelMinSigninMouseExited
-        panelMinSignin.setBackground(new Color(51,51,51));
-        labelMinSignin.setForeground(new Color(255,255,255));
+        panelMinSignin.setBackground(new Color(51, 51, 51));
+        labelMinSignin.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelMinSigninMouseExited
 
     /**
@@ -432,7 +470,6 @@ public class SignIn extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new SignIn().setVisible(true);
@@ -442,7 +479,9 @@ public class SignIn extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> SignInDistrict;
+    private javax.swing.JTextField SignInEmail;
     private javax.swing.JComboBox<String> SignInPS;
+    private javax.swing.JPasswordField SignInPassword;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -455,8 +494,6 @@ public class SignIn extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel labelCrossSignin;
     private javax.swing.JLabel labelMinSignin;
     private javax.swing.JPanel panelCrossSignin;
