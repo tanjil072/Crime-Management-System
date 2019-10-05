@@ -163,99 +163,405 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        dialogDeletePolice = new javax.swing.JDialog();
+        jPanel26 = new javax.swing.JPanel();
+        jPanel27 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        panelAddPoliceCross4 = new javax.swing.JPanel();
+        labelAddPoliceCross4 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         dialogAddPolice = new javax.swing.JDialog();
-        jPanel10 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
+        jPanel28 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        Salary1 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        Age1 = new javax.swing.JTextField();
+        Gender1 = new javax.swing.JComboBox<>();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        Phone1 = new javax.swing.JTextField();
+        jLabel47 = new javax.swing.JLabel();
+        District1 = new javax.swing.JComboBox<>();
+        jLabel48 = new javax.swing.JLabel();
+        PoliceStation1 = new javax.swing.JComboBox<>();
+        jLabel49 = new javax.swing.JLabel();
+        FirstName1 = new javax.swing.JTextField();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        AddImage1 = new javax.swing.JButton();
+        jLabel52 = new javax.swing.JLabel();
+        LastName1 = new javax.swing.JTextField();
+        Save5 = new javax.swing.JButton();
+        jLabel53 = new javax.swing.JLabel();
+        PermanentAdd1 = new javax.swing.JTextField();
+        jLabel54 = new javax.swing.JLabel();
+        LivingAdd1 = new javax.swing.JTextField();
+        jLabel55 = new javax.swing.JLabel();
+        Email1 = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
+        NID1 = new javax.swing.JTextField();
+        img3 = new javax.swing.JLabel();
+        jPanel29 = new javax.swing.JPanel();
+        jLabel57 = new javax.swing.JLabel();
+        panelAddPoliceCross5 = new javax.swing.JPanel();
+        labelAddPoliceCross5 = new javax.swing.JLabel();
+        jSeparator11 = new javax.swing.JSeparator();
+        jSeparator12 = new javax.swing.JSeparator();
+        jSeparator13 = new javax.swing.JSeparator();
+        jSeparator14 = new javax.swing.JSeparator();
+        Save6 = new javax.swing.JButton();
+        Designation1 = new javax.swing.JComboBox<>();
+        JoiningDate1 = new com.toedter.calendar.JDateChooser();
+        ResigningDate1 = new com.toedter.calendar.JDateChooser();
+        DateOfBirth1 = new com.toedter.calendar.JDateChooser();
+        dialogUpdatePolice = new javax.swing.JDialog();
+        jPanel30 = new javax.swing.JPanel();
+        Salary2 = new javax.swing.JTextField();
+        jLabel58 = new javax.swing.JLabel();
+        Age2 = new javax.swing.JTextField();
+        Gender2 = new javax.swing.JComboBox<>();
+        Phone2 = new javax.swing.JTextField();
+        District2 = new javax.swing.JComboBox<>();
+        PoliceStation2 = new javax.swing.JComboBox<>();
+        FirstName2 = new javax.swing.JTextField();
+        LastName2 = new javax.swing.JTextField();
+        Save7 = new javax.swing.JButton();
+        PermanentAdd2 = new javax.swing.JTextField();
+        LivingAdd2 = new javax.swing.JTextField();
+        Email2 = new javax.swing.JTextField();
+        NID2 = new javax.swing.JTextField();
+        img4 = new javax.swing.JLabel();
+        jPanel31 = new javax.swing.JPanel();
+        jLabel59 = new javax.swing.JLabel();
+        panelAddPoliceCross6 = new javax.swing.JPanel();
+        labelAddPoliceCross6 = new javax.swing.JLabel();
+        jSeparator15 = new javax.swing.JSeparator();
+        jSeparator16 = new javax.swing.JSeparator();
+        jSeparator17 = new javax.swing.JSeparator();
+        jSeparator18 = new javax.swing.JSeparator();
+        Save8 = new javax.swing.JButton();
+        Designation2 = new javax.swing.JComboBox<>();
+        JoiningDate2 = new com.toedter.calendar.JDateChooser();
+        ResigningDate2 = new com.toedter.calendar.JDateChooser();
+        DateOfBirth2 = new com.toedter.calendar.JDateChooser();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+        jCheckBox7 = new javax.swing.JCheckBox();
+        jCheckBox8 = new javax.swing.JCheckBox();
+        jCheckBox10 = new javax.swing.JCheckBox();
+        jCheckBox11 = new javax.swing.JCheckBox();
+        jCheckBox12 = new javax.swing.JCheckBox();
+        jCheckBox13 = new javax.swing.JCheckBox();
+        jCheckBox14 = new javax.swing.JCheckBox();
+        jCheckBox15 = new javax.swing.JCheckBox();
+        jCheckBox16 = new javax.swing.JCheckBox();
+        jCheckBox17 = new javax.swing.JCheckBox();
+        jTextField2 = new javax.swing.JTextField();
+        jLabel60 = new javax.swing.JLabel();
+        jSeparator19 = new javax.swing.JSeparator();
+        jCheckBox18 = new javax.swing.JCheckBox();
+        jCheckBox9 = new javax.swing.JCheckBox();
+        dialogAddCriminal = new javax.swing.JDialog();
+        jPanel32 = new javax.swing.JPanel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        Age3 = new javax.swing.JTextField();
+        Gender3 = new javax.swing.JComboBox<>();
+        jLabel66 = new javax.swing.JLabel();
+        Phone3 = new javax.swing.JTextField();
+        jLabel67 = new javax.swing.JLabel();
+        FirstName3 = new javax.swing.JTextField();
+        jLabel68 = new javax.swing.JLabel();
+        PermanentAdd3 = new javax.swing.JTextField();
+        jLabel69 = new javax.swing.JLabel();
+        LivingAdd3 = new javax.swing.JTextField();
+        jLabel70 = new javax.swing.JLabel();
+        Email3 = new javax.swing.JTextField();
+        jLabel71 = new javax.swing.JLabel();
+        NID3 = new javax.swing.JTextField();
+        jPanel33 = new javax.swing.JPanel();
+        jLabel72 = new javax.swing.JLabel();
+        panelAddPoliceCross7 = new javax.swing.JPanel();
+        labelAddPoliceCross7 = new javax.swing.JLabel();
+        jSeparator20 = new javax.swing.JSeparator();
+        jSeparator21 = new javax.swing.JSeparator();
+        DateOfBirth3 = new com.toedter.calendar.JDateChooser();
+        jLabel73 = new javax.swing.JLabel();
+        LastName3 = new javax.swing.JTextField();
+        jLabel74 = new javax.swing.JLabel();
+        LastName4 = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        Gender4 = new javax.swing.JComboBox<>();
+        jCheckBox19 = new javax.swing.JCheckBox();
+        jCheckBox20 = new javax.swing.JCheckBox();
+        jCheckBox22 = new javax.swing.JCheckBox();
+        jCheckBox23 = new javax.swing.JCheckBox();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        NID4 = new javax.swing.JTextField();
+        NID5 = new javax.swing.JTextField();
+        jLabel78 = new javax.swing.JLabel();
+        Gender5 = new javax.swing.JComboBox<>();
+        jLabel79 = new javax.swing.JLabel();
+        Gender6 = new javax.swing.JComboBox<>();
+        jLabel80 = new javax.swing.JLabel();
+        Gender7 = new javax.swing.JComboBox<>();
+        jCheckBox24 = new javax.swing.JCheckBox();
+        jCheckBox25 = new javax.swing.JCheckBox();
+        jCheckBox26 = new javax.swing.JCheckBox();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        NID6 = new javax.swing.JTextField();
+        jSeparator4 = new javax.swing.JSeparator();
+        LivingAdd4 = new javax.swing.JTextField();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        NID7 = new javax.swing.JTextField();
+        jLabel85 = new javax.swing.JLabel();
+        NID8 = new javax.swing.JTextField();
+        jLabel86 = new javax.swing.JLabel();
+        NID9 = new javax.swing.JTextField();
+        jLabel87 = new javax.swing.JLabel();
+        NID10 = new javax.swing.JTextField();
+        Gender9 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
-        Salary = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        Age = new javax.swing.JTextField();
-        Gender = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        Phone = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        District = new javax.swing.JComboBox<>();
-        jLabel14 = new javax.swing.JLabel();
-        PoliceStation = new javax.swing.JComboBox<>();
-        jLabel15 = new javax.swing.JLabel();
-        FirstName = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        AddImage = new javax.swing.JButton();
-        jLabel18 = new javax.swing.JLabel();
-        LastName = new javax.swing.JTextField();
-        Save = new javax.swing.JButton();
-        jLabel19 = new javax.swing.JLabel();
-        PermanentAdd = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        LivingAdd = new javax.swing.JTextField();
-        jLabel21 = new javax.swing.JLabel();
-        Email = new javax.swing.JTextField();
-        jLabel22 = new javax.swing.JLabel();
-        NID = new javax.swing.JTextField();
-        img2 = new javax.swing.JLabel();
-        PoliceIdNo = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        panelAddPoliceCross = new javax.swing.JPanel();
-        labelAddPoliceCross = new javax.swing.JLabel();
-        jSeparator4 = new javax.swing.JSeparator();
         jSeparator5 = new javax.swing.JSeparator();
-        jSeparator6 = new javax.swing.JSeparator();
-        jSeparator7 = new javax.swing.JSeparator();
-        Save1 = new javax.swing.JButton();
-        Designation = new javax.swing.JComboBox<>();
-        JoiningDate = new com.toedter.calendar.JDateChooser();
-        ResigningDate = new com.toedter.calendar.JDateChooser();
-        DateOfBirth = new com.toedter.calendar.JDateChooser();
-        jPanel5 = new javax.swing.JPanel();
-        dialogAddComplaint_Info = new javax.swing.JDialog();
-        jPanel11 = new javax.swing.JPanel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        ComplainantName = new javax.swing.JTextField();
-        jLabel31 = new javax.swing.JLabel();
-        ComplainantType = new javax.swing.JTextField();
-        jLabel34 = new javax.swing.JLabel();
-        ComplaintType = new javax.swing.JTextField();
-        Save2 = new javax.swing.JButton();
-        jPanel12 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jLocaleChooser2 = new com.toedter.components.JLocaleChooser();
+        dialogDeleteCriminal = new javax.swing.JDialog();
+        jPanel34 = new javax.swing.JPanel();
+        jPanel35 = new javax.swing.JPanel();
         jLabel42 = new javax.swing.JLabel();
-        panelAddPoliceCross1 = new javax.swing.JPanel();
-        labelAddPoliceCross1 = new javax.swing.JLabel();
-        Cancel = new javax.swing.JButton();
-        DateOfIssue = new com.toedter.calendar.JDateChooser();
-        dialogAddCustody_Info = new javax.swing.JDialog();
-        jPanel22 = new javax.swing.JPanel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        Capacity = new javax.swing.JTextField();
-        RemainingSeats = new javax.swing.JTextField();
-        Save3 = new javax.swing.JButton();
-        jPanel23 = new javax.swing.JPanel();
+        panelAddPoliceCross8 = new javax.swing.JPanel();
+        labelAddPoliceCross8 = new javax.swing.JLabel();
         jLabel43 = new javax.swing.JLabel();
-        panelAddPoliceCross2 = new javax.swing.JPanel();
-        labelAddPoliceCross2 = new javax.swing.JLabel();
-        Cancel1 = new javax.swing.JButton();
-        dialogAddCriminal_Info = new javax.swing.JDialog();
-        jPanel24 = new javax.swing.JPanel();
+        jTextField3 = new javax.swing.JTextField();
+        jButton8 = new javax.swing.JButton();
+        dialogUpdateCriminal = new javax.swing.JDialog();
+        jPanel36 = new javax.swing.JPanel();
+        jLabel91 = new javax.swing.JLabel();
+        Age4 = new javax.swing.JTextField();
+        Gender10 = new javax.swing.JComboBox<>();
+        Phone4 = new javax.swing.JTextField();
+        FirstName4 = new javax.swing.JTextField();
+        PermanentAdd4 = new javax.swing.JTextField();
+        LivingAdd5 = new javax.swing.JTextField();
+        Email4 = new javax.swing.JTextField();
+        NID11 = new javax.swing.JTextField();
+        jPanel37 = new javax.swing.JPanel();
+        jLabel99 = new javax.swing.JLabel();
+        panelAddPoliceCross9 = new javax.swing.JPanel();
+        labelAddPoliceCross9 = new javax.swing.JLabel();
+        jSeparator22 = new javax.swing.JSeparator();
+        jSeparator23 = new javax.swing.JSeparator();
+        DateOfBirth4 = new com.toedter.calendar.JDateChooser();
+        LastName5 = new javax.swing.JTextField();
+        LastName6 = new javax.swing.JTextField();
+        Gender11 = new javax.swing.JComboBox<>();
+        jCheckBox21 = new javax.swing.JCheckBox();
+        jCheckBox27 = new javax.swing.JCheckBox();
+        jCheckBox28 = new javax.swing.JCheckBox();
+        jCheckBox29 = new javax.swing.JCheckBox();
+        NID12 = new javax.swing.JTextField();
+        NID13 = new javax.swing.JTextField();
+        Gender12 = new javax.swing.JComboBox<>();
+        Gender13 = new javax.swing.JComboBox<>();
+        Gender14 = new javax.swing.JComboBox<>();
+        jCheckBox30 = new javax.swing.JCheckBox();
+        jCheckBox31 = new javax.swing.JCheckBox();
+        jCheckBox32 = new javax.swing.JCheckBox();
+        Gender15 = new javax.swing.JComboBox<>();
+        NID14 = new javax.swing.JTextField();
+        jSeparator6 = new javax.swing.JSeparator();
+        LivingAdd6 = new javax.swing.JTextField();
+        NID15 = new javax.swing.JTextField();
+        NID16 = new javax.swing.JTextField();
+        NID17 = new javax.swing.JTextField();
+        NID18 = new javax.swing.JTextField();
+        Gender16 = new javax.swing.JComboBox<>();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jSeparator7 = new javax.swing.JSeparator();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jCheckBox33 = new javax.swing.JCheckBox();
+        jCheckBox34 = new javax.swing.JCheckBox();
+        jCheckBox35 = new javax.swing.JCheckBox();
+        jCheckBox36 = new javax.swing.JCheckBox();
+        jCheckBox37 = new javax.swing.JCheckBox();
+        jCheckBox38 = new javax.swing.JCheckBox();
+        jCheckBox39 = new javax.swing.JCheckBox();
+        jCheckBox40 = new javax.swing.JCheckBox();
+        jCheckBox41 = new javax.swing.JCheckBox();
+        jCheckBox42 = new javax.swing.JCheckBox();
+        jCheckBox43 = new javax.swing.JCheckBox();
+        jCheckBox44 = new javax.swing.JCheckBox();
+        jCheckBox45 = new javax.swing.JCheckBox();
+        jCheckBox47 = new javax.swing.JCheckBox();
+        jCheckBox48 = new javax.swing.JCheckBox();
+        jCheckBox49 = new javax.swing.JCheckBox();
+        jCheckBox50 = new javax.swing.JCheckBox();
+        jCheckBox51 = new javax.swing.JCheckBox();
+        jCheckBox52 = new javax.swing.JCheckBox();
+        jCheckBox53 = new javax.swing.JCheckBox();
+        jCheckBox54 = new javax.swing.JCheckBox();
+        jCheckBox55 = new javax.swing.JCheckBox();
+        jCheckBox56 = new javax.swing.JCheckBox();
+        jCheckBox57 = new javax.swing.JCheckBox();
+        jCheckBox58 = new javax.swing.JCheckBox();
+        jCheckBox59 = new javax.swing.JCheckBox();
+        jCheckBox60 = new javax.swing.JCheckBox();
+        jCheckBox61 = new javax.swing.JCheckBox();
+        jCheckBox62 = new javax.swing.JCheckBox();
+        jLabel3 = new javax.swing.JLabel();
+        FirstName5 = new javax.swing.JTextField();
+        jCheckBox63 = new javax.swing.JCheckBox();
+        jSeparator25 = new javax.swing.JSeparator();
+        dialogInsertComplaint = new javax.swing.JDialog();
+        jPanel38 = new javax.swing.JPanel();
+        jLabel90 = new javax.swing.JLabel();
+        jPanel39 = new javax.swing.JPanel();
+        jLabel106 = new javax.swing.JLabel();
+        panelAddPoliceCross10 = new javax.swing.JPanel();
+        labelAddPoliceCross10 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField4 = new javax.swing.JTextField();
+        jSeparator29 = new javax.swing.JSeparator();
+        jSeparator30 = new javax.swing.JSeparator();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jYearChooser1 = new com.toedter.calendar.JYearChooser();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel17 = new javax.swing.JLabel();
+        jTimeChooser1 = new lu.tudor.santec.jtimechooser.JTimeChooser();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
+        jSeparator31 = new javax.swing.JSeparator();
+        jSeparator32 = new javax.swing.JSeparator();
+        jLabel21 = new javax.swing.JLabel();
+        jSeparator33 = new javax.swing.JSeparator();
+        jDateChooser2 = new com.toedter.calendar.JDateChooser();
+        jDateChooser3 = new com.toedter.calendar.JDateChooser();
+        jTimeChooser2 = new lu.tudor.santec.jtimechooser.JTimeChooser();
+        jTimeChooser3 = new lu.tudor.santec.jtimechooser.JTimeChooser();
+        jComboBox4 = new javax.swing.JComboBox<>();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jTextField7 = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
-        CriminalsAge = new javax.swing.JTextField();
-        CriminalsName = new javax.swing.JTextField();
-        Save4 = new javax.swing.JButton();
-        jPanel25 = new javax.swing.JPanel();
-        jLabel44 = new javax.swing.JLabel();
-        panelAddPoliceCross3 = new javax.swing.JPanel();
-        labelAddPoliceCross3 = new javax.swing.JLabel();
-        Cancel2 = new javax.swing.JButton();
+        jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
-        CriminalsFathersName = new javax.swing.JTextField();
+        jSeparator34 = new javax.swing.JSeparator();
         jLabel33 = new javax.swing.JLabel();
-        CriminalsPreviousActs = new javax.swing.JTextField();
+        jSeparator35 = new javax.swing.JSeparator();
+        jButton9 = new javax.swing.JButton();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        dialogAccusedDetails = new javax.swing.JDialog();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel40 = new javax.swing.JPanel();
+        jLabel107 = new javax.swing.JLabel();
+        panelAddPoliceCross11 = new javax.swing.JPanel();
+        labelAddPoliceCross11 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jLabel92 = new javax.swing.JLabel();
+        jSeparator24 = new javax.swing.JSeparator();
+        jLabel93 = new javax.swing.JLabel();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        dialogAddComplainant = new javax.swing.JDialog();
+        jPanel9 = new javax.swing.JPanel();
+        jPanel41 = new javax.swing.JPanel();
+        jLabel108 = new javax.swing.JLabel();
+        panelAddPoliceCross12 = new javax.swing.JPanel();
+        labelAddPoliceCross12 = new javax.swing.JLabel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel100 = new javax.swing.JLabel();
+        jLabel101 = new javax.swing.JLabel();
+        jLabel102 = new javax.swing.JLabel();
+        jLabel103 = new javax.swing.JLabel();
+        jLabel104 = new javax.swing.JLabel();
+        jLabel105 = new javax.swing.JLabel();
+        jLabel109 = new javax.swing.JLabel();
+        jLabel110 = new javax.swing.JLabel();
+        jTextField10 = new javax.swing.JTextField();
+        jTextField11 = new javax.swing.JTextField();
+        jTextField12 = new javax.swing.JTextField();
+        jTextField13 = new javax.swing.JTextField();
+        jComboBox5 = new javax.swing.JComboBox<>();
+        jLocaleChooser1 = new com.toedter.components.JLocaleChooser();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jDateChooser4 = new com.toedter.calendar.JDateChooser();
+        jTextField16 = new javax.swing.JTextField();
+        jComboBox6 = new javax.swing.JComboBox<>();
+        jTextField17 = new javax.swing.JTextField();
+        jButton15 = new javax.swing.JButton();
+        dialogDeleteComplaint = new javax.swing.JDialog();
+        jPanel42 = new javax.swing.JPanel();
+        jPanel43 = new javax.swing.JPanel();
+        jLabel94 = new javax.swing.JLabel();
+        panelAddPoliceCross13 = new javax.swing.JPanel();
+        labelAddPoliceCross13 = new javax.swing.JLabel();
+        jLabel111 = new javax.swing.JLabel();
+        jTextField18 = new javax.swing.JTextField();
+        jButton16 = new javax.swing.JButton();
+        dialogUpdateComplaint = new javax.swing.JDialog();
+        jPanel10 = new javax.swing.JPanel();
+        jPanel44 = new javax.swing.JPanel();
+        jLabel112 = new javax.swing.JLabel();
+        panelAddPoliceCross14 = new javax.swing.JPanel();
+        labelAddPoliceCross14 = new javax.swing.JLabel();
+        jLabel113 = new javax.swing.JLabel();
+        jTextField19 = new javax.swing.JTextField();
+        jLabel114 = new javax.swing.JLabel();
+        jComboBox7 = new javax.swing.JComboBox<>();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -306,24 +612,6 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel17 = new javax.swing.JPanel();
         jPanel18 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
-        panelCriminal = new javax.swing.JPanel();
-        jSeparator8 = new javax.swing.JSeparator();
-        panelPoliceAdd1 = new javax.swing.JPanel();
-        labelPoliceAdd1 = new javax.swing.JLabel();
-        panelUpdatePolice1 = new javax.swing.JPanel();
-        labelUpdatePolice1 = new javax.swing.JLabel();
-        panelDeletePolice1 = new javax.swing.JPanel();
-        labelDeletePolice1 = new javax.swing.JLabel();
-        panelResetPolice1 = new javax.swing.JPanel();
-        labelResetPolice1 = new javax.swing.JLabel();
-        panelRefreshPolice1 = new javax.swing.JPanel();
-        labelRefreshPolice1 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        Criminal_Info = new javax.swing.JTable();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
         panelPolice = new javax.swing.JPanel();
         jSeparator2 = new javax.swing.JSeparator();
         panelPoliceAdd = new javax.swing.JPanel();
@@ -342,6 +630,24 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        panelCriminal = new javax.swing.JPanel();
+        jSeparator8 = new javax.swing.JSeparator();
+        panelPoliceAdd1 = new javax.swing.JPanel();
+        labelPoliceAdd1 = new javax.swing.JLabel();
+        panelUpdatePolice1 = new javax.swing.JPanel();
+        labelUpdatePolice1 = new javax.swing.JLabel();
+        panelDeletePolice1 = new javax.swing.JPanel();
+        labelDeletePolice1 = new javax.swing.JLabel();
+        panelResetPolice1 = new javax.swing.JPanel();
+        labelResetPolice1 = new javax.swing.JLabel();
+        panelRefreshPolice1 = new javax.swing.JPanel();
+        labelRefreshPolice1 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         panelPoliceInfo = new javax.swing.JPanel();
         labelPoliceInfo = new javax.swing.JLabel();
         panelCriminalInfo = new javax.swing.JPanel();
@@ -354,6 +660,120 @@ public class Dashboard extends javax.swing.JFrame {
         panelExit = new javax.swing.JPanel();
         labelExit = new javax.swing.JLabel();
 
+        dialogDeletePolice.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogDeletePolice.setBackground(new java.awt.Color(204, 204, 204));
+        dialogDeletePolice.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogDeletePolice.setLocationByPlatform(true);
+        dialogDeletePolice.setUndecorated(true);
+        dialogDeletePolice.setResizable(false);
+        dialogDeletePolice.setSize(new java.awt.Dimension(218, 145));
+        dialogDeletePolice.setType(java.awt.Window.Type.POPUP);
+
+        jPanel26.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel26.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel26AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel26.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel27.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel27.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel35.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("Delete Police Info - CMS");
+
+        panelAddPoliceCross4.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross4.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross4.setText("X");
+        labelAddPoliceCross4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross4MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelAddPoliceCross4Layout = new javax.swing.GroupLayout(panelAddPoliceCross4);
+        panelAddPoliceCross4.setLayout(panelAddPoliceCross4Layout);
+        panelAddPoliceCross4Layout.setHorizontalGroup(
+            panelAddPoliceCross4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross4Layout.setVerticalGroup(
+            panelAddPoliceCross4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross4Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
+        jPanel27.setLayout(jPanel27Layout);
+        jPanel27Layout.setHorizontalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel27Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel27Layout.setVerticalGroup(
+            jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel26.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel36.setText("Police ID");
+        jPanel26.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 28));
+
+        jTextField1.setSelectionColor(new java.awt.Color(51, 51, 51));
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel26.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 50, 80, 28));
+
+        jButton1.setText("OK");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel26.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+
+        javax.swing.GroupLayout dialogDeletePoliceLayout = new javax.swing.GroupLayout(dialogDeletePolice.getContentPane());
+        dialogDeletePolice.getContentPane().setLayout(dialogDeletePoliceLayout);
+        dialogDeletePoliceLayout.setHorizontalGroup(
+            dialogDeletePoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogDeletePoliceLayout.createSequentialGroup()
+                .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        dialogDeletePoliceLayout.setVerticalGroup(
+            dialogDeletePoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel26, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+        );
+
         dialogAddPolice.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         dialogAddPolice.setBackground(new java.awt.Color(204, 204, 204));
         dialogAddPolice.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
@@ -363,961 +783,2038 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAddPolice.setSize(new java.awt.Dimension(684, 470));
         dialogAddPolice.setType(java.awt.Window.Type.POPUP);
 
-        jPanel10.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel10.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel10.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel10.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel28.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel28.setMaximumSize(new java.awt.Dimension(659, 455));
+        jPanel28.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel28.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setText("First Name");
+        jLabel37.setText("First Name");
+        jPanel28.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 53, -1, -1));
 
-        jLabel6.setText("Last Name");
+        jLabel38.setText("Last Name");
+        jPanel28.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 53, -1, -1));
 
-        Salary.addActionListener(new java.awt.event.ActionListener() {
+        Salary1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SalaryActionPerformed(evt);
+                Salary1ActionPerformed(evt);
             }
         });
+        jPanel28.add(Salary1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 219, 120, -1));
 
-        jLabel7.setText("Age");
+        jLabel39.setText("Age");
+        jPanel28.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 83, -1, -1));
+        jPanel28.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
 
-        jLabel9.setText("Gender");
+        jLabel41.setText("Gender");
+        jPanel28.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 83, -1, -1));
 
-        Age.addActionListener(new java.awt.event.ActionListener() {
+        Age1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AgeActionPerformed(evt);
+                Age1ActionPerformed(evt);
             }
         });
+        jPanel28.add(Age1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 82, 120, -1));
 
-        Gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        Gender.addActionListener(new java.awt.event.ActionListener() {
+        Gender1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GenderActionPerformed(evt);
+                Gender1ActionPerformed(evt);
             }
         });
+        jPanel28.add(Gender1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 82, 120, -1));
 
-        jLabel10.setText("Designation");
+        jLabel45.setText("Designation");
+        jPanel28.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 220, -1, 20));
 
-        jLabel12.setText("Phone");
+        jLabel46.setText("Phone");
+        jPanel28.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, -1, -1));
+        jPanel28.add(Phone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 112, 120, -1));
 
-        jLabel13.setText("District");
+        jLabel47.setText("District");
+        jPanel28.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 190, -1, -1));
 
-        District.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dhaka" }));
+        District1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dhaka" }));
+        jPanel28.add(District1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 190, 120, -1));
 
-        jLabel14.setText("Police Station");
+        jLabel48.setText("P. Station");
+        jPanel28.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, -1, -1));
 
-        PoliceStation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adabor", "Airport", "Badda", "Banani" }));
-        PoliceStation.addActionListener(new java.awt.event.ActionListener() {
+        PoliceStation1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adabor", "Airport", "Badda", "Banani" }));
+        PoliceStation1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PoliceStationActionPerformed(evt);
+                PoliceStation1ActionPerformed(evt);
             }
         });
+        jPanel28.add(PoliceStation1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 190, 120, -1));
 
-        jLabel15.setText("Date of Birth");
+        jLabel49.setText("Date of Birth");
+        jPanel28.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 143, -1, -1));
 
-        FirstName.addActionListener(new java.awt.event.ActionListener() {
+        FirstName1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FirstNameActionPerformed(evt);
+                FirstName1ActionPerformed(evt);
             }
         });
+        jPanel28.add(FirstName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 52, 120, -1));
 
-        jLabel16.setText("Date of Joining");
+        jLabel50.setText("Date of Joining");
+        jPanel28.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(432, 53, -1, 20));
 
-        jLabel17.setText("Date of Resigning");
+        jLabel51.setText("Date of Resigning");
+        jPanel28.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(432, 82, -1, 20));
 
-        AddImage.setText("Add Image");
-        AddImage.addActionListener(new java.awt.event.ActionListener() {
+        AddImage1.setText("Add Image");
+        AddImage1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddImageActionPerformed(evt);
+                AddImage1ActionPerformed(evt);
             }
         });
+        jPanel28.add(AddImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(497, 292, -1, -1));
 
-        jLabel18.setText("Salary");
+        jLabel52.setText("Salary");
+        jPanel28.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 50, -1));
 
-        LastName.addActionListener(new java.awt.event.ActionListener() {
+        LastName1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LastNameActionPerformed(evt);
+                LastName1ActionPerformed(evt);
             }
         });
+        jPanel28.add(LastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 52, 120, -1));
 
-        Save.setBackground(new java.awt.Color(51, 51, 51));
-        Save.setForeground(new java.awt.Color(255, 255, 255));
-        Save.setText("SAVE");
-        Save.setBorder(null);
-        Save.addActionListener(new java.awt.event.ActionListener() {
+        Save5.setBackground(new java.awt.Color(51, 51, 51));
+        Save5.setForeground(new java.awt.Color(255, 255, 255));
+        Save5.setText("SAVE");
+        Save5.setBorder(null);
+        Save5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SaveActionPerformed(evt);
+                Save5ActionPerformed(evt);
             }
         });
+        jPanel28.add(Save5, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 354, 218, 30));
 
-        jLabel19.setText("Permanent Address");
+        jLabel53.setText("Permanent Address");
+        jPanel28.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
+        jPanel28.add(PermanentAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 386, 54));
 
-        jLabel20.setText("Living Address");
+        jLabel54.setText("Living Address");
+        jPanel28.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+        jPanel28.add(LivingAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 386, 54));
 
-        jLabel21.setText("Email");
+        jLabel55.setText("Email");
+        jPanel28.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 113, -1, -1));
+        jPanel28.add(Email1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 112, 120, -1));
 
-        jLabel22.setText("NID No");
+        jLabel56.setText("NID No");
+        jPanel28.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 143, -1, -1));
 
-        NID.addActionListener(new java.awt.event.ActionListener() {
+        NID1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NIDActionPerformed(evt);
+                NID1ActionPerformed(evt);
             }
         });
+        jPanel28.add(NID1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 142, 120, -1));
 
-        img2.setBackground(new java.awt.Color(255, 255, 255));
-        img2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        img3.setBackground(new java.awt.Color(255, 255, 255));
+        img3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jPanel28.add(img3, new org.netbeans.lib.awtextra.AbsoluteConstraints(432, 137, 220, 139));
 
-        jPanel9.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel9.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel29.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel29.setForeground(new java.awt.Color(51, 51, 51));
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Police Details - CMS");
+        jLabel57.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel57.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel57.setText("Insert Police Details - CMS");
 
-        panelAddPoliceCross.setBackground(new java.awt.Color(51, 51, 51));
+        panelAddPoliceCross5.setBackground(new java.awt.Color(51, 51, 51));
 
-        labelAddPoliceCross.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        labelAddPoliceCross.setForeground(new java.awt.Color(255, 255, 255));
-        labelAddPoliceCross.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelAddPoliceCross.setText("X");
-        labelAddPoliceCross.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelAddPoliceCross5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross5.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross5.setText("X");
+        labelAddPoliceCross5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCrossMouseClicked(evt);
+                labelAddPoliceCross5MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCrossMouseEntered(evt);
+                labelAddPoliceCross5MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCrossMouseExited(evt);
+                labelAddPoliceCross5MouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout panelAddPoliceCrossLayout = new javax.swing.GroupLayout(panelAddPoliceCross);
-        panelAddPoliceCross.setLayout(panelAddPoliceCrossLayout);
-        panelAddPoliceCrossLayout.setHorizontalGroup(
-            panelAddPoliceCrossLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCrossLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelAddPoliceCross5Layout = new javax.swing.GroupLayout(panelAddPoliceCross5);
+        panelAddPoliceCross5.setLayout(panelAddPoliceCross5Layout);
+        panelAddPoliceCross5Layout.setHorizontalGroup(
+            panelAddPoliceCross5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        panelAddPoliceCrossLayout.setVerticalGroup(
-            panelAddPoliceCrossLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCrossLayout.createSequentialGroup()
+        panelAddPoliceCross5Layout.setVerticalGroup(
+            panelAddPoliceCross5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross5Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross5, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel29Layout = new javax.swing.GroupLayout(jPanel29);
+        jPanel29.setLayout(jPanel29Layout);
+        jPanel29Layout.setHorizontalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel29Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 526, Short.MAX_VALUE)
-                .addComponent(panelAddPoliceCross, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel57)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 487, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelAddPoliceCross, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel29Layout.setVerticalGroup(
+            jPanel29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel57, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel28.add(jPanel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 680, -1));
+        jPanel28.add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 390, 10));
+        jPanel28.add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 390, 10));
 
-        Save1.setBackground(new java.awt.Color(51, 51, 51));
-        Save1.setForeground(new java.awt.Color(255, 255, 255));
-        Save1.setText("Cancel");
-        Save1.setBorder(null);
-        Save1.addActionListener(new java.awt.event.ActionListener() {
+        jSeparator13.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel28.add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 50, 13, 390));
+        jPanel28.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 119, 218, 12));
+
+        Save6.setBackground(new java.awt.Color(51, 51, 51));
+        Save6.setForeground(new java.awt.Color(255, 255, 255));
+        Save6.setText("Cancel");
+        Save6.setBorder(null);
+        Save6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Save1ActionPerformed(evt);
+                Save6ActionPerformed(evt);
             }
         });
+        jPanel28.add(Save6, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 400, 218, 30));
 
-        Designation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IG", "DIG", "SP", "ASP", "SERGEANT" }));
+        Designation1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IG", "DIG", "SP", "ASP", "SERGEANT" }));
+        jPanel28.add(Designation1, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 219, 120, -1));
 
-        DateOfBirth.setName("DateOfBirth"); // NOI18N
+        JoiningDate1.setDateFormatString("yyyy-m-dd");
+        jPanel28.add(JoiningDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 52, 120, -1));
 
-        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
-        jPanel10.setLayout(jPanel10Layout);
-        jPanel10Layout.setHorizontalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(237, 237, 237)
-                        .addComponent(PoliceIdNo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel10)
-                                .addGap(23, 23, 23)
-                                .addComponent(Designation, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(22, 22, 22)
-                                .addComponent(Salary, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addComponent(jLabel13)
-                                        .addGap(46, 46, 46)
-                                        .addComponent(District, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(jLabel14)
-                                        .addGap(9, 9, 9)
-                                        .addComponent(PoliceStation, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 390, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel20)
-                                    .addComponent(LivingAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel19)
-                                    .addComponent(PermanentAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                                .addComponent(jLabel12)
-                                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                                        .addGap(140, 140, 140)
-                                                        .addComponent(jLabel8))
-                                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                                        .addGap(39, 39, 39)
-                                                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                            .addComponent(Age, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addComponent(Phone, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel21)
-                                                    .addComponent(jLabel9)))
-                                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jLabel5)
-                                                    .addComponent(jLabel7))
-                                                .addGap(18, 18, 18)
-                                                .addComponent(FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jLabel6)))
-                                        .addGap(13, 13, 13)
-                                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(Email)
-                                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(LastName, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGap(0, 0, Short.MAX_VALUE))))))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel22)
-                                .addGap(35, 35, 35)
-                                .addComponent(NID, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(DateOfBirth, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(14, 14, 14)
-                        .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(4, 4, 4)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(img2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGap(65, 65, 65)
-                                        .addComponent(AddImage))
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addGap(2, 2, 2)
-                                        .addComponent(Save1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel17)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(JoiningDate, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
-                                    .addComponent(ResigningDate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
-                .addContainerGap())
-        );
-        jPanel10Layout.setVerticalGroup(
-            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel10Layout.createSequentialGroup()
-                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(6, 6, 6)
-                .addComponent(PoliceIdNo, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(4, 4, 4)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel6)
-                                        .addComponent(LastName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jLabel7))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(Age, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel9)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(Gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel10Layout.createSequentialGroup()
-                                        .addComponent(jLabel12)
-                                        .addGap(6, 6, 6))
-                                    .addComponent(jLabel21))
-                                .addGap(4, 4, 4)
-                                .addComponent(jLabel8))
-                            .addComponent(Phone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(DateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jLabel15)
-                                .addComponent(NID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel22)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel13))
-                            .addComponent(District, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel14))
-                            .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(3, 3, 3)
-                                .addComponent(PoliceStation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(7, 7, 7)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(Designation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel18))
-                            .addComponent(Salary, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jSeparator5, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(jLabel20)
-                        .addGap(6, 6, 6)
-                        .addComponent(LivingAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(11, 11, 11)
-                        .addComponent(jLabel19)
-                        .addGap(6, 6, 6)
-                        .addComponent(PermanentAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(JoiningDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ResigningDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(11, 11, 11)
-                        .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(img2, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16)
-                        .addComponent(AddImage)
-                        .addGap(72, 72, 72)
-                        .addComponent(Save, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(6, 6, 6)
-                        .addComponent(Save1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        ResigningDate1.setDateFormatString("yyyy,mm,dd");
+        jPanel28.add(ResigningDate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 81, 120, -1));
+
+        DateOfBirth1.setDateFormatString("yyyy,mm,dd");
+        DateOfBirth1.setName("DateOfBirth"); // NOI18N
+        jPanel28.add(DateOfBirth1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 142, 120, -1));
 
         javax.swing.GroupLayout dialogAddPoliceLayout = new javax.swing.GroupLayout(dialogAddPolice.getContentPane());
         dialogAddPolice.getContentPane().setLayout(dialogAddPoliceLayout);
         dialogAddPoliceLayout.setHorizontalGroup(
             dialogAddPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 683, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, 681, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         dialogAddPoliceLayout.setVerticalGroup(
             dialogAddPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 810, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 540, Short.MAX_VALUE)
-        );
+        dialogUpdatePolice.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogUpdatePolice.setBackground(new java.awt.Color(204, 204, 204));
+        dialogUpdatePolice.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogUpdatePolice.setLocationByPlatform(true);
+        dialogUpdatePolice.setUndecorated(true);
+        dialogUpdatePolice.setResizable(false);
+        dialogUpdatePolice.setSize(new java.awt.Dimension(728, 523));
+        dialogUpdatePolice.setType(java.awt.Window.Type.POPUP);
 
-        dialogAddComplaint_Info.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        dialogAddComplaint_Info.setBackground(new java.awt.Color(204, 204, 204));
-        dialogAddComplaint_Info.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        dialogAddComplaint_Info.setLocationByPlatform(true);
-        dialogAddComplaint_Info.setUndecorated(true);
-        dialogAddComplaint_Info.setResizable(false);
-        dialogAddComplaint_Info.setSize(new java.awt.Dimension(684, 470));
-        dialogAddComplaint_Info.setType(java.awt.Window.Type.POPUP);
+        jPanel30.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel30.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel30.setMaximumSize(new java.awt.Dimension(659, 455));
+        jPanel30.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel30.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel11.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel11.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel11.setPreferredSize(new java.awt.Dimension(659, 455));
-
-        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel25.setText("Complaint Type");
-
-        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel27.setText("Complainant Name:");
-
-        ComplainantName.addActionListener(new java.awt.event.ActionListener() {
+        Salary2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComplainantNameActionPerformed(evt);
+                Salary2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(Salary2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 280, 120, -1));
+        jPanel30.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
+
+        Age2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Age2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(Age2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, 120, -1));
+
+        Gender2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(Gender2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 130, 120, -1));
+        jPanel30.add(Phone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 160, 120, -1));
+
+        District2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dhaka" }));
+        jPanel30.add(District2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 250, 120, -1));
+
+        PoliceStation2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Adabor", "Airport", "Badda", "Banani" }));
+        PoliceStation2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PoliceStation2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(PoliceStation2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 250, 120, -1));
+
+        FirstName2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstName2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(FirstName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 100, 120, -1));
+
+        LastName2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastName2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(LastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 100, 120, -1));
+
+        Save7.setBackground(new java.awt.Color(51, 51, 51));
+        Save7.setForeground(new java.awt.Color(255, 255, 255));
+        Save7.setText("Update");
+        Save7.setBorder(null);
+        Save7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Save7ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(Save7, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 420, 218, 30));
+        jPanel30.add(PermanentAdd2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 442, 430, 54));
+        jPanel30.add(LivingAdd2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 352, 430, 54));
+        jPanel30.add(Email2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 160, 120, -1));
+
+        NID2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(NID2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 190, 120, -1));
+
+        img4.setBackground(new java.awt.Color(255, 255, 255));
+        img4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        jPanel30.add(img4, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 190, 230, 150));
+
+        jPanel31.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel31.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel31.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel59.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel59.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel59.setText("Update Police Details - CMS");
+        jPanel31.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 6, -1, -1));
+
+        panelAddPoliceCross6.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross6.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross6.setText("X");
+        labelAddPoliceCross6.setPreferredSize(new java.awt.Dimension(35, 0));
+        labelAddPoliceCross6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross6MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross6MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross6MouseExited(evt);
             }
         });
 
-        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel31.setText("Complainant Type");
+        javax.swing.GroupLayout panelAddPoliceCross6Layout = new javax.swing.GroupLayout(panelAddPoliceCross6);
+        panelAddPoliceCross6.setLayout(panelAddPoliceCross6Layout);
+        panelAddPoliceCross6Layout.setHorizontalGroup(
+            panelAddPoliceCross6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross6Layout.setVerticalGroup(
+            panelAddPoliceCross6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross6, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel34.setText("Date of Issue");
+        jPanel31.add(panelAddPoliceCross6, new org.netbeans.lib.awtextra.AbsoluteConstraints(692, 0, -1, 25));
 
-        ComplaintType.addActionListener(new java.awt.event.ActionListener() {
+        jPanel30.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 728, -1));
+        jPanel30.add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 430, 10));
+        jPanel30.add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 430, 10));
+
+        jSeparator17.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel30.add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(455, 100, 13, 400));
+        jPanel30.add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 235, 10));
+
+        Save8.setBackground(new java.awt.Color(51, 51, 51));
+        Save8.setForeground(new java.awt.Color(255, 255, 255));
+        Save8.setText("Cancel");
+        Save8.setBorder(null);
+        Save8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ComplaintTypeActionPerformed(evt);
+                Save8ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(Save8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 460, 218, 30));
+
+        Designation2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "IG", "DIG", "SP", "ASP", "SERGEANT" }));
+        jPanel30.add(Designation2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 120, -1));
+
+        JoiningDate2.setDateFormatString("yyyy-m-dd");
+        jPanel30.add(JoiningDate2, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 100, 120, -1));
+
+        ResigningDate2.setDateFormatString("yyyy,mm,dd");
+        jPanel30.add(ResigningDate2, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 130, 120, -1));
+
+        DateOfBirth2.setDateFormatString("yyyy,mm,dd");
+        DateOfBirth2.setName("DateOfBirth"); // NOI18N
+        jPanel30.add(DateOfBirth2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 190, 120, -1));
+
+        jCheckBox1.setText("First Name");
+        jCheckBox1.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 103, -1, 20));
+
+        jCheckBox2.setText("Last Name");
+        jCheckBox2.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 103, -1, 20));
+
+        jCheckBox3.setText("Age");
+        jCheckBox3.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 133, -1, 20));
+
+        jCheckBox4.setText("Gender");
+        jCheckBox4.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 133, -1, 20));
+
+        jCheckBox5.setText("Phone");
+        jCheckBox5.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 163, -1, 20));
+
+        jCheckBox6.setText("Email");
+        jCheckBox6.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 163, -1, 20));
+
+        jCheckBox7.setText("NID No");
+        jCheckBox7.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 193, 80, 20));
+
+        jCheckBox8.setText("Date of Birth");
+        jCheckBox8.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(233, 193, -1, 20));
+
+        jCheckBox10.setText("Date of Resigning");
+        jCheckBox10.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 130, -1, 20));
+
+        jCheckBox11.setText("Change Image");
+        jCheckBox11.setBorderPainted(true);
+        jPanel30.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
+
+        jCheckBox12.setText("District");
+        jCheckBox12.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 253, -1, 20));
+
+        jCheckBox13.setText("P. Station");
+        jCheckBox13.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 253, -1, 20));
+
+        jCheckBox14.setText("Designation");
+        jCheckBox14.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 283, -1, 20));
+
+        jCheckBox15.setText("Salary");
+        jCheckBox15.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 283, -1, -1));
+
+        jCheckBox16.setText("Living Address");
+        jCheckBox16.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, 20));
+
+        jCheckBox17.setText("Permanent Address");
+        jCheckBox17.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 420, -1, 20));
+
+        jTextField2.setSelectionColor(new java.awt.Color(51, 51, 51));
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
+        jPanel30.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 80, 28));
+
+        jLabel60.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel60.setText("Police ID");
+        jPanel30.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 60, 28));
+        jPanel30.add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 700, 10));
+
+        jCheckBox18.setText("Date of Joining");
+        jCheckBox18.setContentAreaFilled(false);
+        jPanel30.add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 100, -1, 20));
+
+        jCheckBox9.setBackground(new java.awt.Color(204, 204, 204));
+        jCheckBox9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jCheckBox9.setText("Select All");
+        jCheckBox9.setToolTipText("Update all items");
+        jCheckBox9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 51, 51), new java.awt.Color(153, 153, 153), null, null));
+        jPanel30.add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 90, 28));
+
+        javax.swing.GroupLayout dialogUpdatePoliceLayout = new javax.swing.GroupLayout(dialogUpdatePolice.getContentPane());
+        dialogUpdatePolice.getContentPane().setLayout(dialogUpdatePoliceLayout);
+        dialogUpdatePoliceLayout.setHorizontalGroup(
+            dialogUpdatePoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel30, javax.swing.GroupLayout.PREFERRED_SIZE, 728, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogUpdatePoliceLayout.setVerticalGroup(
+            dialogUpdatePoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel30, javax.swing.GroupLayout.DEFAULT_SIZE, 518, Short.MAX_VALUE)
+        );
+
+        dialogAddCriminal.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogAddCriminal.setBackground(new java.awt.Color(204, 204, 204));
+        dialogAddCriminal.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogAddCriminal.setLocationByPlatform(true);
+        dialogAddCriminal.setUndecorated(true);
+        dialogAddCriminal.setResizable(false);
+        dialogAddCriminal.setSize(new java.awt.Dimension(684, 470));
+        dialogAddCriminal.setType(java.awt.Window.Type.POPUP);
+
+        jPanel32.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel32.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel32.setMaximumSize(new java.awt.Dimension(659, 455));
+        jPanel32.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel32.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel61.setText("First Name");
+        jPanel32.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 53, -1, -1));
+
+        jLabel62.setText("Last Name");
+        jPanel32.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+
+        jLabel63.setText("Age");
+        jPanel32.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 83, -1, -1));
+        jPanel32.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
+
+        jLabel65.setText("Marital Status");
+        jPanel32.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, -1, -1));
+
+        Age3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Age3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Age3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 82, 120, -1));
+
+        Gender3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 120, -1));
+
+        jLabel66.setText("Phone");
+        jPanel32.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, -1, -1));
+        jPanel32.add(Phone3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 112, 120, -1));
+
+        jLabel67.setText("Date of Birth");
+        jPanel32.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+
+        FirstName3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstName3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(FirstName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 52, 120, -1));
+
+        jLabel68.setText("Work Address");
+        jPanel32.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
+        jPanel32.add(PermanentAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 660, 54));
+
+        jLabel69.setText("Living Address");
+        jPanel32.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+
+        LivingAdd3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        LivingAdd3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LivingAdd3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(LivingAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 660, 54));
+
+        jLabel70.setText("Email");
+        jPanel32.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        jPanel32.add(Email3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 120, -1));
+
+        jLabel71.setText("Weight ( kg )");
+        jPanel32.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+
+        NID3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID3ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 40, -1));
+
+        jPanel33.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel33.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel33.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel72.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel72.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setText("Insert Criminal Details - CMS");
+        jPanel33.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 6, -1, -1));
+
+        panelAddPoliceCross7.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross7.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross7.setText("X");
+        labelAddPoliceCross7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross7MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross7MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross7MouseExited(evt);
             }
         });
 
-        Save2.setBackground(new java.awt.Color(51, 51, 51));
-        Save2.setForeground(new java.awt.Color(255, 255, 255));
-        Save2.setText("SAVE");
-        Save2.setBorder(null);
-        Save2.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout panelAddPoliceCross7Layout = new javax.swing.GroupLayout(panelAddPoliceCross7);
+        panelAddPoliceCross7.setLayout(panelAddPoliceCross7Layout);
+        panelAddPoliceCross7Layout.setHorizontalGroup(
+            panelAddPoliceCross7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross7Layout.setVerticalGroup(
+            panelAddPoliceCross7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross7Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross7, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        jPanel33.add(panelAddPoliceCross7, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 0, -1, 25));
+
+        jPanel32.add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 910, -1));
+        jPanel32.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 650, 10));
+        jPanel32.add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 660, 10));
+
+        DateOfBirth3.setDateFormatString("yyyy,mm,dd");
+        DateOfBirth3.setName("DateOfBirth"); // NOI18N
+        jPanel32.add(DateOfBirth3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 120, -1));
+
+        jLabel73.setText("Father's Name");
+        jPanel32.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, -1));
+
+        LastName3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Save2ActionPerformed(evt);
+                LastName3ActionPerformed(evt);
             }
         });
+        jPanel32.add(LastName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 120, -1));
 
-        jPanel12.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel12.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel74.setText("Gender");
+        jPanel32.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, -1, -1));
+
+        LastName4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastName4ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(LastName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 120, -1));
+
+        jLabel75.setText("Nationality");
+        jPanel32.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
+
+        Gender4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender4ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 70, -1));
+
+        jCheckBox19.setText("Tatoos");
+        jPanel32.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, -1, -1));
+
+        jCheckBox20.setText("Glasses");
+        jPanel32.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+
+        jCheckBox22.setText("Birthmarks");
+        jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox22ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 80, -1));
+
+        jCheckBox23.setText("Gold Teeth");
+        jPanel32.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 80, -1));
+
+        jLabel76.setText("NID No");
+        jPanel32.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 143, -1, -1));
+
+        jLabel77.setText("Eye Color");
+        jPanel32.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, -1, -1));
+
+        NID4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID4ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID4, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 142, 120, -1));
+
+        NID5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID5ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 40, -1));
+
+        jLabel78.setText("Height ( inch )");
+        jPanel32.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+
+        Gender5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender5ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 120, -1));
+
+        jLabel79.setText("Skin Color");
+        jPanel32.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
+
+        Gender6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender6ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 70, -1));
+
+        jLabel80.setText("Hair Color");
+        jPanel32.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, -1, -1));
+
+        Gender7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender7ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 70, -1));
+
+        jCheckBox24.setText("Beard");
+        jPanel32.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, -1, -1));
+
+        jCheckBox25.setText("Mustache");
+        jPanel32.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, -1, -1));
+
+        jCheckBox26.setText("Missing Teeth");
+        jPanel32.add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, -1, -1));
+
+        jLabel81.setText("Occupation");
+        jPanel32.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, -1));
+
+        jLabel82.setText("Scars");
+        jPanel32.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, -1, -1));
+
+        NID6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID6ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 70, -1));
+
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel32.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 40, 10, 540));
+        jPanel32.add(LivingAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 660, 54));
+
+        jLabel83.setText("Permanent Address");
+        jPanel32.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+
+        jLabel84.setText("Occurrence ID");
+        jPanel32.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, -1, -1));
+
+        NID7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID7ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 70, -1));
+
+        jLabel85.setText("Previous Records");
+        jPanel32.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, -1, -1));
+
+        NID8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID8ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 550, 70, -1));
+
+        jLabel86.setText("Custody No");
+        jPanel32.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, -1, -1));
+
+        NID9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID9ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, 70, -1));
+
+        jLabel87.setText("Police ID");
+        jPanel32.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, -1, -1));
+
+        NID10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID10ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(NID10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 550, 70, -1));
+
+        Gender9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender9ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(Gender9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 120, -1));
+
+        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 190, 100));
+
+        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 450, 190, 100));
+
+        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 190, 100));
+
+        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 190, 100));
+        jPanel32.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 660, 10));
+
+        jButton2.setText("Back Image");
+        jPanel32.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 550, -1, -1));
+
+        jButton3.setText("Front Image");
+        jPanel32.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, -1, -1));
+
+        jButton4.setText("Right Image");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        jPanel32.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, -1, -1));
+
+        jButton5.setText("Left Image");
+        jPanel32.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 410, -1, -1));
+
+        jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton6.setText("Add");
+        jPanel32.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, 100, 30));
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton7.setText("Cancel");
+        jPanel32.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 620, 90, 30));
+        jPanel32.add(jLocaleChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 170, -1));
+
+        javax.swing.GroupLayout dialogAddCriminalLayout = new javax.swing.GroupLayout(dialogAddCriminal.getContentPane());
+        dialogAddCriminal.getContentPane().setLayout(dialogAddCriminalLayout);
+        dialogAddCriminalLayout.setHorizontalGroup(
+            dialogAddCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, 911, Short.MAX_VALUE)
+        );
+        dialogAddCriminalLayout.setVerticalGroup(
+            dialogAddCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, 663, Short.MAX_VALUE)
+        );
+
+        dialogDeleteCriminal.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogDeleteCriminal.setBackground(new java.awt.Color(204, 204, 204));
+        dialogDeleteCriminal.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogDeleteCriminal.setLocationByPlatform(true);
+        dialogDeleteCriminal.setUndecorated(true);
+        dialogDeleteCriminal.setResizable(false);
+        dialogDeleteCriminal.setSize(new java.awt.Dimension(218, 145));
+        dialogDeleteCriminal.setType(java.awt.Window.Type.POPUP);
+
+        jPanel34.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel34.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel34AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel34.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel35.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel35.setForeground(new java.awt.Color(51, 51, 51));
 
         jLabel42.setBackground(new java.awt.Color(255, 255, 255));
         jLabel42.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel42.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel42.setText("Complaint Details - CMS");
+        jLabel42.setText("Delete Criminal Info - CMS");
 
-        panelAddPoliceCross1.setBackground(new java.awt.Color(51, 51, 51));
+        panelAddPoliceCross8.setBackground(new java.awt.Color(51, 51, 51));
 
-        labelAddPoliceCross1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        labelAddPoliceCross1.setForeground(new java.awt.Color(255, 255, 255));
-        labelAddPoliceCross1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelAddPoliceCross1.setText("X");
-        labelAddPoliceCross1.addMouseListener(new java.awt.event.MouseAdapter() {
+        labelAddPoliceCross8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross8.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross8.setText("X");
+        labelAddPoliceCross8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross1MouseClicked(evt);
+                labelAddPoliceCross8MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross1MouseEntered(evt);
+                labelAddPoliceCross8MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross1MouseExited(evt);
+                labelAddPoliceCross8MouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout panelAddPoliceCross1Layout = new javax.swing.GroupLayout(panelAddPoliceCross1);
-        panelAddPoliceCross1.setLayout(panelAddPoliceCross1Layout);
-        panelAddPoliceCross1Layout.setHorizontalGroup(
-            panelAddPoliceCross1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelAddPoliceCross8Layout = new javax.swing.GroupLayout(panelAddPoliceCross8);
+        panelAddPoliceCross8.setLayout(panelAddPoliceCross8Layout);
+        panelAddPoliceCross8Layout.setHorizontalGroup(
+            panelAddPoliceCross8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross8Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        panelAddPoliceCross1Layout.setVerticalGroup(
-            panelAddPoliceCross1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross1Layout.createSequentialGroup()
+        panelAddPoliceCross8Layout.setVerticalGroup(
+            panelAddPoliceCross8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross8Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel12Layout = new javax.swing.GroupLayout(jPanel12);
-        jPanel12.setLayout(jPanel12Layout);
-        jPanel12Layout.setHorizontalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel12Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel35Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel42)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelAddPoliceCross1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel12Layout.setVerticalGroup(
-            jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelAddPoliceCross1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Cancel.setBackground(new java.awt.Color(51, 51, 51));
-        Cancel.setForeground(new java.awt.Color(255, 255, 255));
-        Cancel.setText("Cancel");
-        Cancel.setBorder(null);
-        Cancel.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CancelActionPerformed(evt);
-            }
-        });
+        jPanel34.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
 
-        DateOfIssue.setName("DateOfBirth"); // NOI18N
-
-        javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
-        jPanel11.setLayout(jPanel11Layout);
-        jPanel11Layout.setHorizontalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel25)
-                    .addGroup(jPanel11Layout.createSequentialGroup()
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel34)
-                            .addComponent(jLabel31))
-                        .addGap(39, 39, 39)
-                        .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(DateOfIssue, javax.swing.GroupLayout.DEFAULT_SIZE, 152, Short.MAX_VALUE)
-                            .addGroup(jPanel11Layout.createSequentialGroup()
-                                .addComponent(ComplainantType)
-                                .addGap(12, 12, 12))))
-                    .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel11Layout.createSequentialGroup()
-                            .addComponent(jLabel27)
-                            .addGap(28, 28, 28)
-                            .addComponent(ComplainantName, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(ComplaintType, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(77, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Save2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(85, 85, 85))
-        );
-        jPanel11Layout.setVerticalGroup(
-            jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel11Layout.createSequentialGroup()
-                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(ComplaintType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27)
-                    .addComponent(ComplainantName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
-                    .addComponent(ComplainantType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(61, 61, 61)
-                .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel34)
-                    .addComponent(DateOfIssue, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
-                .addComponent(Save2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(Cancel, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout dialogAddComplaint_InfoLayout = new javax.swing.GroupLayout(dialogAddComplaint_Info.getContentPane());
-        dialogAddComplaint_Info.getContentPane().setLayout(dialogAddComplaint_InfoLayout);
-        dialogAddComplaint_InfoLayout.setHorizontalGroup(
-            dialogAddComplaint_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        dialogAddComplaint_InfoLayout.setVerticalGroup(
-            dialogAddComplaint_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 489, Short.MAX_VALUE)
-        );
-
-        dialogAddCustody_Info.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        dialogAddCustody_Info.setBackground(new java.awt.Color(204, 204, 204));
-        dialogAddCustody_Info.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        dialogAddCustody_Info.setLocationByPlatform(true);
-        dialogAddCustody_Info.setUndecorated(true);
-        dialogAddCustody_Info.setResizable(false);
-        dialogAddCustody_Info.setSize(new java.awt.Dimension(684, 470));
-        dialogAddCustody_Info.setType(java.awt.Window.Type.POPUP);
-
-        jPanel22.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel22.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel22.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel22.setPreferredSize(new java.awt.Dimension(659, 455));
-
-        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel26.setText("Remaining Seats");
-
-        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel28.setText("Capacity");
-
-        Capacity.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CapacityActionPerformed(evt);
-            }
-        });
-
-        RemainingSeats.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RemainingSeatsActionPerformed(evt);
-            }
-        });
-
-        Save3.setBackground(new java.awt.Color(51, 51, 51));
-        Save3.setForeground(new java.awt.Color(255, 255, 255));
-        Save3.setText("SAVE");
-        Save3.setBorder(null);
-        Save3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Save3ActionPerformed(evt);
-            }
-        });
-
-        jPanel23.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel23.setForeground(new java.awt.Color(51, 51, 51));
-
-        jLabel43.setBackground(new java.awt.Color(255, 255, 255));
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel43.setText("Complaint Details - CMS");
+        jLabel43.setText("Criminal ID");
+        jPanel34.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 28));
 
-        panelAddPoliceCross2.setBackground(new java.awt.Color(51, 51, 51));
+        jTextField3.setSelectionColor(new java.awt.Color(51, 51, 51));
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+        jPanel34.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 80, 28));
 
-        labelAddPoliceCross2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        labelAddPoliceCross2.setForeground(new java.awt.Color(255, 255, 255));
-        labelAddPoliceCross2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelAddPoliceCross2.setText("X");
-        labelAddPoliceCross2.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton8.setText("OK");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jPanel34.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+
+        javax.swing.GroupLayout dialogDeleteCriminalLayout = new javax.swing.GroupLayout(dialogDeleteCriminal.getContentPane());
+        dialogDeleteCriminal.getContentPane().setLayout(dialogDeleteCriminalLayout);
+        dialogDeleteCriminalLayout.setHorizontalGroup(
+            dialogDeleteCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogDeleteCriminalLayout.createSequentialGroup()
+                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        dialogDeleteCriminalLayout.setVerticalGroup(
+            dialogDeleteCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+        );
+
+        dialogUpdateCriminal.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogUpdateCriminal.setBackground(new java.awt.Color(204, 204, 204));
+        dialogUpdateCriminal.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogUpdateCriminal.setLocationByPlatform(true);
+        dialogUpdateCriminal.setUndecorated(true);
+        dialogUpdateCriminal.setResizable(false);
+        dialogUpdateCriminal.setSize(new java.awt.Dimension(684, 470));
+        dialogUpdateCriminal.setType(java.awt.Window.Type.POPUP);
+
+        jPanel36.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel36.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel36.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel36.setMaximumSize(new java.awt.Dimension(659, 455));
+        jPanel36.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel36.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel36.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
+
+        Age4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Age4ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Age4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 120, -1));
+
+        Gender10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender10ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 120, -1));
+        jPanel36.add(Phone4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 120, -1));
+
+        FirstName4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstName4ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(FirstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 120, -1));
+        jPanel36.add(PermanentAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 660, 54));
+
+        LivingAdd5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        LivingAdd5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LivingAdd5ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(LivingAdd5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 660, 54));
+        jPanel36.add(Email4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 120, -1));
+
+        NID11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID11ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 40, -1));
+
+        jPanel37.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel37.setForeground(new java.awt.Color(51, 51, 51));
+        jPanel37.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel99.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel99.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel99.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel99.setText("Update Criminal Details - CMS");
+        jPanel37.add(jLabel99, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 6, -1, -1));
+
+        panelAddPoliceCross9.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross9.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross9.setText("X");
+        labelAddPoliceCross9.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross2MouseClicked(evt);
+                labelAddPoliceCross9MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross2MouseEntered(evt);
+                labelAddPoliceCross9MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross2MouseExited(evt);
+                labelAddPoliceCross9MouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout panelAddPoliceCross2Layout = new javax.swing.GroupLayout(panelAddPoliceCross2);
-        panelAddPoliceCross2.setLayout(panelAddPoliceCross2Layout);
-        panelAddPoliceCross2Layout.setHorizontalGroup(
-            panelAddPoliceCross2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross2Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelAddPoliceCross9Layout = new javax.swing.GroupLayout(panelAddPoliceCross9);
+        panelAddPoliceCross9.setLayout(panelAddPoliceCross9Layout);
+        panelAddPoliceCross9Layout.setHorizontalGroup(
+            panelAddPoliceCross9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross9Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        panelAddPoliceCross2Layout.setVerticalGroup(
-            panelAddPoliceCross2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross2Layout.createSequentialGroup()
+        panelAddPoliceCross9Layout.setVerticalGroup(
+            panelAddPoliceCross9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross9Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross9, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
-        jPanel23.setLayout(jPanel23Layout);
-        jPanel23Layout.setHorizontalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel23Layout.createSequentialGroup()
+        jPanel37.add(panelAddPoliceCross9, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 0, -1, 25));
+
+        jPanel36.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 910, -1));
+        jPanel36.add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 650, 10));
+        jPanel36.add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 660, 10));
+
+        DateOfBirth4.setDateFormatString("yyyy,mm,dd");
+        DateOfBirth4.setName("DateOfBirth"); // NOI18N
+        jPanel36.add(DateOfBirth4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 120, -1));
+
+        LastName5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastName5ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(LastName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 120, -1));
+
+        LastName6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LastName6ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(LastName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 120, -1));
+
+        Gender11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender11ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 70, -1));
+
+        jCheckBox21.setText("Tatoos");
+        jPanel36.add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, -1, -1));
+
+        jCheckBox27.setText("Glasses");
+        jPanel36.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
+
+        jCheckBox28.setText("Birthmarks");
+        jCheckBox28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox28ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
+
+        jCheckBox29.setText("Gold Teeth");
+        jPanel36.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, -1, -1));
+
+        NID12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID12ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 120, -1));
+
+        NID13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID13ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 40, -1));
+
+        Gender12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender12ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 120, -1));
+
+        Gender13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender13ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender13, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 70, -1));
+
+        Gender14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender14ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 70, -1));
+
+        jCheckBox30.setText("Beard");
+        jPanel36.add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, -1, -1));
+
+        jCheckBox31.setText("Mustache");
+        jPanel36.add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, -1, -1));
+
+        jCheckBox32.setText("Missing Teeth");
+        jPanel36.add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
+
+        Gender15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender15ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, 120, -1));
+
+        NID14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID14ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 70, -1));
+
+        jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel36.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 90, 10, 540));
+        jPanel36.add(LivingAdd6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 660, 54));
+
+        NID15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID15ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, 70, -1));
+
+        NID16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID16ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 600, 70, -1));
+
+        NID17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID17ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 600, 70, -1));
+
+        NID18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NID18ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(NID18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 70, -1));
+
+        Gender16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Gender16ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(Gender16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, 120, -1));
+
+        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 190, 100));
+
+        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 500, 190, 100));
+
+        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 230, 190, 100));
+
+        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, 190, 100));
+        jPanel36.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 660, 10));
+
+        jButton13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton13.setText("Update");
+        jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 670, 100, 30));
+
+        jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton14.setText("Cancel");
+        jPanel36.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 670, 90, 30));
+
+        jCheckBox33.setText("Back Image");
+        jPanel36.add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 600, -1, -1));
+
+        jCheckBox34.setText("First Name");
+        jPanel36.add(jCheckBox34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+
+        jCheckBox35.setText("Last Name");
+        jPanel36.add(jCheckBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
+
+        jCheckBox36.setText("Father's Name");
+        jPanel36.add(jCheckBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, -1, -1));
+
+        jCheckBox37.setText("Age");
+        jPanel36.add(jCheckBox37, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
+
+        jCheckBox38.setText("Gender");
+        jPanel36.add(jCheckBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, -1, -1));
+
+        jCheckBox39.setText("Marital Status");
+        jPanel36.add(jCheckBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
+
+        jCheckBox40.setText("Phone");
+        jPanel36.add(jCheckBox40, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
+
+        jCheckBox41.setText("Email");
+        jPanel36.add(jCheckBox41, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
+
+        jCheckBox42.setText("Nationality");
+        jPanel36.add(jCheckBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, -1, -1));
+
+        jCheckBox43.setText("NID No");
+        jPanel36.add(jCheckBox43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
+
+        jCheckBox44.setText("Date of Birth");
+        jPanel36.add(jCheckBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
+
+        jCheckBox45.setText("Occupation");
+        jPanel36.add(jCheckBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, -1, -1));
+
+        jCheckBox47.setText("Height ( inch )");
+        jPanel36.add(jCheckBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+
+        jCheckBox48.setText("Weight ( kg )");
+        jPanel36.add(jCheckBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+
+        jCheckBox49.setText("Eye Color");
+        jPanel36.add(jCheckBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+
+        jCheckBox50.setText("Skin Color");
+        jPanel36.add(jCheckBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+
+        jCheckBox51.setText("Hair Color");
+        jPanel36.add(jCheckBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
+
+        jCheckBox52.setText("Scars");
+        jPanel36.add(jCheckBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, -1, -1));
+
+        jCheckBox53.setText("Living Address");
+        jPanel36.add(jCheckBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+
+        jCheckBox54.setText("Work Address");
+        jPanel36.add(jCheckBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+
+        jCheckBox55.setText("Permanent Address");
+        jPanel36.add(jCheckBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, -1, -1));
+
+        jCheckBox56.setText("Occurrence ID");
+        jPanel36.add(jCheckBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, -1));
+
+        jCheckBox57.setText("Previous Records");
+        jCheckBox57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox57ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(jCheckBox57, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 600, -1, -1));
+
+        jCheckBox58.setText("Custody No");
+        jPanel36.add(jCheckBox58, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 600, -1, -1));
+
+        jCheckBox59.setText("Police ID");
+        jPanel36.add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 600, -1, -1));
+
+        jCheckBox60.setText("Front Image");
+        jPanel36.add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 200, -1, -1));
+
+        jCheckBox61.setText("Right Image");
+        jPanel36.add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, -1, -1));
+
+        jCheckBox62.setText("Left Image");
+        jPanel36.add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 460, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel3.setText("Criminal ID");
+        jPanel36.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        FirstName5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FirstName5ActionPerformed(evt);
+            }
+        });
+        jPanel36.add(FirstName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 120, -1));
+
+        jCheckBox63.setBackground(new java.awt.Color(204, 204, 204));
+        jCheckBox63.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jCheckBox63.setText("Select All");
+        jCheckBox63.setToolTipText("Update all items");
+        jCheckBox63.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 51, 51), new java.awt.Color(153, 153, 153), null, null));
+        jPanel36.add(jCheckBox63, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 90, 28));
+        jPanel36.add(jSeparator25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 890, 10));
+
+        javax.swing.GroupLayout dialogUpdateCriminalLayout = new javax.swing.GroupLayout(dialogUpdateCriminal.getContentPane());
+        dialogUpdateCriminal.getContentPane().setLayout(dialogUpdateCriminalLayout);
+        dialogUpdateCriminalLayout.setHorizontalGroup(
+            dialogUpdateCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 911, Short.MAX_VALUE)
+        );
+        dialogUpdateCriminalLayout.setVerticalGroup(
+            dialogUpdateCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 730, Short.MAX_VALUE)
+        );
+
+        dialogInsertComplaint.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogInsertComplaint.setBackground(new java.awt.Color(204, 204, 204));
+        dialogInsertComplaint.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogInsertComplaint.setLocationByPlatform(true);
+        dialogInsertComplaint.setUndecorated(true);
+        dialogInsertComplaint.setResizable(false);
+        dialogInsertComplaint.setSize(new java.awt.Dimension(684, 470));
+        dialogInsertComplaint.setType(java.awt.Window.Type.POPUP);
+
+        jPanel38.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jPanel38.setMaximumSize(new java.awt.Dimension(659, 455));
+        jPanel38.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel38.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel38.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
+
+        jPanel39.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel39.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel106.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel106.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel106.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel106.setText("Insert Complaint Details - CMS");
+
+        panelAddPoliceCross10.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross10.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross10.setText("X");
+        labelAddPoliceCross10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross10MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross10MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross10MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelAddPoliceCross10Layout = new javax.swing.GroupLayout(panelAddPoliceCross10);
+        panelAddPoliceCross10.setLayout(panelAddPoliceCross10Layout);
+        panelAddPoliceCross10Layout.setHorizontalGroup(
+            panelAddPoliceCross10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross10Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross10, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross10Layout.setVerticalGroup(
+            panelAddPoliceCross10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross10Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross10, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
+        jPanel39.setLayout(jPanel39Layout);
+        jPanel39Layout.setHorizontalGroup(
+            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel39Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel43)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelAddPoliceCross2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel106)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 463, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel23Layout.setVerticalGroup(
-            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelAddPoliceCross2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel39Layout.setVerticalGroup(
+            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel106, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Cancel1.setBackground(new java.awt.Color(51, 51, 51));
-        Cancel1.setForeground(new java.awt.Color(255, 255, 255));
-        Cancel1.setText("Cancel");
-        Cancel1.setBorder(null);
-        Cancel1.addActionListener(new java.awt.event.ActionListener() {
+        jPanel38.add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 680, -1));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel5.setText("Occurrence Details");
+        jPanel38.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, -1, -1));
+
+        jTextField4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cancel1ActionPerformed(evt);
+                jTextField4ActionPerformed(evt);
             }
         });
+        jPanel38.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 70, -1));
+        jPanel38.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 470, 10));
+        jPanel38.add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 60, 10));
 
-        javax.swing.GroupLayout jPanel22Layout = new javax.swing.GroupLayout(jPanel22);
-        jPanel22.setLayout(jPanel22Layout);
-        jPanel22Layout.setHorizontalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel22Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26)
-                    .addComponent(jLabel28))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Capacity, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RemainingSeats, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(121, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel22Layout.createSequentialGroup()
-                .addGap(0, 100, Short.MAX_VALUE)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Cancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Save3, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(85, 85, 85))
-        );
-        jPanel22Layout.setVerticalGroup(
-            jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel22Layout.createSequentialGroup()
-                .addComponent(jPanel23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26)
-                    .addComponent(RemainingSeats, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel28)
-                    .addComponent(Capacity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 273, Short.MAX_VALUE)
-                .addComponent(Save3, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(Cancel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabel15.setText("Time");
+        jPanel38.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
 
-        javax.swing.GroupLayout dialogAddCustody_InfoLayout = new javax.swing.GroupLayout(dialogAddCustody_Info.getContentPane());
-        dialogAddCustody_Info.getContentPane().setLayout(dialogAddCustody_InfoLayout);
-        dialogAddCustody_InfoLayout.setHorizontalGroup(
-            dialogAddCustody_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel22, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        dialogAddCustody_InfoLayout.setVerticalGroup(
-            dialogAddCustody_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel22, javax.swing.GroupLayout.DEFAULT_SIZE, 489, Short.MAX_VALUE)
-        );
+        jLabel16.setText("FIR No");
+        jPanel38.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
+        jPanel38.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
+        jPanel38.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, -1, -1));
 
-        dialogAddCriminal_Info.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
-        dialogAddCriminal_Info.setBackground(new java.awt.Color(204, 204, 204));
-        dialogAddCriminal_Info.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        dialogAddCriminal_Info.setLocationByPlatform(true);
-        dialogAddCriminal_Info.setUndecorated(true);
-        dialogAddCriminal_Info.setResizable(false);
-        dialogAddCriminal_Info.setSize(new java.awt.Dimension(684, 470));
-        dialogAddCriminal_Info.setType(java.awt.Window.Type.POPUP);
+        jLabel17.setText("Year");
+        jPanel38.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
+        jPanel38.add(jTimeChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, -1, -1));
 
-        jPanel24.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel24.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel24.setPreferredSize(new java.awt.Dimension(659, 455));
+        jLabel18.setText("Date");
+        jPanel38.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel29.setText("First Name");
+        jLabel19.setText("Act");
+        jPanel38.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel30.setText("Age");
+        jLabel20.setText("Section");
+        jPanel38.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, -1, -1));
 
-        CriminalsAge.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CriminalsAgeActionPerformed(evt);
-            }
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel38.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, -1, -1));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel38.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, -1, -1));
+        jPanel38.add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 60, 10));
+        jPanel38.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 60, 10));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel21.setText("FIR Info");
+        jPanel38.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
+        jPanel38.add(jSeparator33, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 540, 10));
+        jPanel38.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+        jPanel38.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+        jPanel38.add(jTimeChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, -1));
+        jPanel38.add(jTimeChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, -1, -1));
+
+        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel38.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
+        jPanel38.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 90, -1));
+        jPanel38.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 610, 40));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane5.setViewportView(jTextArea1);
+
+        jPanel38.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 610, -1));
+        jPanel38.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 80, -1));
+
+        jLabel22.setText("Date From");
+        jPanel38.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel25.setText("Date To");
+        jPanel38.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, -1));
+
+        jLabel26.setText("Time From");
+        jPanel38.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, -1));
+
+        jLabel27.setText("Time To");
+        jPanel38.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
+
+        jLabel28.setText("Direction from PS");
+        jPanel38.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+
+        jLabel29.setText("Distance from PS");
+        jPanel38.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, -1));
+
+        jLabel30.setText("Address");
+        jPanel38.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
+
+        jLabel31.setText("Details");
+        jPanel38.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+
+        jLabel32.setText("Damaged Properties ( taka )");
+        jPanel38.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
+        jPanel38.add(jSeparator34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 60, 10));
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel33.setText("Accused Info");
+        jPanel38.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, -1, -1));
+        jPanel38.add(jSeparator35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 510, 10));
+
+        jButton9.setText("Insert Accused Details");
+        jPanel38.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
+
+        jList1.setModel(new javax.swing.AbstractListModel<String>() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public String getElementAt(int i) { return strings[i]; }
         });
+        jScrollPane6.setViewportView(jList1);
 
-        CriminalsName.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CriminalsNameActionPerformed(evt);
-            }
-        });
+        jPanel38.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 470, 70));
 
-        Save4.setBackground(new java.awt.Color(51, 51, 51));
-        Save4.setForeground(new java.awt.Color(255, 255, 255));
-        Save4.setText("SAVE");
-        Save4.setBorder(null);
-        Save4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Save4ActionPerformed(evt);
-            }
-        });
-
-        jPanel25.setBackground(new java.awt.Color(51, 51, 51));
-        jPanel25.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel34.setText("Total Accused:");
+        jPanel38.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
 
         jLabel44.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel44.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel44.setText("Complaint Details - CMS");
+        jPanel38.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, 50, 20));
 
-        panelAddPoliceCross3.setBackground(new java.awt.Color(51, 51, 51));
+        javax.swing.GroupLayout dialogInsertComplaintLayout = new javax.swing.GroupLayout(dialogInsertComplaint.getContentPane());
+        dialogInsertComplaint.getContentPane().setLayout(dialogInsertComplaintLayout);
+        dialogInsertComplaintLayout.setHorizontalGroup(
+            dialogInsertComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel38, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 681, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogInsertComplaintLayout.setVerticalGroup(
+            dialogInsertComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-        labelAddPoliceCross3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        labelAddPoliceCross3.setForeground(new java.awt.Color(255, 255, 255));
-        labelAddPoliceCross3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelAddPoliceCross3.setText("X");
-        labelAddPoliceCross3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel40.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel40.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel107.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel107.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel107.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel107.setText("Insert Accused Details - CMS");
+
+        panelAddPoliceCross11.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross11.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross11.setText("X");
+        labelAddPoliceCross11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross3MouseClicked(evt);
+                labelAddPoliceCross11MouseClicked(evt);
             }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross3MouseEntered(evt);
+                labelAddPoliceCross11MouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelAddPoliceCross3MouseExited(evt);
+                labelAddPoliceCross11MouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout panelAddPoliceCross3Layout = new javax.swing.GroupLayout(panelAddPoliceCross3);
-        panelAddPoliceCross3.setLayout(panelAddPoliceCross3Layout);
-        panelAddPoliceCross3Layout.setHorizontalGroup(
-            panelAddPoliceCross3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross3Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelAddPoliceCross11Layout = new javax.swing.GroupLayout(panelAddPoliceCross11);
+        panelAddPoliceCross11.setLayout(panelAddPoliceCross11Layout);
+        panelAddPoliceCross11Layout.setHorizontalGroup(
+            panelAddPoliceCross11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross11Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        panelAddPoliceCross3Layout.setVerticalGroup(
-            panelAddPoliceCross3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross3Layout.createSequentialGroup()
+        panelAddPoliceCross11Layout.setVerticalGroup(
+            panelAddPoliceCross11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross11Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelAddPoliceCross3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelAddPoliceCross11, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
-        jPanel25.setLayout(jPanel25Layout);
-        jPanel25Layout.setHorizontalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel25Layout.createSequentialGroup()
+        javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
+        jPanel40.setLayout(jPanel40Layout);
+        jPanel40Layout.setHorizontalGroup(
+            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel40Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel44)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelAddPoliceCross3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel107)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 343, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel25Layout.setVerticalGroup(
-            jPanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelAddPoliceCross3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel40Layout.setVerticalGroup(
+            jPanel40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel107, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        Cancel2.setBackground(new java.awt.Color(51, 51, 51));
-        Cancel2.setForeground(new java.awt.Color(255, 255, 255));
-        Cancel2.setText("Cancel");
-        Cancel2.setBorder(null);
-        Cancel2.addActionListener(new java.awt.event.ActionListener() {
+        jPanel5.add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 550, -1));
+
+        jLabel88.setText("First Name");
+        jPanel5.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 46, -1, -1));
+
+        jLabel89.setText("Last Name");
+        jPanel5.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
+        jPanel5.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 80, -1));
+
+        jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Cancel2ActionPerformed(evt);
+                jTextField9ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 80, -1));
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jScrollPane7.setViewportView(jTextArea2);
+
+        jPanel5.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 250, -1));
+
+        jLabel92.setText("Details");
+        jPanel5.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+
+        jSeparator24.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel5.add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 10, 150));
+
+        jLabel93.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel5.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 190, 110));
+
+        jButton10.setText("Add Image");
+        jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
+
+        jButton11.setText("Insert");
+        jPanel5.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+
+        jButton12.setText("Cancel");
+        jPanel5.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
+
+        javax.swing.GroupLayout dialogAccusedDetailsLayout = new javax.swing.GroupLayout(dialogAccusedDetails.getContentPane());
+        dialogAccusedDetails.getContentPane().setLayout(dialogAccusedDetailsLayout);
+        dialogAccusedDetailsLayout.setHorizontalGroup(
+            dialogAccusedDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogAccusedDetailsLayout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        dialogAccusedDetailsLayout.setVerticalGroup(
+            dialogAccusedDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
+        );
+
+        jPanel9.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel41.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel41.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel108.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel108.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel108.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel108.setText("Insert Complainant Details - CMS");
+
+        panelAddPoliceCross12.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross12.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross12.setText("X");
+        labelAddPoliceCross12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross12MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross12MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross12MouseExited(evt);
             }
         });
 
-        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel32.setText("Father's Name");
+        javax.swing.GroupLayout panelAddPoliceCross12Layout = new javax.swing.GroupLayout(panelAddPoliceCross12);
+        panelAddPoliceCross12.setLayout(panelAddPoliceCross12Layout);
+        panelAddPoliceCross12Layout.setHorizontalGroup(
+            panelAddPoliceCross12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross12Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross12Layout.setVerticalGroup(
+            panelAddPoliceCross12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross12Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross12, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        CriminalsFathersName.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
+        jPanel41.setLayout(jPanel41Layout);
+        jPanel41Layout.setHorizontalGroup(
+            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel41Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel108)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 239, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel41Layout.setVerticalGroup(
+            jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel108, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel9.add(jPanel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 470, -1));
+
+        jLabel95.setText("Father's Name");
+        jPanel9.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
+
+        jLabel96.setText("Age");
+        jPanel9.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+
+        jLabel97.setText("Occupation");
+        jPanel9.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+
+        jLabel98.setText("Nationality");
+        jPanel9.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
+
+        jLabel100.setText("Phone");
+        jPanel9.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
+
+        jLabel101.setText("Email");
+        jPanel9.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+
+        jLabel102.setText("Date of Birth");
+        jPanel9.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+
+        jLabel103.setText("Address");
+        jPanel9.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+
+        jLabel104.setText("NID No");
+        jPanel9.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+
+        jLabel105.setText("Complainant Type");
+        jPanel9.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
+
+        jLabel109.setText("First Name");
+        jPanel9.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+
+        jLabel110.setText("Last Name");
+        jPanel9.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, -1));
+        jPanel9.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 70, -1));
+        jPanel9.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 70, -1));
+        jPanel9.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 60, -1));
+        jPanel9.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 70, -1));
+
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel9.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
+        jPanel9.add(jLocaleChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 140, -1));
+        jPanel9.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 70, -1));
+        jPanel9.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 70, -1));
+        jPanel9.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, -1, -1));
+        jPanel9.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 70, -1));
+
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel9.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, -1));
+
+        jTextField17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CriminalsFathersNameActionPerformed(evt);
+                jTextField17ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 450, 40));
+
+        jButton15.setText("Insert Complaint Details");
+        jPanel9.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, -1));
+
+        javax.swing.GroupLayout dialogAddComplainantLayout = new javax.swing.GroupLayout(dialogAddComplainant.getContentPane());
+        dialogAddComplainant.getContentPane().setLayout(dialogAddComplainantLayout);
+        dialogAddComplainantLayout.setHorizontalGroup(
+            dialogAddComplainantLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogAddComplainantLayout.setVerticalGroup(
+            dialogAddComplainantLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE)
+        );
+
+        dialogDeleteComplaint.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogDeleteComplaint.setBackground(new java.awt.Color(204, 204, 204));
+        dialogDeleteComplaint.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogDeleteComplaint.setLocationByPlatform(true);
+        dialogDeleteComplaint.setUndecorated(true);
+        dialogDeleteComplaint.setResizable(false);
+        dialogDeleteComplaint.setSize(new java.awt.Dimension(218, 145));
+        dialogDeleteComplaint.setType(java.awt.Window.Type.POPUP);
+
+        jPanel42.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel42.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel42AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel42.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel43.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel43.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel94.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel94.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel94.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel94.setText("Delete Complaint Info - CMS");
+
+        panelAddPoliceCross13.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross13.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross13.setText("X");
+        labelAddPoliceCross13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross13MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross13MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross13MouseExited(evt);
             }
         });
 
-        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel33.setText("Previous Acts");
+        javax.swing.GroupLayout panelAddPoliceCross13Layout = new javax.swing.GroupLayout(panelAddPoliceCross13);
+        panelAddPoliceCross13.setLayout(panelAddPoliceCross13Layout);
+        panelAddPoliceCross13Layout.setHorizontalGroup(
+            panelAddPoliceCross13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross13Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross13Layout.setVerticalGroup(
+            panelAddPoliceCross13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross13Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross13, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
-        CriminalsPreviousActs.addActionListener(new java.awt.event.ActionListener() {
+        javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
+        jPanel43.setLayout(jPanel43Layout);
+        jPanel43Layout.setHorizontalGroup(
+            jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel43Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel94)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel43Layout.setVerticalGroup(
+            jPanel43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel42.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jLabel111.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel111.setText("Complaint ID");
+        jPanel42.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 28));
+
+        jTextField18.setSelectionColor(new java.awt.Color(51, 51, 51));
+        jTextField18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                CriminalsPreviousActsActionPerformed(evt);
+                jTextField18ActionPerformed(evt);
+            }
+        });
+        jPanel42.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 80, 28));
+
+        jButton16.setText("OK");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        jPanel42.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+
+        javax.swing.GroupLayout dialogDeleteComplaintLayout = new javax.swing.GroupLayout(dialogDeleteComplaint.getContentPane());
+        dialogDeleteComplaint.getContentPane().setLayout(dialogDeleteComplaintLayout);
+        dialogDeleteComplaintLayout.setHorizontalGroup(
+            dialogDeleteComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogDeleteComplaintLayout.createSequentialGroup()
+                .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        dialogDeleteComplaintLayout.setVerticalGroup(
+            dialogDeleteComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+        );
+
+        jPanel10.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel44.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel44.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel112.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel112.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel112.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel112.setText("Update Complaint Details - CMS");
+
+        panelAddPoliceCross14.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross14.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross14.setText("X");
+        labelAddPoliceCross14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross14MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross14MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross14MouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
-        jPanel24.setLayout(jPanel24Layout);
-        jPanel24Layout.setHorizontalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel24Layout.createSequentialGroup()
-                .addGap(0, 100, Short.MAX_VALUE)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(Cancel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Save4, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(85, 85, 85))
-            .addGroup(jPanel24Layout.createSequentialGroup()
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel29)
-                            .addComponent(jLabel30)))
-                    .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel32))
-                    .addGroup(jPanel24Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel33)))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(CriminalsAge, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CriminalsName, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CriminalsFathersName, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CriminalsPreviousActs, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        javax.swing.GroupLayout panelAddPoliceCross14Layout = new javax.swing.GroupLayout(panelAddPoliceCross14);
+        panelAddPoliceCross14.setLayout(panelAddPoliceCross14Layout);
+        panelAddPoliceCross14Layout.setHorizontalGroup(
+            panelAddPoliceCross14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross14Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross14, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel24Layout.setVerticalGroup(
-            jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel24Layout.createSequentialGroup()
-                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel29)
-                    .addComponent(CriminalsName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel30)
-                    .addComponent(CriminalsAge, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel32)
-                    .addComponent(CriminalsFathersName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addGroup(jPanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(CriminalsPreviousActs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel33))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 170, Short.MAX_VALUE)
-                .addComponent(Save4, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Cancel2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        panelAddPoliceCross14Layout.setVerticalGroup(
+            panelAddPoliceCross14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross14Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross14, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        javax.swing.GroupLayout dialogAddCriminal_InfoLayout = new javax.swing.GroupLayout(dialogAddCriminal_Info.getContentPane());
-        dialogAddCriminal_Info.getContentPane().setLayout(dialogAddCriminal_InfoLayout);
-        dialogAddCriminal_InfoLayout.setHorizontalGroup(
-            dialogAddCriminal_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
+        jPanel44.setLayout(jPanel44Layout);
+        jPanel44Layout.setHorizontalGroup(
+            jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel44Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel112)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        dialogAddCriminal_InfoLayout.setVerticalGroup(
-            dialogAddCriminal_InfoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel24, javax.swing.GroupLayout.DEFAULT_SIZE, 489, Short.MAX_VALUE)
+        jPanel44Layout.setVerticalGroup(
+            jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel112, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel10.add(jPanel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 240, -1));
+
+        jLabel113.setText("Complaint ID");
+        jPanel10.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+        jPanel10.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 70, -1));
+
+        jLabel114.setText("Status");
+        jPanel10.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
+
+        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel10.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 70, -1));
+
+        jButton17.setText("Update");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        jPanel10.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+
+        jButton18.setText("Cancel");
+        jPanel10.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, -1));
+
+        javax.swing.GroupLayout dialogUpdateComplaintLayout = new javax.swing.GroupLayout(dialogUpdateComplaint.getContentPane());
+        dialogUpdateComplaint.getContentPane().setLayout(dialogUpdateComplaintLayout);
+        dialogUpdateComplaintLayout.setHorizontalGroup(
+            dialogUpdateComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogUpdateComplaintLayout.setVerticalGroup(
+            dialogUpdateComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -1639,45 +3136,45 @@ public class Dashboard extends javax.swing.JFrame {
 
         Complaint_Info.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
             },
             new String [] {
-                "Complaint ID", "Complaint Type", "Complainant Name", "Complainant Type", "Date of Issue"
+                "Complaint ID", "Complaint Type", "Complainant Name", "Complainant Type", "Date of Issue", "Status"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
+                false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -2005,280 +3502,6 @@ public class Dashboard extends javax.swing.JFrame {
 
         panelSlider1.add(panelCustody, "card2");
 
-        panelCriminal.setBackground(new java.awt.Color(204, 204, 204));
-        panelCriminal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        panelCriminal.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 790, 20));
-
-        panelPoliceAdd1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelPoliceAdd1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelPoliceAdd1.setForeground(new java.awt.Color(51, 51, 51));
-        labelPoliceAdd1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelPoliceAdd1.setText("Add");
-        labelPoliceAdd1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelPoliceAdd1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelPoliceAdd1Layout = new javax.swing.GroupLayout(panelPoliceAdd1);
-        panelPoliceAdd1.setLayout(panelPoliceAdd1Layout);
-        panelPoliceAdd1Layout.setHorizontalGroup(
-            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelPoliceAdd1Layout.setVerticalGroup(
-            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPoliceAdd1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelPoliceAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 30));
-
-        panelUpdatePolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelUpdatePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelUpdatePolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelUpdatePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelUpdatePolice1.setText("Update");
-        labelUpdatePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelUpdatePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelUpdatePolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelUpdatePolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelUpdatePolice1Layout = new javax.swing.GroupLayout(panelUpdatePolice1);
-        panelUpdatePolice1.setLayout(panelUpdatePolice1Layout);
-        panelUpdatePolice1Layout.setHorizontalGroup(
-            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelUpdatePolice1Layout.setVerticalGroup(
-            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUpdatePolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelUpdatePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 30));
-
-        panelDeletePolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelDeletePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelDeletePolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelDeletePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelDeletePolice1.setText("Delete");
-        labelDeletePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelDeletePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelDeletePolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelDeletePolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelDeletePolice1Layout = new javax.swing.GroupLayout(panelDeletePolice1);
-        panelDeletePolice1.setLayout(panelDeletePolice1Layout);
-        panelDeletePolice1Layout.setHorizontalGroup(
-            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelDeletePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelDeletePolice1Layout.setVerticalGroup(
-            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeletePolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelDeletePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelDeletePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 70, 30));
-
-        panelResetPolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelResetPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelResetPolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelResetPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelResetPolice1.setText("Reset");
-        labelResetPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelResetPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelResetPolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelResetPolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelResetPolice1Layout = new javax.swing.GroupLayout(panelResetPolice1);
-        panelResetPolice1.setLayout(panelResetPolice1Layout);
-        panelResetPolice1Layout.setHorizontalGroup(
-            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelResetPolice1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelResetPolice1Layout.setVerticalGroup(
-            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelResetPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 70, 30));
-
-        panelRefreshPolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelRefreshPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelRefreshPolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelRefreshPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelRefreshPolice1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh.png"))); // NOI18N
-        labelRefreshPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelRefreshPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelRefreshPolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelRefreshPolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelRefreshPolice1Layout = new javax.swing.GroupLayout(panelRefreshPolice1);
-        panelRefreshPolice1.setLayout(panelRefreshPolice1Layout);
-        panelRefreshPolice1Layout.setHorizontalGroup(
-            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRefreshPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        panelRefreshPolice1Layout.setVerticalGroup(
-            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRefreshPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelRefreshPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, 50, 30));
-
-        jPanel13.setBackground(new java.awt.Color(204, 204, 204));
-
-        Criminal_Info.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "ID", "Name", "Age", "Father's Name", "Previous Acts"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        Criminal_Info.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        Criminal_Info.setFocusable(false);
-        Criminal_Info.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        Criminal_Info.setRowHeight(20);
-        Criminal_Info.setSelectionBackground(new java.awt.Color(51, 51, 51));
-        Criminal_Info.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(Criminal_Info);
-
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Preview");
-        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-        );
-
-        jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        panelCriminal.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 790, 490));
-
-        panelSlider1.add(panelCriminal, "card2");
-
         panelPolice.setBackground(new java.awt.Color(204, 204, 204));
         panelPolice.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         panelPolice.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 880, 20));
@@ -2325,6 +3548,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelUpdatePolice.setText("Update");
         labelUpdatePolice.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelUpdatePolice.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelUpdatePoliceMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelUpdatePoliceMouseEntered(evt);
             }
@@ -2356,6 +3582,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelDeletePolice.setText("Delete");
         labelDeletePolice.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelDeletePolice.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelDeletePoliceMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelDeletePoliceMouseEntered(evt);
             }
@@ -2550,6 +3779,281 @@ public class Dashboard extends javax.swing.JFrame {
         panelPolice.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 880, 490));
 
         panelSlider1.add(panelPolice, "card2");
+
+        panelCriminal.setBackground(new java.awt.Color(204, 204, 204));
+        panelCriminal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelCriminal.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 950, 20));
+
+        panelPoliceAdd1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelPoliceAdd1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelPoliceAdd1.setForeground(new java.awt.Color(51, 51, 51));
+        labelPoliceAdd1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPoliceAdd1.setText("Add");
+        labelPoliceAdd1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelPoliceAdd1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelPoliceAdd1Layout = new javax.swing.GroupLayout(panelPoliceAdd1);
+        panelPoliceAdd1.setLayout(panelPoliceAdd1Layout);
+        panelPoliceAdd1Layout.setHorizontalGroup(
+            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelPoliceAdd1Layout.setVerticalGroup(
+            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPoliceAdd1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelPoliceAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 30));
+
+        panelUpdatePolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelUpdatePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelUpdatePolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelUpdatePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelUpdatePolice1.setText("Update");
+        labelUpdatePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelUpdatePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelUpdatePolice1Layout = new javax.swing.GroupLayout(panelUpdatePolice1);
+        panelUpdatePolice1.setLayout(panelUpdatePolice1Layout);
+        panelUpdatePolice1Layout.setHorizontalGroup(
+            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelUpdatePolice1Layout.setVerticalGroup(
+            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUpdatePolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelUpdatePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 30));
+
+        panelDeletePolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelDeletePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelDeletePolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelDeletePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelDeletePolice1.setText("Delete");
+        labelDeletePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelDeletePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelDeletePolice1Layout = new javax.swing.GroupLayout(panelDeletePolice1);
+        panelDeletePolice1.setLayout(panelDeletePolice1Layout);
+        panelDeletePolice1Layout.setHorizontalGroup(
+            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelDeletePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelDeletePolice1Layout.setVerticalGroup(
+            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeletePolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelDeletePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelDeletePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 70, 30));
+
+        panelResetPolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelResetPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelResetPolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelResetPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelResetPolice1.setText("Reset");
+        labelResetPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelResetPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelResetPolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelResetPolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelResetPolice1Layout = new javax.swing.GroupLayout(panelResetPolice1);
+        panelResetPolice1.setLayout(panelResetPolice1Layout);
+        panelResetPolice1Layout.setHorizontalGroup(
+            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelResetPolice1Layout.setVerticalGroup(
+            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelResetPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, 30));
+
+        panelRefreshPolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelRefreshPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelRefreshPolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelRefreshPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelRefreshPolice1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh.png"))); // NOI18N
+        labelRefreshPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelRefreshPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelRefreshPolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelRefreshPolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelRefreshPolice1Layout = new javax.swing.GroupLayout(panelRefreshPolice1);
+        panelRefreshPolice1.setLayout(panelRefreshPolice1Layout);
+        panelRefreshPolice1Layout.setHorizontalGroup(
+            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRefreshPolice1Layout.createSequentialGroup()
+                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        panelRefreshPolice1Layout.setVerticalGroup(
+            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRefreshPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelRefreshPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 50, 30));
+
+        jPanel13.setBackground(new java.awt.Color(204, 204, 204));
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Name", "Age", "Father's Name", "Previous Records"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable2.setFocusable(false);
+        jTable2.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        jTable2.setRowHeight(20);
+        jTable2.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        jTable2.getTableHeader().setReorderingAllowed(false);
+        jScrollPane2.setViewportView(jTable2);
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Preview");
+        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        panelCriminal.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        panelSlider1.add(panelCriminal, "card2");
 
         jPanel2.add(panelSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 980, 550));
 
@@ -2913,172 +4417,10 @@ public class Dashboard extends javax.swing.JFrame {
         setColor(panelResetPolice, labelResetPolice);
     }//GEN-LAST:event_labelResetPoliceMouseExited
 
-    private void SalaryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalaryActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_SalaryActionPerformed
-
-    private void AgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AgeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AgeActionPerformed
-
-    private void PoliceStationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PoliceStationActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_PoliceStationActionPerformed
-
-    private void AddImageActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddImageActionPerformed
-        JFileChooser chooser = new JFileChooser();
-        chooser.showOpenDialog(null);
-        File f = chooser.getSelectedFile();
-        filename = f.getAbsolutePath();
-        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img2.getWidth(), img2.getHeight(), Image.SCALE_SMOOTH));
-        img2.setIcon(imageIcon);
-
-        try {
-            File image = new File(filename);
-            FileInputStream fis = new FileInputStream(image);
-            ByteArrayOutputStream bos = new ByteArrayOutputStream();
-            byte[] buf = new byte[1024];
-
-            for (int readNum; (readNum = fis.read(buf)) != -1;) {
-                bos.write(buf, 0, readNum);
-            }
-            person_image = bos.toByteArray();
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
-    }//GEN-LAST:event_AddImageActionPerformed
-
-    private void LastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_LastNameActionPerformed
-
-    private void SaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveActionPerformed
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection(
-                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-
-            String query = "INSERT INTO POLICE_INFO(FirstName,LastName,Age,Gender,DateOfBirth,Phone,Designation,"
-                    + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
-                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-            PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, FirstName.getText());
-            pst.setString(2, LastName.getText());
-            pst.setString(3, Age.getText());
-            pst.setString(4, Gender.getSelectedItem().toString());
-
-            Date dateofbirth = DateOfBirth.getDate();
-            String strDate = DateFormat.getDateInstance().format(dateofbirth);
-
-            pst.setString(5, strDate);
-            pst.setString(6, Phone.getText());
-            pst.setString(7, Designation.getSelectedItem().toString());
-            pst.setString(8, LivingAdd.getText());
-            pst.setString(9, PermanentAdd.getText());
-            pst.setString(10, Email.getText());
-            pst.setString(11, NID.getText());
-            pst.setString(12, District.getSelectedItem().toString());
-            pst.setString(13, PoliceStation.getSelectedItem().toString());
-
-            Date date2 = JoiningDate.getDate();
-            String strDateofJoining = DateFormat.getDateInstance().format(date2);
-            pst.setString(14, strDateofJoining);
-
-            Date date3 = JoiningDate.getDate();
-            String strDateofResigning = DateFormat.getDateInstance().format(date3);
-            pst.setString(14, strDateofResigning);
-
-            pst.setString(15, strDateofResigning);
-            pst.setString(16, Salary.getText());
-
-            pst.setBytes(17, person_image);
-            pst.executeUpdate();
-            
-            DefaultTableModel model=(DefaultTableModel)Police_Info.getModel();
-            model.setRowCount(0);
-            PoliceInfo();
-
-            JOptionPane.showMessageDialog(this, "Added Successfully!");
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e);
-        }
-    }//GEN-LAST:event_SaveActionPerformed
-
-    private void NIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NIDActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NIDActionPerformed
-
-    private void Save1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save1ActionPerformed
-        // TODO add your handling code here:
-        dialogAddPolice.dispose();
-    }//GEN-LAST:event_Save1ActionPerformed
-
     private void labelPoliceAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAddMouseClicked
         dialogAddPolice.setLocationRelativeTo(null);
         dialogAddPolice.setVisible(true);
     }//GEN-LAST:event_labelPoliceAddMouseClicked
-
-    private void labelAddPoliceCrossMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseEntered
-        panelAddPoliceCross.setBackground(new Color(204, 0, 0));
-        labelAddPoliceCross.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_labelAddPoliceCrossMouseEntered
-
-    private void labelAddPoliceCrossMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseExited
-        panelAddPoliceCross.setBackground(new Color(51, 51, 51));
-        labelAddPoliceCross.setForeground(new Color(255, 255, 255));
-    }//GEN-LAST:event_labelAddPoliceCrossMouseExited
-
-    private void labelAddPoliceCrossMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCrossMouseClicked
-        dialogAddPolice.dispose();
-    }//GEN-LAST:event_labelAddPoliceCrossMouseClicked
-
-    private void labelPoliceAdd1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseClicked
-        // TODO add your handling code here:
-        dialogAddCriminal_Info.setLocationRelativeTo(null);
-        dialogAddCriminal_Info.setVisible(true);
-    }//GEN-LAST:event_labelPoliceAdd1MouseClicked
-
-    private void labelPoliceAdd1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelPoliceAdd1MouseEntered
-
-    private void labelPoliceAdd1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelPoliceAdd1MouseExited
-
-    private void labelUpdatePolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelUpdatePolice1MouseEntered
-
-    private void labelUpdatePolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelUpdatePolice1MouseExited
-
-    private void labelDeletePolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelDeletePolice1MouseEntered
-
-    private void labelDeletePolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelDeletePolice1MouseExited
-
-    private void labelResetPolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPolice1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelResetPolice1MouseEntered
-
-    private void labelResetPolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPolice1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelResetPolice1MouseExited
-
-    private void labelRefreshPolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelRefreshPolice1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelRefreshPolice1MouseEntered
-
-    private void labelRefreshPolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelRefreshPolice1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelRefreshPolice1MouseExited
 
     private void labelAddCustodyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddCustodyMouseClicked
         dialogAddCustody_Info.setLocationRelativeTo(null);
@@ -3214,191 +4556,11 @@ public class Dashboard extends javax.swing.JFrame {
         
     }//GEN-LAST:event_labelComplainMouseClicked
 
-    private void GenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GenderActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GenderActionPerformed
-
-    private void FirstNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FirstNameActionPerformed
-
     private void labelResetPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseClicked
         // TODO add your handling code here:
 
 
     }//GEN-LAST:event_labelResetPoliceMouseClicked
-
-    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
-        // TODO add your handling code here:
-        dialogAddComplaint_Info.dispose();
-
-    }//GEN-LAST:event_CancelActionPerformed
-
-    private void labelAddPoliceCross1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross1MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross1MouseExited
-
-    private void labelAddPoliceCross1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross1MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross1MouseEntered
-
-    private void labelAddPoliceCross1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross1MouseClicked
-
-    private void Save2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save2ActionPerformed
-
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection(
-                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-
-            String query = "INSERT INTO COMPLAINT_INFO(ComplaintType,ComplainantName,ComplainantType,DateOfIssue)"
-            + "VALUES(?,?,?,?)";
-            PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, ComplaintType.getText());
-            pst.setString(2, ComplainantName.getText());
-            pst.setString(3, ComplainantType.getText());
-            //pst.setString(4, Gender.getSelectedItem().toString());
-
-            Date dateofissue = DateOfIssue.getDate();
-            String strDate = DateFormat.getDateInstance().format(dateofissue);
-
-            pst.setString(4, strDate);
-
-            pst.executeUpdate();
-            
-            DefaultTableModel model=(DefaultTableModel)Complaint_Info.getModel();
-            model.setRowCount(0);
-            ComplaintInfo();
-            
-
-            JOptionPane.showMessageDialog(this, "Added Successfully!");
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e);
-        }
-
-    }//GEN-LAST:event_Save2ActionPerformed
-
-    private void ComplaintTypeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComplaintTypeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ComplaintTypeActionPerformed
-
-    private void ComplainantNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ComplainantNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_ComplainantNameActionPerformed
-
-    private void CapacityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CapacityActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CapacityActionPerformed
-
-    private void RemainingSeatsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RemainingSeatsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_RemainingSeatsActionPerformed
-
-    private void Save3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save3ActionPerformed
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection(
-                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-
-            String query = "INSERT INTO CUSTODY_INFO(RemainingSeats,Capacity)"
-            + "VALUES(?,?)";
-            PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, RemainingSeats.getText());
-            pst.setString(2, Capacity.getText());
-            
-
-            pst.executeUpdate();
-            
-            DefaultTableModel model=(DefaultTableModel)Custody_Info.getModel();
-            model.setRowCount(0);
-            CustodyInfo();
-
-            JOptionPane.showMessageDialog(this, "Added Successfully!");
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e);
-        }
-    }//GEN-LAST:event_Save3ActionPerformed
-
-    private void labelAddPoliceCross2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross2MouseClicked
-
-    private void labelAddPoliceCross2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross2MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross2MouseEntered
-
-    private void labelAddPoliceCross2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross2MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross2MouseExited
-
-    private void Cancel1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel1ActionPerformed
-        dialogAddCustody_Info.dispose();
-    }//GEN-LAST:event_Cancel1ActionPerformed
-
-    private void CriminalsAgeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalsAgeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CriminalsAgeActionPerformed
-
-    private void CriminalsNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalsNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CriminalsNameActionPerformed
-
-    private void Save4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save4ActionPerformed
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection connection = DriverManager.getConnection(
-                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-
-            String query = "INSERT INTO CRIMINAL_INFO(FirstName,Age,FathersName,PreviousActs)"
-            + "VALUES(?,?,?,?)";
-            PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, CriminalsName.getText());
-            pst.setString(2, CriminalsAge.getText());
-            pst.setString(3, CriminalsFathersName.getText());
-            pst.setString(4, CriminalsPreviousActs.getText());
-            
-            
-
-            pst.executeUpdate();
-            
-            DefaultTableModel model=(DefaultTableModel)Criminal_Info.getModel();
-            model.setRowCount(0);
-            CriminalInfo();
-
-            JOptionPane.showMessageDialog(this, "Added Successfully!");
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, e);
-        }
-    }//GEN-LAST:event_Save4ActionPerformed
-
-    private void labelAddPoliceCross3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross3MouseClicked
-
-    private void labelAddPoliceCross3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross3MouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross3MouseEntered
-
-    private void labelAddPoliceCross3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross3MouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_labelAddPoliceCross3MouseExited
-
-    private void Cancel2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Cancel2ActionPerformed
-        dialogAddCriminal_Info.dispose();
-    }//GEN-LAST:event_Cancel2ActionPerformed
-
-    private void CriminalsFathersNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalsFathersNameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CriminalsFathersNameActionPerformed
-
-    private void CriminalsPreviousActsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalsPreviousActsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_CriminalsPreviousActsActionPerformed
 
     private void labelExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelExitMouseClicked
         // TODO add your handling code here:
@@ -3409,6 +4571,567 @@ public class Dashboard extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_labelExitMouseClicked
+
+    private void labelAddPoliceCross4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross4MouseClicked
+
+    private void labelAddPoliceCross4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross4MouseEntered
+
+    private void labelAddPoliceCross4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross4MouseExited
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String s=JOptionPane.showInputDialog("Confirm Password", JOptionPane.QUESTION_MESSAGE);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jPanel26AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel26AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel26AncestorAdded
+
+    private void Salary1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salary1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Salary1ActionPerformed
+
+    private void Age1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Age1ActionPerformed
+
+    private void Gender1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender1ActionPerformed
+
+    private void PoliceStation1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PoliceStation1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PoliceStation1ActionPerformed
+
+    private void FirstName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstName1ActionPerformed
+
+    private void AddImage1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddImage1ActionPerformed
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img2.getWidth(), img2.getHeight(), Image.SCALE_SMOOTH));
+        img2.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_AddImage1ActionPerformed
+
+    private void LastName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName1ActionPerformed
+
+    private void Save5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save5ActionPerformed
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query = "INSERT INTO POLICE_INFO(FirstName,LastName,Age,Gender,DateOfBirth,Phone,Designation,"
+            + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
+            + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            PreparedStatement pst = connection.prepareStatement(query);
+            pst.setString(1, FirstName.getText());
+            pst.setString(2, LastName.getText());
+            pst.setString(3, Age.getText());
+            pst.setString(4, Gender.getSelectedItem().toString());
+
+            Date dateofbirth = DateOfBirth.getDate();
+            String strDate = DateFormat.getDateInstance().format(dateofbirth);
+
+            pst.setString(5, strDate);
+            pst.setString(6, Phone1.getText());
+            pst.setString(7, Designation.getSelectedItem().toString());
+            pst.setString(8, LivingAdd.getText());
+            pst.setString(9, PermanentAdd.getText());
+            pst.setString(10, Email.getText());
+            pst.setString(11, NID.getText());
+            pst.setString(12, District.getSelectedItem().toString());
+            pst.setString(13, PoliceStation.getSelectedItem().toString());
+
+            Date date2 = JoiningDate.getDate();
+            String strDateofJoining = DateFormat.getDateInstance().format(date2);
+            pst.setString(14, strDateofJoining);
+
+            Date date3 = JoiningDate.getDate();
+            String strDateofResigning = DateFormat.getDateInstance().format(date3);
+            pst.setString(14, strDateofResigning);
+
+            pst.setString(15, strDateofResigning);
+            pst.setString(16, Salary.getText());
+
+            pst.setBytes(17, person_image);
+            pst.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+    }//GEN-LAST:event_Save5ActionPerformed
+
+    private void NID1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID1ActionPerformed
+
+    private void labelAddPoliceCross5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseClicked
+        dialogAddPolice.dispose();
+    }//GEN-LAST:event_labelAddPoliceCross5MouseClicked
+
+    private void labelAddPoliceCross5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseEntered
+        panelAddPoliceCross.setBackground(new Color(204, 0, 0));
+        labelAddPoliceCross.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_labelAddPoliceCross5MouseEntered
+
+    private void labelAddPoliceCross5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseExited
+        panelAddPoliceCross.setBackground(new Color(51,51,51));
+        labelAddPoliceCross.setForeground(new Color(255,255,255));
+    }//GEN-LAST:event_labelAddPoliceCross5MouseExited
+
+    private void Save6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Save6ActionPerformed
+
+    private void Salary2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salary2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Salary2ActionPerformed
+
+    private void Age2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Age2ActionPerformed
+
+    private void Gender2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender2ActionPerformed
+
+    private void PoliceStation2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PoliceStation2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PoliceStation2ActionPerformed
+
+    private void FirstName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstName2ActionPerformed
+
+    private void LastName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName2ActionPerformed
+
+    private void Save7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Save7ActionPerformed
+
+    private void NID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID2ActionPerformed
+
+    private void labelAddPoliceCross6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross6MouseClicked
+
+    private void labelAddPoliceCross6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross6MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross6MouseEntered
+
+    private void labelAddPoliceCross6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross6MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross6MouseExited
+
+    private void Save8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Save8ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void Age3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Age3ActionPerformed
+
+    private void Gender3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender3ActionPerformed
+
+    private void FirstName3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstName3ActionPerformed
+
+    private void NID3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID3ActionPerformed
+
+    private void labelAddPoliceCross7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross7MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross7MouseClicked
+
+    private void labelAddPoliceCross7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross7MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross7MouseEntered
+
+    private void labelAddPoliceCross7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross7MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross7MouseExited
+
+    private void LastName3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName3ActionPerformed
+
+    private void LastName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName4ActionPerformed
+
+    private void Gender4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender4ActionPerformed
+
+    private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox22ActionPerformed
+
+    private void NID4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID4ActionPerformed
+
+    private void NID5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID5ActionPerformed
+
+    private void Gender5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender5ActionPerformed
+
+    private void Gender6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender6ActionPerformed
+
+    private void Gender7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender7ActionPerformed
+
+    private void labelUpdatePoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePoliceMouseClicked
+        dialogUpdatePolice.setLocationRelativeTo(null);
+        dialogUpdatePolice.setVisible(true);
+    }//GEN-LAST:event_labelUpdatePoliceMouseClicked
+
+    private void labelDeletePoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePoliceMouseClicked
+        dialogDeletePolice.setLocationRelativeTo(null);
+        dialogDeletePolice.setVisible(true);
+    }//GEN-LAST:event_labelDeletePoliceMouseClicked
+
+    private void labelPoliceAdd1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelPoliceAdd1MouseClicked
+
+    private void labelPoliceAdd1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelPoliceAdd1MouseEntered
+
+    private void labelPoliceAdd1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelPoliceAdd1MouseExited
+
+    private void labelUpdatePolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelUpdatePolice1MouseEntered
+
+    private void labelUpdatePolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelUpdatePolice1MouseExited
+
+    private void labelDeletePolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelDeletePolice1MouseEntered
+
+    private void labelDeletePolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelDeletePolice1MouseExited
+
+    private void labelResetPolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPolice1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelResetPolice1MouseEntered
+
+    private void labelResetPolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPolice1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelResetPolice1MouseExited
+
+    private void labelRefreshPolice1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelRefreshPolice1MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelRefreshPolice1MouseEntered
+
+    private void labelRefreshPolice1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelRefreshPolice1MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelRefreshPolice1MouseExited
+
+    private void NID6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID6ActionPerformed
+
+    private void NID7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID7ActionPerformed
+
+    private void NID8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID8ActionPerformed
+
+    private void NID9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID9ActionPerformed
+
+    private void NID10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID10ActionPerformed
+
+    private void Gender9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender9ActionPerformed
+
+    private void LivingAdd3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LivingAdd3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LivingAdd3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void labelAddPoliceCross8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross8MouseClicked
+
+    private void labelAddPoliceCross8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross8MouseEntered
+
+    private void labelAddPoliceCross8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross8MouseExited
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jPanel34AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel34AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel34AncestorAdded
+
+    private void Age4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Age4ActionPerformed
+
+    private void Gender10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender10ActionPerformed
+
+    private void FirstName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstName4ActionPerformed
+
+    private void LivingAdd5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LivingAdd5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LivingAdd5ActionPerformed
+
+    private void NID11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID11ActionPerformed
+
+    private void labelAddPoliceCross9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross9MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross9MouseClicked
+
+    private void labelAddPoliceCross9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross9MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross9MouseEntered
+
+    private void labelAddPoliceCross9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross9MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross9MouseExited
+
+    private void LastName5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName5ActionPerformed
+
+    private void LastName6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LastName6ActionPerformed
+
+    private void Gender11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender11ActionPerformed
+
+    private void jCheckBox28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox28ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox28ActionPerformed
+
+    private void NID12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID12ActionPerformed
+
+    private void NID13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID13ActionPerformed
+
+    private void Gender12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender12ActionPerformed
+
+    private void Gender13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender13ActionPerformed
+
+    private void Gender14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender14ActionPerformed
+
+    private void Gender15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender15ActionPerformed
+
+    private void NID14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID14ActionPerformed
+
+    private void NID15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID15ActionPerformed
+
+    private void NID16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID16ActionPerformed
+
+    private void NID17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID17ActionPerformed
+
+    private void NID18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NID18ActionPerformed
+
+    private void Gender16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Gender16ActionPerformed
+
+    private void jCheckBox57ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox57ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox57ActionPerformed
+
+    private void FirstName5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FirstName5ActionPerformed
+
+    private void labelAddPoliceCross10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross10MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross10MouseClicked
+
+    private void labelAddPoliceCross10MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross10MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross10MouseEntered
+
+    private void labelAddPoliceCross10MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross10MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross10MouseExited
+
+    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField4ActionPerformed
+
+    private void labelAddPoliceCross11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross11MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross11MouseClicked
+
+    private void labelAddPoliceCross11MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross11MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross11MouseEntered
+
+    private void labelAddPoliceCross11MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross11MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross11MouseExited
+
+    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField9ActionPerformed
+
+    private void labelAddPoliceCross12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross12MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross12MouseClicked
+
+    private void labelAddPoliceCross12MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross12MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross12MouseEntered
+
+    private void labelAddPoliceCross12MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross12MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross12MouseExited
+
+    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField17ActionPerformed
+
+    private void labelAddPoliceCross13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross13MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross13MouseClicked
+
+    private void labelAddPoliceCross13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross13MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross13MouseEntered
+
+    private void labelAddPoliceCross13MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross13MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross13MouseExited
+
+    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField18ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jPanel42AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel42AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel42AncestorAdded
+
+    private void labelAddPoliceCross14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross14MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross14MouseClicked
+
+    private void labelAddPoliceCross14MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross14MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross14MouseEntered
+
+    private void labelAddPoliceCross14MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross14MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross14MouseExited
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton17ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3446,56 +5169,219 @@ public class Dashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AddImage;
-    private javax.swing.JTextField Age;
-    private javax.swing.JButton Cancel;
-    private javax.swing.JButton Cancel1;
-    private javax.swing.JButton Cancel2;
-    private javax.swing.JTextField Capacity;
-    private javax.swing.JTextField ComplainantName;
-    private javax.swing.JTextField ComplainantType;
-    private javax.swing.JTextField ComplaintType;
+    private javax.swing.JButton AddImage1;
+    private javax.swing.JTextField Age1;
+    private javax.swing.JTextField Age2;
+    private javax.swing.JTextField Age3;
+    private javax.swing.JTextField Age4;
     private javax.swing.JTable Complaint_Info;
-    private javax.swing.JTable Criminal_Info;
-    private javax.swing.JTextField CriminalsAge;
-    private javax.swing.JTextField CriminalsFathersName;
-    private javax.swing.JTextField CriminalsName;
-    private javax.swing.JTextField CriminalsPreviousActs;
     private javax.swing.JTable Custody_Info;
-    private com.toedter.calendar.JDateChooser DateOfBirth;
-    private com.toedter.calendar.JDateChooser DateOfIssue;
-    private javax.swing.JComboBox<String> Designation;
-    private javax.swing.JComboBox<String> District;
-    private javax.swing.JTextField Email;
-    private javax.swing.JTextField FirstName;
-    private javax.swing.JComboBox<String> Gender;
-    private com.toedter.calendar.JDateChooser JoiningDate;
-    private javax.swing.JTextField LastName;
-    private javax.swing.JTextField LivingAdd;
-    private javax.swing.JTextField NID;
-    private javax.swing.JTextField PermanentAdd;
-    private javax.swing.JTextField Phone;
-    private javax.swing.JLabel PoliceIdNo;
-    private javax.swing.JComboBox<String> PoliceStation;
+    private com.toedter.calendar.JDateChooser DateOfBirth1;
+    private com.toedter.calendar.JDateChooser DateOfBirth2;
+    private com.toedter.calendar.JDateChooser DateOfBirth3;
+    private com.toedter.calendar.JDateChooser DateOfBirth4;
+    private javax.swing.JComboBox<String> Designation1;
+    private javax.swing.JComboBox<String> Designation2;
+    private javax.swing.JComboBox<String> District1;
+    private javax.swing.JComboBox<String> District2;
+    private javax.swing.JTextField Email1;
+    private javax.swing.JTextField Email2;
+    private javax.swing.JTextField Email3;
+    private javax.swing.JTextField Email4;
+    private javax.swing.JTextField FirstName1;
+    private javax.swing.JTextField FirstName2;
+    private javax.swing.JTextField FirstName3;
+    private javax.swing.JTextField FirstName4;
+    private javax.swing.JTextField FirstName5;
+    private javax.swing.JComboBox<String> Gender1;
+    private javax.swing.JComboBox<String> Gender10;
+    private javax.swing.JComboBox<String> Gender11;
+    private javax.swing.JComboBox<String> Gender12;
+    private javax.swing.JComboBox<String> Gender13;
+    private javax.swing.JComboBox<String> Gender14;
+    private javax.swing.JComboBox<String> Gender15;
+    private javax.swing.JComboBox<String> Gender16;
+    private javax.swing.JComboBox<String> Gender2;
+    private javax.swing.JComboBox<String> Gender3;
+    private javax.swing.JComboBox<String> Gender4;
+    private javax.swing.JComboBox<String> Gender5;
+    private javax.swing.JComboBox<String> Gender6;
+    private javax.swing.JComboBox<String> Gender7;
+    private javax.swing.JComboBox<String> Gender9;
+    private com.toedter.calendar.JDateChooser JoiningDate1;
+    private com.toedter.calendar.JDateChooser JoiningDate2;
+    private javax.swing.JTextField LastName1;
+    private javax.swing.JTextField LastName2;
+    private javax.swing.JTextField LastName3;
+    private javax.swing.JTextField LastName4;
+    private javax.swing.JTextField LastName5;
+    private javax.swing.JTextField LastName6;
+    private javax.swing.JTextField LivingAdd1;
+    private javax.swing.JTextField LivingAdd2;
+    private javax.swing.JTextField LivingAdd3;
+    private javax.swing.JTextField LivingAdd4;
+    private javax.swing.JTextField LivingAdd5;
+    private javax.swing.JTextField LivingAdd6;
+    private javax.swing.JTextField NID1;
+    private javax.swing.JTextField NID10;
+    private javax.swing.JTextField NID11;
+    private javax.swing.JTextField NID12;
+    private javax.swing.JTextField NID13;
+    private javax.swing.JTextField NID14;
+    private javax.swing.JTextField NID15;
+    private javax.swing.JTextField NID16;
+    private javax.swing.JTextField NID17;
+    private javax.swing.JTextField NID18;
+    private javax.swing.JTextField NID2;
+    private javax.swing.JTextField NID3;
+    private javax.swing.JTextField NID4;
+    private javax.swing.JTextField NID5;
+    private javax.swing.JTextField NID6;
+    private javax.swing.JTextField NID7;
+    private javax.swing.JTextField NID8;
+    private javax.swing.JTextField NID9;
+    private javax.swing.JTextField PermanentAdd1;
+    private javax.swing.JTextField PermanentAdd2;
+    private javax.swing.JTextField PermanentAdd3;
+    private javax.swing.JTextField PermanentAdd4;
+    private javax.swing.JTextField Phone1;
+    private javax.swing.JTextField Phone2;
+    private javax.swing.JTextField Phone3;
+    private javax.swing.JTextField Phone4;
+    private javax.swing.JComboBox<String> PoliceStation1;
+    private javax.swing.JComboBox<String> PoliceStation2;
     private javax.swing.JTable Police_Info;
-    private javax.swing.JTextField RemainingSeats;
-    private com.toedter.calendar.JDateChooser ResigningDate;
-    private javax.swing.JTextField Salary;
-    private javax.swing.JButton Save;
-    private javax.swing.JButton Save1;
-    private javax.swing.JButton Save2;
-    private javax.swing.JButton Save3;
-    private javax.swing.JButton Save4;
+    private com.toedter.calendar.JDateChooser ResigningDate1;
+    private com.toedter.calendar.JDateChooser ResigningDate2;
+    private javax.swing.JTextField Salary1;
+    private javax.swing.JTextField Salary2;
+    private javax.swing.JButton Save5;
+    private javax.swing.JButton Save6;
+    private javax.swing.JButton Save7;
+    private javax.swing.JButton Save8;
     private javax.swing.JButton buttonSearch;
-    private javax.swing.JDialog dialogAddComplaint_Info;
-    private javax.swing.JDialog dialogAddCriminal_Info;
-    private javax.swing.JDialog dialogAddCustody_Info;
+    private javax.swing.JDialog dialogAccusedDetails;
+    private javax.swing.JDialog dialogAddComplainant;
+    private javax.swing.JDialog dialogAddCriminal;
     private javax.swing.JDialog dialogAddPolice;
-    private javax.swing.JLabel img2;
+    private javax.swing.JDialog dialogDeleteComplaint;
+    private javax.swing.JDialog dialogDeleteCriminal;
+    private javax.swing.JDialog dialogDeletePolice;
+    private javax.swing.JDialog dialogInsertComplaint;
+    private javax.swing.JDialog dialogUpdateComplaint;
+    private javax.swing.JDialog dialogUpdateCriminal;
+    private javax.swing.JDialog dialogUpdatePolice;
+    private javax.swing.JLabel img3;
+    private javax.swing.JLabel img4;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox10;
+    private javax.swing.JCheckBox jCheckBox11;
+    private javax.swing.JCheckBox jCheckBox12;
+    private javax.swing.JCheckBox jCheckBox13;
+    private javax.swing.JCheckBox jCheckBox14;
+    private javax.swing.JCheckBox jCheckBox15;
+    private javax.swing.JCheckBox jCheckBox16;
+    private javax.swing.JCheckBox jCheckBox17;
+    private javax.swing.JCheckBox jCheckBox18;
+    private javax.swing.JCheckBox jCheckBox19;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox20;
+    private javax.swing.JCheckBox jCheckBox21;
+    private javax.swing.JCheckBox jCheckBox22;
+    private javax.swing.JCheckBox jCheckBox23;
+    private javax.swing.JCheckBox jCheckBox24;
+    private javax.swing.JCheckBox jCheckBox25;
+    private javax.swing.JCheckBox jCheckBox26;
+    private javax.swing.JCheckBox jCheckBox27;
+    private javax.swing.JCheckBox jCheckBox28;
+    private javax.swing.JCheckBox jCheckBox29;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox30;
+    private javax.swing.JCheckBox jCheckBox31;
+    private javax.swing.JCheckBox jCheckBox32;
+    private javax.swing.JCheckBox jCheckBox33;
+    private javax.swing.JCheckBox jCheckBox34;
+    private javax.swing.JCheckBox jCheckBox35;
+    private javax.swing.JCheckBox jCheckBox36;
+    private javax.swing.JCheckBox jCheckBox37;
+    private javax.swing.JCheckBox jCheckBox38;
+    private javax.swing.JCheckBox jCheckBox39;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox40;
+    private javax.swing.JCheckBox jCheckBox41;
+    private javax.swing.JCheckBox jCheckBox42;
+    private javax.swing.JCheckBox jCheckBox43;
+    private javax.swing.JCheckBox jCheckBox44;
+    private javax.swing.JCheckBox jCheckBox45;
+    private javax.swing.JCheckBox jCheckBox47;
+    private javax.swing.JCheckBox jCheckBox48;
+    private javax.swing.JCheckBox jCheckBox49;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox50;
+    private javax.swing.JCheckBox jCheckBox51;
+    private javax.swing.JCheckBox jCheckBox52;
+    private javax.swing.JCheckBox jCheckBox53;
+    private javax.swing.JCheckBox jCheckBox54;
+    private javax.swing.JCheckBox jCheckBox55;
+    private javax.swing.JCheckBox jCheckBox56;
+    private javax.swing.JCheckBox jCheckBox57;
+    private javax.swing.JCheckBox jCheckBox58;
+    private javax.swing.JCheckBox jCheckBox59;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JCheckBox jCheckBox60;
+    private javax.swing.JCheckBox jCheckBox61;
+    private javax.swing.JCheckBox jCheckBox62;
+    private javax.swing.JCheckBox jCheckBox63;
+    private javax.swing.JCheckBox jCheckBox7;
+    private javax.swing.JCheckBox jCheckBox8;
+    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JComboBox<String> jComboBox5;
+    private javax.swing.JComboBox<String> jComboBox6;
+    private javax.swing.JComboBox<String> jComboBox7;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private com.toedter.calendar.JDateChooser jDateChooser2;
+    private com.toedter.calendar.JDateChooser jDateChooser3;
+    private com.toedter.calendar.JDateChooser jDateChooser4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel100;
+    private javax.swing.JLabel jLabel101;
+    private javax.swing.JLabel jLabel102;
+    private javax.swing.JLabel jLabel103;
+    private javax.swing.JLabel jLabel104;
+    private javax.swing.JLabel jLabel105;
+    private javax.swing.JLabel jLabel106;
+    private javax.swing.JLabel jLabel107;
+    private javax.swing.JLabel jLabel108;
+    private javax.swing.JLabel jLabel109;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel110;
+    private javax.swing.JLabel jLabel111;
+    private javax.swing.JLabel jLabel112;
+    private javax.swing.JLabel jLabel113;
+    private javax.swing.JLabel jLabel114;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -3521,19 +5407,82 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
     private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel90;
+    private javax.swing.JLabel jLabel91;
+    private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
+    private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
+    private javax.swing.JList<String> jList1;
+    private com.toedter.components.JLocaleChooser jLocaleChooser1;
+    private com.toedter.components.JLocaleChooser jLocaleChooser2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
@@ -3544,12 +5493,27 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel22;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
+    private javax.swing.JPanel jPanel33;
+    private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
+    private javax.swing.JPanel jPanel41;
+    private javax.swing.JPanel jPanel42;
+    private javax.swing.JPanel jPanel43;
+    private javax.swing.JPanel jPanel44;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -3559,22 +5523,80 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
+    private javax.swing.JSeparator jSeparator14;
+    private javax.swing.JSeparator jSeparator15;
+    private javax.swing.JSeparator jSeparator16;
+    private javax.swing.JSeparator jSeparator17;
+    private javax.swing.JSeparator jSeparator18;
+    private javax.swing.JSeparator jSeparator19;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator20;
+    private javax.swing.JSeparator jSeparator21;
+    private javax.swing.JSeparator jSeparator22;
+    private javax.swing.JSeparator jSeparator23;
+    private javax.swing.JSeparator jSeparator24;
+    private javax.swing.JSeparator jSeparator25;
+    private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator30;
+    private javax.swing.JSeparator jSeparator31;
+    private javax.swing.JSeparator jSeparator32;
+    private javax.swing.JSeparator jSeparator33;
+    private javax.swing.JSeparator jSeparator34;
+    private javax.swing.JSeparator jSeparator35;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField10;
+    private javax.swing.JTextField jTextField11;
+    private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
+    private javax.swing.JTextField jTextField16;
+    private javax.swing.JTextField jTextField17;
+    private javax.swing.JTextField jTextField18;
+    private javax.swing.JTextField jTextField19;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField7;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
+    private lu.tudor.santec.jtimechooser.JTimeChooser jTimeChooser1;
+    private lu.tudor.santec.jtimechooser.JTimeChooser jTimeChooser2;
+    private lu.tudor.santec.jtimechooser.JTimeChooser jTimeChooser3;
+    private com.toedter.calendar.JYearChooser jYearChooser1;
     private javax.swing.JLabel labelAddComplaint;
     private javax.swing.JLabel labelAddCustody;
-    private javax.swing.JLabel labelAddPoliceCross;
-    private javax.swing.JLabel labelAddPoliceCross1;
-    private javax.swing.JLabel labelAddPoliceCross2;
-    private javax.swing.JLabel labelAddPoliceCross3;
+    private javax.swing.JLabel labelAddPoliceCross10;
+    private javax.swing.JLabel labelAddPoliceCross11;
+    private javax.swing.JLabel labelAddPoliceCross12;
+    private javax.swing.JLabel labelAddPoliceCross13;
+    private javax.swing.JLabel labelAddPoliceCross14;
+    private javax.swing.JLabel labelAddPoliceCross4;
+    private javax.swing.JLabel labelAddPoliceCross5;
+    private javax.swing.JLabel labelAddPoliceCross6;
+    private javax.swing.JLabel labelAddPoliceCross7;
+    private javax.swing.JLabel labelAddPoliceCross8;
+    private javax.swing.JLabel labelAddPoliceCross9;
     private javax.swing.JLabel labelComplain;
     private javax.swing.JLabel labelCriminalInfo;
     private javax.swing.JLabel labelCross;
@@ -3600,10 +5622,17 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel labelUpdatePolice1;
     private javax.swing.JLabel labelUpdatePolice2;
     private javax.swing.JLabel labelUpdatePolice3;
-    private javax.swing.JPanel panelAddPoliceCross;
-    private javax.swing.JPanel panelAddPoliceCross1;
-    private javax.swing.JPanel panelAddPoliceCross2;
-    private javax.swing.JPanel panelAddPoliceCross3;
+    private javax.swing.JPanel panelAddPoliceCross10;
+    private javax.swing.JPanel panelAddPoliceCross11;
+    private javax.swing.JPanel panelAddPoliceCross12;
+    private javax.swing.JPanel panelAddPoliceCross13;
+    private javax.swing.JPanel panelAddPoliceCross14;
+    private javax.swing.JPanel panelAddPoliceCross4;
+    private javax.swing.JPanel panelAddPoliceCross5;
+    private javax.swing.JPanel panelAddPoliceCross6;
+    private javax.swing.JPanel panelAddPoliceCross7;
+    private javax.swing.JPanel panelAddPoliceCross8;
+    private javax.swing.JPanel panelAddPoliceCross9;
     private javax.swing.JPanel panelComplain;
     private javax.swing.JPanel panelComplaint;
     private javax.swing.JPanel panelCriminal;
