@@ -44,6 +44,9 @@ public class Dashboard extends javax.swing.JFrame {
     String filename = null;
     //private byte[] picture;
     byte[] person_image;
+    
+   
+    
 
     DefaultTableModel model;
 
@@ -53,7 +56,8 @@ public class Dashboard extends javax.swing.JFrame {
 
         this.setLocationRelativeTo(null);
     }
-
+    
+   
     public void PoliceInfo() {
        
 
@@ -96,7 +100,7 @@ public class Dashboard extends javax.swing.JFrame {
             String query1 = "SELECT CriminalId,FirstName,Age,FathersName,PreviousActs FROM CRIMINAL_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
-            Criminal_Info.setModel(DbUtils.resultSetToTableModel(rs));
+            jTable2.setModel(DbUtils.resultSetToTableModel(rs));
 
             
         } catch (ClassNotFoundException | SQLException e) {
@@ -156,6 +160,24 @@ public class Dashboard extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
         }
         
+    }
+    
+    
+    public void UpdateCustodyTable()
+    {
+        try{
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+            
+            String sql="SELECT * FROM CUSTODY_INFO";
+            PreparedStatement st = con.prepareStatement(sql);
+            ResultSet rs = st.executeQuery();
+            Custody_Info.setModel(DbUtils.resultSetToTableModel(rs));
+            
+        }catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }
 
    
@@ -782,6 +804,11 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAddPolice.setResizable(false);
         dialogAddPolice.setSize(new java.awt.Dimension(684, 470));
         dialogAddPolice.setType(java.awt.Window.Type.POPUP);
+        dialogAddPolice.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                dialogAddPoliceMouseClicked(evt);
+            }
+        });
 
         jPanel28.setBackground(new java.awt.Color(204, 204, 204));
         jPanel28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
@@ -3307,6 +3334,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelDeletePolice2.setText("Delete");
         labelDeletePolice2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelDeletePolice2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelDeletePolice2MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelDeletePolice2MouseEntered(evt);
             }
@@ -3857,6 +3887,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelDeletePolice1.setText("Delete");
         labelDeletePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelDeletePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelDeletePolice1MouseEntered(evt);
             }
@@ -4423,8 +4456,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelPoliceAddMouseClicked
 
     private void labelAddCustodyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddCustodyMouseClicked
-        dialogAddCustody_Info.setLocationRelativeTo(null);
-        dialogAddCustody_Info.setVisible(true);
+        //dialogAddCustody_Info.setLocationRelativeTo(null);
+       // dialogAddCustody_Info.setVisible(true);
     }//GEN-LAST:event_labelAddCustodyMouseClicked
 
     private void labelAddCustodyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddCustodyMouseEntered
@@ -4470,8 +4503,8 @@ public class Dashboard extends javax.swing.JFrame {
     private void labelAddComplaintMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddComplaintMouseClicked
         // TODO add your handling code here:
 
-        dialogAddComplaint_Info.setLocationRelativeTo(null);
-        dialogAddComplaint_Info.setVisible(true);
+        dialogAddComplainant.setLocationRelativeTo(null);
+        dialogAddComplainant.setVisible(true);
 
     }//GEN-LAST:event_labelAddComplaintMouseClicked
 
@@ -4589,7 +4622,34 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String s=JOptionPane.showInputDialog("Confirm Password", JOptionPane.QUESTION_MESSAGE);
+       
+        
+         try {
+
+            String PID=jTextField1.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "DELETE FROM POLICE_INFO WHERE PoliceId = "+PID;
+
+            PreparedStatement st = con.prepareStatement(query1);
+            int rs=st.executeUpdate();
+             
+
+            Police_Info.revalidate();
+            
+            
+            
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+         
+         
+         //Police_Info.setModel(DbUtils.resultSetToTableModel(rs));
+        
+        //String s=JOptionPane.showInputDialog("Confirm Password", JOptionPane.QUESTION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jPanel26AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel26AncestorAdded
@@ -4621,8 +4681,8 @@ public class Dashboard extends javax.swing.JFrame {
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
         filename = f.getAbsolutePath();
-        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img2.getWidth(), img2.getHeight(), Image.SCALE_SMOOTH));
-        img2.setIcon(imageIcon);
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img3.getWidth(), img3.getHeight(), Image.SCALE_SMOOTH));
+        img3.setIcon(imageIcon);
 
         try {
             File image = new File(filename);
@@ -4654,34 +4714,34 @@ public class Dashboard extends javax.swing.JFrame {
             + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
             + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, FirstName.getText());
-            pst.setString(2, LastName.getText());
-            pst.setString(3, Age.getText());
-            pst.setString(4, Gender.getSelectedItem().toString());
+            pst.setString(1, FirstName1.getText());
+            pst.setString(2, LastName1.getText());
+            pst.setString(3, Age1.getText());
+            pst.setString(4, Gender1.getSelectedItem().toString());
 
-            Date dateofbirth = DateOfBirth.getDate();
+            Date dateofbirth = DateOfBirth1.getDate();
             String strDate = DateFormat.getDateInstance().format(dateofbirth);
 
             pst.setString(5, strDate);
             pst.setString(6, Phone1.getText());
-            pst.setString(7, Designation.getSelectedItem().toString());
-            pst.setString(8, LivingAdd.getText());
-            pst.setString(9, PermanentAdd.getText());
-            pst.setString(10, Email.getText());
-            pst.setString(11, NID.getText());
-            pst.setString(12, District.getSelectedItem().toString());
-            pst.setString(13, PoliceStation.getSelectedItem().toString());
+            pst.setString(7, Designation1.getSelectedItem().toString());
+            pst.setString(8, LivingAdd1.getText());
+            pst.setString(9, PermanentAdd1.getText());
+            pst.setString(10, Email1.getText());
+            pst.setString(11, NID1.getText());
+            pst.setString(12, District1.getSelectedItem().toString());
+            pst.setString(13, PoliceStation1.getSelectedItem().toString());
 
-            Date date2 = JoiningDate.getDate();
+            Date date2 = JoiningDate1.getDate();
             String strDateofJoining = DateFormat.getDateInstance().format(date2);
             pst.setString(14, strDateofJoining);
 
-            Date date3 = JoiningDate.getDate();
+            Date date3 = JoiningDate1.getDate();
             String strDateofResigning = DateFormat.getDateInstance().format(date3);
             pst.setString(14, strDateofResigning);
 
             pst.setString(15, strDateofResigning);
-            pst.setString(16, Salary.getText());
+            pst.setString(16, Salary1.getText());
 
             pst.setBytes(17, person_image);
             pst.executeUpdate();
@@ -4702,13 +4762,15 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelAddPoliceCross5MouseClicked
 
     private void labelAddPoliceCross5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseEntered
-        panelAddPoliceCross.setBackground(new Color(204, 0, 0));
-        labelAddPoliceCross.setForeground(new Color(255,255,255));
+       panelAddPoliceCross5.setBackground(new Color(204, 0, 0));
+        labelAddPoliceCross5.setForeground(new Color(255,255,255));
+        
+        
     }//GEN-LAST:event_labelAddPoliceCross5MouseEntered
 
     private void labelAddPoliceCross5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseExited
-        panelAddPoliceCross.setBackground(new Color(51,51,51));
-        labelAddPoliceCross.setForeground(new Color(255,255,255));
+        panelAddPoliceCross5.setBackground(new Color(51,51,51));
+        labelAddPoliceCross5.setForeground(new Color(255,255,255));
     }//GEN-LAST:event_labelAddPoliceCross5MouseExited
 
     private void Save6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save6ActionPerformed
@@ -5132,6 +5194,46 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void dialogAddPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dialogAddPoliceMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_dialogAddPoliceMouseClicked
+
+    private void labelDeletePolice1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseClicked
+        // TODO add your handling code here:
+        
+       
+
+    }//GEN-LAST:event_labelDeletePolice1MouseClicked
+
+    private void labelDeletePolice2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice2MouseClicked
+        // TODO add your handling code here:
+        
+        dialogDeletePolice.setLocationRelativeTo(null);
+        dialogDeletePolice.setVisible(true);
+        
+        
+        try {
+
+            String PID=jTextField1.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1="DELETE FROM CUSTODY_INFO WHERE CustodyNo=2";
+
+            PreparedStatement st = con.prepareStatement(query1);
+            st.executeUpdate();
+  
+            UpdateCustodyTable();
+ 
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+          
+        
+    }//GEN-LAST:event_labelDeletePolice2MouseClicked
 
     /**
      * @param args the command line arguments
