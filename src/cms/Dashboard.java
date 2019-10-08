@@ -1713,6 +1713,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton7.setText("Cancel");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 620, 100, 30));
         jPanel32.add(jLocaleChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 110, 120, -1));
 
@@ -2121,6 +2126,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton14.setForeground(new java.awt.Color(204, 204, 204));
         jButton14.setText("Cancel");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 665, 100, 30));
 
         jCheckBox33.setText("Back Image");
@@ -2453,6 +2463,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton29.setForeground(new java.awt.Color(204, 204, 204));
         jButton29.setText("Cancel");
+        jButton29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton29ActionPerformed(evt);
+            }
+        });
         jPanel38.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 525, 100, 30));
 
         javax.swing.GroupLayout dialogInsertComplaintLayout = new javax.swing.GroupLayout(dialogInsertComplaint.getContentPane());
@@ -2581,6 +2596,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton12.setForeground(new java.awt.Color(204, 204, 204));
         jButton12.setText("Cancel");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 100, 30));
 
         javax.swing.GroupLayout dialogAccusedDetailsLayout = new javax.swing.GroupLayout(dialogAccusedDetails.getContentPane());
@@ -2751,6 +2771,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton27.setForeground(new java.awt.Color(204, 204, 204));
         jButton27.setText("Cancel");
+        jButton27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton27ActionPerformed(evt);
+            }
+        });
         jPanel9.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 100, 30));
 
         javax.swing.GroupLayout dialogAddComplainantLayout = new javax.swing.GroupLayout(dialogAddComplainant.getContentPane());
@@ -2979,6 +3004,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton18.setForeground(new java.awt.Color(204, 204, 204));
         jButton18.setText("Cancel");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
         jPanel10.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 120, 100, 30));
 
         javax.swing.GroupLayout dialogUpdateComplaintLayout = new javax.swing.GroupLayout(dialogUpdateComplaint.getContentPane());
@@ -3082,6 +3112,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton19.setForeground(new java.awt.Color(204, 204, 204));
         jButton19.setText("Cancel");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
         jPanel11.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 140, 100, 30));
 
         jButton20.setBackground(new java.awt.Color(51, 51, 51));
@@ -3180,6 +3215,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton21.setForeground(new java.awt.Color(204, 204, 204));
         jButton21.setText("Cancel");
+        jButton21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton21ActionPerformed(evt);
+            }
+        });
         jPanel12.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 155, 100, 30));
 
         jButton22.setBackground(new java.awt.Color(51, 51, 51));
@@ -5107,6 +5147,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelAddPoliceCross4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseClicked
         // TODO add your handling code here:
+        dialogDeletePolice.dispose();
     }//GEN-LAST:event_labelAddPoliceCross4MouseClicked
 
     private void labelAddPoliceCross4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseEntered
@@ -5275,6 +5316,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void Save6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save6ActionPerformed
         // TODO add your handling code here:
+        dialogAddPolice.dispose();
     }//GEN-LAST:event_Save6ActionPerformed
 
     private void Salary2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Salary2ActionPerformed
@@ -5303,6 +5345,39 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void Save7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save7ActionPerformed
         // TODO add your handling code here:
+        
+        
+          String fname = null;
+        String PID=jTextField2.getText();
+        
+        if (jCheckBox1.isSelected()) {
+            fname=FirstName2.getText();
+            
+
+        }
+        
+       try {
+
+            
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "UPDATE POLICE_INFO SET FirstName="+"\'"+fname+"\'"+" WHERE PoliceId="+PID;
+
+
+            PreparedStatement st = con.prepareStatement(query1);
+            st.executeUpdate();
+
+            
+            
+
+            
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
     }//GEN-LAST:event_Save7ActionPerformed
 
     private void NID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID2ActionPerformed
@@ -5323,6 +5398,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void Save8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save8ActionPerformed
         // TODO add your handling code here:
+        dialogUpdatePolice.dispose();
     }//GEN-LAST:event_Save8ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -5482,6 +5558,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelAddPoliceCross8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseClicked
         // TODO add your handling code here:
+        dialogDeleteCriminal.dispose();
     }//GEN-LAST:event_labelAddPoliceCross8MouseClicked
 
     private void labelAddPoliceCross8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseEntered
@@ -5658,6 +5735,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelAddPoliceCross13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross13MouseClicked
         // TODO add your handling code here:
+        dialogDeleteComplaint.dispose();
     }//GEN-LAST:event_labelAddPoliceCross13MouseClicked
 
     private void labelAddPoliceCross13MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross13MouseEntered
@@ -5759,6 +5837,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelAddPoliceCross17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseClicked
         // TODO add your handling code here:
+        dialogDeleteCustody.dispose();
+        
     }//GEN-LAST:event_labelAddPoliceCross17MouseClicked
 
     private void labelAddPoliceCross17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseEntered
@@ -5818,6 +5898,51 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAccusedDetails.setLocationRelativeTo(null);
         dialogAccusedDetails.setVisible(true);
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+        
+        dialogAddCriminal.dispose();
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        // TODO add your handling code here:
+        dialogUpdateCriminal.dispose();
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
+        // TODO add your handling code here:
+        
+        dialogInsertComplaint.dispose();
+    }//GEN-LAST:event_jButton29ActionPerformed
+
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        
+        dialogAccusedDetails.dispose();
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+        // TODO add your handling code here:
+        dialogAddComplainant.dispose();
+    }//GEN-LAST:event_jButton27ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        // TODO add your handling code here:
+        dialogUpdateComplaint.dispose();
+        
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+        
+        dialogAddCustody.dispose();
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+        // TODO add your handling code here:
+        dialogUpdateCustody.dispose();
+    }//GEN-LAST:event_jButton21ActionPerformed
 
     /**
      * @param args the command line arguments
