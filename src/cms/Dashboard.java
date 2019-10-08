@@ -514,6 +514,8 @@ public class Dashboard extends javax.swing.JFrame {
         jList1 = new javax.swing.JList<>();
         jLabel34 = new javax.swing.JLabel();
         jLabel44 = new javax.swing.JLabel();
+        jButton28 = new javax.swing.JButton();
+        jButton29 = new javax.swing.JButton();
         dialogAccusedDetails = new javax.swing.JDialog();
         jPanel5 = new javax.swing.JPanel();
         jPanel40 = new javax.swing.JPanel();
@@ -563,6 +565,8 @@ public class Dashboard extends javax.swing.JFrame {
         jComboBox6 = new javax.swing.JComboBox<>();
         jTextField17 = new javax.swing.JTextField();
         jButton15 = new javax.swing.JButton();
+        jButton26 = new javax.swing.JButton();
+        jButton27 = new javax.swing.JButton();
         dialogDeleteComplaint = new javax.swing.JDialog();
         jPanel42 = new javax.swing.JPanel();
         jPanel43 = new javax.swing.JPanel();
@@ -584,6 +588,42 @@ public class Dashboard extends javax.swing.JFrame {
         jComboBox7 = new javax.swing.JComboBox<>();
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
+        dialogAddCustody = new javax.swing.JDialog();
+        jPanel11 = new javax.swing.JPanel();
+        jPanel45 = new javax.swing.JPanel();
+        jLabel115 = new javax.swing.JLabel();
+        panelAddPoliceCross15 = new javax.swing.JPanel();
+        labelAddPoliceCross15 = new javax.swing.JLabel();
+        jLabel116 = new javax.swing.JLabel();
+        jLabel117 = new javax.swing.JLabel();
+        jTextField20 = new javax.swing.JTextField();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        dialogUpdateCustody = new javax.swing.JDialog();
+        jPanel12 = new javax.swing.JPanel();
+        jPanel46 = new javax.swing.JPanel();
+        jLabel118 = new javax.swing.JLabel();
+        panelAddPoliceCross16 = new javax.swing.JPanel();
+        labelAddPoliceCross16 = new javax.swing.JLabel();
+        jTextField21 = new javax.swing.JTextField();
+        jComboBox9 = new javax.swing.JComboBox<>();
+        jButton21 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jCheckBox46 = new javax.swing.JCheckBox();
+        jSeparator26 = new javax.swing.JSeparator();
+        jLabel119 = new javax.swing.JLabel();
+        jTextField22 = new javax.swing.JTextField();
+        jCheckBox64 = new javax.swing.JCheckBox();
+        dialogDeleteCustody = new javax.swing.JDialog();
+        jPanel47 = new javax.swing.JPanel();
+        jPanel48 = new javax.swing.JPanel();
+        jLabel120 = new javax.swing.JLabel();
+        panelAddPoliceCross17 = new javax.swing.JPanel();
+        labelAddPoliceCross17 = new javax.swing.JLabel();
+        jLabel121 = new javax.swing.JLabel();
+        jTextField23 = new javax.swing.JTextField();
+        jButton23 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
@@ -616,6 +656,24 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel20 = new javax.swing.JPanel();
         jPanel21 = new javax.swing.JPanel();
         jLabel24 = new javax.swing.JLabel();
+        panelCriminal = new javax.swing.JPanel();
+        jSeparator8 = new javax.swing.JSeparator();
+        panelPoliceAdd1 = new javax.swing.JPanel();
+        labelPoliceAdd1 = new javax.swing.JLabel();
+        panelUpdatePolice1 = new javax.swing.JPanel();
+        labelUpdatePolice1 = new javax.swing.JLabel();
+        panelDeletePolice1 = new javax.swing.JPanel();
+        labelDeletePolice1 = new javax.swing.JLabel();
+        panelResetPolice1 = new javax.swing.JPanel();
+        labelResetPolice1 = new javax.swing.JLabel();
+        panelRefreshPolice1 = new javax.swing.JPanel();
+        labelRefreshPolice1 = new javax.swing.JLabel();
+        jPanel13 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jPanel14 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
         panelCustody = new javax.swing.JPanel();
         jSeparator9 = new javax.swing.JSeparator();
         panelPoliceAdd2 = new javax.swing.JPanel();
@@ -652,24 +710,6 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        panelCriminal = new javax.swing.JPanel();
-        jSeparator8 = new javax.swing.JSeparator();
-        panelPoliceAdd1 = new javax.swing.JPanel();
-        labelPoliceAdd1 = new javax.swing.JLabel();
-        panelUpdatePolice1 = new javax.swing.JPanel();
-        labelUpdatePolice1 = new javax.swing.JLabel();
-        panelDeletePolice1 = new javax.swing.JPanel();
-        labelDeletePolice1 = new javax.swing.JLabel();
-        panelResetPolice1 = new javax.swing.JPanel();
-        labelResetPolice1 = new javax.swing.JLabel();
-        panelRefreshPolice1 = new javax.swing.JPanel();
-        labelRefreshPolice1 = new javax.swing.JLabel();
-        jPanel13 = new javax.swing.JPanel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jPanel14 = new javax.swing.JPanel();
-        jPanel15 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
         panelPoliceInfo = new javax.swing.JPanel();
         labelPoliceInfo = new javax.swing.JLabel();
         panelCriminalInfo = new javax.swing.JPanel();
@@ -775,13 +815,16 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel26.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 50, 80, 28));
 
+        jButton1.setBackground(new java.awt.Color(51, 51, 51));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(204, 204, 204));
         jButton1.setText("OK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel26.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+        jPanel26.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 100, 30));
 
         javax.swing.GroupLayout dialogDeletePoliceLayout = new javax.swing.GroupLayout(dialogDeletePolice.getContentPane());
         dialogDeletePolice.getContentPane().setLayout(dialogDeletePoliceLayout);
@@ -802,7 +845,7 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAddPolice.setLocationByPlatform(true);
         dialogAddPolice.setUndecorated(true);
         dialogAddPolice.setResizable(false);
-        dialogAddPolice.setSize(new java.awt.Dimension(684, 470));
+        dialogAddPolice.setSize(new java.awt.Dimension(681, 465));
         dialogAddPolice.setType(java.awt.Window.Type.POPUP);
         dialogAddPolice.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -813,7 +856,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel28.setBackground(new java.awt.Color(204, 204, 204));
         jPanel28.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jPanel28.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel28.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel28.setPreferredSize(new java.awt.Dimension(681, 465));
         jPanel28.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel37.setText("First Name");
@@ -910,8 +953,9 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel28.add(LastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 52, 120, -1));
 
         Save5.setBackground(new java.awt.Color(51, 51, 51));
-        Save5.setForeground(new java.awt.Color(255, 255, 255));
-        Save5.setText("SAVE");
+        Save5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Save5.setForeground(new java.awt.Color(204, 204, 204));
+        Save5.setText("Save");
         Save5.setBorder(null);
         Save5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1012,7 +1056,8 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel28.add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(434, 119, 218, 12));
 
         Save6.setBackground(new java.awt.Color(51, 51, 51));
-        Save6.setForeground(new java.awt.Color(255, 255, 255));
+        Save6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Save6.setForeground(new java.awt.Color(204, 204, 204));
         Save6.setText("Cancel");
         Save6.setBorder(null);
         Save6.addActionListener(new java.awt.event.ActionListener() {
@@ -1111,7 +1156,8 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel30.add(LastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 100, 120, -1));
 
         Save7.setBackground(new java.awt.Color(51, 51, 51));
-        Save7.setForeground(new java.awt.Color(255, 255, 255));
+        Save7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Save7.setForeground(new java.awt.Color(204, 204, 204));
         Save7.setText("Update");
         Save7.setBorder(null);
         Save7.addActionListener(new java.awt.event.ActionListener() {
@@ -1190,7 +1236,8 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel30.add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 235, 10));
 
         Save8.setBackground(new java.awt.Color(51, 51, 51));
-        Save8.setForeground(new java.awt.Color(255, 255, 255));
+        Save8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        Save8.setForeground(new java.awt.Color(204, 204, 204));
         Save8.setText("Cancel");
         Save8.setBorder(null);
         Save8.addActionListener(new java.awt.event.ActionListener() {
@@ -1318,28 +1365,28 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAddCriminal.setLocationByPlatform(true);
         dialogAddCriminal.setUndecorated(true);
         dialogAddCriminal.setResizable(false);
-        dialogAddCriminal.setSize(new java.awt.Dimension(684, 470));
+        dialogAddCriminal.setSize(new java.awt.Dimension(911, 663));
         dialogAddCriminal.setType(java.awt.Window.Type.POPUP);
 
         jPanel32.setBackground(new java.awt.Color(204, 204, 204));
         jPanel32.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jPanel32.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel32.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel32.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel32.setPreferredSize(new java.awt.Dimension(911, 663));
         jPanel32.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel61.setText("First Name");
-        jPanel32.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 53, -1, -1));
+        jPanel32.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 54, -1, -1));
 
         jLabel62.setText("Last Name");
-        jPanel32.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
+        jPanel32.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 54, -1, -1));
 
         jLabel63.setText("Age");
-        jPanel32.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 83, -1, -1));
+        jPanel32.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 84, -1, -1));
         jPanel32.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
 
         jLabel65.setText("Marital Status");
-        jPanel32.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, -1, -1));
+        jPanel32.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 84, -1, -1));
 
         Age3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1354,14 +1401,14 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender3ActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 140, 120, -1));
+        jPanel32.add(Gender3, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 140, 120, -1));
 
         jLabel66.setText("Phone");
-        jPanel32.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 113, -1, -1));
+        jPanel32.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 114, -1, -1));
         jPanel32.add(Phone3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 112, 120, -1));
 
         jLabel67.setText("Date of Birth");
-        jPanel32.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
+        jPanel32.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 144, -1, -1));
 
         FirstName3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1371,11 +1418,11 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(FirstName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 52, 120, -1));
 
         jLabel68.setText("Work Address");
-        jPanel32.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 360, -1, -1));
-        jPanel32.add(PermanentAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 380, 660, 54));
+        jPanel32.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 360, -1, -1));
+        jPanel32.add(PermanentAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 380, 660, 54));
 
         jLabel69.setText("Living Address");
-        jPanel32.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+        jPanel32.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 280, -1, -1));
 
         LivingAdd3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         LivingAdd3.addActionListener(new java.awt.event.ActionListener() {
@@ -1383,21 +1430,21 @@ public class Dashboard extends javax.swing.JFrame {
                 LivingAdd3ActionPerformed(evt);
             }
         });
-        jPanel32.add(LivingAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, 660, 54));
+        jPanel32.add(LivingAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 300, 660, 54));
 
         jLabel70.setText("Email");
-        jPanel32.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 110, -1, -1));
+        jPanel32.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 114, -1, -1));
         jPanel32.add(Email3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 110, 120, -1));
 
-        jLabel71.setText("Weight ( kg )");
-        jPanel32.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+        jLabel71.setText("Weight (kg)");
+        jPanel32.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 233, -1, -1));
 
         NID3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID3ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 40, -1));
+        jPanel32.add(NID3, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 230, 40, -1));
 
         jPanel33.setBackground(new java.awt.Color(51, 51, 51));
         jPanel33.setForeground(new java.awt.Color(51, 51, 51));
@@ -1445,7 +1492,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel33.add(panelAddPoliceCross7, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 0, -1, 25));
 
         jPanel32.add(jPanel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 910, -1));
-        jPanel32.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 650, 10));
+        jPanel32.add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, 660, 10));
         jPanel32.add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 660, 10));
 
         DateOfBirth3.setDateFormatString("yyyy,mm,dd");
@@ -1453,7 +1500,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(DateOfBirth3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, 120, -1));
 
         jLabel73.setText("Father's Name");
-        jPanel32.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, -1, -1));
+        jPanel32.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 54, -1, -1));
 
         LastName3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1463,17 +1510,17 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(LastName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 120, -1));
 
         jLabel74.setText("Gender");
-        jPanel32.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 80, -1, -1));
+        jPanel32.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 84, -1, -1));
 
         LastName4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LastName4ActionPerformed(evt);
             }
         });
-        jPanel32.add(LastName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 50, 120, -1));
+        jPanel32.add(LastName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 50, 120, -1));
 
         jLabel75.setText("Nationality");
-        jPanel32.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, -1, -1));
+        jPanel32.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 114, -1, -1));
 
         Gender4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender4.addActionListener(new java.awt.event.ActionListener() {
@@ -1484,10 +1531,10 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(Gender4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 70, -1));
 
         jCheckBox19.setText("Tatoos");
-        jPanel32.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 200, -1, -1));
+        jPanel32.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 203, -1, -1));
 
         jCheckBox20.setText("Glasses");
-        jPanel32.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+        jPanel32.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 203, -1, -1));
 
         jCheckBox22.setText("Birthmarks");
         jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
@@ -1495,16 +1542,16 @@ public class Dashboard extends javax.swing.JFrame {
                 jCheckBox22ActionPerformed(evt);
             }
         });
-        jPanel32.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 230, 80, -1));
+        jPanel32.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 233, 90, -1));
 
         jCheckBox23.setText("Gold Teeth");
-        jPanel32.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 80, -1));
+        jPanel32.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 233, 90, -1));
 
         jLabel76.setText("NID No");
-        jPanel32.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 143, -1, -1));
+        jPanel32.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 144, -1, -1));
 
         jLabel77.setText("Eye Color");
-        jPanel32.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, -1, -1));
+        jPanel32.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 203, -1, -1));
 
         NID4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1518,10 +1565,10 @@ public class Dashboard extends javax.swing.JFrame {
                 NID5ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 200, 40, -1));
+        jPanel32.add(NID5, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 200, 40, -1));
 
-        jLabel78.setText("Height ( inch )");
-        jPanel32.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+        jLabel78.setText("Height (inch)");
+        jPanel32.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 203, -1, -1));
 
         Gender5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender5.addActionListener(new java.awt.event.ActionListener() {
@@ -1532,7 +1579,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(Gender5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 80, 120, -1));
 
         jLabel79.setText("Skin Color");
-        jPanel32.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
+        jPanel32.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 233, -1, -1));
 
         Gender6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender6.addActionListener(new java.awt.event.ActionListener() {
@@ -1543,7 +1590,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(Gender6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 70, -1));
 
         jLabel80.setText("Hair Color");
-        jPanel32.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, -1, -1));
+        jPanel32.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 203, -1, -1));
 
         Gender7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender7.addActionListener(new java.awt.event.ActionListener() {
@@ -1551,39 +1598,39 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender7ActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender7, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 200, 70, -1));
+        jPanel32.add(Gender7, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 200, 70, -1));
 
         jCheckBox24.setText("Beard");
-        jPanel32.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 200, -1, -1));
+        jPanel32.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 203, -1, -1));
 
         jCheckBox25.setText("Mustache");
-        jPanel32.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, -1, -1));
+        jPanel32.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 203, -1, -1));
 
         jCheckBox26.setText("Missing Teeth");
-        jPanel32.add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, -1, -1));
+        jPanel32.add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 233, 100, -1));
 
         jLabel81.setText("Occupation");
-        jPanel32.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, -1));
+        jPanel32.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 144, -1, -1));
 
         jLabel82.setText("Scars");
-        jPanel32.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, -1, -1));
+        jPanel32.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 233, -1, -1));
 
         NID6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID6ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 230, 70, -1));
+        jPanel32.add(NID6, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 230, 70, -1));
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel32.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 40, 10, 540));
-        jPanel32.add(LivingAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 660, 54));
+        jPanel32.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 40, 10, 540));
+        jPanel32.add(LivingAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 460, 660, 54));
 
         jLabel83.setText("Permanent Address");
-        jPanel32.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, -1, -1));
+        jPanel32.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 440, -1, -1));
 
         jLabel84.setText("Occurrence ID");
-        jPanel32.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, -1, -1));
+        jPanel32.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 553, -1, -1));
 
         NID7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1593,34 +1640,34 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(NID7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 70, -1));
 
         jLabel85.setText("Previous Records");
-        jPanel32.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, -1, -1));
+        jPanel32.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 553, -1, -1));
 
         NID8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID8ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 550, 70, -1));
+        jPanel32.add(NID8, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 550, 70, -1));
 
         jLabel86.setText("Custody No");
-        jPanel32.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, -1, -1));
+        jPanel32.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 553, -1, -1));
 
         NID9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID9ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 550, 70, -1));
+        jPanel32.add(NID9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, 70, -1));
 
         jLabel87.setText("Police ID");
-        jPanel32.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 550, -1, -1));
+        jPanel32.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 553, -1, -1));
 
         NID10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID10ActionPerformed(evt);
             }
         });
-        jPanel32.add(NID10, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 550, 70, -1));
+        jPanel32.add(NID10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 550, 70, -1));
 
         Gender9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender9.addActionListener(new java.awt.event.ActionListener() {
@@ -1628,23 +1675,23 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender9ActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 80, 120, -1));
+        jPanel32.add(Gender9, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 80, 120, -1));
 
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, 190, 100));
+        jPanel32.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 319, 190, 100));
 
         jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 450, 190, 100));
+        jPanel32.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 452, 190, 100));
 
         jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 180, 190, 100));
+        jPanel32.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 184, 190, 100));
 
         jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel32.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 190, 100));
         jPanel32.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 660, 10));
 
         jButton2.setText("Back Image");
-        jPanel32.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 550, -1, -1));
+        jPanel32.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 552, -1, -1));
 
         jButton3.setText("Front Image");
         jPanel32.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, -1, -1));
@@ -1655,29 +1702,29 @@ public class Dashboard extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        jPanel32.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, -1, -1));
+        jPanel32.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 284, -1, -1));
 
         jButton5.setText("Left Image");
-        jPanel32.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 410, -1, -1));
+        jPanel32.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 419, -1, -1));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("Add");
-        jPanel32.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 620, 100, 30));
+        jPanel32.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(345, 620, 100, 30));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton7.setText("Cancel");
-        jPanel32.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 620, 90, 30));
-        jPanel32.add(jLocaleChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 110, 170, -1));
+        jPanel32.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 620, 100, 30));
+        jPanel32.add(jLocaleChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 110, 120, -1));
 
         javax.swing.GroupLayout dialogAddCriminalLayout = new javax.swing.GroupLayout(dialogAddCriminal.getContentPane());
         dialogAddCriminal.getContentPane().setLayout(dialogAddCriminalLayout);
         dialogAddCriminalLayout.setHorizontalGroup(
             dialogAddCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, 911, Short.MAX_VALUE)
+            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         dialogAddCriminalLayout.setVerticalGroup(
             dialogAddCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, 663, Short.MAX_VALUE)
+            .addComponent(jPanel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         dialogDeleteCriminal.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -1686,11 +1733,12 @@ public class Dashboard extends javax.swing.JFrame {
         dialogDeleteCriminal.setLocationByPlatform(true);
         dialogDeleteCriminal.setUndecorated(true);
         dialogDeleteCriminal.setResizable(false);
-        dialogDeleteCriminal.setSize(new java.awt.Dimension(218, 145));
+        dialogDeleteCriminal.setSize(new java.awt.Dimension(234, 135));
         dialogDeleteCriminal.setType(java.awt.Window.Type.POPUP);
 
         jPanel34.setBackground(new java.awt.Color(204, 204, 204));
         jPanel34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel34.setPreferredSize(new java.awt.Dimension(231, 135));
         jPanel34.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
@@ -1750,7 +1798,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel35Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel42)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(panelAddPoliceCross8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel35Layout.setVerticalGroup(
@@ -1759,7 +1807,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addComponent(jLabel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel34.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+        jPanel34.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 235, -1));
 
         jLabel43.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel43.setText("Criminal ID");
@@ -1773,25 +1821,30 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel34.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 80, 28));
 
+        jButton8.setBackground(new java.awt.Color(51, 51, 51));
+        jButton8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(204, 204, 204));
         jButton8.setText("OK");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
             }
         });
-        jPanel34.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+        jPanel34.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 97, 100, 30));
 
         javax.swing.GroupLayout dialogDeleteCriminalLayout = new javax.swing.GroupLayout(dialogDeleteCriminal.getContentPane());
         dialogDeleteCriminal.getContentPane().setLayout(dialogDeleteCriminalLayout);
         dialogDeleteCriminalLayout.setHorizontalGroup(
             dialogDeleteCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dialogDeleteCriminalLayout.createSequentialGroup()
-                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         dialogDeleteCriminalLayout.setVerticalGroup(
             dialogDeleteCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel34, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addGroup(dialogDeleteCriminalLayout.createSequentialGroup()
+                .addComponent(jPanel34, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         dialogUpdateCriminal.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -1800,14 +1853,14 @@ public class Dashboard extends javax.swing.JFrame {
         dialogUpdateCriminal.setLocationByPlatform(true);
         dialogUpdateCriminal.setUndecorated(true);
         dialogUpdateCriminal.setResizable(false);
-        dialogUpdateCriminal.setSize(new java.awt.Dimension(684, 470));
+        dialogUpdateCriminal.setSize(new java.awt.Dimension(911, 708));
         dialogUpdateCriminal.setType(java.awt.Window.Type.POPUP);
 
         jPanel36.setBackground(new java.awt.Color(204, 204, 204));
         jPanel36.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jPanel36.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel36.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel36.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel36.setPreferredSize(new java.awt.Dimension(911, 708));
         jPanel36.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel36.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
 
@@ -1816,7 +1869,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Age4ActionPerformed(evt);
             }
         });
-        jPanel36.add(Age4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, 120, -1));
+        jPanel36.add(Age4, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 129, 120, -1));
 
         Gender10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender10.addActionListener(new java.awt.event.ActionListener() {
@@ -1824,16 +1877,16 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender10ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender10, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 120, -1));
-        jPanel36.add(Phone4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 170, 120, -1));
+        jPanel36.add(Gender10, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 189, 120, -1));
+        jPanel36.add(Phone4, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 159, 120, -1));
 
         FirstName4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 FirstName4ActionPerformed(evt);
             }
         });
-        jPanel36.add(FirstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 120, -1));
-        jPanel36.add(PermanentAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 660, 54));
+        jPanel36.add(FirstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 45, 120, -1));
+        jPanel36.add(PermanentAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 670, 54));
 
         LivingAdd5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         LivingAdd5.addActionListener(new java.awt.event.ActionListener() {
@@ -1841,15 +1894,15 @@ public class Dashboard extends javax.swing.JFrame {
                 LivingAdd5ActionPerformed(evt);
             }
         });
-        jPanel36.add(LivingAdd5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, 660, 54));
-        jPanel36.add(Email4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 160, 120, -1));
+        jPanel36.add(LivingAdd5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 670, 54));
+        jPanel36.add(Email4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 159, 120, -1));
 
         NID11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID11ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, 40, -1));
+        jPanel36.add(NID11, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 280, 40, -1));
 
         jPanel37.setBackground(new java.awt.Color(51, 51, 51));
         jPanel37.setForeground(new java.awt.Color(51, 51, 51));
@@ -1897,26 +1950,26 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel37.add(panelAddPoliceCross9, new org.netbeans.lib.awtextra.AbsoluteConstraints(875, 0, -1, 25));
 
         jPanel36.add(jPanel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 910, -1));
-        jPanel36.add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 650, 10));
+        jPanel36.add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 670, 10));
         jPanel36.add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 660, 10));
 
         DateOfBirth4.setDateFormatString("yyyy,mm,dd");
         DateOfBirth4.setName("DateOfBirth"); // NOI18N
-        jPanel36.add(DateOfBirth4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, 120, -1));
+        jPanel36.add(DateOfBirth4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 189, 120, -1));
 
         LastName5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LastName5ActionPerformed(evt);
             }
         });
-        jPanel36.add(LastName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 100, 120, -1));
+        jPanel36.add(LastName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 99, 120, -1));
 
         LastName6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LastName6ActionPerformed(evt);
             }
         });
-        jPanel36.add(LastName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 120, -1));
+        jPanel36.add(LastName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 99, 120, -1));
 
         Gender11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender11.addActionListener(new java.awt.event.ActionListener() {
@@ -1924,13 +1977,13 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender11ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 70, -1));
+        jPanel36.add(Gender11, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 250, 70, -1));
 
         jCheckBox21.setText("Tatoos");
-        jPanel36.add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 250, -1, -1));
+        jPanel36.add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(635, 253, -1, -1));
 
         jCheckBox27.setText("Glasses");
-        jPanel36.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 250, -1, -1));
+        jPanel36.add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(568, 253, -1, -1));
 
         jCheckBox28.setText("Birthmarks");
         jCheckBox28.addActionListener(new java.awt.event.ActionListener() {
@@ -1938,24 +1991,24 @@ public class Dashboard extends javax.swing.JFrame {
                 jCheckBox28ActionPerformed(evt);
             }
         });
-        jPanel36.add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 280, -1, -1));
+        jPanel36.add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 283, -1, -1));
 
         jCheckBox29.setText("Gold Teeth");
-        jPanel36.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, -1, -1));
+        jPanel36.add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 283, -1, -1));
 
         NID12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID12ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID12, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 120, -1));
+        jPanel36.add(NID12, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 189, 120, -1));
 
         NID13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID13ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 40, -1));
+        jPanel36.add(NID13, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 250, 40, -1));
 
         Gender12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender12.addActionListener(new java.awt.event.ActionListener() {
@@ -1963,7 +2016,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender12ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender12, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, 120, -1));
+        jPanel36.add(Gender12, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 129, 120, -1));
 
         Gender13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender13.addActionListener(new java.awt.event.ActionListener() {
@@ -1971,7 +2024,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender13ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender13, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 70, -1));
+        jPanel36.add(Gender13, new org.netbeans.lib.awtextra.AbsoluteConstraints(221, 280, 70, -1));
 
         Gender14.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender14.addActionListener(new java.awt.event.ActionListener() {
@@ -1979,16 +2032,16 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender14ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 250, 70, -1));
+        jPanel36.add(Gender14, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 250, 70, -1));
 
         jCheckBox30.setText("Beard");
-        jPanel36.add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 250, -1, -1));
+        jPanel36.add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 253, -1, -1));
 
         jCheckBox31.setText("Mustache");
-        jPanel36.add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 250, -1, -1));
+        jPanel36.add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(494, 253, -1, -1));
 
         jCheckBox32.setText("Missing Teeth");
-        jPanel36.add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 280, -1, -1));
+        jPanel36.add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 283, -1, -1));
 
         Gender15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender15.addActionListener(new java.awt.event.ActionListener() {
@@ -1996,46 +2049,46 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender15ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 160, 120, -1));
+        jPanel36.add(Gender15, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 159, 120, -1));
 
         NID14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID14ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID14, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 280, 70, -1));
+        jPanel36.add(NID14, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 280, 70, -1));
 
         jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel36.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 90, 10, 540));
-        jPanel36.add(LivingAdd6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 660, 54));
+        jPanel36.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 10, 540));
+        jPanel36.add(LivingAdd6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 510, 670, 54));
 
         NID15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID15ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 600, 70, -1));
+        jPanel36.add(NID15, new org.netbeans.lib.awtextra.AbsoluteConstraints(118, 600, 70, -1));
 
         NID16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID16ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID16, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 600, 70, -1));
+        jPanel36.add(NID16, new org.netbeans.lib.awtextra.AbsoluteConstraints(308, 600, 70, -1));
 
         NID17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID17ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 600, 70, -1));
+        jPanel36.add(NID17, new org.netbeans.lib.awtextra.AbsoluteConstraints(467, 600, 70, -1));
 
         NID18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NID18ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID18, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 600, 70, -1));
+        jPanel36.add(NID18, new org.netbeans.lib.awtextra.AbsoluteConstraints(611, 600, 70, -1));
 
         Gender16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender16.addActionListener(new java.awt.event.ActionListener() {
@@ -2043,7 +2096,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Gender16ActionPerformed(evt);
             }
         });
-        jPanel36.add(Gender16, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 130, 120, -1));
+        jPanel36.add(Gender16, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 129, 120, -1));
 
         jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel36.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 190, 100));
@@ -2058,34 +2111,38 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, 190, 100));
         jPanel36.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 660, 10));
 
+        jButton13.setBackground(new java.awt.Color(51, 51, 51));
         jButton13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(204, 204, 204));
         jButton13.setText("Update");
-        jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 670, 100, 30));
+        jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 665, 100, 30));
 
+        jButton14.setBackground(new java.awt.Color(51, 51, 51));
         jButton14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(204, 204, 204));
         jButton14.setText("Cancel");
-        jPanel36.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 670, 90, 30));
+        jPanel36.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 665, 100, 30));
 
         jCheckBox33.setText("Back Image");
-        jPanel36.add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 600, -1, -1));
+        jPanel36.add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 600, -1, -1));
 
         jCheckBox34.setText("First Name");
         jPanel36.add(jCheckBox34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
 
         jCheckBox35.setText("Last Name");
-        jPanel36.add(jCheckBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, -1, -1));
+        jPanel36.add(jCheckBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, -1, -1));
 
         jCheckBox36.setText("Father's Name");
-        jPanel36.add(jCheckBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 100, -1, -1));
+        jPanel36.add(jCheckBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 100, -1, -1));
 
         jCheckBox37.setText("Age");
         jPanel36.add(jCheckBox37, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
 
         jCheckBox38.setText("Gender");
-        jPanel36.add(jCheckBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, -1, -1));
+        jPanel36.add(jCheckBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
 
         jCheckBox39.setText("Marital Status");
-        jPanel36.add(jCheckBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
+        jPanel36.add(jCheckBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 130, -1, -1));
 
         jCheckBox40.setText("Phone");
         jPanel36.add(jCheckBox40, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
@@ -2094,46 +2151,46 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(jCheckBox41, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 160, -1, -1));
 
         jCheckBox42.setText("Nationality");
-        jPanel36.add(jCheckBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 160, -1, -1));
+        jPanel36.add(jCheckBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, -1, -1));
 
         jCheckBox43.setText("NID No");
         jPanel36.add(jCheckBox43, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, -1, -1));
 
         jCheckBox44.setText("Date of Birth");
-        jPanel36.add(jCheckBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 190, -1, -1));
+        jPanel36.add(jCheckBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, -1, -1));
 
         jCheckBox45.setText("Occupation");
-        jPanel36.add(jCheckBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 190, -1, -1));
+        jPanel36.add(jCheckBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 190, -1, -1));
 
-        jCheckBox47.setText("Height ( inch )");
-        jPanel36.add(jCheckBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+        jCheckBox47.setText("Height (inch)");
+        jPanel36.add(jCheckBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 252, -1, -1));
 
-        jCheckBox48.setText("Weight ( kg )");
-        jPanel36.add(jCheckBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, -1, -1));
+        jCheckBox48.setText("Weight (kg)");
+        jPanel36.add(jCheckBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 282, -1, -1));
 
         jCheckBox49.setText("Eye Color");
-        jPanel36.add(jCheckBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+        jPanel36.add(jCheckBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 252, -1, -1));
 
         jCheckBox50.setText("Skin Color");
-        jPanel36.add(jCheckBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+        jPanel36.add(jCheckBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(143, 282, -1, -1));
 
         jCheckBox51.setText("Hair Color");
-        jPanel36.add(jCheckBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
+        jPanel36.add(jCheckBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 252, -1, -1));
 
         jCheckBox52.setText("Scars");
-        jPanel36.add(jCheckBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, -1, -1));
+        jPanel36.add(jCheckBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 282, -1, -1));
 
         jCheckBox53.setText("Living Address");
-        jPanel36.add(jCheckBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, -1, -1));
+        jPanel36.add(jCheckBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
 
         jCheckBox54.setText("Work Address");
-        jPanel36.add(jCheckBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, -1, -1));
+        jPanel36.add(jCheckBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
         jCheckBox55.setText("Permanent Address");
-        jPanel36.add(jCheckBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, -1, -1));
+        jPanel36.add(jCheckBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 490, -1, -1));
 
         jCheckBox56.setText("Occurrence ID");
-        jPanel36.add(jCheckBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 600, -1, -1));
+        jPanel36.add(jCheckBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(18, 602, -1, -1));
 
         jCheckBox57.setText("Previous Records");
         jCheckBox57.addActionListener(new java.awt.event.ActionListener() {
@@ -2141,22 +2198,22 @@ public class Dashboard extends javax.swing.JFrame {
                 jCheckBox57ActionPerformed(evt);
             }
         });
-        jPanel36.add(jCheckBox57, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 600, -1, -1));
+        jPanel36.add(jCheckBox57, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 602, -1, -1));
 
         jCheckBox58.setText("Custody No");
-        jPanel36.add(jCheckBox58, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 600, -1, -1));
+        jPanel36.add(jCheckBox58, new org.netbeans.lib.awtextra.AbsoluteConstraints(381, 602, -1, -1));
 
         jCheckBox59.setText("Police ID");
-        jPanel36.add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 600, -1, -1));
+        jPanel36.add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 602, -1, -1));
 
         jCheckBox60.setText("Front Image");
-        jPanel36.add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 200, -1, -1));
+        jPanel36.add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 200, -1, -1));
 
         jCheckBox61.setText("Right Image");
-        jPanel36.add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 330, -1, -1));
+        jPanel36.add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 330, -1, -1));
 
         jCheckBox62.setText("Left Image");
-        jPanel36.add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 460, -1, -1));
+        jPanel36.add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 460, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Criminal ID");
@@ -2167,25 +2224,27 @@ public class Dashboard extends javax.swing.JFrame {
                 FirstName5ActionPerformed(evt);
             }
         });
-        jPanel36.add(FirstName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 120, -1));
+        jPanel36.add(FirstName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 99, 120, -1));
 
         jCheckBox63.setBackground(new java.awt.Color(204, 204, 204));
         jCheckBox63.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jCheckBox63.setText("Select All");
         jCheckBox63.setToolTipText("Update all items");
         jCheckBox63.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 51, 51), new java.awt.Color(153, 153, 153), null, null));
-        jPanel36.add(jCheckBox63, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 50, 90, 28));
+        jPanel36.add(jCheckBox63, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 44, 90, 28));
         jPanel36.add(jSeparator25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 890, 10));
 
         javax.swing.GroupLayout dialogUpdateCriminalLayout = new javax.swing.GroupLayout(dialogUpdateCriminal.getContentPane());
         dialogUpdateCriminal.getContentPane().setLayout(dialogUpdateCriminalLayout);
         dialogUpdateCriminalLayout.setHorizontalGroup(
             dialogUpdateCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 911, Short.MAX_VALUE)
+            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         dialogUpdateCriminalLayout.setVerticalGroup(
             dialogUpdateCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 730, Short.MAX_VALUE)
+            .addGroup(dialogUpdateCriminalLayout.createSequentialGroup()
+                .addComponent(jPanel36, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
+                .addGap(2, 2, 2))
         );
 
         dialogInsertComplaint.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -2194,13 +2253,13 @@ public class Dashboard extends javax.swing.JFrame {
         dialogInsertComplaint.setLocationByPlatform(true);
         dialogInsertComplaint.setUndecorated(true);
         dialogInsertComplaint.setResizable(false);
-        dialogInsertComplaint.setSize(new java.awt.Dimension(684, 470));
+        dialogInsertComplaint.setSize(new java.awt.Dimension(681, 565));
         dialogInsertComplaint.setType(java.awt.Window.Type.POPUP);
 
         jPanel38.setBackground(new java.awt.Color(204, 204, 204));
         jPanel38.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         jPanel38.setMaximumSize(new java.awt.Dimension(659, 455));
-        jPanel38.setPreferredSize(new java.awt.Dimension(659, 455));
+        jPanel38.setPreferredSize(new java.awt.Dimension(681, 564));
         jPanel38.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel38.add(jLabel90, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
 
@@ -2272,36 +2331,38 @@ public class Dashboard extends javax.swing.JFrame {
                 jTextField4ActionPerformed(evt);
             }
         });
-        jPanel38.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 70, -1));
-        jPanel38.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 470, 10));
+        jPanel38.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 64, 55, -1));
+        jPanel38.add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 480, 10));
         jPanel38.add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 60, 10));
 
         jLabel15.setText("Time");
-        jPanel38.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, -1, -1));
+        jPanel38.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 68, -1, -1));
 
         jLabel16.setText("FIR No");
-        jPanel38.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, -1, -1));
-        jPanel38.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, -1, -1));
-        jPanel38.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 70, -1, -1));
+        jPanel38.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 68, -1, -1));
+        jPanel38.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(137, 64, 55, -1));
+        jPanel38.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 64, -1, -1));
 
         jLabel17.setText("Year");
-        jPanel38.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
-        jPanel38.add(jTimeChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 70, -1, -1));
+        jPanel38.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 68, -1, -1));
+
+        jTimeChooser1.setBackground(new java.awt.Color(240, 240, 240));
+        jPanel38.add(jTimeChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 64, -1, -1));
 
         jLabel18.setText("Date");
-        jPanel38.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 70, -1, -1));
+        jPanel38.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 68, -1, -1));
 
         jLabel19.setText("Act");
-        jPanel38.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, -1, -1));
+        jPanel38.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 68, -1, -1));
 
         jLabel20.setText("Section");
-        jPanel38.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 70, -1, -1));
+        jPanel38.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(545, 68, -1, -1));
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel38.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, -1, -1));
+        jPanel38.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 66, 70, -1));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel38.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, -1, -1));
+        jPanel38.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 66, 70, -1));
         jPanel38.add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 60, 10));
         jPanel38.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 60, 10));
 
@@ -2309,49 +2370,49 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel21.setText("FIR Info");
         jPanel38.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, -1, -1));
         jPanel38.add(jSeparator33, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, 540, 10));
-        jPanel38.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
-        jPanel38.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, -1, -1));
-        jPanel38.add(jTimeChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, -1));
-        jPanel38.add(jTimeChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 140, -1, -1));
+        jPanel38.add(jDateChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 135, -1, -1));
+        jPanel38.add(jDateChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(245, 135, -1, -1));
+        jPanel38.add(jTimeChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(505, 135, -1, -1));
+        jPanel38.add(jTimeChooser3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 135, -1, -1));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel38.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, -1, -1));
-        jPanel38.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 90, -1));
-        jPanel38.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 610, 40));
+        jPanel38.add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 165, 80, -1));
+        jPanel38.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 165, 65, -1));
+        jPanel38.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 220, 660, 40));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane5.setViewportView(jTextArea1);
 
-        jPanel38.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 610, -1));
-        jPanel38.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 80, -1));
+        jPanel38.add(jScrollPane5, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 290, 660, -1));
+        jPanel38.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(595, 165, 75, -1));
 
         jLabel22.setText("Date From");
-        jPanel38.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        jPanel38.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 140, -1, -1));
 
         jLabel25.setText("Date To");
-        jPanel38.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, -1, -1));
+        jPanel38.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, -1, -1));
 
         jLabel26.setText("Time From");
-        jPanel38.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 140, -1, -1));
+        jPanel38.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 140, -1, -1));
 
         jLabel27.setText("Time To");
-        jPanel38.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 140, -1, -1));
+        jPanel38.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(565, 140, -1, -1));
 
         jLabel28.setText("Direction from PS");
-        jPanel38.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+        jPanel38.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 170, -1, -1));
 
         jLabel29.setText("Distance from PS");
-        jPanel38.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, -1));
+        jPanel38.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, -1, -1));
 
         jLabel30.setText("Address");
-        jPanel38.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 240, -1, -1));
+        jPanel38.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 200, -1, -1));
 
         jLabel31.setText("Details");
-        jPanel38.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, -1));
+        jPanel38.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 270, -1, -1));
 
-        jLabel32.setText("Damaged Properties ( taka )");
-        jPanel38.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 190, -1, -1));
+        jLabel32.setText("Damaged Properties (taka)");
+        jPanel38.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 170, -1, -1));
         jPanel38.add(jSeparator34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, 60, 10));
 
         jLabel33.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -2360,6 +2421,11 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel38.add(jSeparator35, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 510, 10));
 
         jButton9.setText("Insert Accused Details");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
         jPanel38.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, -1, -1));
 
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
@@ -2375,7 +2441,19 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel38.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 470, -1, -1));
 
         jLabel44.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel38.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, 50, 20));
+        jPanel38.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 465, 50, 20));
+
+        jButton28.setBackground(new java.awt.Color(51, 51, 51));
+        jButton28.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton28.setForeground(new java.awt.Color(204, 204, 204));
+        jButton28.setText("OK");
+        jPanel38.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 525, 100, 30));
+
+        jButton29.setBackground(new java.awt.Color(51, 51, 51));
+        jButton29.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton29.setForeground(new java.awt.Color(204, 204, 204));
+        jButton29.setText("Cancel");
+        jPanel38.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 525, 100, 30));
 
         javax.swing.GroupLayout dialogInsertComplaintLayout = new javax.swing.GroupLayout(dialogInsertComplaint.getContentPane());
         dialogInsertComplaint.getContentPane().setLayout(dialogInsertComplaintLayout);
@@ -2385,11 +2463,21 @@ public class Dashboard extends javax.swing.JFrame {
         );
         dialogInsertComplaintLayout.setVerticalGroup(
             dialogInsertComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, 517, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(dialogInsertComplaintLayout.createSequentialGroup()
+                .addComponent(jPanel38, javax.swing.GroupLayout.PREFERRED_SIZE, 564, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 1, Short.MAX_VALUE))
         );
+
+        dialogAccusedDetails.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogAccusedDetails.setLocationByPlatform(true);
+        dialogAccusedDetails.setUndecorated(true);
+        dialogAccusedDetails.setResizable(false);
+        dialogAccusedDetails.setSize(new java.awt.Dimension(551, 277));
+        dialogAccusedDetails.setType(java.awt.Window.Type.POPUP);
 
         jPanel5.setBackground(new java.awt.Color(204, 204, 204));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel5.setPreferredSize(new java.awt.Dimension(551, 277));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel40.setBackground(new java.awt.Color(51, 51, 51));
@@ -2452,57 +2540,74 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel5.add(jPanel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 550, -1));
 
         jLabel88.setText("First Name");
-        jPanel5.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 46, -1, -1));
+        jPanel5.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 45, -1, -1));
 
         jLabel89.setText("Last Name");
-        jPanel5.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, -1, -1));
-        jPanel5.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 40, 80, -1));
+        jPanel5.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 75, -1, -1));
+        jPanel5.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 40, 120, -1));
 
         jTextField9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField9ActionPerformed(evt);
             }
         });
-        jPanel5.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 80, -1));
+        jPanel5.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(75, 70, 120, -1));
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
         jScrollPane7.setViewportView(jTextArea2);
 
-        jPanel5.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 250, -1));
+        jPanel5.add(jScrollPane7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 300, -1));
 
         jLabel92.setText("Details");
-        jPanel5.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        jPanel5.add(jLabel92, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 105, -1, -1));
 
         jSeparator24.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jPanel5.add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 10, 150));
+        jPanel5.add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 10, 180));
 
         jLabel93.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel5.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 190, 110));
+        jPanel5.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 190, 130));
 
         jButton10.setText("Add Image");
-        jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
+        jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 185, -1, -1));
 
-        jButton11.setText("Insert");
-        jPanel5.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
+        jButton11.setBackground(new java.awt.Color(51, 51, 51));
+        jButton11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(204, 204, 204));
+        jButton11.setText("OK");
+        jPanel5.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 100, 30));
 
+        jButton12.setBackground(new java.awt.Color(51, 51, 51));
+        jButton12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(204, 204, 204));
         jButton12.setText("Cancel");
-        jPanel5.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
+        jPanel5.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 100, 30));
 
         javax.swing.GroupLayout dialogAccusedDetailsLayout = new javax.swing.GroupLayout(dialogAccusedDetails.getContentPane());
         dialogAccusedDetails.getContentPane().setLayout(dialogAccusedDetailsLayout);
         dialogAccusedDetailsLayout.setHorizontalGroup(
             dialogAccusedDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dialogAccusedDetailsLayout.createSequentialGroup()
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 548, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 551, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         dialogAccusedDetailsLayout.setVerticalGroup(
             dialogAccusedDetailsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, 249, Short.MAX_VALUE)
+            .addGroup(dialogAccusedDetailsLayout.createSequentialGroup()
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, 277, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
+        dialogAddComplainant.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogAddComplainant.setLocationByPlatform(true);
+        dialogAddComplainant.setUndecorated(true);
+        dialogAddComplainant.setResizable(false);
+        dialogAddComplainant.setSize(new java.awt.Dimension(471, 346));
+        dialogAddComplainant.setType(java.awt.Window.Type.POPUP);
+
         jPanel9.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel9.setPreferredSize(new java.awt.Dimension(471, 346));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel41.setBackground(new java.awt.Color(51, 51, 51));
@@ -2565,75 +2670,100 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel9.add(jPanel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 470, -1));
 
         jLabel95.setText("Father's Name");
-        jPanel9.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 40, -1, -1));
+        jPanel9.add(jLabel95, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 192, -1, -1));
 
         jLabel96.setText("Age");
-        jPanel9.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, -1, -1));
+        jPanel9.add(jLabel96, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 72, -1, -1));
 
         jLabel97.setText("Occupation");
-        jPanel9.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+        jPanel9.add(jLabel97, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 72, -1, -1));
 
         jLabel98.setText("Nationality");
-        jPanel9.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
+        jPanel9.add(jLabel98, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 162, -1, -1));
 
         jLabel100.setText("Phone");
-        jPanel9.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
+        jPanel9.add(jLabel100, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 102, -1, -1));
 
         jLabel101.setText("Email");
-        jPanel9.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 130, -1, -1));
+        jPanel9.add(jLabel101, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 102, -1, -1));
 
         jLabel102.setText("Date of Birth");
-        jPanel9.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 130, -1, -1));
+        jPanel9.add(jLabel102, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 132, -1, -1));
 
         jLabel103.setText("Address");
-        jPanel9.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 210, -1, -1));
+        jPanel9.add(jLabel103, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 220, -1, -1));
 
         jLabel104.setText("NID No");
-        jPanel9.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, -1));
+        jPanel9.add(jLabel104, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 132, -1, -1));
 
         jLabel105.setText("Complainant Type");
-        jPanel9.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, -1, -1));
+        jPanel9.add(jLabel105, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 162, -1, -1));
 
         jLabel109.setText("First Name");
-        jPanel9.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+        jPanel9.add(jLabel109, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 42, -1, -1));
 
         jLabel110.setText("Last Name");
-        jPanel9.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, -1));
-        jPanel9.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 70, -1));
-        jPanel9.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 40, 70, -1));
-        jPanel9.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 40, 60, -1));
-        jPanel9.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 70, -1));
+        jPanel9.add(jLabel110, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 42, -1, -1));
+        jPanel9.add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 130, 120, -1));
+        jPanel9.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, 120, -1));
+        jPanel9.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 190, 120, -1));
+        jPanel9.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 40, 120, -1));
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel9.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
-        jPanel9.add(jLocaleChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 80, 140, -1));
-        jPanel9.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 70, -1));
-        jPanel9.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 70, -1));
-        jPanel9.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, -1, -1));
-        jPanel9.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 70, -1));
+        jPanel9.add(jComboBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 120, -1));
+        jPanel9.add(jLocaleChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 160, 120, -1));
+
+        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField14ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 70, 120, -1));
+        jPanel9.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 100, 120, -1));
+        jPanel9.add(jDateChooser4, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 130, 120, -1));
+        jPanel9.add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 100, 120, -1));
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel9.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 70, -1, -1));
+        jPanel9.add(jComboBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 70, 120, -1));
 
         jTextField17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField17ActionPerformed(evt);
             }
         });
-        jPanel9.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 450, 40));
+        jPanel9.add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 240, 450, 40));
 
         jButton15.setText("Insert Complaint Details");
-        jPanel9.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, -1));
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 190, 220, -1));
+
+        jButton26.setBackground(new java.awt.Color(51, 51, 51));
+        jButton26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton26.setForeground(new java.awt.Color(204, 204, 204));
+        jButton26.setText("Save");
+        jPanel9.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 100, 30));
+
+        jButton27.setBackground(new java.awt.Color(51, 51, 51));
+        jButton27.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton27.setForeground(new java.awt.Color(204, 204, 204));
+        jButton27.setText("Cancel");
+        jPanel9.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 300, 100, 30));
 
         javax.swing.GroupLayout dialogAddComplainantLayout = new javax.swing.GroupLayout(dialogAddComplainant.getContentPane());
         dialogAddComplainant.getContentPane().setLayout(dialogAddComplainantLayout);
         dialogAddComplainantLayout.setHorizontalGroup(
             dialogAddComplainantLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         dialogAddComplainantLayout.setVerticalGroup(
             dialogAddComplainantLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 285, Short.MAX_VALUE)
+            .addGroup(dialogAddComplainantLayout.createSequentialGroup()
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         dialogDeleteComplaint.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -2642,11 +2772,12 @@ public class Dashboard extends javax.swing.JFrame {
         dialogDeleteComplaint.setLocationByPlatform(true);
         dialogDeleteComplaint.setUndecorated(true);
         dialogDeleteComplaint.setResizable(false);
-        dialogDeleteComplaint.setSize(new java.awt.Dimension(218, 145));
+        dialogDeleteComplaint.setSize(new java.awt.Dimension(245, 145));
         dialogDeleteComplaint.setType(java.awt.Window.Type.POPUP);
 
         jPanel42.setBackground(new java.awt.Color(204, 204, 204));
         jPanel42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel42.setPreferredSize(new java.awt.Dimension(245, 145));
         jPanel42.addAncestorListener(new javax.swing.event.AncestorListener() {
             public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
             }
@@ -2706,7 +2837,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addGroup(jPanel43Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel94)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addComponent(panelAddPoliceCross13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel43Layout.setVerticalGroup(
@@ -2715,11 +2846,11 @@ public class Dashboard extends javax.swing.JFrame {
             .addComponent(jLabel94, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jPanel42.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+        jPanel42.add(jPanel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 245, -1));
 
         jLabel111.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel111.setText("Complaint ID");
-        jPanel42.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, 28));
+        jPanel42.add(jLabel111, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 48, -1, 28));
 
         jTextField18.setSelectionColor(new java.awt.Color(51, 51, 51));
         jTextField18.addActionListener(new java.awt.event.ActionListener() {
@@ -2729,28 +2860,39 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel42.add(jTextField18, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 80, 28));
 
+        jButton16.setBackground(new java.awt.Color(51, 51, 51));
+        jButton16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton16.setForeground(new java.awt.Color(204, 204, 204));
         jButton16.setText("OK");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
             }
         });
-        jPanel42.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, 60, -1));
+        jPanel42.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 100, 30));
 
         javax.swing.GroupLayout dialogDeleteComplaintLayout = new javax.swing.GroupLayout(dialogDeleteComplaint.getContentPane());
         dialogDeleteComplaint.getContentPane().setLayout(dialogDeleteComplaintLayout);
         dialogDeleteComplaintLayout.setHorizontalGroup(
             dialogDeleteComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(dialogDeleteComplaintLayout.createSequentialGroup()
-                .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel42, javax.swing.GroupLayout.PREFERRED_SIZE, 245, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         dialogDeleteComplaintLayout.setVerticalGroup(
             dialogDeleteComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
+            .addComponent(jPanel42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        dialogUpdateComplaint.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogUpdateComplaint.setLocationByPlatform(true);
+        dialogUpdateComplaint.setUndecorated(true);
+        dialogUpdateComplaint.setResizable(false);
+        dialogUpdateComplaint.setSize(new java.awt.Dimension(241, 158));
+
         jPanel10.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel10.setPreferredSize(new java.awt.Dimension(241, 158));
         jPanel10.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel44.setBackground(new java.awt.Color(51, 51, 51));
@@ -2813,35 +2955,380 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel10.add(jPanel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 240, -1));
 
         jLabel113.setText("Complaint ID");
-        jPanel10.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
-        jPanel10.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, 70, -1));
+        jPanel10.add(jLabel113, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 45, -1, -1));
+        jPanel10.add(jTextField19, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 40, 80, -1));
 
         jLabel114.setText("Status");
-        jPanel10.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
+        jPanel10.add(jLabel114, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 75, -1, -1));
 
         jComboBox7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel10.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 70, -1));
+        jPanel10.add(jComboBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 70, 80, -1));
 
+        jButton17.setBackground(new java.awt.Color(51, 51, 51));
+        jButton17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton17.setForeground(new java.awt.Color(204, 204, 204));
         jButton17.setText("Update");
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
             }
         });
-        jPanel10.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+        jPanel10.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 120, 100, 30));
 
+        jButton18.setBackground(new java.awt.Color(51, 51, 51));
+        jButton18.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton18.setForeground(new java.awt.Color(204, 204, 204));
         jButton18.setText("Cancel");
-        jPanel10.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, -1, -1));
+        jPanel10.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 120, 100, 30));
 
         javax.swing.GroupLayout dialogUpdateComplaintLayout = new javax.swing.GroupLayout(dialogUpdateComplaint.getContentPane());
         dialogUpdateComplaint.getContentPane().setLayout(dialogUpdateComplaintLayout);
         dialogUpdateComplaintLayout.setHorizontalGroup(
             dialogUpdateComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         dialogUpdateComplaintLayout.setVerticalGroup(
             dialogUpdateComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, 158, Short.MAX_VALUE)
+            .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        dialogAddCustody.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogAddCustody.setLocationByPlatform(true);
+        dialogAddCustody.setUndecorated(true);
+        dialogAddCustody.setResizable(false);
+        dialogAddCustody.setSize(new java.awt.Dimension(241, 183));
+        dialogAddCustody.setType(java.awt.Window.Type.POPUP);
+
+        jPanel11.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel45.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel45.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel115.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel115.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel115.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel115.setText("Add New Custody - CMS");
+
+        panelAddPoliceCross15.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross15.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross15.setText("X");
+        labelAddPoliceCross15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross15MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross15MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross15MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelAddPoliceCross15Layout = new javax.swing.GroupLayout(panelAddPoliceCross15);
+        panelAddPoliceCross15.setLayout(panelAddPoliceCross15Layout);
+        panelAddPoliceCross15Layout.setHorizontalGroup(
+            panelAddPoliceCross15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross15Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross15Layout.setVerticalGroup(
+            panelAddPoliceCross15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross15Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross15, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
+        jPanel45.setLayout(jPanel45Layout);
+        jPanel45Layout.setHorizontalGroup(
+            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel45Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel115)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel45Layout.setVerticalGroup(
+            jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel115, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel11.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 240, -1));
+
+        jLabel116.setText("Custody Type");
+        jPanel11.add(jLabel116, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 54, -1, -1));
+
+        jLabel117.setText("Total Seats");
+        jPanel11.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+
+        jTextField20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField20ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 90, 110, -1));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Physical", "Legal", "Sole", "Joint", "Child" }));
+        jPanel11.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 50, 110, -1));
+
+        jButton19.setBackground(new java.awt.Color(51, 51, 51));
+        jButton19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(204, 204, 204));
+        jButton19.setText("Cancel");
+        jPanel11.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 140, 100, 30));
+
+        jButton20.setBackground(new java.awt.Color(51, 51, 51));
+        jButton20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton20.setForeground(new java.awt.Color(204, 204, 204));
+        jButton20.setText("Save");
+        jPanel11.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 140, 100, 30));
+
+        javax.swing.GroupLayout dialogAddCustodyLayout = new javax.swing.GroupLayout(dialogAddCustody.getContentPane());
+        dialogAddCustody.getContentPane().setLayout(dialogAddCustodyLayout);
+        dialogAddCustodyLayout.setHorizontalGroup(
+            dialogAddCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogAddCustodyLayout.setVerticalGroup(
+            dialogAddCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        dialogUpdateCustody.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogUpdateCustody.setLocationByPlatform(true);
+        dialogUpdateCustody.setUndecorated(true);
+        dialogUpdateCustody.setPreferredSize(new java.awt.Dimension(219, 195));
+        dialogUpdateCustody.setResizable(false);
+        dialogUpdateCustody.setSize(new java.awt.Dimension(219, 195));
+        dialogUpdateCustody.setType(java.awt.Window.Type.POPUP);
+
+        jPanel12.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel46.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel46.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel118.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel118.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel118.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel118.setText("Update Custody Info - CMS");
+
+        panelAddPoliceCross16.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross16.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross16.setText("X");
+        labelAddPoliceCross16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross16MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross16MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross16MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelAddPoliceCross16Layout = new javax.swing.GroupLayout(panelAddPoliceCross16);
+        panelAddPoliceCross16.setLayout(panelAddPoliceCross16Layout);
+        panelAddPoliceCross16Layout.setHorizontalGroup(
+            panelAddPoliceCross16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross16Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross16, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross16Layout.setVerticalGroup(
+            panelAddPoliceCross16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross16Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross16, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
+        jPanel46.setLayout(jPanel46Layout);
+        jPanel46Layout.setHorizontalGroup(
+            jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel46Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel118)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel46Layout.setVerticalGroup(
+            jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel118, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel12.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, 220, -1));
+        jPanel12.add(jTextField21, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 79, -1));
+
+        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Physical", "Legal", "Sole", "Joint", "Child" }));
+        jPanel12.add(jComboBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 80, -1, -1));
+
+        jButton21.setBackground(new java.awt.Color(51, 51, 51));
+        jButton21.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton21.setForeground(new java.awt.Color(204, 204, 204));
+        jButton21.setText("Cancel");
+        jPanel12.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(113, 155, 100, 30));
+
+        jButton22.setBackground(new java.awt.Color(51, 51, 51));
+        jButton22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton22.setForeground(new java.awt.Color(204, 204, 204));
+        jButton22.setText("Update");
+        jPanel12.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 155, 100, 30));
+
+        jCheckBox46.setText("Custody Type");
+        jPanel12.add(jCheckBox46, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 81, -1, -1));
+        jPanel12.add(jSeparator26, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 200, 10));
+
+        jLabel119.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel119.setText("Custody No");
+        jPanel12.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+        jPanel12.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 36, 70, -1));
+
+        jCheckBox64.setText("Total Seats");
+        jPanel12.add(jCheckBox64, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 111, -1, -1));
+
+        javax.swing.GroupLayout dialogUpdateCustodyLayout = new javax.swing.GroupLayout(dialogUpdateCustody.getContentPane());
+        dialogUpdateCustody.getContentPane().setLayout(dialogUpdateCustodyLayout);
+        dialogUpdateCustodyLayout.setHorizontalGroup(
+            dialogUpdateCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        dialogUpdateCustodyLayout.setVerticalGroup(
+            dialogUpdateCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogUpdateCustodyLayout.createSequentialGroup()
+                .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        dialogDeleteCustody.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        dialogDeleteCustody.setBackground(new java.awt.Color(204, 204, 204));
+        dialogDeleteCustody.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        dialogDeleteCustody.setLocationByPlatform(true);
+        dialogDeleteCustody.setUndecorated(true);
+        dialogDeleteCustody.setResizable(false);
+        dialogDeleteCustody.setSize(new java.awt.Dimension(230, 145));
+        dialogDeleteCustody.setType(java.awt.Window.Type.POPUP);
+
+        jPanel47.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel47.setPreferredSize(new java.awt.Dimension(230, 145));
+        jPanel47.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                jPanel47AncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        jPanel47.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel48.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel48.setForeground(new java.awt.Color(51, 51, 51));
+
+        jLabel120.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel120.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel120.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel120.setText("Delete Custody Info - CMS");
+
+        panelAddPoliceCross17.setBackground(new java.awt.Color(51, 51, 51));
+
+        labelAddPoliceCross17.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        labelAddPoliceCross17.setForeground(new java.awt.Color(255, 255, 255));
+        labelAddPoliceCross17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAddPoliceCross17.setText("X");
+        labelAddPoliceCross17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross17MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross17MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelAddPoliceCross17MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelAddPoliceCross17Layout = new javax.swing.GroupLayout(panelAddPoliceCross17);
+        panelAddPoliceCross17.setLayout(panelAddPoliceCross17Layout);
+        panelAddPoliceCross17Layout.setHorizontalGroup(
+            panelAddPoliceCross17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross17Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross17, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelAddPoliceCross17Layout.setVerticalGroup(
+            panelAddPoliceCross17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelAddPoliceCross17Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelAddPoliceCross17, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel48Layout = new javax.swing.GroupLayout(jPanel48);
+        jPanel48.setLayout(jPanel48Layout);
+        jPanel48Layout.setHorizontalGroup(
+            jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel48Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel120)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
+                .addComponent(panelAddPoliceCross17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel48Layout.setVerticalGroup(
+            jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelAddPoliceCross17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel120, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        jPanel47.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jLabel121.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel121.setText("Custody No");
+        jPanel47.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 50, -1, 28));
+
+        jTextField23.setSelectionColor(new java.awt.Color(51, 51, 51));
+        jTextField23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField23ActionPerformed(evt);
+            }
+        });
+        jPanel47.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 50, 80, 28));
+
+        jButton23.setBackground(new java.awt.Color(51, 51, 51));
+        jButton23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton23.setForeground(new java.awt.Color(204, 204, 204));
+        jButton23.setText("OK");
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
+        jPanel47.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 100, 100, 30));
+
+        javax.swing.GroupLayout dialogDeleteCustodyLayout = new javax.swing.GroupLayout(dialogDeleteCustody.getContentPane());
+        dialogDeleteCustody.getContentPane().setLayout(dialogDeleteCustodyLayout);
+        dialogDeleteCustodyLayout.setHorizontalGroup(
+            dialogDeleteCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dialogDeleteCustodyLayout.createSequentialGroup()
+                .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        dialogDeleteCustodyLayout.setVerticalGroup(
+            dialogDeleteCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -3038,6 +3525,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelUpdatePolice3.setText("Update");
         labelUpdatePolice3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelUpdatePolice3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelUpdatePolice3MouseEntered(evt);
             }
@@ -3069,6 +3559,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelDeletePolice3.setText("Delete");
         labelDeletePolice3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelDeletePolice3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelDeletePolice3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelDeletePolice3MouseEntered(evt);
             }
@@ -3257,9 +3750,290 @@ public class Dashboard extends javax.swing.JFrame {
 
         panelSlider1.add(panelComplaint, "card2");
 
+        panelCriminal.setBackground(new java.awt.Color(204, 204, 204));
+        panelCriminal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelCriminal.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 950, 20));
+
+        panelPoliceAdd1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelPoliceAdd1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelPoliceAdd1.setForeground(new java.awt.Color(51, 51, 51));
+        labelPoliceAdd1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPoliceAdd1.setText("Add");
+        labelPoliceAdd1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelPoliceAdd1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelPoliceAdd1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelPoliceAdd1Layout = new javax.swing.GroupLayout(panelPoliceAdd1);
+        panelPoliceAdd1.setLayout(panelPoliceAdd1Layout);
+        panelPoliceAdd1Layout.setHorizontalGroup(
+            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelPoliceAdd1Layout.setVerticalGroup(
+            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPoliceAdd1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelPoliceAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 30));
+
+        panelUpdatePolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelUpdatePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelUpdatePolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelUpdatePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelUpdatePolice1.setText("Update");
+        labelUpdatePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelUpdatePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelUpdatePolice1Layout = new javax.swing.GroupLayout(panelUpdatePolice1);
+        panelUpdatePolice1.setLayout(panelUpdatePolice1Layout);
+        panelUpdatePolice1Layout.setHorizontalGroup(
+            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelUpdatePolice1Layout.setVerticalGroup(
+            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUpdatePolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelUpdatePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 30));
+
+        panelDeletePolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelDeletePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelDeletePolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelDeletePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelDeletePolice1.setText("Delete");
+        labelDeletePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelDeletePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelDeletePolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelDeletePolice1Layout = new javax.swing.GroupLayout(panelDeletePolice1);
+        panelDeletePolice1.setLayout(panelDeletePolice1Layout);
+        panelDeletePolice1Layout.setHorizontalGroup(
+            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(labelDeletePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+        );
+        panelDeletePolice1Layout.setVerticalGroup(
+            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeletePolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelDeletePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelDeletePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 70, 30));
+
+        panelResetPolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelResetPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelResetPolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelResetPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelResetPolice1.setText("Reset");
+        labelResetPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelResetPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelResetPolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelResetPolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelResetPolice1Layout = new javax.swing.GroupLayout(panelResetPolice1);
+        panelResetPolice1.setLayout(panelResetPolice1Layout);
+        panelResetPolice1Layout.setHorizontalGroup(
+            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        panelResetPolice1Layout.setVerticalGroup(
+            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelResetPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, 30));
+
+        panelRefreshPolice1.setBackground(new java.awt.Color(204, 204, 204));
+
+        labelRefreshPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
+        labelRefreshPolice1.setForeground(new java.awt.Color(51, 51, 51));
+        labelRefreshPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelRefreshPolice1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh.png"))); // NOI18N
+        labelRefreshPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        labelRefreshPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                labelRefreshPolice1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                labelRefreshPolice1MouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelRefreshPolice1Layout = new javax.swing.GroupLayout(panelRefreshPolice1);
+        panelRefreshPolice1.setLayout(panelRefreshPolice1Layout);
+        panelRefreshPolice1Layout.setHorizontalGroup(
+            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelRefreshPolice1Layout.createSequentialGroup()
+                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        panelRefreshPolice1Layout.setVerticalGroup(
+            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRefreshPolice1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelCriminal.add(panelRefreshPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 50, 30));
+
+        jPanel13.setBackground(new java.awt.Color(204, 204, 204));
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Name", "Age", "Father's Name", "Previous Records"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable2.setFocusable(false);
+        jTable2.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        jTable2.setRowHeight(20);
+        jTable2.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        jTable2.getTableHeader().setReorderingAllowed(false);
+        jScrollPane2.setViewportView(jTable2);
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Preview");
+        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
+        jPanel13.setLayout(jPanel13Layout);
+        jPanel13Layout.setHorizontalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel13Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel13Layout.setVerticalGroup(
+            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
+            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        panelCriminal.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        panelSlider1.add(panelCriminal, "card2");
+
         panelCustody.setBackground(new java.awt.Color(204, 204, 204));
         panelCustody.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        panelCustody.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 780, 20));
+        panelCustody.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 950, 20));
 
         panelPoliceAdd2.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -3303,6 +4077,9 @@ public class Dashboard extends javax.swing.JFrame {
         labelUpdatePolice2.setText("Update");
         labelUpdatePolice2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         labelUpdatePolice2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                labelUpdatePolice2MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 labelUpdatePolice2MouseEntered(evt);
             }
@@ -3380,7 +4157,9 @@ public class Dashboard extends javax.swing.JFrame {
         panelResetPolice2.setLayout(panelResetPolice2Layout);
         panelResetPolice2Layout.setHorizontalGroup(
             panelResetPolice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelResetPolice2, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+            .addGroup(panelResetPolice2Layout.createSequentialGroup()
+                .addComponent(labelResetPolice2, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         panelResetPolice2Layout.setVerticalGroup(
             panelResetPolice2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3389,7 +4168,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(labelResetPolice2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelCustody.add(panelResetPolice2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 10, 70, 30));
+        panelCustody.add(panelResetPolice2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, 30));
 
         panelRefreshPolice2.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -3422,51 +4201,51 @@ public class Dashboard extends javax.swing.JFrame {
                 .addComponent(labelRefreshPolice2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelCustody.add(panelRefreshPolice2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 10, 50, 30));
+        panelCustody.add(panelRefreshPolice2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 50, 30));
 
         jPanel16.setBackground(new java.awt.Color(204, 204, 204));
 
         Custody_Info.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
             },
             new String [] {
-                "Custody No.", "Seats Remaining", "Capacity"
+                "Custody No.", "Seats Remaining", "Capacity", "Custody Type"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false
+                false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -3517,10 +4296,9 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel16Layout.createSequentialGroup()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 325, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 497, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, 437, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jPanel17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3528,7 +4306,7 @@ public class Dashboard extends javax.swing.JFrame {
             .addComponent(jPanel17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        panelCustody.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 790, 490));
+        panelCustody.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
 
         panelSlider1.add(panelCustody, "card2");
 
@@ -3809,284 +4587,6 @@ public class Dashboard extends javax.swing.JFrame {
         panelPolice.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 880, 490));
 
         panelSlider1.add(panelPolice, "card2");
-
-        panelCriminal.setBackground(new java.awt.Color(204, 204, 204));
-        panelCriminal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        panelCriminal.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 950, 20));
-
-        panelPoliceAdd1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelPoliceAdd1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelPoliceAdd1.setForeground(new java.awt.Color(51, 51, 51));
-        labelPoliceAdd1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelPoliceAdd1.setText("Add");
-        labelPoliceAdd1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelPoliceAdd1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelPoliceAdd1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelPoliceAdd1Layout = new javax.swing.GroupLayout(panelPoliceAdd1);
-        panelPoliceAdd1.setLayout(panelPoliceAdd1Layout);
-        panelPoliceAdd1Layout.setHorizontalGroup(
-            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelPoliceAdd1Layout.setVerticalGroup(
-            panelPoliceAdd1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelPoliceAdd1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelPoliceAdd1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelPoliceAdd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 30));
-
-        panelUpdatePolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelUpdatePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelUpdatePolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelUpdatePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelUpdatePolice1.setText("Update");
-        labelUpdatePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelUpdatePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelUpdatePolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelUpdatePolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelUpdatePolice1Layout = new javax.swing.GroupLayout(panelUpdatePolice1);
-        panelUpdatePolice1.setLayout(panelUpdatePolice1Layout);
-        panelUpdatePolice1Layout.setHorizontalGroup(
-            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelUpdatePolice1Layout.setVerticalGroup(
-            panelUpdatePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelUpdatePolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelUpdatePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelUpdatePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 70, 30));
-
-        panelDeletePolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelDeletePolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelDeletePolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelDeletePolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelDeletePolice1.setText("Delete");
-        labelDeletePolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelDeletePolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                labelDeletePolice1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelDeletePolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelDeletePolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelDeletePolice1Layout = new javax.swing.GroupLayout(panelDeletePolice1);
-        panelDeletePolice1.setLayout(panelDeletePolice1Layout);
-        panelDeletePolice1Layout.setHorizontalGroup(
-            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(labelDeletePolice1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-        );
-        panelDeletePolice1Layout.setVerticalGroup(
-            panelDeletePolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelDeletePolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelDeletePolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelDeletePolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 70, 30));
-
-        panelResetPolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelResetPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelResetPolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelResetPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelResetPolice1.setText("Reset");
-        labelResetPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelResetPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelResetPolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelResetPolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelResetPolice1Layout = new javax.swing.GroupLayout(panelResetPolice1);
-        panelResetPolice1.setLayout(panelResetPolice1Layout);
-        panelResetPolice1Layout.setHorizontalGroup(
-            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        panelResetPolice1Layout.setVerticalGroup(
-            panelResetPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelResetPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelResetPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelResetPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 10, 70, 30));
-
-        panelRefreshPolice1.setBackground(new java.awt.Color(204, 204, 204));
-
-        labelRefreshPolice1.setFont(new java.awt.Font("Segoe UI Symbol", 1, 13)); // NOI18N
-        labelRefreshPolice1.setForeground(new java.awt.Color(51, 51, 51));
-        labelRefreshPolice1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelRefreshPolice1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/refresh.png"))); // NOI18N
-        labelRefreshPolice1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        labelRefreshPolice1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                labelRefreshPolice1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                labelRefreshPolice1MouseExited(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panelRefreshPolice1Layout = new javax.swing.GroupLayout(panelRefreshPolice1);
-        panelRefreshPolice1.setLayout(panelRefreshPolice1Layout);
-        panelRefreshPolice1Layout.setHorizontalGroup(
-            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelRefreshPolice1Layout.createSequentialGroup()
-                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        panelRefreshPolice1Layout.setVerticalGroup(
-            panelRefreshPolice1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelRefreshPolice1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(labelRefreshPolice1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        panelCriminal.add(panelRefreshPolice1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 10, 50, 30));
-
-        jPanel13.setBackground(new java.awt.Color(204, 204, 204));
-
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
-            },
-            new String [] {
-                "ID", "Name", "Age", "Father's Name", "Previous Records"
-            }
-        ) {
-            Class[] types = new Class [] {
-                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
-            };
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false
-            };
-
-            public Class getColumnClass(int columnIndex) {
-                return types [columnIndex];
-            }
-
-            public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
-            }
-        });
-        jTable2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable2.setFocusable(false);
-        jTable2.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        jTable2.setRowHeight(20);
-        jTable2.setSelectionBackground(new java.awt.Color(51, 51, 51));
-        jTable2.getTableHeader().setReorderingAllowed(false);
-        jScrollPane2.setViewportView(jTable2);
-
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel15.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel4.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Preview");
-        jLabel4.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
-        jPanel15.setLayout(jPanel15Layout);
-        jPanel15Layout.setHorizontalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel15Layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 311, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel15Layout.setVerticalGroup(
-            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-        );
-
-        jPanel14.add(jPanel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
-
-        javax.swing.GroupLayout jPanel13Layout = new javax.swing.GroupLayout(jPanel13);
-        jPanel13.setLayout(jPanel13Layout);
-        jPanel13Layout.setHorizontalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel13Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 620, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        jPanel13Layout.setVerticalGroup(
-            jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-            .addComponent(jPanel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        panelCriminal.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
-
-        panelSlider1.add(panelCriminal, "card2");
 
         jPanel2.add(panelSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 980, 550));
 
@@ -4456,8 +4956,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelPoliceAddMouseClicked
 
     private void labelAddCustodyMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddCustodyMouseClicked
-        //dialogAddCustody_Info.setLocationRelativeTo(null);
-       // dialogAddCustody_Info.setVisible(true);
+        dialogAddCustody.setLocationRelativeTo(null);
+        dialogAddCustody.setVisible(true);
     }//GEN-LAST:event_labelAddCustodyMouseClicked
 
     private void labelAddCustodyMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddCustodyMouseEntered
@@ -4904,7 +5404,8 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelDeletePoliceMouseClicked
 
     private void labelPoliceAdd1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseClicked
-        // TODO add your handling code here:
+        dialogAddCriminal.setLocationRelativeTo(null);
+        dialogAddCriminal.setVisible(true);
     }//GEN-LAST:event_labelPoliceAdd1MouseClicked
 
     private void labelPoliceAdd1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelPoliceAdd1MouseEntered
@@ -5200,17 +5701,14 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_dialogAddPoliceMouseClicked
 
     private void labelDeletePolice1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice1MouseClicked
-        // TODO add your handling code here:
-        
-       
-
+        dialogDeleteCriminal.setLocationRelativeTo(null);
+        dialogDeleteCriminal.setVisible(true);
     }//GEN-LAST:event_labelDeletePolice1MouseClicked
 
     private void labelDeletePolice2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice2MouseClicked
-        // TODO add your handling code here:
-        
-        dialogDeletePolice.setLocationRelativeTo(null);
-        dialogDeletePolice.setVisible(true);
+
+        dialogDeleteCustody.setLocationRelativeTo(null);
+        dialogDeleteCustody.setVisible(true);
         
         
         try {
@@ -5234,6 +5732,92 @@ public class Dashboard extends javax.swing.JFrame {
           
         
     }//GEN-LAST:event_labelDeletePolice2MouseClicked
+
+    private void labelAddPoliceCross15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross15MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross15MouseClicked
+
+    private void labelAddPoliceCross15MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross15MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross15MouseEntered
+
+    private void labelAddPoliceCross15MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross15MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross15MouseExited
+
+    private void labelAddPoliceCross16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross16MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross16MouseClicked
+
+    private void labelAddPoliceCross16MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross16MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross16MouseEntered
+
+    private void labelAddPoliceCross16MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross16MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross16MouseExited
+
+    private void labelAddPoliceCross17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross17MouseClicked
+
+    private void labelAddPoliceCross17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross17MouseEntered
+
+    private void labelAddPoliceCross17MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_labelAddPoliceCross17MouseExited
+
+    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField23ActionPerformed
+
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jPanel47AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel47AncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPanel47AncestorAdded
+
+    private void labelUpdatePolice1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice1MouseClicked
+        dialogUpdateCriminal.setLocationRelativeTo(null);
+        dialogUpdateCriminal.setVisible(true);
+    }//GEN-LAST:event_labelUpdatePolice1MouseClicked
+
+    private void labelUpdatePolice2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice2MouseClicked
+        dialogUpdateCustody.setLocationRelativeTo(null);
+        dialogUpdateCustody.setVisible(true);
+    }//GEN-LAST:event_labelUpdatePolice2MouseClicked
+
+    private void labelUpdatePolice3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePolice3MouseClicked
+        dialogUpdateComplaint.setLocationRelativeTo(null);
+        dialogUpdateComplaint.setVisible(true);
+    }//GEN-LAST:event_labelUpdatePolice3MouseClicked
+
+    private void labelDeletePolice3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelDeletePolice3MouseClicked
+        dialogDeleteComplaint.setLocationRelativeTo(null);
+        dialogDeleteComplaint.setVisible(true);
+    }//GEN-LAST:event_labelDeletePolice3MouseClicked
+
+    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField20ActionPerformed
+
+    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        dialogInsertComplaint.setLocationRelativeTo(null);
+        dialogInsertComplaint.setVisible(true);
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        dialogAccusedDetails.setLocationRelativeTo(null);
+        dialogAccusedDetails.setVisible(true);
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5365,13 +5949,16 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JDialog dialogAccusedDetails;
     private javax.swing.JDialog dialogAddComplainant;
     private javax.swing.JDialog dialogAddCriminal;
+    private javax.swing.JDialog dialogAddCustody;
     private javax.swing.JDialog dialogAddPolice;
     private javax.swing.JDialog dialogDeleteComplaint;
     private javax.swing.JDialog dialogDeleteCriminal;
+    private javax.swing.JDialog dialogDeleteCustody;
     private javax.swing.JDialog dialogDeletePolice;
     private javax.swing.JDialog dialogInsertComplaint;
     private javax.swing.JDialog dialogUpdateComplaint;
     private javax.swing.JDialog dialogUpdateCriminal;
+    private javax.swing.JDialog dialogUpdateCustody;
     private javax.swing.JDialog dialogUpdatePolice;
     private javax.swing.JLabel img3;
     private javax.swing.JLabel img4;
@@ -5385,7 +5972,16 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
+    private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -5433,6 +6029,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox43;
     private javax.swing.JCheckBox jCheckBox44;
     private javax.swing.JCheckBox jCheckBox45;
+    private javax.swing.JCheckBox jCheckBox46;
     private javax.swing.JCheckBox jCheckBox47;
     private javax.swing.JCheckBox jCheckBox48;
     private javax.swing.JCheckBox jCheckBox49;
@@ -5452,6 +6049,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox61;
     private javax.swing.JCheckBox jCheckBox62;
     private javax.swing.JCheckBox jCheckBox63;
+    private javax.swing.JCheckBox jCheckBox64;
     private javax.swing.JCheckBox jCheckBox7;
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
@@ -5462,6 +6060,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
+    private javax.swing.JComboBox<String> jComboBox9;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
     private com.toedter.calendar.JDateChooser jDateChooser3;
@@ -5484,7 +6084,14 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel112;
     private javax.swing.JLabel jLabel113;
     private javax.swing.JLabel jLabel114;
+    private javax.swing.JLabel jLabel115;
+    private javax.swing.JLabel jLabel116;
+    private javax.swing.JLabel jLabel117;
+    private javax.swing.JLabel jLabel118;
+    private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel120;
+    private javax.swing.JLabel jLabel121;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
@@ -5585,6 +6192,8 @@ public class Dashboard extends javax.swing.JFrame {
     private com.toedter.components.JLocaleChooser jLocaleChooser2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
@@ -5616,6 +6225,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel42;
     private javax.swing.JPanel jPanel43;
     private javax.swing.JPanel jPanel44;
+    private javax.swing.JPanel jPanel45;
+    private javax.swing.JPanel jPanel46;
+    private javax.swing.JPanel jPanel47;
+    private javax.swing.JPanel jPanel48;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
@@ -5646,6 +6259,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator23;
     private javax.swing.JSeparator jSeparator24;
     private javax.swing.JSeparator jSeparator25;
+    private javax.swing.JSeparator jSeparator26;
     private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator30;
@@ -5675,6 +6289,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
+    private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
@@ -5693,6 +6311,9 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel labelAddPoliceCross12;
     private javax.swing.JLabel labelAddPoliceCross13;
     private javax.swing.JLabel labelAddPoliceCross14;
+    private javax.swing.JLabel labelAddPoliceCross15;
+    private javax.swing.JLabel labelAddPoliceCross16;
+    private javax.swing.JLabel labelAddPoliceCross17;
     private javax.swing.JLabel labelAddPoliceCross4;
     private javax.swing.JLabel labelAddPoliceCross5;
     private javax.swing.JLabel labelAddPoliceCross6;
@@ -5729,6 +6350,9 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelAddPoliceCross12;
     private javax.swing.JPanel panelAddPoliceCross13;
     private javax.swing.JPanel panelAddPoliceCross14;
+    private javax.swing.JPanel panelAddPoliceCross15;
+    private javax.swing.JPanel panelAddPoliceCross16;
+    private javax.swing.JPanel panelAddPoliceCross17;
     private javax.swing.JPanel panelAddPoliceCross4;
     private javax.swing.JPanel panelAddPoliceCross5;
     private javax.swing.JPanel panelAddPoliceCross6;
