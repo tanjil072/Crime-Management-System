@@ -2,13 +2,42 @@ USE CMS;
 CREATE TABLE CRIMINAL_INFO
 (
 	CriminalId int IDENTITY(1,1) PRIMARY KEY,
-	FirstName varchar(15) NOT NULL,
-	FathersName varchar(15) NULL,
+	FirstName varchar(30) NOT NULL,
+	LastName varchar(30) NOT NULL,
+	FathersName varchar(30) NULL,
 	Age tinyint NOT NULL,
-	PreviousActs varchar(15) NULL,
+	Gender varchar(6) NOT NULL,
+	Marital_Status varchar(10) NULL,
+	Phone varchar(11) NULL,
+	Email varchar(30) UNIQUE NULL,
+	Nationality varchar(50) NOT NULL,
+	NID varchar(15) UNIQUE NOT NULL,
+	DateOfBirth date DEFAULT '0001-01-01' NOT NULL,
+	Occupation varchar(15) NOT NULL,
+	Height float NULL,
+	Eye_Color varchar(15) NOT NULL,
+	Hair_Color varchar(15) NOT NULL,
+	Beard varchar(3) NULL,
+	Mustache varchar(3) NULL,
+	Glasses varchar(3) NULL,
+	Tatoos varchar(3) NULL,
+	Weight float NULL,
+	Skin_Color varchar(15) NOT NULL,
+	Scars varchar(15)  NULL,
+	Birthmarks varchar(3) NULL,
+	Gold_Teeth varchar(3) NULL,
+	Missing_Teeth varchar(3) NULL,
+	LivingAddress varchar(300) NOT NULL,
+	WordAddress varchar(300) NOT NULL,
+	PermanentAddress varchar(300) NOT NULL,
+	OccurrenceId int  NULL,
+	PreviousRecords int NULL,
+	CustodyNo int NULL,
+	PoliceId int NOT NULL,
+	FrontImage image NULL,
+	RightImage image NULL,
+	LeftImage image NULL,
+	BackImage image NULL,
+
 )
 
-
-
-INSERT INTO CRIMINAL_INFO(FirstName,FathersName,Age,PreviousActs)
-                        VALUES('Toshib','Ahmed',21,'Murder');

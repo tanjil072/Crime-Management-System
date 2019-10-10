@@ -21,6 +21,8 @@ import java.sql.Statement;
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
@@ -44,9 +46,11 @@ public class Dashboard extends javax.swing.JFrame {
     String filename = null;
     //private byte[] picture;
     byte[] person_image;
-    
-   
-    
+    byte[] person_image2;
+    byte[] person_image5;
+    byte[] person_image6;
+    byte[] person_image7;
+    byte[] person_image8;
 
     DefaultTableModel model;
 
@@ -56,131 +60,111 @@ public class Dashboard extends javax.swing.JFrame {
 
         this.setLocationRelativeTo(null);
     }
-    
-   
+
     public void PoliceInfo() {
-       
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
             centerRenderer.setHorizontalAlignment(JLabel.CENTER);
             Police_Info.setDefaultRenderer(String.class, centerRenderer);
             Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
-
             String query1 = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
             Police_Info.setModel(DbUtils.resultSetToTableModel(rs));
 
-            
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
     }
-    
-    
+
     public void CriminalInfo() {
-        
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
             centerRenderer.setHorizontalAlignment(JLabel.CENTER);
             Police_Info.setDefaultRenderer(String.class, centerRenderer);
             Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
-
-            String query1 = "SELECT CriminalId,FirstName,Age,FathersName,PreviousActs FROM CRIMINAL_INFO";
+            String query1 = "SELECT CriminalId,FirstName,Age,FathersName,PreviousRecords FROM CRIMINAL_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
             jTable2.setModel(DbUtils.resultSetToTableModel(rs));
 
-            
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
     }
-    
-    
-    
+
     public void CustodyInfo() {
-        
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
             centerRenderer.setHorizontalAlignment(JLabel.CENTER);
             Police_Info.setDefaultRenderer(String.class, centerRenderer);
             Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
-
             String query1 = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
             Custody_Info.setModel(DbUtils.resultSetToTableModel(rs));
 
-            
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
     }
-    
-    
+
     public void ComplaintInfo() {
-        
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-           /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+            /* DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
             centerRenderer.setHorizontalAlignment(JLabel.CENTER);
             Police_Info.setDefaultRenderer(String.class, centerRenderer);
             Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
-
             String query1 = "SELECT ComplaintId,ComplaintType,ComplainantName,ComplainantType,DateOfIssue FROM COMPLAINT_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
             Complaint_Info.setModel(DbUtils.resultSetToTableModel(rs));
 
-            
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
     }
-    
-    
-    public void UpdateCustodyTable()
-    {
-        try{
+
+    public void UpdateCustodyTable() {
+        try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-            
-            String sql="SELECT * FROM CUSTODY_INFO";
+
+            String sql = "SELECT * FROM CUSTODY_INFO";
             PreparedStatement st = con.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
             Custody_Info.setModel(DbUtils.resultSetToTableModel(rs));
-            
-        }catch (ClassNotFoundException | SQLException e) {
+
+        } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
     }
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -306,13 +290,13 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel67 = new javax.swing.JLabel();
         FirstName3 = new javax.swing.JTextField();
         jLabel68 = new javax.swing.JLabel();
-        PermanentAdd3 = new javax.swing.JTextField();
+        WorkAdd3 = new javax.swing.JTextField();
         jLabel69 = new javax.swing.JLabel();
         LivingAdd3 = new javax.swing.JTextField();
         jLabel70 = new javax.swing.JLabel();
         Email3 = new javax.swing.JTextField();
         jLabel71 = new javax.swing.JLabel();
-        NID3 = new javax.swing.JTextField();
+        weight = new javax.swing.JTextField();
         jPanel33 = new javax.swing.JPanel();
         jLabel72 = new javax.swing.JLabel();
         panelAddPoliceCross7 = new javax.swing.JPanel();
@@ -323,45 +307,45 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel73 = new javax.swing.JLabel();
         LastName3 = new javax.swing.JTextField();
         jLabel74 = new javax.swing.JLabel();
-        LastName4 = new javax.swing.JTextField();
+        FathersName3 = new javax.swing.JTextField();
         jLabel75 = new javax.swing.JLabel();
-        Gender4 = new javax.swing.JComboBox<>();
-        jCheckBox19 = new javax.swing.JCheckBox();
-        jCheckBox20 = new javax.swing.JCheckBox();
-        jCheckBox22 = new javax.swing.JCheckBox();
-        jCheckBox23 = new javax.swing.JCheckBox();
+        EyeColor = new javax.swing.JComboBox<>();
+        Tatoos = new javax.swing.JCheckBox();
+        Glasses = new javax.swing.JCheckBox();
+        Birthmarks = new javax.swing.JCheckBox();
+        GoldTeeth = new javax.swing.JCheckBox();
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         NID4 = new javax.swing.JTextField();
-        NID5 = new javax.swing.JTextField();
+        Height = new javax.swing.JTextField();
         jLabel78 = new javax.swing.JLabel();
         Gender5 = new javax.swing.JComboBox<>();
         jLabel79 = new javax.swing.JLabel();
-        Gender6 = new javax.swing.JComboBox<>();
+        SkinColor = new javax.swing.JComboBox<>();
         jLabel80 = new javax.swing.JLabel();
-        Gender7 = new javax.swing.JComboBox<>();
-        jCheckBox24 = new javax.swing.JCheckBox();
-        jCheckBox25 = new javax.swing.JCheckBox();
-        jCheckBox26 = new javax.swing.JCheckBox();
+        HairColor = new javax.swing.JComboBox<>();
+        Beard = new javax.swing.JCheckBox();
+        Mustache = new javax.swing.JCheckBox();
+        MissingTeeth = new javax.swing.JCheckBox();
         jLabel81 = new javax.swing.JLabel();
         jLabel82 = new javax.swing.JLabel();
-        NID6 = new javax.swing.JTextField();
+        scars = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        LivingAdd4 = new javax.swing.JTextField();
+        PermanentAdd3 = new javax.swing.JTextField();
         jLabel83 = new javax.swing.JLabel();
         jLabel84 = new javax.swing.JLabel();
-        NID7 = new javax.swing.JTextField();
+        OccurrenceId = new javax.swing.JTextField();
         jLabel85 = new javax.swing.JLabel();
-        NID8 = new javax.swing.JTextField();
+        PrevRec = new javax.swing.JTextField();
         jLabel86 = new javax.swing.JLabel();
-        NID9 = new javax.swing.JTextField();
+        CustodyNo = new javax.swing.JTextField();
         jLabel87 = new javax.swing.JLabel();
-        NID10 = new javax.swing.JTextField();
+        PoliceId = new javax.swing.JTextField();
         Gender9 = new javax.swing.JComboBox<>();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        img7 = new javax.swing.JLabel();
+        img8 = new javax.swing.JLabel();
+        img6 = new javax.swing.JLabel();
+        img5 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -369,7 +353,7 @@ public class Dashboard extends javax.swing.JFrame {
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
-        jLocaleChooser2 = new com.toedter.components.JLocaleChooser();
+        Nationality = new com.toedter.components.JLocaleChooser();
         dialogDeleteCriminal = new javax.swing.JDialog();
         jPanel34 = new javax.swing.JPanel();
         jPanel35 = new javax.swing.JPanel();
@@ -382,14 +366,14 @@ public class Dashboard extends javax.swing.JFrame {
         dialogUpdateCriminal = new javax.swing.JDialog();
         jPanel36 = new javax.swing.JPanel();
         jLabel91 = new javax.swing.JLabel();
-        Age4 = new javax.swing.JTextField();
+        Age5 = new javax.swing.JTextField();
         Gender10 = new javax.swing.JComboBox<>();
         Phone4 = new javax.swing.JTextField();
-        FirstName4 = new javax.swing.JTextField();
+        CriminalId4 = new javax.swing.JTextField();
         PermanentAdd4 = new javax.swing.JTextField();
         LivingAdd5 = new javax.swing.JTextField();
         Email4 = new javax.swing.JTextField();
-        NID11 = new javax.swing.JTextField();
+        Weight5 = new javax.swing.JTextField();
         jPanel37 = new javax.swing.JPanel();
         jLabel99 = new javax.swing.JLabel();
         panelAddPoliceCross9 = new javax.swing.JPanel();
@@ -398,14 +382,14 @@ public class Dashboard extends javax.swing.JFrame {
         jSeparator23 = new javax.swing.JSeparator();
         DateOfBirth4 = new com.toedter.calendar.JDateChooser();
         LastName5 = new javax.swing.JTextField();
-        LastName6 = new javax.swing.JTextField();
+        FathersName5 = new javax.swing.JTextField();
         Gender11 = new javax.swing.JComboBox<>();
         jCheckBox21 = new javax.swing.JCheckBox();
         jCheckBox27 = new javax.swing.JCheckBox();
         jCheckBox28 = new javax.swing.JCheckBox();
         jCheckBox29 = new javax.swing.JCheckBox();
         NID12 = new javax.swing.JTextField();
-        NID13 = new javax.swing.JTextField();
+        Height5 = new javax.swing.JTextField();
         Gender12 = new javax.swing.JComboBox<>();
         Gender13 = new javax.swing.JComboBox<>();
         Gender14 = new javax.swing.JComboBox<>();
@@ -413,7 +397,7 @@ public class Dashboard extends javax.swing.JFrame {
         jCheckBox31 = new javax.swing.JCheckBox();
         jCheckBox32 = new javax.swing.JCheckBox();
         Gender15 = new javax.swing.JComboBox<>();
-        NID14 = new javax.swing.JTextField();
+        scars5 = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         LivingAdd6 = new javax.swing.JTextField();
         NID15 = new javax.swing.JTextField();
@@ -1298,6 +1282,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         jCheckBox11.setText("Change Image");
         jCheckBox11.setBorderPainted(true);
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
         jPanel30.add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 350, -1, -1));
 
         jCheckBox12.setText("District");
@@ -1395,7 +1384,7 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel32.add(Age3, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 82, 120, -1));
 
-        Gender3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Doctor", "Engineer", "Farmer", "Service", "BusinessMan", "Others" }));
         Gender3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Gender3ActionPerformed(evt);
@@ -1419,7 +1408,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jLabel68.setText("Work Address");
         jPanel32.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 360, -1, -1));
-        jPanel32.add(PermanentAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 380, 660, 54));
+        jPanel32.add(WorkAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 380, 660, 54));
 
         jLabel69.setText("Living Address");
         jPanel32.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 280, -1, -1));
@@ -1439,12 +1428,12 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel71.setText("Weight (kg)");
         jPanel32.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 233, -1, -1));
 
-        NID3.addActionListener(new java.awt.event.ActionListener() {
+        weight.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID3ActionPerformed(evt);
+                weightActionPerformed(evt);
             }
         });
-        jPanel32.add(NID3, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 230, 40, -1));
+        jPanel32.add(weight, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 230, 40, -1));
 
         jPanel33.setBackground(new java.awt.Color(51, 51, 51));
         jPanel33.setForeground(new java.awt.Color(51, 51, 51));
@@ -1512,40 +1501,40 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel74.setText("Gender");
         jPanel32.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 84, -1, -1));
 
-        LastName4.addActionListener(new java.awt.event.ActionListener() {
+        FathersName3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LastName4ActionPerformed(evt);
+                FathersName3ActionPerformed(evt);
             }
         });
-        jPanel32.add(LastName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 50, 120, -1));
+        jPanel32.add(FathersName3, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 50, 120, -1));
 
         jLabel75.setText("Nationality");
         jPanel32.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 114, -1, -1));
 
-        Gender4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        Gender4.addActionListener(new java.awt.event.ActionListener() {
+        EyeColor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Red", "Brown", "Black", "Purple" }));
+        EyeColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Gender4ActionPerformed(evt);
+                EyeColorActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 70, -1));
+        jPanel32.add(EyeColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 200, 70, -1));
 
-        jCheckBox19.setText("Tatoos");
-        jPanel32.add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 203, -1, -1));
+        Tatoos.setText("Tatoos");
+        jPanel32.add(Tatoos, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 203, -1, -1));
 
-        jCheckBox20.setText("Glasses");
-        jPanel32.add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 203, -1, -1));
+        Glasses.setText("Glasses");
+        jPanel32.add(Glasses, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 203, -1, -1));
 
-        jCheckBox22.setText("Birthmarks");
-        jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
+        Birthmarks.setText("Birthmarks");
+        Birthmarks.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox22ActionPerformed(evt);
+                BirthmarksActionPerformed(evt);
             }
         });
-        jPanel32.add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 233, 90, -1));
+        jPanel32.add(Birthmarks, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 233, 90, -1));
 
-        jCheckBox23.setText("Gold Teeth");
-        jPanel32.add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 233, 90, -1));
+        GoldTeeth.setText("Gold Teeth");
+        jPanel32.add(GoldTeeth, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 233, 90, -1));
 
         jLabel76.setText("NID No");
         jPanel32.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 144, -1, -1));
@@ -1560,12 +1549,12 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel32.add(NID4, new org.netbeans.lib.awtextra.AbsoluteConstraints(81, 142, 120, -1));
 
-        NID5.addActionListener(new java.awt.event.ActionListener() {
+        Height.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID5ActionPerformed(evt);
+                HeightActionPerformed(evt);
             }
         });
-        jPanel32.add(NID5, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 200, 40, -1));
+        jPanel32.add(Height, new org.netbeans.lib.awtextra.AbsoluteConstraints(82, 200, 40, -1));
 
         jLabel78.setText("Height (inch)");
         jPanel32.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 203, -1, -1));
@@ -1581,33 +1570,33 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel79.setText("Skin Color");
         jPanel32.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(132, 233, -1, -1));
 
-        Gender6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        Gender6.addActionListener(new java.awt.event.ActionListener() {
+        SkinColor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Black", "White", "OffWhite", " " }));
+        SkinColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Gender6ActionPerformed(evt);
+                SkinColorActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 70, -1));
+        jPanel32.add(SkinColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 230, 70, -1));
 
         jLabel80.setText("Hair Color");
         jPanel32.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 203, -1, -1));
 
-        Gender7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
-        Gender7.addActionListener(new java.awt.event.ActionListener() {
+        HairColor.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Black", "White", "OffWhite", " " }));
+        HairColor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Gender7ActionPerformed(evt);
+                HairColorActionPerformed(evt);
             }
         });
-        jPanel32.add(Gender7, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 200, 70, -1));
+        jPanel32.add(HairColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 200, 70, -1));
 
-        jCheckBox24.setText("Beard");
-        jPanel32.add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 203, -1, -1));
+        Beard.setText("Beard");
+        jPanel32.add(Beard, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 203, -1, -1));
 
-        jCheckBox25.setText("Mustache");
-        jPanel32.add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 203, -1, -1));
+        Mustache.setText("Mustache");
+        jPanel32.add(Mustache, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 203, -1, -1));
 
-        jCheckBox26.setText("Missing Teeth");
-        jPanel32.add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 233, 100, -1));
+        MissingTeeth.setText("Missing Teeth");
+        jPanel32.add(MissingTeeth, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 233, 100, -1));
 
         jLabel81.setText("Occupation");
         jPanel32.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 144, -1, -1));
@@ -1615,16 +1604,16 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel82.setText("Scars");
         jPanel32.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 233, -1, -1));
 
-        NID6.addActionListener(new java.awt.event.ActionListener() {
+        scars.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID6ActionPerformed(evt);
+                scarsActionPerformed(evt);
             }
         });
-        jPanel32.add(NID6, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 230, 70, -1));
+        jPanel32.add(scars, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 230, 70, -1));
 
         jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel32.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(685, 40, 10, 540));
-        jPanel32.add(LivingAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 460, 660, 54));
+        jPanel32.add(PermanentAdd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 460, 660, 54));
 
         jLabel83.setText("Permanent Address");
         jPanel32.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(11, 440, -1, -1));
@@ -1632,44 +1621,44 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel84.setText("Occurrence ID");
         jPanel32.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 553, -1, -1));
 
-        NID7.addActionListener(new java.awt.event.ActionListener() {
+        OccurrenceId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID7ActionPerformed(evt);
+                OccurrenceIdActionPerformed(evt);
             }
         });
-        jPanel32.add(NID7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 70, -1));
+        jPanel32.add(OccurrenceId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 550, 70, -1));
 
         jLabel85.setText("Previous Records");
         jPanel32.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 553, -1, -1));
 
-        NID8.addActionListener(new java.awt.event.ActionListener() {
+        PrevRec.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID8ActionPerformed(evt);
+                PrevRecActionPerformed(evt);
             }
         });
-        jPanel32.add(NID8, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 550, 70, -1));
+        jPanel32.add(PrevRec, new org.netbeans.lib.awtextra.AbsoluteConstraints(283, 550, 70, -1));
 
         jLabel86.setText("Custody No");
         jPanel32.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(384, 553, -1, -1));
 
-        NID9.addActionListener(new java.awt.event.ActionListener() {
+        CustodyNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID9ActionPerformed(evt);
+                CustodyNoActionPerformed(evt);
             }
         });
-        jPanel32.add(NID9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, 70, -1));
+        jPanel32.add(CustodyNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 550, 70, -1));
 
         jLabel87.setText("Police ID");
         jPanel32.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(548, 553, -1, -1));
 
-        NID10.addActionListener(new java.awt.event.ActionListener() {
+        PoliceId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID10ActionPerformed(evt);
+                PoliceIdActionPerformed(evt);
             }
         });
-        jPanel32.add(NID10, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 550, 70, -1));
+        jPanel32.add(PoliceId, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 550, 70, -1));
 
-        Gender9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
+        Gender9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Married", "Unmarried", "Devorced", "Widowed" }));
         Gender9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Gender9ActionPerformed(evt);
@@ -1677,23 +1666,33 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel32.add(Gender9, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 80, 120, -1));
 
-        jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 319, 190, 100));
+        img7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(img7, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 319, 190, 100));
 
-        jLabel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 452, 190, 100));
+        img8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(img8, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 452, 190, 100));
 
-        jLabel9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 184, 190, 100));
+        img6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(img6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 184, 190, 100));
 
-        jLabel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel32.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 190, 100));
+        img5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel32.add(img5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 50, 190, 100));
         jPanel32.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 660, 10));
 
         jButton2.setText("Back Image");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 552, -1, -1));
 
         jButton3.setText("Front Image");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 150, -1, -1));
 
         jButton4.setText("Right Image");
@@ -1705,10 +1704,20 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel32.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 284, -1, -1));
 
         jButton5.setText("Left Image");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 419, -1, -1));
 
         jButton6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton6.setText("Add");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
         jPanel32.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(345, 620, 100, 30));
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -1719,7 +1728,7 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
         jPanel32.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(475, 620, 100, 30));
-        jPanel32.add(jLocaleChooser2, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 110, 120, -1));
+        jPanel32.add(Nationality, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 110, 120, -1));
 
         javax.swing.GroupLayout dialogAddCriminalLayout = new javax.swing.GroupLayout(dialogAddCriminal.getContentPane());
         dialogAddCriminal.getContentPane().setLayout(dialogAddCriminalLayout);
@@ -1869,12 +1878,12 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel36.add(jLabel91, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 129, -1, -1));
 
-        Age4.addActionListener(new java.awt.event.ActionListener() {
+        Age5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Age4ActionPerformed(evt);
+                Age5ActionPerformed(evt);
             }
         });
-        jPanel36.add(Age4, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 129, 120, -1));
+        jPanel36.add(Age5, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 129, 120, -1));
 
         Gender10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender10.addActionListener(new java.awt.event.ActionListener() {
@@ -1885,12 +1894,12 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(Gender10, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 189, 120, -1));
         jPanel36.add(Phone4, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 159, 120, -1));
 
-        FirstName4.addActionListener(new java.awt.event.ActionListener() {
+        CriminalId4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FirstName4ActionPerformed(evt);
+                CriminalId4ActionPerformed(evt);
             }
         });
-        jPanel36.add(FirstName4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 45, 120, -1));
+        jPanel36.add(CriminalId4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 45, 120, -1));
         jPanel36.add(PermanentAdd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 430, 670, 54));
 
         LivingAdd5.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -1902,12 +1911,12 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(LivingAdd5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 350, 670, 54));
         jPanel36.add(Email4, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 159, 120, -1));
 
-        NID11.addActionListener(new java.awt.event.ActionListener() {
+        Weight5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID11ActionPerformed(evt);
+                Weight5ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID11, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 280, 40, -1));
+        jPanel36.add(Weight5, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 280, 40, -1));
 
         jPanel37.setBackground(new java.awt.Color(51, 51, 51));
         jPanel37.setForeground(new java.awt.Color(51, 51, 51));
@@ -1969,12 +1978,12 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel36.add(LastName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 99, 120, -1));
 
-        LastName6.addActionListener(new java.awt.event.ActionListener() {
+        FathersName5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LastName6ActionPerformed(evt);
+                FathersName5ActionPerformed(evt);
             }
         });
-        jPanel36.add(LastName6, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 99, 120, -1));
+        jPanel36.add(FathersName5, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 99, 120, -1));
 
         Gender11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender11.addActionListener(new java.awt.event.ActionListener() {
@@ -2008,12 +2017,12 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel36.add(NID12, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 189, 120, -1));
 
-        NID13.addActionListener(new java.awt.event.ActionListener() {
+        Height5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID13ActionPerformed(evt);
+                Height5ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID13, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 250, 40, -1));
+        jPanel36.add(Height5, new org.netbeans.lib.awtextra.AbsoluteConstraints(101, 250, 40, -1));
 
         Gender12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other" }));
         Gender12.addActionListener(new java.awt.event.ActionListener() {
@@ -2056,12 +2065,12 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel36.add(Gender15, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 159, 120, -1));
 
-        NID14.addActionListener(new java.awt.event.ActionListener() {
+        scars5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NID14ActionPerformed(evt);
+                scars5ActionPerformed(evt);
             }
         });
-        jPanel36.add(NID14, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 280, 70, -1));
+        jPanel36.add(scars5, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 280, 70, -1));
 
         jSeparator6.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel36.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 90, 10, 540));
@@ -2120,6 +2129,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton13.setForeground(new java.awt.Color(204, 204, 204));
         jButton13.setText("Update");
+        jButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton13ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 665, 100, 30));
 
         jButton14.setBackground(new java.awt.Color(51, 51, 51));
@@ -2217,9 +2231,19 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 602, -1, -1));
 
         jCheckBox60.setText("Front Image");
+        jCheckBox60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox60ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 200, -1, -1));
 
         jCheckBox61.setText("Right Image");
+        jCheckBox61.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox61ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 330, -1, -1));
 
         jCheckBox62.setText("Left Image");
@@ -3139,7 +3163,6 @@ public class Dashboard extends javax.swing.JFrame {
         dialogUpdateCustody.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         dialogUpdateCustody.setLocationByPlatform(true);
         dialogUpdateCustody.setUndecorated(true);
-        dialogUpdateCustody.setPreferredSize(new java.awt.Dimension(219, 195));
         dialogUpdateCustody.setResizable(false);
         dialogUpdateCustody.setSize(new java.awt.Dimension(219, 195));
         dialogUpdateCustody.setType(java.awt.Window.Type.POPUP);
@@ -4578,6 +4601,11 @@ public class Dashboard extends javax.swing.JFrame {
         Police_Info.setRowHeight(20);
         Police_Info.setSelectionBackground(new java.awt.Color(51, 51, 51));
         Police_Info.getTableHeader().setReorderingAllowed(false);
+        Police_Info.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Police_InfoMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(Police_Info);
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
@@ -5094,12 +5122,12 @@ public class Dashboard extends javax.swing.JFrame {
 
         try {
 
-            String a="'Murder'";
+            String a = "'Murder'";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-            String query1 = "SELECT * FROM COMPLAINT_INFO WHERE ComplaintType="+a;
+            String query1 = "SELECT * FROM COMPLAINT_INFO WHERE ComplaintType=" + a;
 
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
@@ -5113,7 +5141,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
         panelSlider1.nextPanel(20, panelCriminal, rootPaneCheckingEnabled);
-        CriminalInfo() ;
+        CriminalInfo();
     }//GEN-LAST:event_labelCriminalInfoMouseClicked
 
     private void labelCustodyInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCustodyInfoMouseClicked
@@ -5123,10 +5151,10 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelComplainMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelComplainMouseClicked
         panelSlider1.nextPanel(20, panelComplaint, rootPaneCheckingEnabled);
-        
+
         ComplaintInfo();
-        
-        
+
+
     }//GEN-LAST:event_labelComplainMouseClicked
 
     private void labelResetPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelResetPoliceMouseClicked
@@ -5137,12 +5165,12 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void labelExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelExitMouseClicked
         // TODO add your handling code here:
-        
+
         dispose();
-        SignIn sn= new SignIn();
+        SignIn sn = new SignIn();
         sn.setVisible(true);
-        
-        
+
+
     }//GEN-LAST:event_labelExitMouseClicked
 
     private void labelAddPoliceCross4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross4MouseClicked
@@ -5163,33 +5191,26 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
-        
-         try {
 
-            String PID=jTextField1.getText();
+        try {
+
+            String PID = jTextField1.getText();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-            String query1 = "DELETE FROM POLICE_INFO WHERE PoliceId = "+PID;
+            String query1 = "DELETE FROM POLICE_INFO WHERE PoliceId = " + PID;
 
             PreparedStatement st = con.prepareStatement(query1);
-            int rs=st.executeUpdate();
-             
+            int rs = st.executeUpdate();
 
             Police_Info.revalidate();
-            
-            
-            
 
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-         
-         
-         //Police_Info.setModel(DbUtils.resultSetToTableModel(rs));
-        
+
+        //Police_Info.setModel(DbUtils.resultSetToTableModel(rs));
         //String s=JOptionPane.showInputDialog("Confirm Password", JOptionPane.QUESTION_MESSAGE);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -5249,11 +5270,11 @@ public class Dashboard extends javax.swing.JFrame {
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection connection = DriverManager.getConnection(
-                "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             String query = "INSERT INTO POLICE_INFO(FirstName,LastName,Age,Gender,DateOfBirth,Phone,Designation,"
-            + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
-            + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "LivingAddress,PermanentAddress,Email,NID,District,PoliceStation,JoiningDate,ResigningDate,Salary,Image)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = connection.prepareStatement(query);
             pst.setString(1, FirstName1.getText());
             pst.setString(2, LastName1.getText());
@@ -5303,15 +5324,15 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_labelAddPoliceCross5MouseClicked
 
     private void labelAddPoliceCross5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseEntered
-       panelAddPoliceCross5.setBackground(new Color(204, 0, 0));
-        labelAddPoliceCross5.setForeground(new Color(255,255,255));
-        
-        
+        panelAddPoliceCross5.setBackground(new Color(204, 0, 0));
+        labelAddPoliceCross5.setForeground(new Color(255, 255, 255));
+
+
     }//GEN-LAST:event_labelAddPoliceCross5MouseEntered
 
     private void labelAddPoliceCross5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross5MouseExited
-        panelAddPoliceCross5.setBackground(new Color(51,51,51));
-        labelAddPoliceCross5.setForeground(new Color(255,255,255));
+        panelAddPoliceCross5.setBackground(new Color(51, 51, 51));
+        labelAddPoliceCross5.setForeground(new Color(255, 255, 255));
     }//GEN-LAST:event_labelAddPoliceCross5MouseExited
 
     private void Save6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save6ActionPerformed
@@ -5344,40 +5365,355 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_LastName2ActionPerformed
 
     private void Save7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Save7ActionPerformed
-        // TODO add your handling code here:
-        
-        
-          String fname = null;
-        String PID=jTextField2.getText();
-        
+
+        String fname = null;
+        String lname = null;
+        String age = null;
+        String gender = null;
+        String phone = null;
+        String PID = jTextField2.getText();
+
         if (jCheckBox1.isSelected()) {
-            fname=FirstName2.getText();
-            
+            fname = FirstName2.getText();
 
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
         }
-        
-       try {
 
-            
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+        if (jCheckBox2.isSelected()) {
+            lname = LastName2.getText();
 
-            String query1 = "UPDATE POLICE_INFO SET FirstName="+"\'"+fname+"\'"+" WHERE PoliceId="+PID;
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
+                String query1 = "UPDATE POLICE_INFO SET LastName=" + "\'" + lname + "\'" + " WHERE PoliceId=" + PID;
 
-            PreparedStatement st = con.prepareStatement(query1);
-            st.executeUpdate();
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
 
-            
-            
+                JOptionPane.showMessageDialog(this, "Update Successfull");
 
-            
-
-        } catch (ClassNotFoundException | SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
         }
-        
+        if (jCheckBox3.isSelected()) {
+            age = Age2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Age=" + "\'" + age + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        if (jCheckBox4.isSelected()) {
+            gender = Gender2.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Gender=" + "\'" + gender + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        if (jCheckBox5.isSelected()) {
+            phone = Phone2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Phone=" + "\'" + phone + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox6.isSelected()) {
+            String Email = Email2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Email=" + "\'" + Email + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox7.isSelected()) {
+            String NID = NID2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET NID=" + "\'" + NID + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox8.isSelected()) {
+            Date dateofbirth = DateOfBirth2.getDate();
+            String DateOfBirth = DateFormat.getDateInstance().format(dateofbirth);
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET DateOfBirth=" + "\'" + DateOfBirth + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox12.isSelected()) {
+            String District = District2.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET District=" + "\'" + District + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox13.isSelected()) {
+            String PoliceStation = PoliceStation2.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET PoliceStation=" + "\'" + PoliceStation + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox14.isSelected()) {
+            String Designation = Designation2.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Designation=" + "\'" + Designation + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox15.isSelected()) {
+            String Salary = Salary2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET Salary=" + "\'" + Salary + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox16.isSelected()) {
+            String LivingAdd = LivingAdd2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET LivingAddress=" + "\'" + LivingAdd + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox17.isSelected()) {
+            String PermanentAddress = PermanentAdd2.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET PermanentAddress=" + "\'" + PermanentAddress + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox18.isSelected()) {
+            Date dateofjoining = JoiningDate2.getDate();
+            String DateOfJoining = DateFormat.getDateInstance().format(dateofjoining);
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET JoiningDate=" + "\'" + DateOfJoining + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox10.isSelected()) {
+            Date dateofresigning = ResigningDate2.getDate();
+            String DateOfResigning = DateFormat.getDateInstance().format(dateofresigning);
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE POLICE_INFO SET ResigningDate=" + "\'" + DateOfResigning + "\'" + " WHERE PoliceId=" + PID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+
+        if (jCheckBox11.isSelected()) {
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection connection = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query = "UPDATE POLICE_INFO SET IMAGE=?";
+                PreparedStatement pst = connection.prepareStatement(query);
+
+                pst.setBytes(1, person_image2);
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+        }
+
+
     }//GEN-LAST:event_Save7ActionPerformed
 
     private void NID2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID2ActionPerformed
@@ -5417,9 +5753,9 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_FirstName3ActionPerformed
 
-    private void NID3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID3ActionPerformed
+    private void weightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_weightActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID3ActionPerformed
+    }//GEN-LAST:event_weightActionPerformed
 
     private void labelAddPoliceCross7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross7MouseClicked
         // TODO add your handling code here:
@@ -5437,37 +5773,37 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_LastName3ActionPerformed
 
-    private void LastName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName4ActionPerformed
+    private void FathersName3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FathersName3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_LastName4ActionPerformed
+    }//GEN-LAST:event_FathersName3ActionPerformed
 
-    private void Gender4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender4ActionPerformed
+    private void EyeColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EyeColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Gender4ActionPerformed
+    }//GEN-LAST:event_EyeColorActionPerformed
 
-    private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
+    private void BirthmarksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BirthmarksActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox22ActionPerformed
+    }//GEN-LAST:event_BirthmarksActionPerformed
 
     private void NID4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_NID4ActionPerformed
 
-    private void NID5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID5ActionPerformed
+    private void HeightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HeightActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID5ActionPerformed
+    }//GEN-LAST:event_HeightActionPerformed
 
     private void Gender5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Gender5ActionPerformed
 
-    private void Gender6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender6ActionPerformed
+    private void SkinColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SkinColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Gender6ActionPerformed
+    }//GEN-LAST:event_SkinColorActionPerformed
 
-    private void Gender7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender7ActionPerformed
+    private void HairColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HairColorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Gender7ActionPerformed
+    }//GEN-LAST:event_HairColorActionPerformed
 
     private void labelUpdatePoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelUpdatePoliceMouseClicked
         dialogUpdatePolice.setLocationRelativeTo(null);
@@ -5524,25 +5860,25 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_labelRefreshPolice1MouseExited
 
-    private void NID6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID6ActionPerformed
+    private void scarsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scarsActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID6ActionPerformed
+    }//GEN-LAST:event_scarsActionPerformed
 
-    private void NID7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID7ActionPerformed
+    private void OccurrenceIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OccurrenceIdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID7ActionPerformed
+    }//GEN-LAST:event_OccurrenceIdActionPerformed
 
-    private void NID8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID8ActionPerformed
+    private void PrevRecActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PrevRecActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID8ActionPerformed
+    }//GEN-LAST:event_PrevRecActionPerformed
 
-    private void NID9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID9ActionPerformed
+    private void CustodyNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CustodyNoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID9ActionPerformed
+    }//GEN-LAST:event_CustodyNoActionPerformed
 
-    private void NID10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID10ActionPerformed
+    private void PoliceIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PoliceIdActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID10ActionPerformed
+    }//GEN-LAST:event_PoliceIdActionPerformed
 
     private void Gender9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender9ActionPerformed
         // TODO add your handling code here:
@@ -5554,6 +5890,27 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img6.getWidth(), img6.getHeight(), Image.SCALE_SMOOTH));
+        img6.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image6 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void labelAddPoliceCross8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross8MouseClicked
@@ -5581,25 +5938,25 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jPanel34AncestorAdded
 
-    private void Age4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age4ActionPerformed
+    private void Age5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Age5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Age4ActionPerformed
+    }//GEN-LAST:event_Age5ActionPerformed
 
     private void Gender10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_Gender10ActionPerformed
 
-    private void FirstName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstName4ActionPerformed
+    private void CriminalId4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CriminalId4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FirstName4ActionPerformed
+    }//GEN-LAST:event_CriminalId4ActionPerformed
 
     private void LivingAdd5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LivingAdd5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_LivingAdd5ActionPerformed
 
-    private void NID11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID11ActionPerformed
+    private void Weight5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Weight5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID11ActionPerformed
+    }//GEN-LAST:event_Weight5ActionPerformed
 
     private void labelAddPoliceCross9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross9MouseClicked
         // TODO add your handling code here:
@@ -5617,9 +5974,9 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_LastName5ActionPerformed
 
-    private void LastName6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LastName6ActionPerformed
+    private void FathersName5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FathersName5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_LastName6ActionPerformed
+    }//GEN-LAST:event_FathersName5ActionPerformed
 
     private void Gender11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender11ActionPerformed
         // TODO add your handling code here:
@@ -5633,9 +5990,9 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_NID12ActionPerformed
 
-    private void NID13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID13ActionPerformed
+    private void Height5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Height5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID13ActionPerformed
+    }//GEN-LAST:event_Height5ActionPerformed
 
     private void Gender12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Gender12ActionPerformed
         // TODO add your handling code here:
@@ -5653,9 +6010,9 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Gender15ActionPerformed
 
-    private void NID14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID14ActionPerformed
+    private void scars5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scars5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_NID14ActionPerformed
+    }//GEN-LAST:event_scars5ActionPerformed
 
     private void NID15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NID15ActionPerformed
         // TODO add your handling code here:
@@ -5787,28 +6144,26 @@ public class Dashboard extends javax.swing.JFrame {
 
         dialogDeleteCustody.setLocationRelativeTo(null);
         dialogDeleteCustody.setVisible(true);
-        
-        
+
         try {
 
-            String PID=jTextField1.getText();
+            String PID = jTextField1.getText();
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-            String query1="DELETE FROM CUSTODY_INFO WHERE CustodyNo=2";
+            String query1 = "DELETE FROM CUSTODY_INFO WHERE CustodyNo=2";
 
             PreparedStatement st = con.prepareStatement(query1);
             st.executeUpdate();
-  
+
             UpdateCustodyTable();
- 
+
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
-          
-        
+
+
     }//GEN-LAST:event_labelDeletePolice2MouseClicked
 
     private void labelAddPoliceCross15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross15MouseClicked
@@ -5838,7 +6193,7 @@ public class Dashboard extends javax.swing.JFrame {
     private void labelAddPoliceCross17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseClicked
         // TODO add your handling code here:
         dialogDeleteCustody.dispose();
-        
+
     }//GEN-LAST:event_labelAddPoliceCross17MouseClicked
 
     private void labelAddPoliceCross17MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelAddPoliceCross17MouseEntered
@@ -5901,7 +6256,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
-        
+
         dialogAddCriminal.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -5912,13 +6267,13 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
         // TODO add your handling code here:
-        
+
         dialogInsertComplaint.dispose();
     }//GEN-LAST:event_jButton29ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-        
+
         dialogAccusedDetails.dispose();
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -5930,12 +6285,12 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
         dialogUpdateComplaint.dispose();
-        
+
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
-        
+
         dialogAddCustody.dispose();
     }//GEN-LAST:event_jButton19ActionPerformed
 
@@ -5943,6 +6298,1110 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         dialogUpdateCustody.dispose();
     }//GEN-LAST:event_jButton21ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+        // TODO add your handling code here:
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img4.getWidth(), img4.getHeight(), Image.SCALE_SMOOTH));
+        img4.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image2 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void Police_InfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Police_InfoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Police_InfoMouseClicked
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+
+        String beard = null;
+        String mustache = null;
+        String glasses = null;
+        String tatoos = null;
+        String birthmarks = null;
+        String goldTeeth = null;
+        String missingTeeth = null;
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query = "INSERT INTO CRIMINAL_INFO(FirstName,LastName,FathersName,Age,Gender,Marital_Status,"
+                    + "Phone,Email,Nationality,NID,DateOfBirth,Occupation,Height,Eye_Color,Hair_Color,Beard,Mustache,Glasses,Tatoos,Weight,Skin_Color,Scars,Birthmarks,Gold_Teeth,Missing_Teeth,LivingAddress,WordAddress,PermanentAddress,OccurrenceId,PreviousRecords,CustodyNo,PoliceId,FrontImage,RightImage,LeftImage,BackImage)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            PreparedStatement pst = connection.prepareStatement(query);
+            pst.setString(1, FirstName3.getText());
+            pst.setString(2, LastName3.getText());
+            pst.setString(3, FathersName3.getText());
+
+            pst.setString(4, Age3.getText());
+            pst.setString(5, Gender5.getSelectedItem().toString());
+            pst.setString(6, Gender9.getSelectedItem().toString());
+            pst.setString(7, Phone3.getText());
+            pst.setString(8, Email3.getText());
+            pst.setString(9, Nationality.getSelectedItem().toString());
+            pst.setString(10, NID4.getText());
+
+            Date dateofbirth = DateOfBirth3.getDate();
+            String strDate = DateFormat.getDateInstance().format(dateofbirth);
+            pst.setString(11, strDate);
+
+            pst.setString(12, Gender3.getSelectedItem().toString());
+            pst.setString(13, Height.getText());
+
+            pst.setString(14, EyeColor.getSelectedItem().toString());
+            pst.setString(15, HairColor.getSelectedItem().toString());
+
+            if (Beard.isSelected()) {
+                beard = "YES";
+
+            } else {
+                beard = "NO";
+            }
+
+            if (Mustache.isSelected()) {
+                mustache = "YES";
+            } else {
+                mustache = "NO";
+            }
+
+            if (Glasses.isSelected()) {
+                glasses = "YES";
+            } else {
+                glasses = "NO";
+            }
+
+            if (Tatoos.isSelected()) {
+                tatoos = "YES";
+            } else {
+                tatoos = "NO";
+            }
+
+            pst.setString(16, beard);
+            pst.setString(17, mustache);
+            pst.setString(18, glasses);
+            pst.setString(19, tatoos);
+
+            pst.setString(20, weight.getText());
+
+            pst.setString(21, SkinColor.getSelectedItem().toString());
+            pst.setString(22, scars.getText());
+
+            if (Birthmarks.isSelected()) {
+                birthmarks = "YES";
+            } else {
+                birthmarks = "NO";
+            }
+
+            if (GoldTeeth.isSelected()) {
+                goldTeeth = "YES";
+            } else {
+                goldTeeth = "NO";
+            }
+
+            if (MissingTeeth.isSelected()) {
+                missingTeeth = "YES";
+            } else {
+                missingTeeth = "NO";
+            }
+
+            pst.setString(23, birthmarks);
+            pst.setString(24, goldTeeth);
+            pst.setString(25, missingTeeth);
+
+            pst.setString(26, LivingAdd3.getText());
+            pst.setString(27, WorkAdd3.getText());
+            pst.setString(28, PermanentAdd3.getText());
+            pst.setString(29, OccurrenceId.getText());
+            pst.setString(30, PrevRec.getText());
+            pst.setString(31, CustodyNo.getText());
+            pst.setString(32, PoliceId.getText());
+
+            pst.setBytes(33, person_image5);
+            pst.setBytes(34, person_image6);
+            pst.setBytes(35, person_image7);
+            pst.setBytes(36, person_image8);
+            pst.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Added Successfully!");
+            
+            dialogAddCriminal.dispose();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        
+         JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img5.getWidth(), img5.getHeight(), Image.SCALE_SMOOTH));
+        img5.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image5 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img7.getWidth(), img7.getHeight(), Image.SCALE_SMOOTH));
+        img7.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image7 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img8.getWidth(), img8.getHeight(), Image.SCALE_SMOOTH));
+        img8.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image8 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+        // TODO add your handling code here:
+        String CID=CriminalId4.getText();
+        
+        if (jCheckBox34.isSelected()) {
+            String fname = FirstName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox35.isSelected()) {
+            String lname = LastName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET LastName=" + "\'" + lname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox36.isSelected()) {
+            String fname = FathersName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        
+        if (jCheckBox37.isSelected()) {
+            String fname = Age5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox38.isSelected()) {
+            String fname = Gender12.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox39.isSelected()) {
+            String fname = Gender16.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox40.isSelected()) {
+            String fname = Phone4.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox41.isSelected()) {
+            String fname = Email4.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox42.isSelected()) {
+            String fname = Gender15.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox43.isSelected()) {
+            String fname = NID12.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox44.isSelected()) {
+            Date dateofbirth = DateOfBirth4.getDate();
+            String DateOfbirth = DateFormat.getDateInstance().format(dateofbirth);
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET DateOfbirth=" + "\'" + DateOfbirth + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox45.isSelected()) {
+            String fname = Gender10.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox47.isSelected()) {
+            String fname = Height5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox49.isSelected()) {
+            String fname = Gender11.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox51.isSelected()) {
+            String fname = Gender14.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        
+            
+        
+        if (jCheckBox30.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox31.isSelected()) {
+            String mustache = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache+ "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String mustache = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache+ "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox27.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox21.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox48.isSelected()) {
+            String fname = Weight5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Weight=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox50.isSelected()) {
+            String fname = Gender13.getSelectedItem().toString();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox52.isSelected()) {
+            String fname = scars5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Scars=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox28.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox29.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox32.isSelected()) {
+            String beard = "YES";
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }else{
+            String beard = "NO";
+            
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+            
+        }
+        
+        if (jCheckBox53.isSelected()) {
+            String fname = LivingAdd5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox54.isSelected()) {
+            String fname = PermanentAdd4.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox55.isSelected()) {
+            String fname = LivingAdd6.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox56.isSelected()) {
+            String fname = NID15.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox57.isSelected()) {
+            String fname = NID16.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox58.isSelected()) {
+            String fname = NID17.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox59.isSelected()) {
+            String fname = NID18.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox60.isSelected()) {
+            String fname = FirstName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox61.isSelected()) {
+            String fname = FirstName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox62.isSelected()) {
+            String fname = FirstName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+        if (jCheckBox33.isSelected()) {
+            String fname = FirstName5.getText();
+
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+
+                PreparedStatement st = con.prepareStatement(query1);
+                st.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successfull");
+
+            } catch (ClassNotFoundException | SQLException e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+        }
+        
+    }//GEN-LAST:event_jButton13ActionPerformed
+
+    private void jCheckBox60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox60ActionPerformed
+
+        
+    }//GEN-LAST:event_jCheckBox60ActionPerformed
+
+    private void jCheckBox61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox61ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBox61ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -5984,8 +7443,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Age1;
     private javax.swing.JTextField Age2;
     private javax.swing.JTextField Age3;
-    private javax.swing.JTextField Age4;
+    private javax.swing.JTextField Age5;
+    private javax.swing.JCheckBox Beard;
+    private javax.swing.JCheckBox Birthmarks;
     private javax.swing.JTable Complaint_Info;
+    private javax.swing.JTextField CriminalId4;
+    private javax.swing.JTextField CustodyNo;
     private javax.swing.JTable Custody_Info;
     private com.toedter.calendar.JDateChooser DateOfBirth1;
     private com.toedter.calendar.JDateChooser DateOfBirth2;
@@ -5999,10 +7462,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Email2;
     private javax.swing.JTextField Email3;
     private javax.swing.JTextField Email4;
+    private javax.swing.JComboBox<String> EyeColor;
+    private javax.swing.JTextField FathersName3;
+    private javax.swing.JTextField FathersName5;
     private javax.swing.JTextField FirstName1;
     private javax.swing.JTextField FirstName2;
     private javax.swing.JTextField FirstName3;
-    private javax.swing.JTextField FirstName4;
     private javax.swing.JTextField FirstName5;
     private javax.swing.JComboBox<String> Gender1;
     private javax.swing.JComboBox<String> Gender10;
@@ -6014,43 +7479,36 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> Gender16;
     private javax.swing.JComboBox<String> Gender2;
     private javax.swing.JComboBox<String> Gender3;
-    private javax.swing.JComboBox<String> Gender4;
     private javax.swing.JComboBox<String> Gender5;
-    private javax.swing.JComboBox<String> Gender6;
-    private javax.swing.JComboBox<String> Gender7;
     private javax.swing.JComboBox<String> Gender9;
+    private javax.swing.JCheckBox Glasses;
+    private javax.swing.JCheckBox GoldTeeth;
+    private javax.swing.JComboBox<String> HairColor;
+    private javax.swing.JTextField Height;
+    private javax.swing.JTextField Height5;
     private com.toedter.calendar.JDateChooser JoiningDate1;
     private com.toedter.calendar.JDateChooser JoiningDate2;
     private javax.swing.JTextField LastName1;
     private javax.swing.JTextField LastName2;
     private javax.swing.JTextField LastName3;
-    private javax.swing.JTextField LastName4;
     private javax.swing.JTextField LastName5;
-    private javax.swing.JTextField LastName6;
     private javax.swing.JTextField LivingAdd1;
     private javax.swing.JTextField LivingAdd2;
     private javax.swing.JTextField LivingAdd3;
-    private javax.swing.JTextField LivingAdd4;
     private javax.swing.JTextField LivingAdd5;
     private javax.swing.JTextField LivingAdd6;
+    private javax.swing.JCheckBox MissingTeeth;
+    private javax.swing.JCheckBox Mustache;
     private javax.swing.JTextField NID1;
-    private javax.swing.JTextField NID10;
-    private javax.swing.JTextField NID11;
     private javax.swing.JTextField NID12;
-    private javax.swing.JTextField NID13;
-    private javax.swing.JTextField NID14;
     private javax.swing.JTextField NID15;
     private javax.swing.JTextField NID16;
     private javax.swing.JTextField NID17;
     private javax.swing.JTextField NID18;
     private javax.swing.JTextField NID2;
-    private javax.swing.JTextField NID3;
     private javax.swing.JTextField NID4;
-    private javax.swing.JTextField NID5;
-    private javax.swing.JTextField NID6;
-    private javax.swing.JTextField NID7;
-    private javax.swing.JTextField NID8;
-    private javax.swing.JTextField NID9;
+    private com.toedter.components.JLocaleChooser Nationality;
+    private javax.swing.JTextField OccurrenceId;
     private javax.swing.JTextField PermanentAdd1;
     private javax.swing.JTextField PermanentAdd2;
     private javax.swing.JTextField PermanentAdd3;
@@ -6059,9 +7517,11 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Phone2;
     private javax.swing.JTextField Phone3;
     private javax.swing.JTextField Phone4;
+    private javax.swing.JTextField PoliceId;
     private javax.swing.JComboBox<String> PoliceStation1;
     private javax.swing.JComboBox<String> PoliceStation2;
     private javax.swing.JTable Police_Info;
+    private javax.swing.JTextField PrevRec;
     private com.toedter.calendar.JDateChooser ResigningDate1;
     private com.toedter.calendar.JDateChooser ResigningDate2;
     private javax.swing.JTextField Salary1;
@@ -6070,6 +7530,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton Save6;
     private javax.swing.JButton Save7;
     private javax.swing.JButton Save8;
+    private javax.swing.JComboBox<String> SkinColor;
+    private javax.swing.JCheckBox Tatoos;
+    private javax.swing.JTextField Weight5;
+    private javax.swing.JTextField WorkAdd3;
     private javax.swing.JButton buttonSearch;
     private javax.swing.JDialog dialogAccusedDetails;
     private javax.swing.JDialog dialogAddComplainant;
@@ -6087,6 +7551,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JDialog dialogUpdatePolice;
     private javax.swing.JLabel img3;
     private javax.swing.JLabel img4;
+    private javax.swing.JLabel img5;
+    private javax.swing.JLabel img6;
+    private javax.swing.JLabel img7;
+    private javax.swing.JLabel img8;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -6124,15 +7592,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox16;
     private javax.swing.JCheckBox jCheckBox17;
     private javax.swing.JCheckBox jCheckBox18;
-    private javax.swing.JCheckBox jCheckBox19;
     private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JCheckBox jCheckBox20;
     private javax.swing.JCheckBox jCheckBox21;
-    private javax.swing.JCheckBox jCheckBox22;
-    private javax.swing.JCheckBox jCheckBox23;
-    private javax.swing.JCheckBox jCheckBox24;
-    private javax.swing.JCheckBox jCheckBox25;
-    private javax.swing.JCheckBox jCheckBox26;
     private javax.swing.JCheckBox jCheckBox27;
     private javax.swing.JCheckBox jCheckBox28;
     private javax.swing.JCheckBox jCheckBox29;
@@ -6192,7 +7653,6 @@ public class Dashboard extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser jDateChooser3;
     private com.toedter.calendar.JDateChooser jDateChooser4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
     private javax.swing.JLabel jLabel102;
@@ -6268,7 +7728,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -6290,7 +7749,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel77;
     private javax.swing.JLabel jLabel78;
     private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel80;
     private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
@@ -6301,7 +7759,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
@@ -6314,7 +7771,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel99;
     private javax.swing.JList<String> jList1;
     private com.toedter.components.JLocaleChooser jLocaleChooser1;
-    private com.toedter.components.JLocaleChooser jLocaleChooser2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -6516,5 +7972,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelUpdatePolice1;
     private javax.swing.JPanel panelUpdatePolice2;
     private javax.swing.JPanel panelUpdatePolice3;
+    private javax.swing.JTextField scars;
+    private javax.swing.JTextField scars5;
+    private javax.swing.JTextField weight;
     // End of variables declaration//GEN-END:variables
 }

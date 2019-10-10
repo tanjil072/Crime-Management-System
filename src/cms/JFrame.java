@@ -256,6 +256,11 @@ public class JFrame extends javax.swing.JFrame {
 
         Img.setBackground(new java.awt.Color(255, 255, 255));
         Img.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
+        Img.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ImgMouseClicked(evt);
+            }
+        });
 
         SearchList.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
@@ -765,6 +770,10 @@ public class JFrame extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e);
         }
     }//GEN-LAST:event_SearchListValueChanged
+
+    private void ImgMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImgMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ImgMouseClicked
 
     /**
      * @param args the command line arguments
