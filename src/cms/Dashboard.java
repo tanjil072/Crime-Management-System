@@ -56,6 +56,8 @@ public class Dashboard extends javax.swing.JFrame {
     byte[] person_image10;
     byte[] person_image11;
     byte[] person_image12;
+    
+    byte[] person_image20;
 
     DefaultTableModel model;
 
@@ -143,7 +145,7 @@ public class Dashboard extends javax.swing.JFrame {
             centerRenderer.setHorizontalAlignment(JLabel.CENTER);
             Police_Info.setDefaultRenderer(String.class, centerRenderer);
             Police_Info.setDefaultRenderer(Integer.class, centerRenderer);*/
-            String query1 = "SELECT ComplaintId,ComplaintType,ComplainantName,ComplainantType,DateOfIssue FROM COMPLAINT_INFO";
+            String query1 = "SELECT ComplaintId,ComplaintType,FirstName,Occupation,DateOfFir FROM COMPLAINT_INFO";
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
             Complaint_Info.setModel(DbUtils.resultSetToTableModel(rs));
@@ -519,7 +521,7 @@ public class Dashboard extends javax.swing.JFrame {
         jTextArea2 = new javax.swing.JTextArea();
         jLabel92 = new javax.swing.JLabel();
         jSeparator24 = new javax.swing.JSeparator();
-        jLabel93 = new javax.swing.JLabel();
+        img20 = new javax.swing.JLabel();
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
@@ -2496,6 +2498,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton28.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton28.setForeground(new java.awt.Color(204, 204, 204));
         jButton28.setText("OK");
+        jButton28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton28ActionPerformed(evt);
+            }
+        });
         jPanel38.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 525, 100, 30));
 
         jButton29.setBackground(new java.awt.Color(51, 51, 51));
@@ -2619,16 +2626,26 @@ public class Dashboard extends javax.swing.JFrame {
         jSeparator24.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel5.add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 10, 180));
 
-        jLabel93.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel5.add(jLabel93, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 190, 130));
+        img20.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel5.add(img20, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 190, 130));
 
         jButton10.setText("Add Image");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 185, -1, -1));
 
         jButton11.setBackground(new java.awt.Color(51, 51, 51));
         jButton11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton11.setForeground(new java.awt.Color(204, 204, 204));
         jButton11.setText("OK");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
         jPanel5.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 240, 100, 30));
 
         jButton12.setBackground(new java.awt.Color(51, 51, 51));
@@ -5962,11 +5979,11 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        
+
         try {
 
-            String CID=jTextField3.getText();
-            
+            String CID = jTextField3.getText();
+
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
@@ -5977,7 +5994,7 @@ public class Dashboard extends javax.swing.JFrame {
             int rs = st.executeUpdate();
 
             jTable2.revalidate();
-            
+
             dialogDeleteCriminal.dispose();
 
         } catch (ClassNotFoundException | SQLException e) {
@@ -6261,13 +6278,11 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
-        
-        
-        
+
         try {
 
-            String CustodyNo=CustodyNo3.getText();
-            
+            String CustodyNo = CustodyNo3.getText();
+
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
@@ -6278,14 +6293,14 @@ public class Dashboard extends javax.swing.JFrame {
             int rs = st.executeUpdate();
 
             Custody_Info.revalidate();
-            
+
             dialogDeleteCustody.dispose();
 
         } catch (ClassNotFoundException | SQLException e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
-        
+
+
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jPanel47AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel47AncestorAdded
@@ -7571,7 +7586,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
-        
+
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection connection = DriverManager.getConnection(
@@ -7581,14 +7596,11 @@ public class Dashboard extends javax.swing.JFrame {
                     + ")"
                     + "VALUES(?,?,?)";
             PreparedStatement pst = connection.prepareStatement(query);
-          
+
             pst.setString(1, CustodyType.getSelectedItem().toString());
             pst.setString(2, Capacity.getText());
             pst.setString(3, Capacity.getText());
-            
-            
-            
-            
+
             pst.executeUpdate();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
@@ -7600,20 +7612,19 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
-        
-        String CNO=CustodyNo2.getText();
+
+        String CNO = CustodyNo2.getText();
         String CType;
         String capacity;
 
-            if(jCheckBox46.isSelected())
-            {
-                CType=jComboBox9.getSelectedItem().toString();
-                try {
+        if (jCheckBox46.isSelected()) {
+            CType = jComboBox9.getSelectedItem().toString();
+            try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query = "UPDATE CUSTODY_INFO SET CustodyType=? WHERE CustodyNo="+CNO;
+                String query = "UPDATE CUSTODY_INFO SET CustodyType=? WHERE CustodyNo=" + CNO;
                 PreparedStatement pst = connection.prepareStatement(query);
 
                 pst.setString(1, CType);
@@ -7624,17 +7635,16 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, e);
             }
-            }
-            if(jCheckBox64.isSelected())
-            {
-                capacity=jTextField21.getText();
-                
-                try {
+        }
+        if (jCheckBox64.isSelected()) {
+            capacity = jTextField21.getText();
+
+            try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query = "UPDATE CUSTODY_INFO SET Capacity=?,RemainingSeats=? WHERE CustodyNo="+CNO;
+                String query = "UPDATE CUSTODY_INFO SET Capacity=?,RemainingSeats=? WHERE CustodyNo=" + CNO;
                 PreparedStatement pst = connection.prepareStatement(query);
 
                 pst.setString(1, capacity);
@@ -7646,55 +7656,97 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, e);
             }
-            }
-            
-        
-        
-        
+        }
+
+
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
         // TODO add your handling code here:
         
-        try {
+        
+            
+
+       try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection connection = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             String query = "INSERT INTO COMPLAINT_INFO(FirstName,LastName,Age,Occupation,"
-                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address)"
-                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address,FirNo,YearOfFir,DateOfFir,TimeOfFir,Act,Section,DateFrom,DateTo,TimeFrom,TimeTo,DirectionFromPS,DistanceFromPS,DamagedProperties,AddressComplaint,Details,TotalAccused,AccusedFirstName,AccusedLastName,AccusedDetails,AccusedImage)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+            
+            //ComplainantDetails
             PreparedStatement pst = connection.prepareStatement(query);
-            pst.setString(1, FirstName1.getText());
-            pst.setString(2, LastName1.getText());
-            pst.setString(3, Age1.getText());
-            pst.setString(4, Gender1.getSelectedItem().toString());
+            
+            pst.setString(1, jTextField13.getText());
+            pst.setString(2, jTextField11.getText());
+            pst.setString(3, jTextField14.getText());
+            pst.setString(4, jComboBox6.getSelectedItem().toString());
+            pst.setString(5, jTextField16.getText());
+            pst.setString(6, jTextField15.getText());
+            pst.setString(7, jTextField10.getText());
 
-            Date dateofbirth = DateOfBirth1.getDate();
-            String strDate = DateFormat.getDateInstance().format(dateofbirth);
-
-            pst.setString(5, strDate);
-            pst.setString(6, Phone1.getText());
-            pst.setString(7, Designation1.getSelectedItem().toString());
-            pst.setString(8, LivingAdd1.getText());
-            pst.setString(9, PermanentAdd1.getText());
-            pst.setString(10, Email1.getText());
-            pst.setString(11, NID1.getText());
-            pst.setString(12, District1.getSelectedItem().toString());
-            pst.setString(13, PoliceStation1.getSelectedItem().toString());
-
-            Date date2 = JoiningDate1.getDate();
+            Date date2 = jDateChooser4.getDate();
             String strDateofJoining = DateFormat.getDateInstance().format(date2);
-            pst.setString(14, strDateofJoining);
+            pst.setString(8, strDateofJoining);
 
-            Date date3 = JoiningDate1.getDate();
+            pst.setString(9, jLocaleChooser1.getSelectedItem().toString());
+            pst.setString(10, jComboBox5.getSelectedItem().toString());
+            pst.setString(11, jTextField12.getText());
+            pst.setString(12, jTextField17.getText());
+
+            //ComplaintDetails
+            pst.setString(13, jTextField4.getText());
+
+            int year = jYearChooser1.getYear();
+            String y = String.valueOf(year);
+            pst.setString(14, y);
+
+            Date date3 = jDateChooser1.getDate();
             String strDateofResigning = DateFormat.getDateInstance().format(date3);
-            pst.setString(14, strDateofResigning);
-
             pst.setString(15, strDateofResigning);
-            pst.setString(16, Salary1.getText());
 
-            pst.setBytes(17, person_image);
+            String time = jTimeChooser1.getFormatedTime();
+            pst.setString(16, time);
+
+            pst.setString(17, jComboBox3.getSelectedItem().toString());
+            pst.setString(18, jComboBox2.getSelectedItem().toString());
+
+            Date date4 = jDateChooser2.getDate();
+            String d4 = DateFormat.getDateInstance().format(date4);
+            pst.setString(19, d4);
+
+            Date date5 = jDateChooser3.getDate();
+            String d5 = DateFormat.getDateInstance().format(date5);
+            pst.setString(20, d5);
+
+            String time2 = jTimeChooser2.getFormatedTime();
+            pst.setString(21, time2);
+
+            String time3 = jTimeChooser3.getFormatedTime();
+            pst.setString(22, time3);
+
+            pst.setString(23, jComboBox4.getSelectedItem().toString());
+
+            pst.setString(24, jTextField5.getText());
+            pst.setString(25, jTextField7.getText());
+            pst.setString(26, jTextField6.getText());
+            pst.setString(27, jTextArea1.getText());
+
+            String selected = jList1.getSelectedValue().toString();
+
+            pst.setString(28, selected);
+            
+            //AccusedDetails
+            
+            pst.setString(29, jTextField8.getText());
+            
+            pst.setString(30, jTextField9.getText());
+            pst.setString(31, jTextArea2.getText());
+            
+            pst.setBytes(32, person_image20);
+            
             pst.executeUpdate();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
@@ -7702,9 +7754,52 @@ public class Dashboard extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e);
         }
+       
+       
         
         
+        
+         
+    
+
+
     }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        // TODO add your handling code here:
+        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img20.getWidth(), img20.getHeight(), Image.SCALE_SMOOTH));
+        img20.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image20 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+        // TODO add your handling code here:
+        dialogInsertComplaint.dispose();
+    }//GEN-LAST:event_jButton28ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+        dialogAccusedDetails.dispose();
+    }//GEN-LAST:event_jButton11ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -7859,6 +7954,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel img10;
     private javax.swing.JLabel img11;
     private javax.swing.JLabel img12;
+    private javax.swing.JLabel img20;
     private javax.swing.JLabel img3;
     private javax.swing.JLabel img4;
     private javax.swing.JLabel img5;
@@ -8068,7 +8164,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
