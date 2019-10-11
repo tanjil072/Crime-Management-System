@@ -52,6 +52,11 @@ public class Dashboard extends javax.swing.JFrame {
     byte[] person_image7;
     byte[] person_image8;
 
+    byte[] person_image9;
+    byte[] person_image10;
+    byte[] person_image11;
+    byte[] person_image12;
+
     DefaultTableModel model;
 
     public Dashboard() {
@@ -405,10 +410,10 @@ public class Dashboard extends javax.swing.JFrame {
         NID17 = new javax.swing.JTextField();
         NID18 = new javax.swing.JTextField();
         Gender16 = new javax.swing.JComboBox<>();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        img11 = new javax.swing.JLabel();
+        img12 = new javax.swing.JLabel();
+        img10 = new javax.swing.JLabel();
+        img9 = new javax.swing.JLabel();
         jSeparator7 = new javax.swing.JSeparator();
         jButton13 = new javax.swing.JButton();
         jButton14 = new javax.swing.JButton();
@@ -580,8 +585,8 @@ public class Dashboard extends javax.swing.JFrame {
         labelAddPoliceCross15 = new javax.swing.JLabel();
         jLabel116 = new javax.swing.JLabel();
         jLabel117 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
-        jComboBox8 = new javax.swing.JComboBox<>();
+        Capacity = new javax.swing.JTextField();
+        CustodyType = new javax.swing.JComboBox<>();
         jButton19 = new javax.swing.JButton();
         jButton20 = new javax.swing.JButton();
         dialogUpdateCustody = new javax.swing.JDialog();
@@ -597,7 +602,7 @@ public class Dashboard extends javax.swing.JFrame {
         jCheckBox46 = new javax.swing.JCheckBox();
         jSeparator26 = new javax.swing.JSeparator();
         jLabel119 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
+        CustodyNo2 = new javax.swing.JTextField();
         jCheckBox64 = new javax.swing.JCheckBox();
         dialogDeleteCustody = new javax.swing.JDialog();
         jPanel47 = new javax.swing.JPanel();
@@ -606,7 +611,7 @@ public class Dashboard extends javax.swing.JFrame {
         panelAddPoliceCross17 = new javax.swing.JPanel();
         labelAddPoliceCross17 = new javax.swing.JLabel();
         jLabel121 = new javax.swing.JLabel();
-        jTextField23 = new javax.swing.JTextField();
+        CustodyNo3 = new javax.swing.JTextField();
         jButton23 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
@@ -2112,17 +2117,17 @@ public class Dashboard extends javax.swing.JFrame {
         });
         jPanel36.add(Gender16, new org.netbeans.lib.awtextra.AbsoluteConstraints(561, 129, 120, -1));
 
-        jLabel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel36.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 190, 100));
+        img11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(img11, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 360, 190, 100));
 
-        jLabel12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel36.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 500, 190, 100));
+        img12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(img12, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 500, 190, 100));
 
-        jLabel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel36.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 230, 190, 100));
+        img10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(img10, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 230, 190, 100));
 
-        jLabel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel36.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, 190, 100));
+        img9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel36.add(img9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, 190, 100));
         jPanel36.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 580, 660, 10));
 
         jButton13.setBackground(new java.awt.Color(51, 51, 51));
@@ -2148,6 +2153,11 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 665, 100, 30));
 
         jCheckBox33.setText("Back Image");
+        jCheckBox33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox33ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 600, -1, -1));
 
         jCheckBox34.setText("First Name");
@@ -2247,6 +2257,11 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel36.add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 330, -1, -1));
 
         jCheckBox62.setText("Left Image");
+        jCheckBox62.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox62ActionPerformed(evt);
+            }
+        });
         jPanel36.add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(765, 460, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -2789,6 +2804,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton26.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton26.setForeground(new java.awt.Color(204, 204, 204));
         jButton26.setText("Save");
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
         jPanel9.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 300, 100, 30));
 
         jButton27.setBackground(new java.awt.Color(51, 51, 51));
@@ -3122,15 +3142,15 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel117.setText("Total Seats");
         jPanel11.add(jLabel117, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
 
-        jTextField20.addActionListener(new java.awt.event.ActionListener() {
+        Capacity.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField20ActionPerformed(evt);
+                CapacityActionPerformed(evt);
             }
         });
-        jPanel11.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 90, 110, -1));
+        jPanel11.add(Capacity, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 90, 110, -1));
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Physical", "Legal", "Sole", "Joint", "Child" }));
-        jPanel11.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 50, 110, -1));
+        CustodyType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Physical", "Legal", "Sole", "Joint", "Child" }));
+        jPanel11.add(CustodyType, new org.netbeans.lib.awtextra.AbsoluteConstraints(98, 50, 110, -1));
 
         jButton19.setBackground(new java.awt.Color(51, 51, 51));
         jButton19.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -3147,6 +3167,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton20.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton20.setForeground(new java.awt.Color(204, 204, 204));
         jButton20.setText("Save");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
         jPanel11.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 140, 100, 30));
 
         javax.swing.GroupLayout dialogAddCustodyLayout = new javax.swing.GroupLayout(dialogAddCustody.getContentPane());
@@ -3249,6 +3274,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton22.setForeground(new java.awt.Color(204, 204, 204));
         jButton22.setText("Update");
+        jButton22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton22ActionPerformed(evt);
+            }
+        });
         jPanel12.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 155, 100, 30));
 
         jCheckBox46.setText("Custody Type");
@@ -3258,7 +3288,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel119.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel119.setText("Custody No");
         jPanel12.add(jLabel119, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
-        jPanel12.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 36, 70, -1));
+        jPanel12.add(CustodyNo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 36, 70, -1));
 
         jCheckBox64.setText("Total Seats");
         jPanel12.add(jCheckBox64, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 111, -1, -1));
@@ -3362,13 +3392,13 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel121.setText("Custody No");
         jPanel47.add(jLabel121, new org.netbeans.lib.awtextra.AbsoluteConstraints(39, 50, -1, 28));
 
-        jTextField23.setSelectionColor(new java.awt.Color(51, 51, 51));
-        jTextField23.addActionListener(new java.awt.event.ActionListener() {
+        CustodyNo3.setSelectionColor(new java.awt.Color(51, 51, 51));
+        CustodyNo3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField23ActionPerformed(evt);
+                CustodyNo3ActionPerformed(evt);
             }
         });
-        jPanel47.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 50, 80, 28));
+        jPanel47.add(CustodyNo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 50, 80, 28));
 
         jButton23.setBackground(new java.awt.Color(51, 51, 51));
         jButton23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -5932,6 +5962,27 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        
+        try {
+
+            String CID=jTextField3.getText();
+            
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "DELETE FROM CRIMINAL_INFO WHERE CriminalId = " + CID;
+
+            PreparedStatement st = con.prepareStatement(query1);
+            int rs = st.executeUpdate();
+
+            jTable2.revalidate();
+            
+            dialogDeleteCriminal.dispose();
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jPanel34AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel34AncestorAdded
@@ -6204,12 +6255,37 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_labelAddPoliceCross17MouseExited
 
-    private void jTextField23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField23ActionPerformed
+    private void CustodyNo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CustodyNo3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField23ActionPerformed
+    }//GEN-LAST:event_CustodyNo3ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
+        
+        
+        
+        try {
+
+            String CustodyNo=CustodyNo3.getText();
+            
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "DELETE FROM CUSTODY_INFO WHERE CustodyNo = " + CustodyNo;
+
+            PreparedStatement st = con.prepareStatement(query1);
+            int rs = st.executeUpdate();
+
+            Custody_Info.revalidate();
+            
+            dialogDeleteCustody.dispose();
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+        
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jPanel47AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel47AncestorAdded
@@ -6236,9 +6312,9 @@ public class Dashboard extends javax.swing.JFrame {
         dialogDeleteComplaint.setVisible(true);
     }//GEN-LAST:event_labelDeletePolice3MouseClicked
 
-    private void jTextField20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField20ActionPerformed
+    private void CapacityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CapacityActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField20ActionPerformed
+    }//GEN-LAST:event_CapacityActionPerformed
 
     private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
         // TODO add your handling code here:
@@ -6442,7 +6518,7 @@ public class Dashboard extends javax.swing.JFrame {
             pst.executeUpdate();
 
             JOptionPane.showMessageDialog(this, "Added Successfully!");
-            
+
             dialogAddCriminal.dispose();
 
         } catch (Exception e) {
@@ -6453,8 +6529,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        
-         JFileChooser chooser = new JFileChooser();
+
+        JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
         filename = f.getAbsolutePath();
@@ -6475,12 +6551,12 @@ public class Dashboard extends javax.swing.JFrame {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         }
-        
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        
+
         JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
@@ -6506,7 +6582,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        
+
         JFileChooser chooser = new JFileChooser();
         chooser.showOpenDialog(null);
         File f = chooser.getSelectedFile();
@@ -6532,8 +6608,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
-        String CID=CriminalId4.getText();
-        
+        String CID = CriminalId4.getText();
+
         if (jCheckBox34.isSelected()) {
             String fname = FirstName5.getText();
 
@@ -6553,7 +6629,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox35.isSelected()) {
             String lname = LastName5.getText();
 
@@ -6573,7 +6649,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox36.isSelected()) {
             String fname = FathersName5.getText();
 
@@ -6582,7 +6658,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET FathersName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6593,8 +6669,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
-        
+
         if (jCheckBox37.isSelected()) {
             String fname = Age5.getText();
 
@@ -6603,7 +6678,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Age=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6614,7 +6689,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox38.isSelected()) {
             String fname = Gender12.getSelectedItem().toString();
 
@@ -6623,7 +6698,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Gender=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6634,7 +6709,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox39.isSelected()) {
             String fname = Gender16.getSelectedItem().toString();
 
@@ -6643,7 +6718,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Marital_Status=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6654,7 +6729,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox40.isSelected()) {
             String fname = Phone4.getText();
 
@@ -6663,7 +6738,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Phone=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6674,7 +6749,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox41.isSelected()) {
             String fname = Email4.getText();
 
@@ -6683,7 +6758,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Email=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6694,7 +6769,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox42.isSelected()) {
             String fname = Gender15.getSelectedItem().toString();
 
@@ -6703,7 +6778,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Nationality=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6714,7 +6789,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox43.isSelected()) {
             String fname = NID12.getText();
 
@@ -6723,7 +6798,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET NID=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6734,7 +6809,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox44.isSelected()) {
             Date dateofbirth = DateOfBirth4.getDate();
             String DateOfbirth = DateFormat.getDateInstance().format(dateofbirth);
@@ -6755,7 +6830,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox45.isSelected()) {
             String fname = Gender10.getSelectedItem().toString();
 
@@ -6764,7 +6839,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Occupation=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6775,7 +6850,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox47.isSelected()) {
             String fname = Height5.getText();
 
@@ -6784,7 +6859,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Height=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6795,7 +6870,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox49.isSelected()) {
             String fname = Gender11.getSelectedItem().toString();
 
@@ -6804,7 +6879,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Eye_Color=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6815,7 +6890,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox51.isSelected()) {
             String fname = Gender14.getSelectedItem().toString();
 
@@ -6824,7 +6899,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Hair_Color=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6835,10 +6910,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
-        
-            
-        
+
         if (jCheckBox30.isSelected()) {
             String beard = "YES";
 
@@ -6857,9 +6929,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
@@ -6875,9 +6947,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox31.isSelected()) {
             String mustache = "YES";
 
@@ -6886,7 +6958,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache+ "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6896,15 +6968,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String mustache = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache+ "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Mustache=" + "\'" + mustache + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6914,9 +6986,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox27.isSelected()) {
             String beard = "YES";
 
@@ -6925,7 +6997,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Glasses=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6935,15 +7007,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Glasses=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6953,9 +7025,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox21.isSelected()) {
             String beard = "YES";
 
@@ -6964,7 +7036,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Tatoos=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6974,15 +7046,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Tatoos=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -6992,9 +7064,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox48.isSelected()) {
             String fname = Weight5.getText();
 
@@ -7014,7 +7086,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox50.isSelected()) {
             String fname = Gender13.getSelectedItem().toString();
 
@@ -7023,7 +7095,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Skin_Color=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7034,7 +7106,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox52.isSelected()) {
             String fname = scars5.getText();
 
@@ -7054,7 +7126,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox28.isSelected()) {
             String beard = "YES";
 
@@ -7063,7 +7135,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Birthmarks=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7073,15 +7145,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Birthmarks=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7091,9 +7163,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox29.isSelected()) {
             String beard = "YES";
 
@@ -7102,7 +7174,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Gold_Teeth=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7112,15 +7184,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Gold_Teeth=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7130,9 +7202,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox32.isSelected()) {
             String beard = "YES";
 
@@ -7141,7 +7213,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Missing_Teeth=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7151,15 +7223,15 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-        }else{
+        } else {
             String beard = "NO";
-            
+
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET Beard=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET Missing_Teeth=" + "\'" + beard + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7169,9 +7241,9 @@ public class Dashboard extends javax.swing.JFrame {
             } catch (ClassNotFoundException | SQLException e) {
                 JOptionPane.showMessageDialog(null, e);
             }
-            
+
         }
-        
+
         if (jCheckBox53.isSelected()) {
             String fname = LivingAdd5.getText();
 
@@ -7180,7 +7252,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET LivingAddress=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7191,7 +7263,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox54.isSelected()) {
             String fname = PermanentAdd4.getText();
 
@@ -7200,7 +7272,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET WordAddress=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7211,7 +7283,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox55.isSelected()) {
             String fname = LivingAdd6.getText();
 
@@ -7220,7 +7292,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET PermanentAddress=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7231,7 +7303,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox56.isSelected()) {
             String fname = NID15.getText();
 
@@ -7240,7 +7312,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET OccurrenceId=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7251,7 +7323,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox57.isSelected()) {
             String fname = NID16.getText();
 
@@ -7260,7 +7332,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET PreviousRecords=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7271,7 +7343,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox58.isSelected()) {
             String fname = NID17.getText();
 
@@ -7280,7 +7352,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET CustodyNo=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7291,7 +7363,7 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox59.isSelected()) {
             String fname = NID18.getText();
 
@@ -7300,7 +7372,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query1 = "UPDATE CRIMINAL_INFO SET PoliceId=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
 
                 PreparedStatement st = con.prepareStatement(query1);
                 st.executeUpdate();
@@ -7311,97 +7383,328 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
         }
-        
+
         if (jCheckBox60.isSelected()) {
-            String fname = FirstName5.getText();
 
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                Connection con = DriverManager.getConnection(
+                Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query = "UPDATE CRIMINAL_INFO SET FrontImage=?";
+                PreparedStatement pst = connection.prepareStatement(query);
 
-                PreparedStatement st = con.prepareStatement(query1);
-                st.executeUpdate();
+                pst.setBytes(1, person_image9);
+                pst.executeUpdate();
 
-                JOptionPane.showMessageDialog(this, "Update Successfull");
+                JOptionPane.showMessageDialog(this, "Image Added Successfully!");
 
-            } catch (ClassNotFoundException | SQLException e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
             }
         }
-        
+
         if (jCheckBox61.isSelected()) {
-            String fname = FirstName5.getText();
 
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                Connection con = DriverManager.getConnection(
+                Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query = "UPDATE CRIMINAL_INFO SET RightImage=?";
+                PreparedStatement pst = connection.prepareStatement(query);
 
-                PreparedStatement st = con.prepareStatement(query1);
-                st.executeUpdate();
+                pst.setBytes(1, person_image10);
+                pst.executeUpdate();
 
-                JOptionPane.showMessageDialog(this, "Update Successfull");
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
 
-            } catch (ClassNotFoundException | SQLException e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
             }
         }
-        
+
         if (jCheckBox62.isSelected()) {
-            String fname = FirstName5.getText();
 
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                Connection con = DriverManager.getConnection(
+                Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query = "UPDATE CRIMINAL_INFO SET LeftImage=?";
+                PreparedStatement pst = connection.prepareStatement(query);
 
-                PreparedStatement st = con.prepareStatement(query1);
-                st.executeUpdate();
+                pst.setBytes(1, person_image11);
+                pst.executeUpdate();
 
-                JOptionPane.showMessageDialog(this, "Update Successfull");
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
 
-            } catch (ClassNotFoundException | SQLException e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
             }
         }
-        
+
         if (jCheckBox33.isSelected()) {
-            String fname = FirstName5.getText();
 
             try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-                Connection con = DriverManager.getConnection(
+                Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query1 = "UPDATE CRIMINAL_INFO SET FirstName=" + "\'" + fname + "\'" + " WHERE CriminalId=" + CID;
+                String query = "UPDATE CRIMINAL_INFO SET BackImage=?";
+                PreparedStatement pst = connection.prepareStatement(query);
 
-                PreparedStatement st = con.prepareStatement(query1);
-                st.executeUpdate();
+                pst.setBytes(1, person_image12);
+                pst.executeUpdate();
 
-                JOptionPane.showMessageDialog(this, "Update Successfull");
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
 
-            } catch (ClassNotFoundException | SQLException e) {
-                JOptionPane.showMessageDialog(null, e);
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
             }
         }
-        
+
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jCheckBox60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox60ActionPerformed
 
-        
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img9.getWidth(), img9.getHeight(), Image.SCALE_SMOOTH));
+        img9.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image9 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+
     }//GEN-LAST:event_jCheckBox60ActionPerformed
 
     private void jCheckBox61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox61ActionPerformed
         // TODO add your handling code here:
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img10.getWidth(), img10.getHeight(), Image.SCALE_SMOOTH));
+        img10.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image10 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_jCheckBox61ActionPerformed
+
+    private void jCheckBox62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox62ActionPerformed
+        // TODO add your handling code here:
+
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img11.getWidth(), img11.getHeight(), Image.SCALE_SMOOTH));
+        img11.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image11 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jCheckBox62ActionPerformed
+
+    private void jCheckBox33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox33ActionPerformed
+        // TODO add your handling code here:
+        JFileChooser chooser = new JFileChooser();
+        chooser.showOpenDialog(null);
+        File f = chooser.getSelectedFile();
+        filename = f.getAbsolutePath();
+        ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(img12.getWidth(), img12.getHeight(), Image.SCALE_SMOOTH));
+        img12.setIcon(imageIcon);
+
+        try {
+            File image = new File(filename);
+            FileInputStream fis = new FileInputStream(image);
+            ByteArrayOutputStream bos = new ByteArrayOutputStream();
+            byte[] buf = new byte[1024];
+
+            for (int readNum; (readNum = fis.read(buf)) != -1;) {
+                bos.write(buf, 0, readNum);
+            }
+            person_image12 = bos.toByteArray();
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jCheckBox33ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        // TODO add your handling code here:
+        
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query = "INSERT INTO CUSTODY_INFO(CustodyType,Capacity,RemainingSeats"
+                    + ")"
+                    + "VALUES(?,?,?)";
+            PreparedStatement pst = connection.prepareStatement(query);
+          
+            pst.setString(1, CustodyType.getSelectedItem().toString());
+            pst.setString(2, Capacity.getText());
+            pst.setString(3, Capacity.getText());
+            
+            
+            
+            
+            pst.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+        // TODO add your handling code here:
+        
+        String CNO=CustodyNo2.getText();
+        String CType;
+        String capacity;
+
+            if(jCheckBox46.isSelected())
+            {
+                CType=jComboBox9.getSelectedItem().toString();
+                try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection connection = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query = "UPDATE CUSTODY_INFO SET CustodyType=? WHERE CustodyNo="+CNO;
+                PreparedStatement pst = connection.prepareStatement(query);
+
+                pst.setString(1, CType);
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+            }
+            if(jCheckBox64.isSelected())
+            {
+                capacity=jTextField21.getText();
+                
+                try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection connection = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query = "UPDATE CUSTODY_INFO SET Capacity=?,RemainingSeats=? WHERE CustodyNo="+CNO;
+                PreparedStatement pst = connection.prepareStatement(query);
+
+                pst.setString(1, capacity);
+                pst.setString(2, capacity);
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+            }
+            
+        
+        
+        
+    }//GEN-LAST:event_jButton22ActionPerformed
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+        
+        try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query = "INSERT INTO COMPLAINT_INFO(FirstName,LastName,Age,Occupation,"
+                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)";
+            PreparedStatement pst = connection.prepareStatement(query);
+            pst.setString(1, FirstName1.getText());
+            pst.setString(2, LastName1.getText());
+            pst.setString(3, Age1.getText());
+            pst.setString(4, Gender1.getSelectedItem().toString());
+
+            Date dateofbirth = DateOfBirth1.getDate();
+            String strDate = DateFormat.getDateInstance().format(dateofbirth);
+
+            pst.setString(5, strDate);
+            pst.setString(6, Phone1.getText());
+            pst.setString(7, Designation1.getSelectedItem().toString());
+            pst.setString(8, LivingAdd1.getText());
+            pst.setString(9, PermanentAdd1.getText());
+            pst.setString(10, Email1.getText());
+            pst.setString(11, NID1.getText());
+            pst.setString(12, District1.getSelectedItem().toString());
+            pst.setString(13, PoliceStation1.getSelectedItem().toString());
+
+            Date date2 = JoiningDate1.getDate();
+            String strDateofJoining = DateFormat.getDateInstance().format(date2);
+            pst.setString(14, strDateofJoining);
+
+            Date date3 = JoiningDate1.getDate();
+            String strDateofResigning = DateFormat.getDateInstance().format(date3);
+            pst.setString(14, strDateofResigning);
+
+            pst.setString(15, strDateofResigning);
+            pst.setString(16, Salary1.getText());
+
+            pst.setBytes(17, person_image);
+            pst.executeUpdate();
+
+            JOptionPane.showMessageDialog(this, "Added Successfully!");
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, e);
+        }
+        
+        
+    }//GEN-LAST:event_jButton26ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -7446,9 +7749,13 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Age5;
     private javax.swing.JCheckBox Beard;
     private javax.swing.JCheckBox Birthmarks;
+    private javax.swing.JTextField Capacity;
     private javax.swing.JTable Complaint_Info;
     private javax.swing.JTextField CriminalId4;
     private javax.swing.JTextField CustodyNo;
+    private javax.swing.JTextField CustodyNo2;
+    private javax.swing.JTextField CustodyNo3;
+    private javax.swing.JComboBox<String> CustodyType;
     private javax.swing.JTable Custody_Info;
     private com.toedter.calendar.JDateChooser DateOfBirth1;
     private com.toedter.calendar.JDateChooser DateOfBirth2;
@@ -7549,12 +7856,16 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JDialog dialogUpdateCriminal;
     private javax.swing.JDialog dialogUpdateCustody;
     private javax.swing.JDialog dialogUpdatePolice;
+    private javax.swing.JLabel img10;
+    private javax.swing.JLabel img11;
+    private javax.swing.JLabel img12;
     private javax.swing.JLabel img3;
     private javax.swing.JLabel img4;
     private javax.swing.JLabel img5;
     private javax.swing.JLabel img6;
     private javax.swing.JLabel img7;
     private javax.swing.JLabel img8;
+    private javax.swing.JLabel img9;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -7646,7 +7957,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
-    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
@@ -7674,11 +7984,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -7738,7 +8045,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -7870,10 +8176,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
