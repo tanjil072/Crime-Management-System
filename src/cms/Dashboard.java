@@ -6177,6 +6177,26 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
         // TODO add your handling code here:
+        
+         try {
+
+            String CID = jTextField18.getText();
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            String query1 = "DELETE FROM COMPLAINT_INFO WHERE ComplaintId = " + CID;
+
+            PreparedStatement st = con.prepareStatement(query1);
+            int rs = st.executeUpdate();
+
+            Complaint_Info.revalidate();
+            JOptionPane.showMessageDialog(this, "Delete Successful!");
+            dialogDeleteComplaint.dispose();
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_jButton16ActionPerformed
 
     private void jPanel42AncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_jPanel42AncestorAdded
@@ -6197,6 +6217,31 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+        
+        String CID=jTextField19.getText();
+        
+        
+        String status = jComboBox7.getSelectedItem().toString();
+            try {
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection connection = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                String query = "UPDATE COMPLAINT_INFO SET Status=? WHERE ComplaintId=" + CID;
+                PreparedStatement pst = connection.prepareStatement(query);
+
+                pst.setString(1, status);
+                pst.executeUpdate();
+
+                JOptionPane.showMessageDialog(this, "Update Successful!");
+                
+                dialogUpdateComplaint.dispose();
+
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(this, e);
+            }
+        
+        
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void dialogAddPoliceMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_dialogAddPoliceMouseClicked
@@ -7673,8 +7718,8 @@ public class Dashboard extends javax.swing.JFrame {
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             String query = "INSERT INTO COMPLAINT_INFO(FirstName,LastName,Age,Occupation,"
-                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address,FirNo,YearOfFir,DateOfFir,TimeOfFir,Act,Section,DateFrom,DateTo,TimeFrom,TimeTo,DirectionFromPS,DistanceFromPS,DamagedProperties,AddressComplaint,Details,TotalAccused,AccusedFirstName,AccusedLastName,AccusedDetails,AccusedImage)"
-                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address,FirNo,YearOfFir,DateOfFir,TimeOfFir,Act,Section,DateFrom,DateTo,TimeFrom,TimeTo,DirectionFromPS,DistanceFromPS,DamagedProperties,AddressComplaint,Details,TotalAccused,AccusedFirstName,AccusedLastName,AccusedDetails,AccusedImage,Status)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NULL)";
             
             //ComplainantDetails
             PreparedStatement pst = connection.prepareStatement(query);
