@@ -5188,13 +5188,13 @@ public class Dashboard extends javax.swing.JFrame {
 
         try {
 
-           String[] tname = new String[15];
+           
             String a = "'Murder'";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-            String query1 = "SELECT * FROM COMPLAINT_INFO WHERE ComplaintType=" + a;
+            String query1 = "SELECT FirstName,LastName,Age FROM COMPLAINT_INFO WHERE ComplaintType=" + a;
 
             PreparedStatement st = con.prepareStatement(query1);
             ResultSet rs = st.executeQuery();
