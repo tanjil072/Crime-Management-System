@@ -4951,6 +4951,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton30.setBackground(new java.awt.Color(51, 51, 51));
         jButton30.setForeground(new java.awt.Color(204, 204, 204));
         jButton30.setText("Search");
+        jButton30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton30ActionPerformed(evt);
+            }
+        });
         jPanel51.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
 
         jLabel127.setText("Results:");
@@ -5444,26 +5449,9 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
 
-        try {
-
-           
-            String a = "'Murder'";
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            Connection con = DriverManager.getConnection(
-                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
-
-            String query1 = "SELECT FirstName,LastName,Age FROM COMPLAINT_INFO WHERE ComplaintType=" + a;
-
-            PreparedStatement st = con.prepareStatement(query1);
-            ResultSet rs = st.executeQuery();
-           
-
-            Complaint_Info.setModel(DbUtils.resultSetToTableModel(rs));
-            
-             //CreateTable();
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e);
-        }
+       
+           panelSlider1.nextPanel(20, panelSearchPolice5, panelSlider1.right);
+       
     }//GEN-LAST:event_buttonSearchActionPerformed
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
@@ -8122,6 +8110,16 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton25ActionPerformed
 
+    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
+        // TODO add your handling code here:
+        if(!jRadioButton2.isSelected())
+        {
+            JOptionPane.showMessageDialog(this, "Hello");
+        }
+        
+             
+    }//GEN-LAST:event_jButton30ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8244,11 +8242,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> PoliceStation1;
     private javax.swing.JComboBox<String> PoliceStation2;
     private javax.swing.JTable Police_Info;
-    private javax.swing.JTable Police_Info1;
-    private javax.swing.JTable Police_Info2;
-    private javax.swing.JTable Police_Info3;
-    private javax.swing.JTable Police_Info4;
-    private javax.swing.JTable Police_Info5;
     private javax.swing.JTable Police_Info6;
     private javax.swing.JTextField PrevRec;
     private com.toedter.calendar.JDateChooser ResigningDate1;
@@ -8528,9 +8521,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
-    private javax.swing.JPanel jPanel23;
-    private javax.swing.JPanel jPanel24;
-    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
@@ -8556,9 +8546,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel46;
     private javax.swing.JPanel jPanel47;
     private javax.swing.JPanel jPanel48;
-    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel50;
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel53;
@@ -8577,9 +8565,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane10;
-    private javax.swing.JScrollPane jScrollPane11;
-    private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -8587,8 +8572,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
-    private javax.swing.JScrollPane jScrollPane8;
-    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -8731,11 +8714,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelExit;
     private javax.swing.JPanel panelMini;
     private javax.swing.JPanel panelPolice;
-    private javax.swing.JPanel panelPolice1;
-    private javax.swing.JPanel panelPolice2;
-    private javax.swing.JPanel panelPolice3;
-    private javax.swing.JPanel panelPolice4;
-    private javax.swing.JPanel panelPolice5;
     private javax.swing.JPanel panelPolice6;
     private javax.swing.JPanel panelPoliceAdd;
     private javax.swing.JPanel panelPoliceAdd1;
