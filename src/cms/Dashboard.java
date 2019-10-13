@@ -8750,11 +8750,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelResetPolice1;
     private javax.swing.JPanel panelResetPolice2;
     private javax.swing.JPanel panelResetPolice3;
-    private javax.swing.JPanel panelSearchPolice;
-    private javax.swing.JPanel panelSearchPolice1;
-    private javax.swing.JPanel panelSearchPolice2;
-    private javax.swing.JPanel panelSearchPolice3;
-    private javax.swing.JPanel panelSearchPolice4;
     private javax.swing.JPanel panelSearchPolice5;
     private diu.swe.habib.JPanelSlider.JPanelSlider panelSlider1;
     private javax.swing.JPanel panelUpdatePolice;
