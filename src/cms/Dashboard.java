@@ -8802,22 +8802,29 @@ public class Dashboard extends javax.swing.JFrame {
         String id1 = null;
         String id2 = null;
         String qid = null;
+        
         if (jRadioButton1.isSelected()) {
             id1 = jTextField28.getText();
             id2 = jTextField20.getText();
 
+            if (id1.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=1";
+            }
+
             if (id2.equals("")) {
                 qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=" + id1;
             } else {
-                int id1int = Integer.parseInt(id1);
-                int id2int = Integer.parseInt(id2);
+                if (!id1.equals("")) {
+                    int id1int = Integer.parseInt(id1);
+                    int id2int = Integer.parseInt(id2);
 
-                int max = Math.max(id1int, id2int);
+                    int max = Math.max(id1int, id2int);
 
-                if (max > id1int) {
-                    qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId BETWEEN " + id1 + "AND " + id2;
-                } else {
-                    JOptionPane.showMessageDialog(null, "Select correct range");
+                    if (max > id1int) {
+                        qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId BETWEEN " + id1 + "AND " + id2;
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Select correct range");
+                    }
                 }
             }
 
@@ -8837,8 +8844,14 @@ public class Dashboard extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, e);
             }
 
-        }else{
+        } else {
             JOptionPane.showMessageDialog(null, "Please Select Radio Button");
+        }
+        
+        
+        if(jRadioButton32.isSelected())
+        {
+            
         }
 
 
