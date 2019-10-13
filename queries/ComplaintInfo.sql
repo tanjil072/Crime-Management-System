@@ -37,9 +37,11 @@ CREATE TABLE COMPLAINT_INFO
 	AccusedLastName varchar(100) not null,
 	AccusedDetails varchar(200) not null,
 	AccusedImage image null,
+	Status varchar(20) null,
 
 
 
 	
 )
+
 
