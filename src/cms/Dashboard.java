@@ -90,21 +90,19 @@ public class Dashboard extends javax.swing.JFrame {
         }
 
     }
-    
-    
-    public void CreateTable()
-    {
-        try{
-            String sql="SELECT FirstName,LastName,Age FROM COMPLAINT_INFO";
+
+    public void CreateTable() {
+        try {
+            String sql = "SELECT FirstName,LastName,Age FROM COMPLAINT_INFO";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             Connection con = DriverManager.getConnection(
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             PreparedStatement st = con.prepareStatement(sql);
             ResultSet rs = st.executeQuery();
-            
+
             Complaint_Info.setModel(DbUtils.resultSetToTableModel(rs));
-        }catch(Exception e){
+        } catch (Exception e) {
             JOptionPane.showMessageDialog(this, e);
         }
     }
@@ -5449,9 +5447,8 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
 
-       
-           panelSlider1.nextPanel(20, panelSearchPolice5, panelSlider1.right);
-       
+        panelSlider1.nextPanel(20, panelSearchPolice5, panelSlider1.right);
+
     }//GEN-LAST:event_buttonSearchActionPerformed
 
     private void labelCriminalInfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelCriminalInfoMouseClicked
@@ -8112,12 +8109,49 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         // TODO add your handling code here:
-        if(!jRadioButton2.isSelected())
-        {
-            JOptionPane.showMessageDialog(this, "Hello");
+        String id1 = null;
+        String id2 = null;
+        String qid = null;
+        if (jRadioButton1.isSelected()) {
+            id1 = jTextField28.getText();
+            id2 = jTextField20.getText();
+
+            if (id2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=" + id1;
+            } else {
+                int id1int = Integer.parseInt(id1);
+                int id2int = Integer.parseInt(id2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId BETWEEN " + id1 + "AND " + id2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            try {
+
+                Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+                Connection con = DriverManager.getConnection(
+                        "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+                PreparedStatement st = con.prepareStatement(qid);
+                ResultSet rs = st.executeQuery();
+
+                Police_Info6.setModel(DbUtils.resultSetToTableModel(rs));
+
+                //CreateTable();
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, e);
+            }
+
+        }else{
+            JOptionPane.showMessageDialog(null, "Please Select Radio Button");
         }
-        
-             
+
+
     }//GEN-LAST:event_jButton30ActionPerformed
 
     /**
