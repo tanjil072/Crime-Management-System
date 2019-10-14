@@ -524,6 +524,7 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel44 = new javax.swing.JLabel();
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
+        jComboBox12 = new javax.swing.JComboBox<>();
         dialogAccusedDetails = new javax.swing.JDialog();
         jPanel5 = new javax.swing.JPanel();
         jPanel40 = new javax.swing.JPanel();
@@ -838,7 +839,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel62 = new javax.swing.JPanel();
         jLabel137 = new javax.swing.JLabel();
         jRadioButton31 = new javax.swing.JRadioButton();
-        jRadioButton32 = new javax.swing.JRadioButton();
+        jRadioButton39 = new javax.swing.JRadioButton();
         jRadioButton33 = new javax.swing.JRadioButton();
         jRadioButton34 = new javax.swing.JRadioButton();
         jRadioButton35 = new javax.swing.JRadioButton();
@@ -2568,8 +2569,8 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel18.setText("Date");
         jPanel38.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 68, -1, -1));
 
-        jLabel19.setText("Act");
-        jPanel38.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 68, -1, -1));
+        jLabel19.setText("ComplaintType");
+        jPanel38.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, -1, -1));
 
         jLabel20.setText("Section");
         jPanel38.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(545, 68, -1, -1));
@@ -2578,7 +2579,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel38.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(588, 66, 70, -1));
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jPanel38.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 66, 70, -1));
+        jPanel38.add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 70, -1));
         jPanel38.add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 60, 10));
         jPanel38.add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 60, 10));
 
@@ -2680,6 +2681,9 @@ public class Dashboard extends javax.swing.JFrame {
             }
         });
         jPanel38.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 525, 100, 30));
+
+        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel38.add(jComboBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(468, 66, 70, -1));
 
         javax.swing.GroupLayout dialogInsertComplaintLayout = new javax.swing.GroupLayout(dialogInsertComplaint.getContentPane());
         dialogInsertComplaint.getContentPane().setLayout(dialogInsertComplaintLayout);
@@ -3624,7 +3628,7 @@ public class Dashboard extends javax.swing.JFrame {
 
         jComboBox1.setBackground(new java.awt.Color(51, 51, 51));
         jComboBox1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Complainant", "Criminal", "Police" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Complainant", "Criminal", "Police", "Custody" }));
         jComboBox1.setPreferredSize(new java.awt.Dimension(109, 25));
 
         buttonSearch.setBackground(new java.awt.Color(51, 51, 51));
@@ -5009,13 +5013,13 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel122.setText("to");
         jPanel51.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, -1, 20));
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Uttara", "Azimpur", "Gulshan", "Hatirjhil", "Airport", "Adabor", "Mohanagar", "Tejgaon" }));
         jPanel51.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 150, -1));
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dhaka", "Khulna", "Narayanganj" }));
         jPanel51.add(jComboBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 150, -1));
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Others" }));
         jPanel51.add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 150, -1));
         jPanel51.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 150, -1));
 
@@ -5037,6 +5041,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton24.setBackground(new java.awt.Color(51, 51, 51));
         jButton24.setForeground(new java.awt.Color(204, 204, 204));
         jButton24.setText("Reset");
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
         jPanel51.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
 
         jButton25.setBackground(new java.awt.Color(51, 51, 51));
@@ -5218,6 +5227,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton36.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton36.setForeground(new java.awt.Color(204, 204, 204));
         jButton36.setText("Search");
+        jButton36.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton36ActionPerformed(evt);
+            }
+        });
         jPanel57.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
 
         jLabel143.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -5361,6 +5375,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton31.setForeground(new java.awt.Color(204, 204, 204));
         jButton31.setText("Reset");
+        jButton31.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton31ActionPerformed(evt);
+            }
+        });
         jPanel54.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
 
         jButton32.setBackground(new java.awt.Color(51, 51, 51));
@@ -5378,6 +5397,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton33.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton33.setForeground(new java.awt.Color(204, 204, 204));
         jButton33.setText("Search");
+        jButton33.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton33ActionPerformed(evt);
+            }
+        });
         jPanel54.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
 
         jLabel132.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -5385,7 +5409,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel54.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
         jPanel54.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 30, 15));
 
-        jRadioButton38.setText("ID");
+        jRadioButton38.setText("C.No");
         jPanel54.add(jRadioButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
         jPanel54.add(jTextField64, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 60, -1));
         jPanel54.add(jTextField65, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 60, -1));
@@ -5517,8 +5541,8 @@ public class Dashboard extends javax.swing.JFrame {
         jRadioButton31.setText("Previous Records");
         jPanel60.add(jRadioButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, -1));
 
-        jRadioButton32.setText("Name");
-        jPanel60.add(jRadioButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
+        jRadioButton39.setText("Name");
+        jPanel60.add(jRadioButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
 
         jRadioButton33.setText("Gender");
         jPanel60.add(jRadioButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
@@ -5573,6 +5597,11 @@ public class Dashboard extends javax.swing.JFrame {
         jButton39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton39.setForeground(new java.awt.Color(204, 204, 204));
         jButton39.setText("Search");
+        jButton39.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton39ActionPerformed(evt);
+            }
+        });
         jPanel60.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
 
         jLabel149.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -6137,7 +6166,20 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
 
-        panelSlider1.nextPanel(20, panelSearchPolice, panelSlider1.right);
+        if (jComboBox1.getSelectedItem().equals("Police")) {
+            panelSlider1.nextPanel(20, panelSearchPolice, panelSlider1.right);
+        }
+
+        if (jComboBox1.getSelectedItem().equals("Custody")) {
+            panelSlider1.nextPanel(20, panelSearchCustody, panelSlider1.right);
+        }
+        if (jComboBox1.getSelectedItem().equals("Complaint")) {
+            panelSlider1.nextPanel(20, panelSearchComplaint, panelSlider1.right);
+        }
+        if (jComboBox1.getSelectedItem().equals("Criminal")) {
+            panelSlider1.nextPanel(20, panelSearchCriminal, panelSlider1.right);
+        }
+
 
     }//GEN-LAST:event_buttonSearchActionPerformed
 
@@ -8669,8 +8711,8 @@ public class Dashboard extends javax.swing.JFrame {
                     "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
             String query = "INSERT INTO COMPLAINT_INFO(FirstName,LastName,Age,Occupation,"
-                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplaintType,FathersName,Address,FirNo,YearOfFir,DateOfFir,TimeOfFir,Act,Section,DateFrom,DateTo,TimeFrom,TimeTo,DirectionFromPS,DistanceFromPS,DamagedProperties,AddressComplaint,Details,TotalAccused,AccusedFirstName,AccusedLastName,AccusedDetails,AccusedImage,Status)"
-                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NULL)";
+                    + "Email,Phone,NID,DateOfBirth,Nationality,ComplainantType,FathersName,Address,FirNo,YearOfFir,DateOfFir,TimeOfFir,Act,Section,DateFrom,DateTo,TimeFrom,TimeTo,DirectionFromPS,DistanceFromPS,DamagedProperties,AddressComplaint,Details,TotalAccused,AccusedFirstName,AccusedLastName,AccusedDetails,AccusedImage,ComplaintType,Status)"
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,NULL)";
 
             //ComplainantDetails
             PreparedStatement pst = connection.prepareStatement(query);
@@ -8706,7 +8748,7 @@ public class Dashboard extends javax.swing.JFrame {
             String time = jTimeChooser1.getFormatedTime();
             pst.setString(16, time);
 
-            pst.setString(17, jComboBox3.getSelectedItem().toString());
+            pst.setString(17, jComboBox12.getSelectedItem().toString());
             pst.setString(18, jComboBox2.getSelectedItem().toString());
 
             Date date4 = jDateChooser2.getDate();
@@ -8741,6 +8783,7 @@ public class Dashboard extends javax.swing.JFrame {
             pst.setString(31, jTextArea2.getText());
 
             pst.setBytes(32, person_image20);
+            pst.setString(33, jComboBox3.getSelectedItem().toString());
 
             pst.executeUpdate();
 
@@ -8799,42 +8842,181 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
         // TODO add your handling code here:
+
         String id1 = null;
         String id2 = null;
         String qid = null;
-        
+
         if (jRadioButton1.isSelected()) {
             id1 = jTextField28.getText();
             id2 = jTextField20.getText();
 
-            if (id1.equals("")) {
-                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=1";
+            if (!id1.equals("") && id2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=" + id1;
             }
 
-            if (id2.equals("")) {
-                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=" + id1;
+            if (id1.equals("") && !id2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId>=0" + "AND PoliceId<=" + id2;
+            }
+
+            if (!id1.equals("") && !id2.equals("")) {
+                int id1int = Integer.parseInt(id1);
+                int id2int = Integer.parseInt(id2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId BETWEEN " + id1 + "AND " + id2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            if (id1.equals("") && id2.equals("")) {
+                JOptionPane.showMessageDialog(null, "Select Range");
+            }
+
+        }
+
+        if (jRadioButton7.isSelected()) {
+            String age1 = jTextField22.getText();
+            String age2 = jTextField23.getText();
+
+            if (age1.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Age>=1";
+            }
+
+            if (age2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Age>=" + age1;
             } else {
-                if (!id1.equals("")) {
-                    int id1int = Integer.parseInt(id1);
-                    int id2int = Integer.parseInt(id2);
+                if (!age1.equals("")) {
+                    int age1int = Integer.parseInt(age1);
+                    int age2int = Integer.parseInt(age2);
 
-                    int max = Math.max(id1int, id2int);
+                    int max = Math.max(age1int, age2int);
 
-                    if (max > id1int) {
-                        qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceId BETWEEN " + id1 + "AND " + id2;
-                    } else {
-                        JOptionPane.showMessageDialog(null, "Select correct range");
+                    if (max > age1int) {
+                        qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Age BETWEEN " + age1 + "AND " + age2;
                     }
                 }
             }
 
-            try {
+        }
 
+        if (jRadioButton2.isSelected()) {
+            String name = jTextField24.getText();
+            qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE FirstName=" + "\'" + name + "\'";
+
+        }
+
+        if (jRadioButton5.isSelected()) {
+            String gender = jComboBox11.getSelectedItem().toString();
+            qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Gender=" + "\'" + gender + "\'";
+
+        }
+
+        if (jRadioButton6.isSelected()) {
+            String phone = jTextField29.getText();
+            qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Phone=" + "\'" + phone + "\'";
+
+        }
+
+        if (jRadioButton8.isSelected()) {
+            String date1 = jTextField31.getText();
+            String date2 = jTextField32.getText();
+
+            if (date1.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE JoiningDate>=1900-01-01";
+            }
+
+            if (date2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE JoiningDate>=" + date1;
+            } else {
+                if (!date1.equals("") && date2.equals("")) {
+                    qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE JoiningDate BETWEEN " + date1 + "AND " + date2;
+                }
+            }
+
+        }
+
+        if (jRadioButton9.isSelected()) {
+            String age1 = jTextField25.getText();
+            String age2 = jTextField30.getText();
+
+            if (!age1.equals("") && age2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Salary>=" + age1;
+            }
+
+            if (age1.equals("") && !age2.equals("")) {
+                qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Salary>=0" + "AND Salary<=" + age2;
+            }
+
+            if (!age1.equals("") && !age2.equals("")) {
+                int id1int = Integer.parseInt(age1);
+                int id2int = Integer.parseInt(age2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE Salary BETWEEN " + age1 + "AND " + age2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            if (age1.equals("") && age2.equals("")) {
+                JOptionPane.showMessageDialog(null, "Select Range");
+            }
+
+        }
+
+        if (jRadioButton10.isSelected()) {
+
+            String a1 = jTextField26.getText();
+            String a2 = jTextField27.getText();
+
+            String a3, a4, a5, a6;
+
+            if (!a1.equals("") && !a2.equals("")) {
+                if (Integer.parseInt(a2) <= Integer.parseInt(a1)) {
+                    JOptionPane.showMessageDialog(null, "Please Input Proper Range");
+                } else {
+                    a3 = a1;
+                    a4 = a2;
+                    //String query1 = "SELECT COUNT(PoliceId) as Arrested, FirstName FROM CRIMINAL_INFO GROUP BY FirstName HAVING COUNT(PoliceId) >0 ORDER BY COUNT(PoliceId);";
+                    qid = "SELECT P.PoliceId As PoliceID, P.FirstName, P.Designation,P.Email,Count(C.PoliceId) As Arrested FROM [CRIMINAL_INFO] C JOIN POLICE_INFO P ON C.PoliceId = P.PoliceId GROUP BY P.FirstName, P.Designation,P.Email,P.PoliceId HAVING COUNT(C.PoliceId) >=" + a3 + " AND COUNT(C.PoliceId) <=" + a4 + " ORDER BY Count(C.PoliceId) DESC";
+
+                }
+            }
+
+            if (!a1.equals("") && a2.equals("")) {
+
+                a5 = a1;
+
+                //String query1 = "SELECT COUNT(PoliceId) as Arrested, FirstName FROM CRIMINAL_INFO GROUP BY FirstName HAVING COUNT(PoliceId) >0 ORDER BY COUNT(PoliceId);";
+                qid = "SELECT P.PoliceId As PoliceID, P.FirstName, P.Designation,P.Email,Count(C.PoliceId) As Arrested FROM [CRIMINAL_INFO] C JOIN POLICE_INFO P ON C.PoliceId = P.PoliceId GROUP BY P.FirstName, P.Designation,P.Email,P.PoliceId HAVING COUNT(C.PoliceId) >=" + a5 + " ORDER BY Count(C.PoliceId) DESC";
+
+            }
+            if (!a2.equals("") && a1.equals("")) {
+                a6 = a2;
+
+                //String query1 = "SELECT COUNT(PoliceId) as Arrested, FirstName FROM CRIMINAL_INFO GROUP BY FirstName HAVING COUNT(PoliceId) >0 ORDER BY COUNT(PoliceId);";
+                qid = "SELECT P.PoliceId As PoliceID, P.FirstName, P.Designation,P.Email,Count(C.PoliceId) As Arrested FROM [CRIMINAL_INFO] C JOIN POLICE_INFO P ON C.PoliceId = P.PoliceId GROUP BY P.FirstName, P.Designation,P.Email,P.PoliceId HAVING COUNT(C.PoliceId) >=0 AND COUNT(C.PoliceId) <=" + a6 + " ORDER BY Count(C.PoliceId) DESC";
+
+            }
+
+            if (a2.equals("") && a1.equals("")) {
+                JOptionPane.showMessageDialog(null, "Please Input Value");
+            }
+
+            /*try {
                 Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                 Connection con = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                PreparedStatement st = con.prepareStatement(qid);
+                //String query1 = "SELECT COUNT(PoliceId) as Arrested, FirstName FROM CRIMINAL_INFO GROUP BY FirstName HAVING COUNT(PoliceId) >0 ORDER BY COUNT(PoliceId);";
+                String qq = "SELECT P.PoliceId As PoliceID, P.FirstName, P.Designation,P.Email,Count(C.PoliceId) As Arrested FROM [CRIMINAL_INFO] C JOIN POLICE_INFO P ON C.PoliceId = P.PoliceId GROUP BY P.FirstName, P.Designation,P.Email,P.PoliceId HAVING COUNT(C.PoliceId) >1 ORDER BY Count(C.PoliceId) DESC";
+                PreparedStatement st = con.prepareStatement(qq);
                 ResultSet rs = st.executeQuery();
 
                 Police_Info6.setModel(DbUtils.resultSetToTableModel(rs));
@@ -8842,16 +9024,34 @@ public class Dashboard extends javax.swing.JFrame {
                 //CreateTable();
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, e);
-            }
-
-        } else {
-            JOptionPane.showMessageDialog(null, "Please Select Radio Button");
+            }*/
         }
-        
-        
-        if(jRadioButton32.isSelected())
-        {
-            
+
+        if (jRadioButton3.isSelected()) {
+            String gender = jComboBox8.getSelectedItem().toString();
+            qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE PoliceStation=" + "\'" + gender + "\'";
+
+        }
+
+        if (jRadioButton4.isSelected()) {
+            String gender = jComboBox10.getSelectedItem().toString();
+            qid = "SELECT PoliceId,FirstName,Designation,Email FROM POLICE_INFO WHERE District=" + "\'" + gender + "\'";
+        }
+
+        try {
+
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            PreparedStatement st = con.prepareStatement(qid);
+            ResultSet rs = st.executeQuery();
+
+            Police_Info6.setModel(DbUtils.resultSetToTableModel(rs));
+
+            //CreateTable();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
         }
 
 
@@ -8872,6 +9072,171 @@ public class Dashboard extends javax.swing.JFrame {
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton38ActionPerformed
+
+    private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
+        // TODO add your handling code here:
+
+
+    }//GEN-LAST:event_jButton39ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        jTextField28.setText("");
+        jTextField29.setText("");
+        jTextField20.setText("");
+        jTextField24.setText("");
+        jTextField22.setText("");
+        jTextField23.setText("");
+        jTextField25.setText("");
+        jTextField31.setText("");
+        jTextField32.setText("");
+        jTextField26.setText("");
+        jTextField27.setText("");
+        jTextField30.setText("");
+
+        jRadioButton1.setSelected(false);
+        jRadioButton2.setSelected(false);
+        jRadioButton3.setSelected(false);
+        jRadioButton4.setSelected(false);
+        jRadioButton5.setSelected(false);
+        jRadioButton6.setSelected(false);
+        jRadioButton7.setSelected(false);
+        jRadioButton8.setSelected(false);
+        jRadioButton9.setSelected(false);
+        jRadioButton10.setSelected(false);
+
+    }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
+        // TODO add your handling code here:
+        String id1, id2;
+        String qid = null;
+        if (jRadioButton38.isSelected()) {
+            id1 = jTextField65.getText();
+            id2 = jTextField33.getText();
+
+            if (!id1.equals("") && id2.equals("")) {
+                qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE CustodyNo>=" + id1;
+            }
+
+            if (id1.equals("") && !id2.equals("")) {
+                qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE CustodyNo>=0" + "AND CustodyNo<=" + id2;
+            }
+
+            if (!id1.equals("") && !id2.equals("")) {
+                int id1int = Integer.parseInt(id1);
+                int id2int = Integer.parseInt(id2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE CustodyNo BETWEEN " + id1 + "AND " + id2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            if (id1.equals("") && id2.equals("")) {
+                JOptionPane.showMessageDialog(null, "Select Range");
+            }
+
+        }
+
+        if (jRadioButton11.isSelected()) {
+            id1 = jTextField43.getText();
+            id2 = jTextField64.getText();
+
+            if (!id1.equals("") && id2.equals("")) {
+                qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE RemainingSeats>=" + id1;
+            }
+
+            if (id1.equals("") && !id2.equals("")) {
+                qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE RemainingSeats>=0" + "AND RemainingSeats<=" + id2;
+            }
+
+            if (!id1.equals("") && !id2.equals("")) {
+                int id1int = Integer.parseInt(id1);
+                int id2int = Integer.parseInt(id2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM CUSTODY_INFO WHERE RemainingSeats BETWEEN " + id1 + "AND " + id2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            if (id1.equals("") && id2.equals("")) {
+                JOptionPane.showMessageDialog(null, "Select Range");
+            }
+
+        }
+        try {
+
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            PreparedStatement st = con.prepareStatement(qid);
+            ResultSet rs = st.executeQuery();
+
+            jTable7.setModel(DbUtils.resultSetToTableModel(rs));
+
+            //CreateTable();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+    }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton31ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton31ActionPerformed
+        // TODO add your handling code here:
+
+        jTextField65.setText("");
+        jTextField64.setText("");
+        jTextField43.setText("");
+        jTextField33.setText("");
+
+        jRadioButton38.setSelected(false);
+        jRadioButton11.setSelected(false);
+    }//GEN-LAST:event_jButton31ActionPerformed
+
+    private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
+        // TODO add your handling code here:
+        String id1,id2;
+        String qid=null;
+        
+        if (jRadioButton18.isSelected()) {
+            id1 = jTextField48.getText();
+            id2 = jTextField37.getText();
+
+            if (!id1.equals("") && id2.equals("")) {
+                qid = "SELECT ComplaintId,ComplaintType,FirstName,ComplainantType, FROM COMPLAINT_INFO WHERE ComplaintId>=" + id1;
+            }
+
+            if (id1.equals("") && !id2.equals("")) {
+                qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM COMPLAINT_INFO WHERE ComplaintId>=0" + "AND ComplaintId<=" + id2;
+            }
+
+            if (!id1.equals("") && !id2.equals("")) {
+                int id1int = Integer.parseInt(id1);
+                int id2int = Integer.parseInt(id2);
+
+                int max = Math.max(id1int, id2int);
+
+                if (max > id1int) {
+                    qid = "SELECT CustodyNo,RemainingSeats,Capacity FROM COMPLAINT_INFO WHERE ComplaintId BETWEEN " + id1 + "AND " + id2;
+                } else {
+                    JOptionPane.showMessageDialog(null, "Select correct range");
+                }
+            }
+
+            if (id1.equals("") && id2.equals("")) {
+                JOptionPane.showMessageDialog(null, "Select Range");
+            }
+
+        }
+    }//GEN-LAST:event_jButton36ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -9134,6 +9499,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
+    private javax.swing.JComboBox<String> jComboBox12;
     private javax.swing.JComboBox<String> jComboBox13;
     private javax.swing.JComboBox<String> jComboBox15;
     private javax.swing.JComboBox<String> jComboBox16;
@@ -9368,13 +9734,13 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton27;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton31;
-    private javax.swing.JRadioButton jRadioButton32;
     private javax.swing.JRadioButton jRadioButton33;
     private javax.swing.JRadioButton jRadioButton34;
     private javax.swing.JRadioButton jRadioButton35;
     private javax.swing.JRadioButton jRadioButton36;
     private javax.swing.JRadioButton jRadioButton37;
     private javax.swing.JRadioButton jRadioButton38;
+    private javax.swing.JRadioButton jRadioButton39;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;

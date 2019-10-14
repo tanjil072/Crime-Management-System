@@ -11,7 +11,7 @@ CREATE TABLE COMPLAINT_INFO
 	NID varchar(100) not null,
 	DateOfBirth date DEFAULT '0001-01-01' NOT NULL,
 	Nationality varchar(100) not null,
-	ComplaintType varchar(100) not null,
+	ComplainantType varchar(100) not null,
 	FathersName varchar(100) not null,
 	Address varchar(100) not null,
 
@@ -21,6 +21,7 @@ CREATE TABLE COMPLAINT_INFO
 	TimeOfFir varchar(100) not null,
 	Act varchar(100) not null,
 	Section varchar(100) not null,
+	
 
 	DateFrom date DEFAULT '0001-01-01' NOT NULL,
 	DateTo date DEFAULT '0001-01-01' NOT NULL,
@@ -37,9 +38,10 @@ CREATE TABLE COMPLAINT_INFO
 	AccusedLastName varchar(100) not null,
 	AccusedDetails varchar(200) not null,
 	AccusedImage image null,
+	
+	ComplaintType varchar(50) not null,
 	Status varchar(20) null,
-
-
+	
 
 	
 )
