@@ -720,6 +720,51 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
+        panelSearchPolice5 = new javax.swing.JPanel();
+        panelPolice6 = new javax.swing.JPanel();
+        jPanel51 = new javax.swing.JPanel();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        Police_Info6 = new javax.swing.JTable();
+        jPanel52 = new javax.swing.JPanel();
+        jPanel53 = new javax.swing.JPanel();
+        jLabel93 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jRadioButton7 = new javax.swing.JRadioButton();
+        jSeparator27 = new javax.swing.JSeparator();
+        jRadioButton8 = new javax.swing.JRadioButton();
+        jRadioButton9 = new javax.swing.JRadioButton();
+        jRadioButton10 = new javax.swing.JRadioButton();
+        jTextField20 = new javax.swing.JTextField();
+        jTextField22 = new javax.swing.JTextField();
+        jTextField23 = new javax.swing.JTextField();
+        jTextField24 = new javax.swing.JTextField();
+        jTextField25 = new javax.swing.JTextField();
+        jTextField26 = new javax.swing.JTextField();
+        jTextField27 = new javax.swing.JTextField();
+        jTextField28 = new javax.swing.JTextField();
+        jLabel122 = new javax.swing.JLabel();
+        jComboBox8 = new javax.swing.JComboBox<>();
+        jComboBox10 = new javax.swing.JComboBox<>();
+        jComboBox11 = new javax.swing.JComboBox<>();
+        jTextField29 = new javax.swing.JTextField();
+        jLabel123 = new javax.swing.JLabel();
+        jLabel124 = new javax.swing.JLabel();
+        jTextField30 = new javax.swing.JTextField();
+        jTextField31 = new javax.swing.JTextField();
+        jTextField32 = new javax.swing.JTextField();
+        jLabel125 = new javax.swing.JLabel();
+        jLabel126 = new javax.swing.JLabel();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
+        jButton30 = new javax.swing.JButton();
+        jLabel127 = new javax.swing.JLabel();
+        jLabel128 = new javax.swing.JLabel();
+        jLabel129 = new javax.swing.JLabel();
         panelPoliceInfo = new javax.swing.JPanel();
         labelPoliceInfo = new javax.swing.JLabel();
         panelCriminalInfo = new javax.swing.JPanel();
@@ -4722,6 +4767,219 @@ public class Dashboard extends javax.swing.JFrame {
 
         panelSlider1.add(panelPolice, "card2");
 
+        panelPolice6.setBackground(new java.awt.Color(204, 204, 204));
+        panelPolice6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel51.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel51.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Police_Info6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, "", "", null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Police ID", "Name", "Designation", "Email"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        Police_Info6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Police_Info6.setFocusable(false);
+        Police_Info6.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        Police_Info6.setRowHeight(20);
+        Police_Info6.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        Police_Info6.getTableHeader().setReorderingAllowed(false);
+        Police_Info6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Police_Info6MouseClicked(evt);
+            }
+        });
+        jScrollPane13.setViewportView(Police_Info6);
+
+        jPanel51.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 540, 210));
+
+        jPanel52.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel52.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel52.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel53.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel93.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel93.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel93.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel93.setText("Preview");
+        jLabel93.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel93.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
+        jPanel53.setLayout(jPanel53Layout);
+        jPanel53Layout.setHorizontalGroup(
+            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel53Layout.createSequentialGroup()
+                .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel53Layout.setVerticalGroup(
+            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel52.add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jPanel51.add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 490));
+
+        jRadioButton1.setText("ID");
+        jPanel51.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jRadioButton2.setText("Name");
+        jPanel51.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
+
+        jRadioButton3.setText("Police Station");
+        jPanel51.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, -1));
+
+        jRadioButton4.setText("District");
+        jPanel51.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, -1, -1));
+
+        jRadioButton5.setText("Gender");
+        jPanel51.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
+
+        jRadioButton6.setText("Phone");
+        jPanel51.add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jRadioButton7.setText("Age");
+        jPanel51.add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, -1));
+
+        jSeparator27.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel51.add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 10, 150));
+
+        jRadioButton8.setText("Joining Date");
+        jPanel51.add(jRadioButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, -1));
+
+        jRadioButton9.setText("Salary");
+        jPanel51.add(jRadioButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
+
+        jRadioButton10.setText("Arrested Criminals");
+        jPanel51.add(jRadioButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, -1, -1));
+        jPanel51.add(jTextField20, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 60, -1));
+        jPanel51.add(jTextField22, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 60, -1));
+        jPanel51.add(jTextField23, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, -1));
+        jPanel51.add(jTextField24, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 150, -1));
+        jPanel51.add(jTextField25, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 60, -1));
+        jPanel51.add(jTextField26, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 60, -1));
+        jPanel51.add(jTextField27, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 60, -1));
+        jPanel51.add(jTextField28, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 60, -1));
+
+        jLabel122.setText("to");
+        jPanel51.add(jLabel122, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, -1, 20));
+
+        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel51.add(jComboBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 150, -1));
+
+        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel51.add(jComboBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 150, -1));
+
+        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel51.add(jComboBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 150, -1));
+        jPanel51.add(jTextField29, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 150, -1));
+
+        jLabel123.setText("to");
+        jPanel51.add(jLabel123, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, -1, 20));
+
+        jLabel124.setText("to");
+        jPanel51.add(jLabel124, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, 20));
+        jPanel51.add(jTextField30, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 60, -1));
+        jPanel51.add(jTextField31, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 60, -1));
+        jPanel51.add(jTextField32, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 60, -1));
+
+        jLabel125.setText("to");
+        jPanel51.add(jLabel125, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, 20));
+
+        jLabel126.setText("to");
+        jPanel51.add(jLabel126, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, -1, 20));
+
+        jButton24.setBackground(new java.awt.Color(51, 51, 51));
+        jButton24.setForeground(new java.awt.Color(204, 204, 204));
+        jButton24.setText("Reset");
+        jPanel51.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
+
+        jButton25.setBackground(new java.awt.Color(51, 51, 51));
+        jButton25.setForeground(new java.awt.Color(204, 204, 204));
+        jButton25.setText("Cancel");
+        jButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton25ActionPerformed(evt);
+            }
+        });
+        jPanel51.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 100, 30));
+
+        jButton30.setBackground(new java.awt.Color(51, 51, 51));
+        jButton30.setForeground(new java.awt.Color(204, 204, 204));
+        jButton30.setText("Search");
+        jPanel51.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
+
+        jLabel127.setText("Results:");
+        jPanel51.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, -1));
+        jPanel51.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 180, 30, 15));
+
+        panelPolice6.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        jLabel129.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel129.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel129.setText("Search || Police Info ");
+        jLabel129.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panelPolice6.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 950, -1));
+
+        javax.swing.GroupLayout panelSearchPolice5Layout = new javax.swing.GroupLayout(panelSearchPolice5);
+        panelSearchPolice5.setLayout(panelSearchPolice5Layout);
+        panelSearchPolice5Layout.setHorizontalGroup(
+            panelSearchPolice5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelPolice6, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
+        );
+        panelSearchPolice5Layout.setVerticalGroup(
+            panelSearchPolice5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchPolice5Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelPolice6, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelSlider1.add(panelSearchPolice5, "card6");
+
         jPanel2.add(panelSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 980, 550));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 0, 980, 590));
@@ -7856,6 +8114,14 @@ public class Dashboard extends javax.swing.JFrame {
         dialogAccusedDetails.dispose();
     }//GEN-LAST:event_jButton11ActionPerformed
 
+    private void Police_Info6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Police_Info6MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Police_Info6MouseClicked
+
+    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton25ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -7978,6 +8244,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> PoliceStation1;
     private javax.swing.JComboBox<String> PoliceStation2;
     private javax.swing.JTable Police_Info;
+    private javax.swing.JTable Police_Info1;
+    private javax.swing.JTable Police_Info2;
+    private javax.swing.JTable Police_Info3;
+    private javax.swing.JTable Police_Info4;
+    private javax.swing.JTable Police_Info5;
+    private javax.swing.JTable Police_Info6;
     private javax.swing.JTextField PrevRec;
     private com.toedter.calendar.JDateChooser ResigningDate1;
     private com.toedter.calendar.JDateChooser ResigningDate2;
@@ -8033,11 +8305,14 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -8102,12 +8377,15 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox10;
+    private javax.swing.JComboBox<String> jComboBox11;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JComboBox<String> jComboBox5;
     private javax.swing.JComboBox<String> jComboBox6;
     private javax.swing.JComboBox<String> jComboBox7;
+    private javax.swing.JComboBox<String> jComboBox8;
     private javax.swing.JComboBox<String> jComboBox9;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private com.toedter.calendar.JDateChooser jDateChooser2;
@@ -8137,6 +8415,14 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel119;
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
+    private javax.swing.JLabel jLabel122;
+    private javax.swing.JLabel jLabel123;
+    private javax.swing.JLabel jLabel124;
+    private javax.swing.JLabel jLabel125;
+    private javax.swing.JLabel jLabel126;
+    private javax.swing.JLabel jLabel127;
+    private javax.swing.JLabel jLabel128;
+    private javax.swing.JLabel jLabel129;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -8219,6 +8505,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
+    private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
@@ -8241,6 +8528,9 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
@@ -8266,18 +8556,39 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel46;
     private javax.swing.JPanel jPanel47;
     private javax.swing.JPanel jPanel48;
+    private javax.swing.JPanel jPanel49;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel50;
+    private javax.swing.JPanel jPanel51;
+    private javax.swing.JPanel jPanel52;
+    private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JRadioButton jRadioButton7;
+    private javax.swing.JRadioButton jRadioButton8;
+    private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane10;
+    private javax.swing.JScrollPane jScrollPane11;
+    private javax.swing.JScrollPane jScrollPane12;
+    private javax.swing.JScrollPane jScrollPane13;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -8297,6 +8608,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator24;
     private javax.swing.JSeparator jSeparator25;
     private javax.swing.JSeparator jSeparator26;
+    private javax.swing.JSeparator jSeparator27;
     private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator30;
@@ -8326,8 +8638,20 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField19;
     private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField20;
     private javax.swing.JTextField jTextField21;
+    private javax.swing.JTextField jTextField22;
+    private javax.swing.JTextField jTextField23;
+    private javax.swing.JTextField jTextField24;
+    private javax.swing.JTextField jTextField25;
+    private javax.swing.JTextField jTextField26;
+    private javax.swing.JTextField jTextField27;
+    private javax.swing.JTextField jTextField28;
+    private javax.swing.JTextField jTextField29;
     private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField30;
+    private javax.swing.JTextField jTextField31;
+    private javax.swing.JTextField jTextField32;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
@@ -8407,6 +8731,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelExit;
     private javax.swing.JPanel panelMini;
     private javax.swing.JPanel panelPolice;
+    private javax.swing.JPanel panelPolice1;
+    private javax.swing.JPanel panelPolice2;
+    private javax.swing.JPanel panelPolice3;
+    private javax.swing.JPanel panelPolice4;
+    private javax.swing.JPanel panelPolice5;
+    private javax.swing.JPanel panelPolice6;
     private javax.swing.JPanel panelPoliceAdd;
     private javax.swing.JPanel panelPoliceAdd1;
     private javax.swing.JPanel panelPoliceAdd2;
@@ -8420,6 +8750,12 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelResetPolice1;
     private javax.swing.JPanel panelResetPolice2;
     private javax.swing.JPanel panelResetPolice3;
+    private javax.swing.JPanel panelSearchPolice;
+    private javax.swing.JPanel panelSearchPolice1;
+    private javax.swing.JPanel panelSearchPolice2;
+    private javax.swing.JPanel panelSearchPolice3;
+    private javax.swing.JPanel panelSearchPolice4;
+    private javax.swing.JPanel panelSearchPolice5;
     private diu.swe.habib.JPanelSlider.JPanelSlider panelSlider1;
     private javax.swing.JPanel panelUpdatePolice;
     private javax.swing.JPanel panelUpdatePolice1;
