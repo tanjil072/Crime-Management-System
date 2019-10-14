@@ -316,7 +316,7 @@ public class SignIn extends javax.swing.JFrame {
 
             if (rs.next() && SignInDistrict.getSelectedIndex()!=0 ) {
                 
-                JOptionPane.showMessageDialog(this, "LOGIN SUCCESS");
+                JOptionPane.showMessageDialog(this, "LOGIN SUCCESSFULL");
                 dispose();
                 Dashboard dashFrame = new Dashboard();
                 dashFrame.setVisible(true);
