@@ -718,7 +718,7 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        panelSearchPolice5 = new javax.swing.JPanel();
+        panelSearchPolice = new javax.swing.JPanel();
         panelPolice6 = new javax.swing.JPanel();
         jPanel51 = new javax.swing.JPanel();
         jScrollPane13 = new javax.swing.JScrollPane();
@@ -763,6 +763,109 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel127 = new javax.swing.JLabel();
         jLabel128 = new javax.swing.JLabel();
         jLabel129 = new javax.swing.JLabel();
+        panelSearchComplaint = new javax.swing.JPanel();
+        panelPolice8 = new javax.swing.JPanel();
+        jPanel57 = new javax.swing.JPanel();
+        jPanel58 = new javax.swing.JPanel();
+        jPanel59 = new javax.swing.JPanel();
+        jLabel134 = new javax.swing.JLabel();
+        jRadioButton18 = new javax.swing.JRadioButton();
+        jRadioButton19 = new javax.swing.JRadioButton();
+        jRadioButton20 = new javax.swing.JRadioButton();
+        jRadioButton21 = new javax.swing.JRadioButton();
+        jRadioButton22 = new javax.swing.JRadioButton();
+        jRadioButton23 = new javax.swing.JRadioButton();
+        jRadioButton24 = new javax.swing.JRadioButton();
+        jSeparator36 = new javax.swing.JSeparator();
+        jRadioButton25 = new javax.swing.JRadioButton();
+        jRadioButton26 = new javax.swing.JRadioButton();
+        jRadioButton27 = new javax.swing.JRadioButton();
+        jTextField37 = new javax.swing.JTextField();
+        jTextField38 = new javax.swing.JTextField();
+        jTextField39 = new javax.swing.JTextField();
+        jTextField42 = new javax.swing.JTextField();
+        jTextField45 = new javax.swing.JTextField();
+        jTextField46 = new javax.swing.JTextField();
+        jTextField47 = new javax.swing.JTextField();
+        jTextField48 = new javax.swing.JTextField();
+        jLabel135 = new javax.swing.JLabel();
+        jComboBox13 = new javax.swing.JComboBox<>();
+        jComboBox15 = new javax.swing.JComboBox<>();
+        jComboBox16 = new javax.swing.JComboBox<>();
+        jTextField49 = new javax.swing.JTextField();
+        jLabel139 = new javax.swing.JLabel();
+        jLabel140 = new javax.swing.JLabel();
+        jTextField50 = new javax.swing.JTextField();
+        jTextField51 = new javax.swing.JTextField();
+        jTextField52 = new javax.swing.JTextField();
+        jLabel141 = new javax.swing.JLabel();
+        jLabel142 = new javax.swing.JLabel();
+        jButton34 = new javax.swing.JButton();
+        jButton35 = new javax.swing.JButton();
+        jButton36 = new javax.swing.JButton();
+        jLabel143 = new javax.swing.JLabel();
+        jLabel144 = new javax.swing.JLabel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTable6 = new javax.swing.JTable();
+        jLabel145 = new javax.swing.JLabel();
+        panelSearchCustody = new javax.swing.JPanel();
+        panelPolice7 = new javax.swing.JPanel();
+        jPanel54 = new javax.swing.JPanel();
+        jPanel55 = new javax.swing.JPanel();
+        jPanel56 = new javax.swing.JPanel();
+        jLabel130 = new javax.swing.JLabel();
+        jRadioButton11 = new javax.swing.JRadioButton();
+        jSeparator28 = new javax.swing.JSeparator();
+        jTextField33 = new javax.swing.JTextField();
+        jTextField43 = new javax.swing.JTextField();
+        jLabel131 = new javax.swing.JLabel();
+        jButton31 = new javax.swing.JButton();
+        jButton32 = new javax.swing.JButton();
+        jButton33 = new javax.swing.JButton();
+        jLabel132 = new javax.swing.JLabel();
+        jLabel133 = new javax.swing.JLabel();
+        jRadioButton38 = new javax.swing.JRadioButton();
+        jTextField64 = new javax.swing.JTextField();
+        jTextField65 = new javax.swing.JTextField();
+        jLabel146 = new javax.swing.JLabel();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTable7 = new javax.swing.JTable();
+        jLabel136 = new javax.swing.JLabel();
+        panelSearchCriminal = new javax.swing.JPanel();
+        panelPolice9 = new javax.swing.JPanel();
+        jPanel60 = new javax.swing.JPanel();
+        jPanel61 = new javax.swing.JPanel();
+        jPanel62 = new javax.swing.JPanel();
+        jLabel137 = new javax.swing.JLabel();
+        jRadioButton31 = new javax.swing.JRadioButton();
+        jRadioButton32 = new javax.swing.JRadioButton();
+        jRadioButton33 = new javax.swing.JRadioButton();
+        jRadioButton34 = new javax.swing.JRadioButton();
+        jRadioButton35 = new javax.swing.JRadioButton();
+        jSeparator37 = new javax.swing.JSeparator();
+        jTextField56 = new javax.swing.JTextField();
+        jTextField57 = new javax.swing.JTextField();
+        jTextField58 = new javax.swing.JTextField();
+        jTextField59 = new javax.swing.JTextField();
+        jTextField60 = new javax.swing.JTextField();
+        jLabel138 = new javax.swing.JLabel();
+        jComboBox17 = new javax.swing.JComboBox<>();
+        jTextField61 = new javax.swing.JTextField();
+        jLabel147 = new javax.swing.JLabel();
+        jLabel148 = new javax.swing.JLabel();
+        jTextField62 = new javax.swing.JTextField();
+        jTextField63 = new javax.swing.JTextField();
+        jButton37 = new javax.swing.JButton();
+        jButton38 = new javax.swing.JButton();
+        jButton39 = new javax.swing.JButton();
+        jLabel149 = new javax.swing.JLabel();
+        jLabel150 = new javax.swing.JLabel();
+        jRadioButton36 = new javax.swing.JRadioButton();
+        jRadioButton37 = new javax.swing.JRadioButton();
+        jComboBox18 = new javax.swing.JComboBox<>();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        jTable5 = new javax.swing.JTable();
+        jLabel151 = new javax.swing.JLabel();
         panelPoliceInfo = new javax.swing.JPanel();
         labelPoliceInfo = new javax.swing.JLabel();
         panelCriminalInfo = new javax.swing.JPanel();
@@ -4968,20 +5071,607 @@ public class Dashboard extends javax.swing.JFrame {
         jLabel129.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panelPolice6.add(jLabel129, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 950, -1));
 
-        javax.swing.GroupLayout panelSearchPolice5Layout = new javax.swing.GroupLayout(panelSearchPolice5);
-        panelSearchPolice5.setLayout(panelSearchPolice5Layout);
-        panelSearchPolice5Layout.setHorizontalGroup(
-            panelSearchPolice5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout panelSearchPoliceLayout = new javax.swing.GroupLayout(panelSearchPolice);
+        panelSearchPolice.setLayout(panelSearchPoliceLayout);
+        panelSearchPoliceLayout.setHorizontalGroup(
+            panelSearchPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(panelPolice6, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
         );
-        panelSearchPolice5Layout.setVerticalGroup(
-            panelSearchPolice5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchPolice5Layout.createSequentialGroup()
+        panelSearchPoliceLayout.setVerticalGroup(
+            panelSearchPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchPoliceLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(panelPolice6, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        panelSlider1.add(panelSearchPolice5, "card6");
+        panelSlider1.add(panelSearchPolice, "card6");
+
+        panelPolice8.setBackground(new java.awt.Color(204, 204, 204));
+        panelPolice8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel57.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel57.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel58.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel58.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel58.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel59.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel134.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel134.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel134.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel134.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel134.setText("Preview");
+        jLabel134.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel134.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
+        jPanel59.setLayout(jPanel59Layout);
+        jPanel59Layout.setHorizontalGroup(
+            jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel59Layout.createSequentialGroup()
+                .addComponent(jLabel134, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel59Layout.setVerticalGroup(
+            jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel134, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel58.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jPanel57.add(jPanel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 490));
+
+        jRadioButton18.setText("ID");
+        jPanel57.add(jRadioButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jRadioButton19.setText("Act");
+        jPanel57.add(jRadioButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
+
+        jRadioButton20.setText("Occurrence Day");
+        jPanel57.add(jRadioButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, -1, -1));
+
+        jRadioButton21.setText("Complainant Type");
+        jPanel57.add(jRadioButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, -1, -1));
+
+        jRadioButton22.setText("Complaint Type");
+        jPanel57.add(jRadioButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jRadioButton23.setText("Section");
+        jPanel57.add(jRadioButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
+
+        jRadioButton24.setText("Age");
+        jPanel57.add(jRadioButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, -1));
+
+        jSeparator36.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel57.add(jSeparator36, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 10, 150));
+
+        jRadioButton25.setText("Date of Issue");
+        jRadioButton25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton25ActionPerformed(evt);
+            }
+        });
+        jPanel57.add(jRadioButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, -1));
+
+        jRadioButton26.setText("Wasted Money");
+        jPanel57.add(jRadioButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
+
+        jRadioButton27.setText("FIR Year");
+        jPanel57.add(jRadioButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 60, -1, -1));
+        jPanel57.add(jTextField37, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 60, -1));
+        jPanel57.add(jTextField38, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 60, -1));
+        jPanel57.add(jTextField39, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, -1));
+        jPanel57.add(jTextField42, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 150, -1));
+        jPanel57.add(jTextField45, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 60, -1));
+        jPanel57.add(jTextField46, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, 60, -1));
+        jPanel57.add(jTextField47, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 60, 60, -1));
+        jPanel57.add(jTextField48, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 60, -1));
+
+        jLabel135.setText("to");
+        jPanel57.add(jLabel135, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, -1, 20));
+
+        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" }));
+        jPanel57.add(jComboBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 150, -1));
+
+        jComboBox15.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "General", "Deffense", "Government", "Police" }));
+        jPanel57.add(jComboBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 150, -1));
+
+        jComboBox16.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel57.add(jComboBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 150, -1));
+        jPanel57.add(jTextField49, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 150, -1));
+
+        jLabel139.setText("to");
+        jPanel57.add(jLabel139, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, -1, 20));
+
+        jLabel140.setText("to");
+        jPanel57.add(jLabel140, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, 20));
+        jPanel57.add(jTextField50, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, 60, -1));
+        jPanel57.add(jTextField51, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 60, -1));
+        jPanel57.add(jTextField52, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 60, -1));
+
+        jLabel141.setText("to");
+        jPanel57.add(jLabel141, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 60, -1, 20));
+
+        jLabel142.setText("to");
+        jPanel57.add(jLabel142, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, -1, 20));
+
+        jButton34.setBackground(new java.awt.Color(51, 51, 51));
+        jButton34.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton34.setForeground(new java.awt.Color(204, 204, 204));
+        jButton34.setText("Reset");
+        jPanel57.add(jButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
+
+        jButton35.setBackground(new java.awt.Color(51, 51, 51));
+        jButton35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton35.setForeground(new java.awt.Color(204, 204, 204));
+        jButton35.setText("Cancel");
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
+        jPanel57.add(jButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 100, 30));
+
+        jButton36.setBackground(new java.awt.Color(51, 51, 51));
+        jButton36.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton36.setForeground(new java.awt.Color(204, 204, 204));
+        jButton36.setText("Search");
+        jPanel57.add(jButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
+
+        jLabel143.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel143.setText("Results:");
+        jPanel57.add(jLabel143, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, -1));
+        jPanel57.add(jLabel144, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 170, 30, 15));
+
+        jTable6.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Complaint ID", "Complaint Type", "Complainant Name", "Complainant Type", "Date of Issue"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable6.setFocusable(false);
+        jTable6.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        jTable6.setRowHeight(20);
+        jTable6.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        jTable6.getTableHeader().setReorderingAllowed(false);
+        jScrollPane8.setViewportView(jTable6);
+
+        jPanel57.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 195, 540, 230));
+
+        panelPolice8.add(jPanel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        jLabel145.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel145.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel145.setText("Search || COMPLAINT Info ");
+        jLabel145.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panelPolice8.add(jLabel145, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 950, -1));
+
+        javax.swing.GroupLayout panelSearchComplaintLayout = new javax.swing.GroupLayout(panelSearchComplaint);
+        panelSearchComplaint.setLayout(panelSearchComplaintLayout);
+        panelSearchComplaintLayout.setHorizontalGroup(
+            panelSearchComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelPolice8, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
+        );
+        panelSearchComplaintLayout.setVerticalGroup(
+            panelSearchComplaintLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchComplaintLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelPolice8, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelSlider1.add(panelSearchComplaint, "card7");
+
+        panelPolice7.setBackground(new java.awt.Color(204, 204, 204));
+        panelPolice7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel54.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel54.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel55.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel55.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel55.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel56.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel130.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel130.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel130.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel130.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel130.setText("Preview");
+        jLabel130.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel130.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel56Layout = new javax.swing.GroupLayout(jPanel56);
+        jPanel56.setLayout(jPanel56Layout);
+        jPanel56Layout.setHorizontalGroup(
+            jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel56Layout.createSequentialGroup()
+                .addComponent(jLabel130, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel56Layout.setVerticalGroup(
+            jPanel56Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel130, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel55.add(jPanel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jPanel54.add(jPanel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 490));
+
+        jRadioButton11.setText("Remaining Seats");
+        jPanel54.add(jRadioButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, -1, -1));
+
+        jSeparator28.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel54.add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 0, 10, 30));
+        jPanel54.add(jTextField33, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 0, 60, -1));
+        jPanel54.add(jTextField43, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 0, 60, -1));
+
+        jLabel131.setText("to");
+        jPanel54.add(jLabel131, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 0, -1, 20));
+
+        jButton31.setBackground(new java.awt.Color(51, 51, 51));
+        jButton31.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton31.setForeground(new java.awt.Color(204, 204, 204));
+        jButton31.setText("Reset");
+        jPanel54.add(jButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
+
+        jButton32.setBackground(new java.awt.Color(51, 51, 51));
+        jButton32.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton32.setForeground(new java.awt.Color(204, 204, 204));
+        jButton32.setText("Cancel");
+        jButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton32ActionPerformed(evt);
+            }
+        });
+        jPanel54.add(jButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 100, 30));
+
+        jButton33.setBackground(new java.awt.Color(51, 51, 51));
+        jButton33.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton33.setForeground(new java.awt.Color(204, 204, 204));
+        jButton33.setText("Search");
+        jPanel54.add(jButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
+
+        jLabel132.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel132.setText("Results:");
+        jPanel54.add(jLabel132, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, -1, -1));
+        jPanel54.add(jLabel133, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 30, 15));
+
+        jRadioButton38.setText("ID");
+        jPanel54.add(jRadioButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jPanel54.add(jTextField64, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 60, -1));
+        jPanel54.add(jTextField65, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 60, -1));
+
+        jLabel146.setText("to");
+        jPanel54.add(jLabel146, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, -1, 20));
+
+        jTable7.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
+            },
+            new String [] {
+                "Custody No.", "Seats Remaining", "Capacity"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable7.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable7.setFocusable(false);
+        jTable7.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        jTable7.setRowHeight(20);
+        jTable7.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        jTable7.getTableHeader().setReorderingAllowed(false);
+        jScrollPane9.setViewportView(jTable7);
+
+        jPanel54.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 540, 350));
+
+        panelPolice7.add(jPanel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        jLabel136.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel136.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel136.setText("Search || CUSTODY Info ");
+        jLabel136.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panelPolice7.add(jLabel136, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 950, -1));
+
+        javax.swing.GroupLayout panelSearchCustodyLayout = new javax.swing.GroupLayout(panelSearchCustody);
+        panelSearchCustody.setLayout(panelSearchCustodyLayout);
+        panelSearchCustodyLayout.setHorizontalGroup(
+            panelSearchCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelPolice7, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
+        );
+        panelSearchCustodyLayout.setVerticalGroup(
+            panelSearchCustodyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchCustodyLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelPolice7, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelSlider1.add(panelSearchCustody, "card8");
+
+        panelPolice9.setBackground(new java.awt.Color(204, 204, 204));
+        panelPolice9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel60.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel60.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel61.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel61.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel61.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel62.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel137.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel137.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel137.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel137.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel137.setText("Preview");
+        jLabel137.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel137.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
+        jPanel62.setLayout(jPanel62Layout);
+        jPanel62Layout.setHorizontalGroup(
+            jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel62Layout.createSequentialGroup()
+                .addComponent(jLabel137, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel62Layout.setVerticalGroup(
+            jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel137, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel61.add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+
+        jPanel60.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 490));
+
+        jRadioButton31.setText("Previous Records");
+        jPanel60.add(jRadioButton31, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, -1, -1));
+
+        jRadioButton32.setText("Name");
+        jPanel60.add(jRadioButton32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, -1, -1));
+
+        jRadioButton33.setText("Gender");
+        jPanel60.add(jRadioButton33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, -1));
+
+        jRadioButton34.setText("Phone");
+        jPanel60.add(jRadioButton34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, -1, -1));
+
+        jRadioButton35.setText("Age");
+        jPanel60.add(jRadioButton35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, -1, -1));
+
+        jSeparator37.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        jPanel60.add(jSeparator37, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 0, 10, 150));
+        jPanel60.add(jTextField56, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 60, -1));
+        jPanel60.add(jTextField57, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 120, 60, -1));
+        jPanel60.add(jTextField58, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 120, 60, -1));
+        jPanel60.add(jTextField59, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 150, -1));
+        jPanel60.add(jTextField60, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 60, -1));
+
+        jLabel138.setText("to");
+        jPanel60.add(jLabel138, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 0, -1, 20));
+
+        jComboBox17.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel60.add(jComboBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 60, 150, -1));
+        jPanel60.add(jTextField61, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 150, -1));
+
+        jLabel147.setText("to");
+        jPanel60.add(jLabel147, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, -1, 20));
+
+        jLabel148.setText("to");
+        jPanel60.add(jLabel148, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, -1, 20));
+        jPanel60.add(jTextField62, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 0, 60, -1));
+        jPanel60.add(jTextField63, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 60, -1));
+
+        jButton37.setBackground(new java.awt.Color(51, 51, 51));
+        jButton37.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton37.setForeground(new java.awt.Color(204, 204, 204));
+        jButton37.setText("Reset");
+        jPanel60.add(jButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 440, 100, 30));
+
+        jButton38.setBackground(new java.awt.Color(51, 51, 51));
+        jButton38.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton38.setForeground(new java.awt.Color(204, 204, 204));
+        jButton38.setText("Cancel");
+        jButton38.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton38ActionPerformed(evt);
+            }
+        });
+        jPanel60.add(jButton38, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 440, 100, 30));
+
+        jButton39.setBackground(new java.awt.Color(51, 51, 51));
+        jButton39.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton39.setForeground(new java.awt.Color(204, 204, 204));
+        jButton39.setText("Search");
+        jPanel60.add(jButton39, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 100, 30));
+
+        jLabel149.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel149.setText("Results:");
+        jPanel60.add(jLabel149, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, -1, 20));
+        jPanel60.add(jLabel150, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 30, 20));
+
+        jRadioButton36.setText("ID");
+        jPanel60.add(jRadioButton36, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jRadioButton37.setText("Marital Status");
+        jPanel60.add(jRadioButton37, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 30, -1, -1));
+
+        jComboBox18.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Married", "Unmarried" }));
+        jPanel60.add(jComboBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 30, 150, -1));
+
+        jTable5.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "ID", "Name", "Age", "Father's Name", "Previous Records"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Integer.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTable5.setFocusable(false);
+        jTable5.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        jTable5.setRowHeight(20);
+        jTable5.setSelectionBackground(new java.awt.Color(51, 51, 51));
+        jTable5.getTableHeader().setReorderingAllowed(false);
+        jScrollPane14.setViewportView(jTable5);
+
+        jPanel60.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 197, 540, 230));
+
+        panelPolice9.add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
+
+        jLabel151.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
+        jLabel151.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel151.setText("Search || CRIMINAL Info ");
+        jLabel151.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panelPolice9.add(jLabel151, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 950, -1));
+
+        javax.swing.GroupLayout panelSearchCriminalLayout = new javax.swing.GroupLayout(panelSearchCriminal);
+        panelSearchCriminal.setLayout(panelSearchCriminalLayout);
+        panelSearchCriminalLayout.setHorizontalGroup(
+            panelSearchCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelPolice9, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
+        );
+        panelSearchCriminalLayout.setVerticalGroup(
+            panelSearchCriminalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelSearchCriminalLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(panelPolice9, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        panelSlider1.add(panelSearchCriminal, "card9");
 
         jPanel2.add(panelSlider1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 980, 550));
 
@@ -5447,7 +6137,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void buttonSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSearchActionPerformed
 
-        panelSlider1.nextPanel(20, panelSearchPolice5, panelSlider1.right);
+        panelSlider1.nextPanel(20, panelSearchPolice, panelSlider1.right);
 
     }//GEN-LAST:event_buttonSearchActionPerformed
 
@@ -8154,6 +8844,22 @@ public class Dashboard extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton30ActionPerformed
 
+    private void jRadioButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton25ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton25ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton35ActionPerformed
+
+    private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton38ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -8340,6 +9046,15 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton jButton29;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
+    private javax.swing.JButton jButton31;
+    private javax.swing.JButton jButton32;
+    private javax.swing.JButton jButton33;
+    private javax.swing.JButton jButton34;
+    private javax.swing.JButton jButton35;
+    private javax.swing.JButton jButton36;
+    private javax.swing.JButton jButton37;
+    private javax.swing.JButton jButton38;
+    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
@@ -8406,6 +9121,11 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox10;
     private javax.swing.JComboBox<String> jComboBox11;
+    private javax.swing.JComboBox<String> jComboBox13;
+    private javax.swing.JComboBox<String> jComboBox15;
+    private javax.swing.JComboBox<String> jComboBox16;
+    private javax.swing.JComboBox<String> jComboBox17;
+    private javax.swing.JComboBox<String> jComboBox18;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JComboBox<String> jComboBox4;
@@ -8450,7 +9170,29 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel127;
     private javax.swing.JLabel jLabel128;
     private javax.swing.JLabel jLabel129;
+    private javax.swing.JLabel jLabel130;
+    private javax.swing.JLabel jLabel131;
+    private javax.swing.JLabel jLabel132;
+    private javax.swing.JLabel jLabel133;
+    private javax.swing.JLabel jLabel134;
+    private javax.swing.JLabel jLabel135;
+    private javax.swing.JLabel jLabel136;
+    private javax.swing.JLabel jLabel137;
+    private javax.swing.JLabel jLabel138;
+    private javax.swing.JLabel jLabel139;
+    private javax.swing.JLabel jLabel140;
+    private javax.swing.JLabel jLabel141;
+    private javax.swing.JLabel jLabel142;
+    private javax.swing.JLabel jLabel143;
+    private javax.swing.JLabel jLabel144;
+    private javax.swing.JLabel jLabel145;
+    private javax.swing.JLabel jLabel146;
+    private javax.swing.JLabel jLabel147;
+    private javax.swing.JLabel jLabel148;
+    private javax.swing.JLabel jLabel149;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel150;
+    private javax.swing.JLabel jLabel151;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -8584,14 +9326,42 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel51;
     private javax.swing.JPanel jPanel52;
     private javax.swing.JPanel jPanel53;
+    private javax.swing.JPanel jPanel54;
+    private javax.swing.JPanel jPanel55;
+    private javax.swing.JPanel jPanel56;
+    private javax.swing.JPanel jPanel57;
+    private javax.swing.JPanel jPanel58;
+    private javax.swing.JPanel jPanel59;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel60;
+    private javax.swing.JPanel jPanel61;
+    private javax.swing.JPanel jPanel62;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton10;
+    private javax.swing.JRadioButton jRadioButton11;
+    private javax.swing.JRadioButton jRadioButton18;
+    private javax.swing.JRadioButton jRadioButton19;
     private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton20;
+    private javax.swing.JRadioButton jRadioButton21;
+    private javax.swing.JRadioButton jRadioButton22;
+    private javax.swing.JRadioButton jRadioButton23;
+    private javax.swing.JRadioButton jRadioButton24;
+    private javax.swing.JRadioButton jRadioButton25;
+    private javax.swing.JRadioButton jRadioButton26;
+    private javax.swing.JRadioButton jRadioButton27;
     private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton31;
+    private javax.swing.JRadioButton jRadioButton32;
+    private javax.swing.JRadioButton jRadioButton33;
+    private javax.swing.JRadioButton jRadioButton34;
+    private javax.swing.JRadioButton jRadioButton35;
+    private javax.swing.JRadioButton jRadioButton36;
+    private javax.swing.JRadioButton jRadioButton37;
+    private javax.swing.JRadioButton jRadioButton38;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
     private javax.swing.JRadioButton jRadioButton6;
@@ -8600,12 +9370,15 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
@@ -8626,6 +9399,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator25;
     private javax.swing.JSeparator jSeparator26;
     private javax.swing.JSeparator jSeparator27;
+    private javax.swing.JSeparator jSeparator28;
     private javax.swing.JSeparator jSeparator29;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator30;
@@ -8634,6 +9408,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator33;
     private javax.swing.JSeparator jSeparator34;
     private javax.swing.JSeparator jSeparator35;
+    private javax.swing.JSeparator jSeparator36;
+    private javax.swing.JSeparator jSeparator37;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
@@ -8641,6 +9417,9 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable5;
+    private javax.swing.JTable jTable6;
+    private javax.swing.JTable jTable7;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextArea jTextArea2;
     private javax.swing.JTextField jTextField1;
@@ -8669,9 +9448,33 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField30;
     private javax.swing.JTextField jTextField31;
     private javax.swing.JTextField jTextField32;
+    private javax.swing.JTextField jTextField33;
+    private javax.swing.JTextField jTextField37;
+    private javax.swing.JTextField jTextField38;
+    private javax.swing.JTextField jTextField39;
     private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField42;
+    private javax.swing.JTextField jTextField43;
+    private javax.swing.JTextField jTextField45;
+    private javax.swing.JTextField jTextField46;
+    private javax.swing.JTextField jTextField47;
+    private javax.swing.JTextField jTextField48;
+    private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
+    private javax.swing.JTextField jTextField56;
+    private javax.swing.JTextField jTextField57;
+    private javax.swing.JTextField jTextField58;
+    private javax.swing.JTextField jTextField59;
     private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField60;
+    private javax.swing.JTextField jTextField61;
+    private javax.swing.JTextField jTextField62;
+    private javax.swing.JTextField jTextField63;
+    private javax.swing.JTextField jTextField64;
+    private javax.swing.JTextField jTextField65;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
@@ -8749,6 +9552,9 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelMini;
     private javax.swing.JPanel panelPolice;
     private javax.swing.JPanel panelPolice6;
+    private javax.swing.JPanel panelPolice7;
+    private javax.swing.JPanel panelPolice8;
+    private javax.swing.JPanel panelPolice9;
     private javax.swing.JPanel panelPoliceAdd;
     private javax.swing.JPanel panelPoliceAdd1;
     private javax.swing.JPanel panelPoliceAdd2;
@@ -8762,7 +9568,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelResetPolice1;
     private javax.swing.JPanel panelResetPolice2;
     private javax.swing.JPanel panelResetPolice3;
-    private javax.swing.JPanel panelSearchPolice5;
+    private javax.swing.JPanel panelSearchComplaint;
+    private javax.swing.JPanel panelSearchCriminal;
+    private javax.swing.JPanel panelSearchCustody;
+    private javax.swing.JPanel panelSearchPolice;
     private diu.swe.habib.JPanelSlider.JPanelSlider panelSlider1;
     private javax.swing.JPanel panelUpdatePolice;
     private javax.swing.JPanel panelUpdatePolice1;
