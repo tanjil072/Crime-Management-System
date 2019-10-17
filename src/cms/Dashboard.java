@@ -725,19 +725,20 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        imgfetch = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        name = new javax.swing.JLabel();
+        ID = new javax.swing.JLabel();
+        email = new javax.swing.JLabel();
+        id = new javax.swing.JLabel();
+        designation = new javax.swing.JLabel();
         panelSearchPolice = new javax.swing.JPanel();
         panelPolice6 = new javax.swing.JPanel();
         jPanel51 = new javax.swing.JPanel();
         jScrollPane13 = new javax.swing.JScrollPane();
         Police_Info6 = new javax.swing.JTable();
-        jPanel52 = new javax.swing.JPanel();
-        jPanel53 = new javax.swing.JPanel();
-        jLabel93 = new javax.swing.JLabel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
@@ -774,6 +775,18 @@ public class Dashboard extends javax.swing.JFrame {
         jButton30 = new javax.swing.JButton();
         jLabel127 = new javax.swing.JLabel();
         jLabel128 = new javax.swing.JLabel();
+        jPanel22 = new javax.swing.JPanel();
+        jPanel23 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        imgfetch1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        name1 = new javax.swing.JLabel();
+        ID1 = new javax.swing.JLabel();
+        email1 = new javax.swing.JLabel();
+        id1 = new javax.swing.JLabel();
+        designation1 = new javax.swing.JLabel();
         jLabel129 = new javax.swing.JLabel();
         panelSearchComplaint = new javax.swing.JPanel();
         panelPolice8 = new javax.swing.JPanel();
@@ -4844,19 +4857,23 @@ public class Dashboard extends javax.swing.JFrame {
         );
 
         jPanel6.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
-        jPanel6.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 220, 130));
+        jPanel6.add(imgfetch, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 220, 130));
 
-        jLabel7.setText("jLabel7");
+        jLabel7.setText("Name                 :");
         jPanel6.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
-        jLabel8.setText("jLabel7");
+        jLabel8.setText("Designation      :");
         jPanel6.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
 
-        jLabel9.setText("jLabel7");
+        jLabel9.setText("Email                  :");
         jPanel6.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        jPanel6.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, -1, -1));
 
-        jLabel10.setText("jLabel7");
-        jPanel6.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, -1, -1));
+        ID.setText("ID                       :");
+        jPanel6.add(ID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 100, -1));
+        jPanel6.add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+        jPanel6.add(id, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        jPanel6.add(designation, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -4942,37 +4959,6 @@ public class Dashboard extends javax.swing.JFrame {
         jScrollPane13.setViewportView(Police_Info6);
 
         jPanel51.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 200, 540, 210));
-
-        jPanel52.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel52.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
-        jPanel52.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel53.setBackground(new java.awt.Color(51, 51, 51));
-
-        jLabel93.setBackground(new java.awt.Color(153, 153, 153));
-        jLabel93.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel93.setForeground(new java.awt.Color(204, 204, 204));
-        jLabel93.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel93.setText("Preview");
-        jLabel93.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
-        jLabel93.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-
-        javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
-        jPanel53.setLayout(jPanel53Layout);
-        jPanel53Layout.setHorizontalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel53Layout.createSequentialGroup()
-                .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        jPanel53Layout.setVerticalGroup(
-            jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel93, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
-        );
-
-        jPanel52.add(jPanel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
-
-        jPanel51.add(jPanel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 0, 390, 490));
 
         jRadioButton1.setText("ID");
         jPanel51.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -5077,6 +5063,54 @@ public class Dashboard extends javax.swing.JFrame {
         jPanel51.add(jLabel127, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, -1, -1));
         jPanel51.add(jLabel128, new org.netbeans.lib.awtextra.AbsoluteConstraints(42, 180, 30, 15));
 
+        jPanel22.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel22.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true));
+        jPanel22.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel23.setBackground(new java.awt.Color(51, 51, 51));
+
+        jLabel6.setBackground(new java.awt.Color(153, 153, 153));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Preview");
+        jLabel6.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, java.awt.Color.white, java.awt.Color.black));
+        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+
+        javax.swing.GroupLayout jPanel23Layout = new javax.swing.GroupLayout(jPanel23);
+        jPanel23.setLayout(jPanel23Layout);
+        jPanel23Layout.setHorizontalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel23Layout.createSequentialGroup()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 399, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel23Layout.setVerticalGroup(
+            jPanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, 33, Short.MAX_VALUE)
+        );
+
+        jPanel22.add(jPanel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 1, -1, -1));
+        jPanel22.add(imgfetch1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 220, 130));
+
+        jLabel10.setText("Name                 :");
+        jPanel22.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
+
+        jLabel12.setText("Designation      :");
+        jPanel22.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
+
+        jLabel13.setText("Email                  :");
+        jPanel22.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        jPanel22.add(name1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, -1, -1));
+
+        ID1.setText("ID                       :");
+        jPanel22.add(ID1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 100, -1));
+        jPanel22.add(email1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 280, -1, -1));
+        jPanel22.add(id1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+        jPanel22.add(designation1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, -1, -1));
+
+        jPanel51.add(jPanel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 400, 490));
+
         panelPolice6.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 950, 490));
 
         jLabel129.setFont(new java.awt.Font("Perpetua Titling MT", 1, 13)); // NOI18N
@@ -5089,7 +5123,7 @@ public class Dashboard extends javax.swing.JFrame {
         panelSearchPolice.setLayout(panelSearchPoliceLayout);
         panelSearchPoliceLayout.setHorizontalGroup(
             panelSearchPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panelPolice6, javax.swing.GroupLayout.DEFAULT_SIZE, 976, Short.MAX_VALUE)
+            .addComponent(panelPolice6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         panelSearchPoliceLayout.setVerticalGroup(
             panelSearchPoliceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -6749,7 +6783,7 @@ public class Dashboard extends javax.swing.JFrame {
                 Connection connection = DriverManager.getConnection(
                         "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
 
-                String query = "UPDATE POLICE_INFO SET IMAGE=?";
+                String query = "UPDATE POLICE_INFO SET IMAGE=? WHERE PoliceId="+ PID;
                 PreparedStatement pst = connection.prepareStatement(query);
 
                 pst.setBytes(1, person_image2);
@@ -7464,6 +7498,44 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void Police_InfoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Police_InfoMouseClicked
         // TODO add your handling code here:
+        
+        DefaultTableModel model=(DefaultTableModel)Police_Info.getModel();
+        int selectedRowIndex=Police_Info.getSelectedRow();
+        
+        id.setText(model.getValueAt(selectedRowIndex, 0).toString());
+        String id2=id.getText().toString();
+        name.setText(model.getValueAt(selectedRowIndex, 1).toString());
+        designation.setText(model.getValueAt(selectedRowIndex, 2).toString());
+        email.setText(model.getValueAt(selectedRowIndex, 3).toString());
+        
+        int id3=Integer.parseInt(id2);
+        
+        
+         try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            Statement stmt = connection.createStatement();
+            
+            String query = "SELECT * FROM POLICE_INFO WHERE PoliceId="+id3;
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()) {
+                
+                if (rs.getBytes(18) != null) {
+                    byte[] setImage = rs.getBytes(18);
+                    ImageIcon imageIcon = new ImageIcon(new ImageIcon(setImage).getImage().getScaledInstance(imgfetch.getWidth(), imgfetch.getHeight(), Image.SCALE_SMOOTH));
+                    imgfetch.setIcon(imageIcon);
+                }
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
+        
+        
+        
     }//GEN-LAST:event_Police_InfoMouseClicked
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -8893,6 +8965,41 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void Police_Info6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Police_Info6MouseClicked
         // TODO add your handling code here:
+        
+         DefaultTableModel model=(DefaultTableModel)Police_Info6.getModel();
+        int selectedRowIndex=Police_Info6.getSelectedRow();
+        
+        id1.setText(model.getValueAt(selectedRowIndex, 0).toString());
+        String id2=id1.getText().toString();
+        name1.setText(model.getValueAt(selectedRowIndex, 1).toString());
+        designation1.setText(model.getValueAt(selectedRowIndex, 2).toString());
+        email1.setText(model.getValueAt(selectedRowIndex, 3).toString());
+        
+        int id3=Integer.parseInt(id2);
+        
+        
+         try {
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Connection connection = DriverManager.getConnection(
+                    "jdbc:sqlserver://localhost:1433;databaseName=CMS;selectMethod=cursor", "sa", "123456");
+
+            Statement stmt = connection.createStatement();
+            
+            String query = "SELECT * FROM POLICE_INFO WHERE PoliceId="+id3;
+            ResultSet rs = stmt.executeQuery(query);
+
+            while (rs.next()) {
+                
+                if (rs.getBytes(18) != null) {
+                    byte[] setImage = rs.getBytes(18);
+                    ImageIcon imageIcon = new ImageIcon(new ImageIcon(setImage).getImage().getScaledInstance(imgfetch.getWidth(), imgfetch.getHeight(), Image.SCALE_SMOOTH));
+                    imgfetch1.setIcon(imageIcon);
+                }
+            }
+
+        } catch (ClassNotFoundException | SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_Police_Info6MouseClicked
 
     private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
@@ -9712,7 +9819,10 @@ public class Dashboard extends javax.swing.JFrame {
 
                 }
             }
-                try {
+               
+        }
+        
+         try {
 
                     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                     Connection con = DriverManager.getConnection(
@@ -9727,7 +9837,6 @@ public class Dashboard extends javax.swing.JFrame {
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, e);
                 }
-        }
 
     }//GEN-LAST:event_jButton39ActionPerformed
 
@@ -10123,6 +10232,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> HairColor;
     private javax.swing.JTextField Height;
     private javax.swing.JTextField Height5;
+    private javax.swing.JLabel ID;
+    private javax.swing.JLabel ID1;
     private com.toedter.calendar.JDateChooser JoiningDate1;
     private com.toedter.calendar.JDateChooser JoiningDate2;
     private javax.swing.JTextField LastName1;
@@ -10173,6 +10284,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JTextField Weight5;
     private javax.swing.JTextField WorkAdd3;
     private javax.swing.JButton buttonSearch;
+    private javax.swing.JLabel designation;
+    private javax.swing.JLabel designation1;
     private javax.swing.JDialog dialogAccusedDetails;
     private javax.swing.JDialog dialogAddComplainant;
     private javax.swing.JDialog dialogAddCriminal;
@@ -10187,6 +10300,10 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JDialog dialogUpdateCriminal;
     private javax.swing.JDialog dialogUpdateCustody;
     private javax.swing.JDialog dialogUpdatePolice;
+    private javax.swing.JLabel email;
+    private javax.swing.JLabel email1;
+    private javax.swing.JLabel id;
+    private javax.swing.JLabel id1;
     private javax.swing.JLabel img10;
     private javax.swing.JLabel img11;
     private javax.swing.JLabel img12;
@@ -10198,6 +10315,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel img7;
     private javax.swing.JLabel img8;
     private javax.swing.JLabel img9;
+    private javax.swing.JLabel imgfetch;
+    private javax.swing.JLabel imgfetch1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -10338,6 +10457,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel117;
     private javax.swing.JLabel jLabel118;
     private javax.swing.JLabel jLabel119;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel120;
     private javax.swing.JLabel jLabel121;
     private javax.swing.JLabel jLabel122;
@@ -10348,6 +10468,7 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel127;
     private javax.swing.JLabel jLabel128;
     private javax.swing.JLabel jLabel129;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel130;
     private javax.swing.JLabel jLabel131;
     private javax.swing.JLabel jLabel132;
@@ -10456,7 +10577,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
-    private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
     private javax.swing.JLabel jLabel95;
     private javax.swing.JLabel jLabel96;
@@ -10479,6 +10599,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
     private javax.swing.JPanel jPanel26;
     private javax.swing.JPanel jPanel27;
     private javax.swing.JPanel jPanel28;
@@ -10506,8 +10628,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel48;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel51;
-    private javax.swing.JPanel jPanel52;
-    private javax.swing.JPanel jPanel53;
     private javax.swing.JPanel jPanel54;
     private javax.swing.JPanel jPanel55;
     private javax.swing.JPanel jPanel56;
@@ -10705,6 +10825,8 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JLabel labelUpdatePolice1;
     private javax.swing.JLabel labelUpdatePolice2;
     private javax.swing.JLabel labelUpdatePolice3;
+    private javax.swing.JLabel name;
+    private javax.swing.JLabel name1;
     private javax.swing.JPanel panelAddPoliceCross10;
     private javax.swing.JPanel panelAddPoliceCross11;
     private javax.swing.JPanel panelAddPoliceCross12;
